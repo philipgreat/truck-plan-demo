@@ -9,11 +9,28 @@
         founded="now()"
         contact_number="992887654321"
     />
-    <brand name="brand"  platform="platform()"/>
-    <product name="宝马|奔驰|布加迪" brand="brand()" image="snack.jpg" platform="platform()"/>
-
-    <sku name="sku" product="product()" platform="platform()" create_time="createTime()"/>
-   
+    <merchant 
+        name="新途气体货运服务公司|新途气体货运服务公司"
+        create_time="createTime()"
+         platform="platform()"
+        _features="merchant"
+    />
+    <truck 
+        name="东风大货车"  
+        image="truck.jpg"
+        truck_length="12.99"
+        truck_height="12.99"
+        empty_weight="12.99"
+        load_weight="12.99"
+        maintenance_fee="$12.99"
+        fuel_fee="$12.99"
+        toll_fee="$12.99"
+        depreciation_fee="$12.99"
+        insurance_fee="$12.99"
+        labor_fee="$12.00"
+        remark="text()"
+        merchant="merchant()"
+        platform="platform()"/>
     
 </root>
 
@@ -21,7 +38,21 @@
 <!-- 
     Consignor Products Quantity Departure Destination Transport value Shipping date
 
-    
+    订单信息										
+#	货主	产品	数量	出发地	到达地	运输价值	运输日期			
+	Consignor Products Quantity Departure Destination Transport value Shipping date									
+										
+	货车信息	重型、中型、轻型，微型									
+										
+#	车长	车高	空重	载重	保养费	油料费	过路费	折旧费	保险费	人工费
+	truck_length	vehicle height, empty weight, load, maintenance fee, fuel fee, toll fee, depreciation fee, insurance fee, labor fee								
+
+									
+										
+										
+										
+										
+										
 
 
 -->
