@@ -24,6 +24,7 @@
     <truck_stop_plan
         name="东方大货车送刘师傅的货"
         stop_order="1|2|[1,20]"
+        create_time="createTime()"
         trip_plan="truck_trip_plan()"
         order_line_item="order_line_item()"
     />
@@ -41,6 +42,7 @@
         insurance_fee="$12.99"
         labor_fee="$12.00"
         remark="text()"
+        create_time="createTime()"
         merchant="merchant()"
         platform="platform()"/>
     <order_line_item
@@ -51,6 +53,7 @@
         departure="成都龙泉驿"
         destination="成都龙泉驿成龙大道123号"
         shipping_date="2020-10-10"
+        create_time="createTime()"
         merchant="merchant()"
         platform="platform()"
         
