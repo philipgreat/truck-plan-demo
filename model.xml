@@ -1,11 +1,11 @@
 <root org="doublechain"
-    chinese_name="火车路线规划0.1"
-    english_name="火车路线规划"
+    chinese_name="货车路线规划规划0.1"
+    english_name="货车路线规划规划"
 >
 
 
     <platform
-        name="火车路线规划|火车路线规划"
+        name="货车路线规划规划|货车路线规划规划"
         founded="now()"
         contact_number="992887654321"
     />
@@ -19,7 +19,7 @@
         name="2020年6月22日运输任务"
         merchant="merchant()"
         platform="platform()"
-        
+
     />
     <truck_stop_plan
         name="东方大货车送刘师傅的货"
