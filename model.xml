@@ -1,11 +1,11 @@
 <root org="doublechain"
-    chinese_name="简单产品管理V1.1"
-    english_name="简单产品管理"
+    chinese_name="火车路线规划0.1"
+    english_name="火车路线规划"
 >
 
 
     <platform
-        name="简单产品管理|简单产品管理"
+        name="火车路线规划|火车路线规划"
         founded="now()"
         contact_number="992887654321"
     />
@@ -31,7 +31,22 @@
         remark="text()"
         merchant="merchant()"
         platform="platform()"/>
+    <order_line_item
+        name="刘师傅需要120个罐子"
+        consignor="刘师傅"
+        contact_number="13099998888"
+        quantity="1200"
+        departure="成都龙泉驿"
+        destination="成都龙泉驿成龙大道123号"
+        shipping_date="2020-10-10"
+        merchant="merchant()"
+        platform="platform()"
+        
     
+    />
+    
+
+
 </root>
 
 
