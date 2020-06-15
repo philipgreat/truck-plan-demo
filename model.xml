@@ -15,6 +15,18 @@
          platform="platform()"
         _features="merchant"
     />
+    <truck_trip_plan
+        name="2020年6月22日运输任务"
+        merchant="merchant()"
+        platform="platform()"
+        
+    />
+    <truck_stop_plan
+        name="东方大货车送刘师傅的货"
+        stop_order="1|2|[1,20]"
+        trip_plan="truck_trip_plan()"
+        order_line_item="order_line_item()"
+    />
     <truck 
         name="东风大货车"  
         image="truck.jpg"
@@ -44,7 +56,7 @@
         
     
     />
-    
+
 
 
 </root>
