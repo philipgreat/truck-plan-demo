@@ -24,6 +24,7 @@
     <truck_stop_plan
         name="东方大货车送刘师傅的货"
         stop_order="1|2|[1,20]"
+        city="cityByIp()"
         create_time="createTime()"
         trip_plan="truck_trip_plan()"
         order_line_item="order_line_item()"
