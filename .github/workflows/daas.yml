@@ -88,12 +88,11 @@ jobs:
         # /home/runner/resin-3.1.16/bin/httpd.sh restart
         #tail -f /home/runner/resin-3.1.16/log/jvm-default.log
     - name: Notify Ready
-      - uses: actions/checkout@v2  
-      - uses: JasonEtco/create-an-issue@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          filename: .github/issue-template.md
+      uses: JasonEtco/create-an-issue@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        filename: .github/issue-template.md
     - name: clean up
       run: |
         while true
