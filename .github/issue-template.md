@@ -1,5 +1,4 @@
 ---
-title: Someone just pushed
-labels: bug, enhancement
+title: Weekly Radar {{ date | date('dddd, MMMM Do') }}
 ---
-Someone just pushed, oh no! Here's who did it: {{ payload.sender.login }}.
+What's everyone up to this week?
