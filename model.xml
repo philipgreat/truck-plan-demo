@@ -10,11 +10,12 @@
     />
     <merchant 
         name="新途气体货运服务公司|旧途气体货运服务公司|双链气体货运服务公司|单链气体货运服务公司|"
+        create_city="cityByIp()"
         create_time="createTime()"
          platform="platform()"
         _features="merchant"
     />
-    
+
     <truck_trip_plan
         name="2020年6月22日运输任务"
         merchant="merchant()"
@@ -24,7 +25,7 @@
     <truck_stop_plan
         name="东方大货车送刘师傅的货"
         stop_order="1|2|[1,20]"
-        city="cityByIp()"
+        
         create_time="createTime()"
         trip_plan="truck_trip_plan()"
         order_line_item="order_line_item()"
