@@ -8,6 +8,45 @@
         founded="now()"
         contact_number="992887654321"
     />
+
+
+    <change_request_type
+		name="登记卡车|注销卡车"
+		code="REGISTER_TRUCK|UNREGISTER_TRUCK|[1,99]"
+		icon="download|swap"
+		display_order="1|2"
+		bind_types="text()"
+		step_configuration="text()"
+		platform="$(platform)"
+		_features="cr_type"
+		_identified_by="code"
+		
+	/>
+	
+	
+	
+	<!-- PENDING ACTION FROM WHOM -->
+    
+	<change_request
+		name="存款|转账|取款|[1,50]"
+		
+		create_time="createTime()"
+		remote_ip="remoteIp()"
+		request_type="$(change_request_type)"
+		platform="$(platform)"
+		_vg4platform="变更"
+		_features="change_request"
+	/>
+	
+	<event
+		name="存款|转账|取款|[1,50]"
+		cq="$(change_request)"
+		_features="event"
+		_reg_func="REGISTER_TRUCK"
+		
+	/>
+
+
     <merchant 
         name="新途气体货运服务公司|旧途气体货运服务公司|双链气体货运服务公司|单链气体货运服务公司|"
         create_city="cityByIp()"
