@@ -43,7 +43,7 @@
 	<event
 		name="存款|转账|取款|[1,50]"
 		cq="$(change_request)"
-		_features="event"
+		_features="n*event"
 		_bind_with_cr_type="REGISTER_TRUCK"
 		
 	/>
