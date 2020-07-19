@@ -15,6 +15,8 @@
     />
     <student
 
+
+
         name="张三|李四|苟晶|李春秀"
         school_roll_number="STD000000"
         photo_in_hight_school="student.jpg"
@@ -22,7 +24,7 @@
         reliability="100|[30,100]"
         last_update_time="updateTime()"
         school="university()"
-        
+
         
     
     />
