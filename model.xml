@@ -10,6 +10,30 @@
         
     />
 
+    <change_request_type
+		name="执行对比|可疑申辩"
+		code="REGISTER_TRUCK|UNREGISTER_TRUCK|[1,99]"
+		icon="download|swap"
+		display_order="1|2"
+		bind_types="text()"
+		step_configuration="text()"
+		platform="$(platform)"
+		_features="cr_type"
+		_identified_by="code"
+		
+	/>
+
+    <change_request
+		name="对比|申辩|[1,50]"
+		
+		create_time="createTime()"
+		city="cityByIp()"
+		request_type="$(change_request_type)"
+		platform="$(platform)"
+		
+		_features="change_request"
+	/>
+
     <university
         name="清华大学|北京大学|复旦大学|上海交通大学"
         contact_person="张老师|李老师"
@@ -17,6 +41,17 @@
         platform="platform()"
         _features="merchant"
     />
+
+
+    <comparison
+		name="存款|转账|取款|[1,50]"
+        thresh_hold="99|100"
+		change_request="$(change_request)"
+		_features="event"
+		_bind_with_cr_type="REGISTER_TRUCK"
+		
+	/>
+
 
     <student
 
