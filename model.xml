@@ -9,6 +9,10 @@
         contact_number="992887654321"
     />
 
+    <university
+        name="清华大学|北京大学|复旦大学|上海交通大学"
+        platform="platform()"
+    />
     <student
 
         name="张三|李四|苟晶|李春秀"
@@ -17,7 +21,7 @@
         photo_in_college="student.jpg"
         reliability="100|[30,100]"
         last_update_time="updateTime()"
-        platform="platform()"
+        school="university()"
         
         
     
