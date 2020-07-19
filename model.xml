@@ -60,7 +60,7 @@
         name="张三|李四|苟晶|李春秀"
         school_roll_number="STD000000"
         photo_in_hight_school="id_photo.jpg"
-        photo_in_college="student.jpg"
+        photo_in_college="id_photo.jpg"
         reliability="100|[30,100]"
         last_update_time="updateTime()"
         school="university()"
