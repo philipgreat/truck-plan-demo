@@ -15,7 +15,8 @@
         school_roll_number="STD000000"
         photo_in_hight_school="student.jpg"
         photo_in_college="student.jpg"
-        compare_result_percent="100|[30,100]"
+        reliability="100|[30,100]"
+        last_update_time="updateTime()"
         platform="platform()"
         
     
