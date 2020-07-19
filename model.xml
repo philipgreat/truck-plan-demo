@@ -1,16 +1,42 @@
 <root org="doublechain"
-    chinese_name="货车路线规划0.90"
-    english_name="货车路线规划"
+    chinese_name="双链人脸对比测试系统1.0"
+    english_name="双链"
 >
 
     <platform
-        name="多商户货车路线规划系统|多商户货车路线规划系统"
+        name="双链|双链"
         founded="now()"
         contact_number="992887654321"
     />
 
+    <student
 
-    <change_request_type
+        name="张三|李四|苟晶|李春秀"
+        school_roll_number="STD000000"
+        photo_in_hight_school="student.jpg"
+        photo_in_college="student.jpg"
+        compare_result_percent="100|[30,100]"
+        platform="platform()"
+        
+    
+    />
+   
+
+
+
+
+
+
+
+
+
+
+    
+
+<!--
+
+
+     <change_request_type
 		name="登记卡车|注销卡车"
 		code="REGISTER_TRUCK|UNREGISTER_TRUCK|[1,99]"
 		icon="download|swap"
@@ -59,17 +85,6 @@
 
 
 
-
-
-
-
-
-
-
-
-    
-
-<!--
     <merchant 
         name="新途气体货运服务公司|旧途气体货运服务公司|双链气体货运服务公司|单链气体货运服务公司|"
         create_city="cityByIp()"
