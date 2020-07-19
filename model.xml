@@ -13,10 +13,11 @@
     <university
         name="清华大学|北京大学|复旦大学|上海交通大学"
         contact_person="张老师|李老师"
-        contact_number=“028-872212”
-        
+        contact_number="0288722121"
         platform="platform()"
+        _features="merchant"
     />
+
     <student
 
 
