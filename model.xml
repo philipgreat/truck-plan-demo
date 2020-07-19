@@ -1,16 +1,20 @@
 <root org="doublechain"
-    chinese_name="学生双链人脸对比系统1.0"
+    chinese_name="学生标准照片对比系统1.0"
     english_name="双链"
 >
 
     <platform
-        name="双链|双链"
+        name="学生标准照片对比系统1.0|学生标准照片对比系统1.0"
+        description="通过对比学生标准照片，找出可疑顶替对象"
         founded="now()"
-        contact_number="992887654321"
+        
     />
 
     <university
         name="清华大学|北京大学|复旦大学|上海交通大学"
+        contact_person="张老师|李老师"
+        contact_number=“028-872212”
+        
         platform="platform()"
     />
     <student
