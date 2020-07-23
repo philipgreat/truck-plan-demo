@@ -1,17 +1,69 @@
 <root org="doublechain"
-    chinese_name="供应链网络仿真ChainLogic"
-    english_name="供应链网络仿真ChainLogic"
-    _login_home="https://demo.doublechaintech.com/demodata/imageManager/loadImage/chainlogic0000/400/300/red/"
+    chinese_name="货车路线规划0.90"
+    english_name="货车路线规划"
 >
-    
+
     <platform
-        name="供应链网络仿真ChainLogic|供应链网络仿真ChainLogic"
+        name="多商户货车路线规划系统|多商户货车路线规划系统"
         founded="now()"
-        
+        contact_number="992887654321"
     />
+
+
+    <change_request_type
+		name="登记卡车|注销卡车"
+		code="REGISTER_TRUCK|UNREGISTER_TRUCK|[1,99]"
+		icon="download|swap"
+		display_order="1|2"
+		bind_types="text()"
+		step_configuration="text()"
+		platform="$(platform)"
+		_features="cr_type"
+		_identified_by="code"
+		
+	/>
+	
+
+
+
+
+
+	
+	
+	<!-- PENDING ACTION FROM WHOM -->
     
 
-</root>
+
+
+
+    
+	<change_request
+		name="存款|转账|取款|[1,50]"
+		
+		create_time="createTime()"
+		city="cityByIp()"
+		request_type="$(change_request_type)"
+		platform="$(platform)"
+		
+		_features="change_request"
+	/>
+	
+	<event
+		name="存款|转账|取款|[1,50]"
+		cq="$(change_request)"
+		_features="n*event"
+		_bind_with_cr_type="REGISTER_TRUCK"
+		
+	/>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -77,63 +129,10 @@
 -->
 
 
-
+</root>
 
 
 <!-- 
-
-
-
-    <change_request_type
-		name="执行仿真|注销卡车"
-		code="REGISTER_TRUCK|UNREGISTER_TRUCK|[1,99]"
-		icon="download|swap"
-		display_order="1|2"
-		bind_types="text()"
-		step_configuration="text()"
-		platform="$(platform)"
-		_features="cr_type"
-		_identified_by="code"
-		
-	/>
-	
-
-
-
-
-
-	
-
-
-
-
-    
-	<change_request
-		name="存款|转账|取款|[1,50]"
-		
-		create_time="createTime()"
-		city="cityByIp()"
-		request_type="$(change_request_type)"
-		platform="$(platform)"
-		
-		_features="change_request"
-	/>
-	
-	<event
-		name="存款|转账|取款|[1,50]"
-		cq="$(change_request)"
-		_features="n*event"
-		_bind_with_cr_type="REGISTER_TRUCK"
-		
-	/>
-
-
-
-
-
-
-
-
     Consignor Products Quantity Departure Destination Transport value Shipping date
 
     订单信息										
