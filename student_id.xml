@@ -1,17 +1,17 @@
 <root org="doublechain"
-    chinese_name="货车路线规划0.90"
-    english_name="货车路线规划"
+    chinese_name="学生标准照片对比系统1.0"
+    english_name="双链"
 >
 
     <platform
-        name="多商户货车路线规划系统|多商户货车路线规划系统"
+        name="学生标准照片对比系统1.0|学生标准照片对比系统1.0"
+        description="通过对比学生标准照片，找出可疑顶替对象"
         founded="now()"
-        contact_number="992887654321"
+        
     />
 
-
     <change_request_type
-		name="登记卡车|注销卡车"
+		name="执行对比|可疑申辩"
 		code="REGISTER_TRUCK|UNREGISTER_TRUCK|[1,99]"
 		icon="download|swap"
 		display_order="1|2"
@@ -22,23 +22,9 @@
 		_identified_by="code"
 		
 	/>
-	
 
-
-
-
-
-	
-	
-	<!-- PENDING ACTION FROM WHOM -->
-    
-
-
-
-
-    
-	<change_request
-		name="存款|转账|取款|[1,50]"
+    <change_request
+		name="对比|申辩|[1,50]"
 		
 		create_time="createTime()"
 		city="cityByIp()"
@@ -47,109 +33,46 @@
 		
 		_features="change_request"
 	/>
-	
-	<event
+
+    <university
+        name="清华大学|北京大学|复旦大学|上海交通大学"
+        contact_person="张老师|李老师"
+        contact_number="0288722121"
+        platform="platform()"
+        _features="merchant"
+    />
+
+
+    <comparison
 		name="存款|转账|取款|[1,50]"
-		cq="$(change_request)"
-		_features="n*event"
+        thresh_hold="99|100"
+		change_request="$(change_request)"
+		_features="event"
 		_bind_with_cr_type="REGISTER_TRUCK"
 		
 	/>
 
 
+    <student
 
 
 
+        name="张三|李四|苟晶|李春秀"
+        school_roll_number="STD000000"
+        photo_in_hight_school="id_photo.jpg"
+        photo_in_college="id_photo.jpg"
+        reliability="100|[30,100]"
+        last_update_time="updateTime()"
+        school="university()"
 
-
-
-
-
-
-
-    
-
-<!--
-    <merchant 
-        name="新途气体货运服务公司|旧途气体货运服务公司|双链气体货运服务公司|单链气体货运服务公司|"
-        create_city="cityByIp()"
-        create_time="createTime()"
-         platform="platform()"
-        _features="merchant"
-    />
-
-
-    <truck_trip_plan
-        name="2020年6月22日运输任务"
-        merchant="merchant()"
-        platform="platform()"
 
     />
-    <truck_stop_plan
-        name="东方大货车送刘师傅的货"
-        stop_order="1|2|[1,20]"
-        
-        create_time="createTime()"
-        trip_plan="truck_trip_plan()"
-        order_line_item="order_line_item()"
-    />
-    <truck 
-        name="东风大货车"  
-        image="truck.jpg"
-        truck_length="12.99"
-        truck_height="12.99"
-        empty_weight="12.99"
-        load_weight="12.99"
-        maintenance_fee="$12.99"
-        fuel_fee="$12.99"
-        toll_fee="$12.99"
-        depreciation_fee="$12.99"
-        insurance_fee="$12.99"
-        labor_fee="$12.00"
-        remark="text()"
-        create_time="createTime()"
-        merchant="merchant()"
-        platform="platform()"/>
-    <order_line_item
-        name="刘师傅需要120个罐子"
-        consignor="刘师傅"
-        contact_number="13099998888"
-        quantity="1200"
-        departure="成都龙泉驿"
-        destination="成都龙泉驿成龙大道123号"
-        shipping_date="2020-10-10"
-        create_time="createTime()"
-        merchant="merchant()"
-        platform="platform()"
-        
-    
-    />
+   
 
 
--->
+
+
+
 
 
 </root>
-
-
-<!-- 
-    Consignor Products Quantity Departure Destination Transport value Shipping date
-
-    订单信息										
-#	货主	产品	数量	出发地	到达地	运输价值	运输日期			
-	Consignor Products Quantity Departure Destination Transport value Shipping date									
-										
-	货车信息	重型、中型、轻型，微型									
-										
-#	车长	车高	空重	载重	保养费	油料费	过路费	折旧费	保险费	人工费
-	truck_length	vehicle height, empty weight, load, maintenance fee, fuel fee, toll fee, depreciation fee, insurance fee, labor fee								
-
-									
-										
-										
-										
-										
-										
-
-
--->
