@@ -6,20 +6,38 @@
 >
     
     <platform
-        name="供应链网络仿真ChainLogic|供应链网络仿真ChainLogic"
+        name="智能供应链|智能供应链"
         founded="now()"
         
     />
-    
-    <solution
-        name="惠州建仓方案"
+    <sku
+        title="高山美肌|凝固时光"
+        platform="platform()"
+    />
+    <merchant_store
+        name="门店001"
         create_time="createTime()"
         platform="platform()"
         
     />
 
 
-    
+    <adviced_replenish_order
+        title="系统建议的补货单"
+        store="merchant_store()"
+
+    />
+
+    <adviced_replenish_item
+        title="系统建议的补货单"
+        sku="sku()"
+        quantity="10|[10,50]"
+        store="adviced_replenish_order()"
+        
+    />
+
+
+
 
 
 
