@@ -1,7 +1,8 @@
 <root org="doublechain"
-    chinese_name="供应链网络仿真ChainLogic"
-    english_name="供应链网络仿真ChainLogic"
-    _login_home="https://demo.doublechaintech.com/demodata/imageManager/loadImage/chainlogic0000/400/300/red/"
+    chinese_name="ChainLogic"
+    english_name="ChainLogic"
+    _login_bg="https://demo.doublechaintech.com/demodata/imageManager/loadImage/chainlogic0000/400/300/red/"
+    _home_bg="https://demo.doublechaintech.com/demodata/imageManager/loadImage/chainlogic0000/400/300/red/"
 >
     
     <platform
@@ -16,6 +17,9 @@
         platform="platform()"
         
     />
+
+
+    
 
 
 
