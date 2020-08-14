@@ -23,7 +23,8 @@ A low code platform run with github actions
 
 
 ![Steps](/doc/final-ui.jpg)
-Please replace [your-github-login] to your github login
+
+* Please replace [your-github-login] to your github login
 
 
 
