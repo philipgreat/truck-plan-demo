@@ -2,9 +2,9 @@
 
 while true
 do
-	echo `$(date '+%Y-%m-%d %H:%M:%S')` >> update-time.txt
+	echo "run at $(date '+%Y-%m-%d %H:%M:%S')" >> update-time.txt
 	git add -A .
-	git commit -m "updated" 
+	git commit -m "updated @ $(date '+%Y-%m-%d %H:%M:%S')" 
 	git push
 	sleep 72000
 done
