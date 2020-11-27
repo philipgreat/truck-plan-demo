@@ -6,6 +6,6 @@ do
 	git add -A .
 	git commit -m "updated @ $(date '+%Y-%m-%d %H:%M:%S')" 
 	git push
-	sleep 72000
+	sleep 18000
 done
 
