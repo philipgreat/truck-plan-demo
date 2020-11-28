@@ -5,7 +5,7 @@ A low code platform run with github actions
 ![Steps](/doc/steps.jpg)
 
 
-## Step #1: Fork Me 
+## Step #1: Fork Me 1
 
 ## Step #2: Enable Github Actions
 
