@@ -6,54 +6,11 @@
 >
     
     <platform
-        name="智能供应链|智能供应链"
+        name="抱同茶仓系统"
         founded="now()"
         
     />
-    <sku
-        title="高山美肌|凝固时光"
-        platform="platform()"
-    />
-
-    <reason
-        name="同期相似商品|本地库存低于安全线|新品上市"
-        code="A1|A2|A3"
-        platform="platform()"
-    />
-
-
-    <merchant_store
-        name="门店001"
-        create_time="createTime()"
-        platform="platform()"
-        
-    />
-
-
-    <adviced_replenish_order
-        title="系统建议的补货单"
-        store="merchant_store()"
-
-    />
-
-
-
-
-
-
-
-
-    <adviced_replenish_item
-        title="系统建议的补货单条目"
-        sku="sku()"
-        reason="reason()"
-        quantity="10|[10,50]"
-        store="adviced_replenish_order()"
-        
-    />
-
-
-
+    <merchant  name="大华茶城仓储服务公司|[4,100]" platform="platform()"/>
 
 
 
