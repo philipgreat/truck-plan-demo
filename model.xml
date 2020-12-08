@@ -10,7 +10,9 @@
         founded="now()"
         
     />
-    <merchant  name="大华茶城仓储服务公司|[4,100]" platform="platform()"/>
+    
+    <merchant_type  name="仓储服务公司|茶楼|检测机构|供应商" code="WH|TH|EXORG|SUPPLIER" platform="platform()"/>
+    <merchant  name="大华茶城仓储服务公司|[4,100]" type="merchant_type()" platform="platform()"/>
 
 
 
