@@ -28,20 +28,24 @@
 
         name="大企业|小企业|中型企业"
         platform="platform()"
+        create_time="createTime()"
         _vg4platform="基础数据"
+       
 
     
     />
     <commander_department
         name="指挥部"
         platform="platform()"
+        _features="merchant"
         
     />
     <industrial_supervisor_deparment
         name="重要化工部门"
-        
+        create_time="createTime()"
         commander_department="commander_department()"
         platform="platform()"
+        _features="merchant"
         
 
     />
@@ -49,6 +53,7 @@
 
     <field_reviewer_person
         name="稽核人员张喜来"
+        create_time="createTime()"
         platform="platform()"
        
     />
@@ -61,8 +66,13 @@
         industrial_supervisor_deparment="industrial_supervisor_deparment()"
         field_reviewer_person="field_reviewer_person()"
         commander_department="commander_department()"
+        street="street()"
+        building="building()"
+        enterprise_type="enterprise_type()"
         platform="platform()"
-       
+        create_time="createTime()"
+        _features="merchant"
+        
     />
     
 
