@@ -1,18 +1,36 @@
 <root org="doublechain"
-    chinese_name="抱同茶仓供应链系统"
+    chinese_name="成都市企业复工备案平台"
     english_name="ChainLogic"
     _login_bg="https://demo.doublechaintech.com/demodata/imageManager/loadImage/chainlogic0000/400/300/red/"
     _home_bg="https://demo.doublechaintech.com/demodata/imageManager/loadImage/chainlogic0000/400/300/red/"
 >
     
     <platform
-        name="抱同茶仓系统"
+        name="成都市企业复工备案平台"
         founded="now()"
         
     />
-    
-    <merchant_type  name="仓储服务公司|茶楼|检测机构|供应商" code="WH|TH|EXORG|SUPPLIER" platform="platform()"/>
-    <merchant  name="大华茶城仓储服务公司|[4,100]" type="merchant_type()" platform="platform()"/>
+    <industrial_supervisor_deparment
+        name="重要化工部门"
+        platform="platform()"
+
+    />
+    <commander_department
+        _name="指挥部"
+        platform="platform()"
+    />
+    <field_reviewer_person
+        name="稽核人员张喜来"
+        platform="platform()"
+    />
+    <enterprise
+        enterprise_name="成都双链科技"
+        industrial_supervisor_deparment="industrial_supervisor_deparment()"
+        field_reviewer_person="field_reviewer_person()"
+        commander_department="commander_department()"
+        platform="platform()"
+        
+    />
 
 
 
@@ -24,6 +42,10 @@
     
 
 <!--
+
+
+     <merchant_type  name="仓储服务公司|茶楼|检测机构|供应商" code="WH|TH|EXORG|SUPPLIER" platform="platform()"/>
+    <merchant  name="大华茶城仓储服务公司|[4,100]" type="merchant_type()" platform="platform()"/>
     <merchant 
         name="新途气体货运服务公司|旧途气体货运服务公司|双链气体货运服务公司|单链气体货运服务公司|"
         create_city="cityByIp()"
