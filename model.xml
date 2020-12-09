@@ -10,6 +10,18 @@
         founded="now()"
         
     />
+    <street
+        name="桂溪街道"
+        platform="platform()"
+
+    />
+    <building
+        name="桂溪街道"
+        street="street()"
+        platform="platform()"
+
+    />
+
     <commander_department
         name="指挥部"
         platform="platform()"
