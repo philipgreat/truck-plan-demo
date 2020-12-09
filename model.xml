@@ -13,15 +13,25 @@
     <street
         name="桂溪街道"
         platform="platform()"
+        _vg4platform="基础数据"
 
     />
     <building
         name="桂溪街道"
         street="street()"
         platform="platform()"
+        _vg4platform="基础数据"
 
     />
 
+    <enterprise_type
+
+        name="大企业|小企业|中型企业"
+        platform="platform()"
+        _vg4platform="基础数据"
+
+    
+    />
     <commander_department
         name="指挥部"
         platform="platform()"
@@ -29,6 +39,7 @@
     />
     <industrial_supervisor_deparment
         name="重要化工部门"
+        
         commander_department="commander_department()"
         platform="platform()"
         
@@ -43,6 +54,10 @@
     />
     <enterprise
         enterprise_name="成都双链科技"
+        unified_social_credit_code="91510100MA6C66P74M"
+        legal_representive_name="张喜来"
+        legal_representive_cell_phone_number="13900000001"
+        registration_address="中国（四川）自由贸易试验区成都市天府新区湖畔路366号1栋3楼1号"
         industrial_supervisor_deparment="industrial_supervisor_deparment()"
         field_reviewer_person="field_reviewer_person()"
         commander_department="commander_department()"
