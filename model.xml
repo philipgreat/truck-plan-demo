@@ -13,13 +13,13 @@
     <commander_department
         name="指挥部"
         platform="platform()"
-        _features="user4all"
+        
     />
     <industrial_supervisor_deparment
         name="重要化工部门"
         commander_department="commander_department()"
         platform="platform()"
-        _features="user4all"
+        
 
     />
     
@@ -27,7 +27,7 @@
     <field_reviewer_person
         name="稽核人员张喜来"
         platform="platform()"
-        _features="user4all"
+       
     />
     <enterprise
         enterprise_name="成都双链科技"
@@ -35,7 +35,7 @@
         field_reviewer_person="field_reviewer_person()"
         commander_department="commander_department()"
         platform="platform()"
-        _features="user4all"
+       
     />
     
 
