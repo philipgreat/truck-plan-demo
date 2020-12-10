@@ -10,6 +10,99 @@
         founded="now()"
         
     />
+
+
+     <change_request_type
+	name="名称:value()|[1,100]"
+	code="代码:value()|[1,100]"
+    icon="图标:value()|[1,100]"
+    display_order="显示顺序:1|2|3|4|5|6"
+    bind_types="text()"
+    step_configuration="text()"
+    platform="platform()"
+    _features="cr_type"
+    _identified_by="code"
+  >
+    <#value name="转移管理员" code="ADMIN_TRANSFER" icon="bars"/>
+    <#value name="信息反馈" code="MORE_SUPPLIER_PRODUCT" icon="bars"/>
+    <#value name="商户注册" code="SELLER_REGISTER" icon="bars"/>
+    <#value name="添加客户" code="SELLER_ADD_BUYER" icon="bars"/>
+    <#value name="产品附加规格" code="EDIT_ADDITIONAL_SPEC_WHEN_INIT" icon="bars"/>
+    <#value name="确认加入" code="CONFIRM_JOIN" icon="bars"/>
+    <#value name="完善信息并入库" code="UPDATE_MERCHANT_INFO_WHEN_INBOUND" icon="bars"/>
+    <#value name="修改附加规格" code="EDIT_ADDITIONAL_SPEC_WHEN_CREATE_IN_QUOTE" icon="bars"/>
+    <#value name="创建交接单" code="CREATE_HANDOVER_TASK" icon="bars"/>
+    <#value name="自定义" code="CUSTOM_PRODUCT_WHEN_QUOTE_BY_PRODUCT" icon="bars"/>
+    <#value name="入库" code="PRODUCT_INBOUND" icon="bars"/>
+    <#value name="编辑备注" code="UPDATE_SUPPLIER" icon="bars"/>
+    <#value name="更新个人信息" code="UPDATE_PERSONAL_INFO" icon="bars"/>
+    <#value name="完善信息" code="UPDATE_MERCHANT_INFO_FROM_SELLER_HOME" icon="bars"/>
+    <#value name="确认" code="BUYER_BIC_CONFIRM" icon="bars"/>
+    <#value name="批准加入" code="APPROVE_JOIN_BUYER" icon="bars"/>
+    <#value name="完善信息" code="UPDATE_BUYER_INFO_WHEN_CONFIRM_QUOTE" icon="bars"/>
+    <#value name="生产入库" code="INBOUND_FROM_HOME" icon="bars"/>
+    <#value name="完善配送" code="BUYER_UPDATE_DELIVERY_INFO" icon="bars"/>
+    <#value name="审核加入" code="BUYER" icon="bars"/>
+    <#value name="修改产品" code="UPDATE_PRODUCT_INFO" icon="bars"/>
+    <#value name="完善信息" code="UPDATE_MERCHANT_INFO_WHEN_QUOTE" icon="bars"/>
+    <#value name="备注" code="UPDATE_COLLEAGUE_INFO" icon="bars"/>
+    <#value name="产品附加规格" code="EDIT_ADDITIONAL_SPEC_WHEN_QUOTE" icon="bars"/>
+    <#value name="更新信息" code="BUYER_UPDATE_MERCHANT_INFO" icon="bars"/>
+    <#value name="商户基础信息" code="UPDATE_COMPANY_INFO" icon="bars"/>
+    <#value name="修改配送信息" code="UPDATE_DELIVERY_INFO" icon="bars"/>
+    <#value name="完善信息" code="UPDATE_MERCHANT_INFO_WHEN_VIEW_BUYER" icon="bars"/>
+    <#value name="修改附加规格" code="EDIT_ADDITIONAL_SPEC_WHEN_CREATE" icon="bars"/>
+    <#value name="上架" code="PRODUCT_ON_SHELF" icon="bars"/>
+    <#value name="提交客户审核" code="SEND_TO_CUSTOMER_AUDIT" icon="bars"/>
+    <#value name="完善信息" code="BUYER_UPDATE_INFO_IN_HOME" icon="bars"/>
+    <#value name="同意代下" code="CONFIRM_QUOTE" icon="bars"/>
+    <#value name="完成审核" code="AUDIT_ORDER" icon="bars"/>
+    <#value name="自定义产品" code="CUSTOM_PRODUCT_WHEN_INITIAL" icon="bars"/>
+    <#value name="配送信息" code="BUYER_DELIVERY_INFO" icon="bars"/>
+    <#value name="外采入库" code="BUY_INBOUND_FROM_HOME" icon="bars"/>
+    <#value name="复制产品" code="COPY_PRODUCT" icon="bars"/>
+    <#value name="修改订单" code="BUYER_UPDATE_ORDER" icon="bars"/>
+    <#value name="完善信息" code="SELLER_UPDATE_MERCHANT_INFO" icon="bars"/>
+    <#value name="设置商户下班时间" code="UPDATE_MERCHANT_OFF_TIME" icon="bars"/>
+    <#value name="提交新单" code="CREATE_SPLIT_ORDER" icon="bars"/>
+    <#value name="审批加入+姓名" code="AUDIT_JOIN_APPLY" icon="bars"/>
+    <#value name="设置单次配送最大量" code="UPDATE_MERCHANT_DELIVERY_LIMIT" icon="bars"/>
+    <#value name="自定义" code="CUSTOM_PRODUCT_WHEN_QUOTE" icon="bars"/>
+    <#value name="产品附加规格" code="EDIT_ADDITIONAL_SPEC_WHEN_REVIEW_INIT" icon="bars"/>
+    <#value name="下架" code="PRODUCT_OFF_SHELF" icon="bars"/>
+    <#value name="完善信息" code="UPDATE_MERCHANT_INFO_WHEN_INVITE" icon="bars"/>
+    <#value name="备注" code="EDIT_BUYER_COLLEAGUE" icon="bars"/>
+    <#value name="代客确认" code="CONFIRM_AS_CUSTOMER" icon="bars"/>
+    <#value name="确认交接" code="CONFIRM_DELIVERY_TASK" icon="bars"/>
+    <#value name="完善信息" code="UPDATE_BUYER_INFO_WHEN_ORDER" icon="bars"/>
+  </change_request_type>
+  <change_request
+	    name="名称:注册|开始考试|答题|[1,50]"
+	    create_time="创建时间:createTime()"
+	    remote_ip="remoteIp()"
+	    city_by_ip="访问地址:四川省成都市|新疆维吾尔自治区阿卡大礼县?"
+	    request_type="类型:$(change_request_type)"
+	    commited="已提交:false"
+	    platform="platform()"
+	    _features="change_request"
+  	/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <street
         name="桂溪街道"
         platform="platform()"
@@ -163,7 +256,7 @@
 		display_order="1|2"
 		bind_types="text()"
 		step_configuration="text()"
-		platform="$(platform)"
+		platform="platform()"
 		_features="cr_type"
 		_identified_by="code"
 		
@@ -186,7 +279,7 @@
 		create_time="createTime()"
 		city="cityByIp()"
 		request_type="$(change_request_type)"
-		platform="$(platform)"
+		platform="platform()"
 		
 		_features="change_request"
 	/>
