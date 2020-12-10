@@ -1,205 +1,296 @@
 <root org="doublechain"
-    chinese_name="双链索骥数据中台"
-    english_name="双链索骥数据中台"
+    chinese_name="成都市企业复工备案平台"
+    english_name="ChainLogic"
+    _login_bg="https://demo.doublechaintech.com/demodata/imageManager/loadImage/chainlogic0000/400/300/red/"
+    _home_bg="https://demo.doublechaintech.com/demodata/imageManager/loadImage/chainlogic0000/400/300/red/"
 >
-
-
+    
     <platform
-        name="双链索骥数据中台"
+        name="成都市企业复工备案平台"
         founded="now()"
         
-        description="双链科技数据中台系统（DMOS)|[1,2000]"
-        
+    />
+
+
+    <change_request
+    name="数据变更|数据增加|数据删除|[1,50]"
+    create_time="createTime()"
+    remote_ip="remoteIp()"
+    request_from_city="cityByIp()"
+    request_type="$(change_request_type)"
+    platform="$(platform)"
+    _vg4platform="数据管理"
+    _features="change_request"
+  />
+  <change_request_type
+    name="企业填报复工备案|员工信息登记|门禁打卡|主管部门审核|行业主管部门审核"
+    code="ADD_MERCHANT|WITHDRAW_MERCHANT|USER_REGISTRATION|CREATE_TENDERING|CREATE_TENDER|CREATE_CONTRACT|CREATE_CONTRACT_CHANGE"
+    icon="shop|poweroff|user-add|file|file-zip|file-done|interaction|shopping-cart|transaction|export|import|account-book|audit|file-markdown|dashboard"
+    display_order="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15"
+    bind_types="Platform|IndustrialSupervisorDeparment|CommanderDepartment|[1,100]"
+    step_configuration="text()"
+    platform="$(platform)"
+    _features="cr_type"
+    _identified_by="code"
+    create_time="createTime()"
+  />
+   
+   <enterprise_fill_info
+		enterprise_name="成都双链科技"
+        unified_social_credit_code="91510100MA6C66P74M"
+        legal_representative_name="张喜来"
+        legal_representative_cell_phone_number="13900000001"
+        registration_address="中国（四川）自由贸易试验区成都市天府新区湖畔路366号1栋3楼1号"
+        industrial_supervisor_deparment="industrial_supervisor_deparment()"
+        field_reviewer_person="field_reviewer_person()"
+        commander_department="commander_department()"
+        street="street()"
+        building="building()"
+        enterprise_type="enterprise_type()"
+		cq="$(change_request)"
+		_features="event"
+		_bind_with_cr_type="ADD_MERCHANT"
+		
+	/>
+    <enterprise_employee_info
+		name="x企业员工|[1,50]"
+		cq="$(change_request)"
+		_features="n*event"
+		_bind_with_cr_type="ADD_MERCHANT"
+		
+	/>
+
+  
+
+
+
+
+
+    <street
+        name="桂溪街道|[1,1000]"
+        platform="platform()"
+        _vg4platform="基础数据"
+
+    />
+    <building
+        name="天祥广场"
+        street="street()"
+        platform="platform()"
+        _vg4platform="基础数据"
+
+    />
+
+    <enterprise_type
+
+        name="大企业|小企业|中型企业"
+        platform="platform()"
+        create_time="createTime()"
+        _vg4platform="基础数据"
+       
+
+    
+    />
+    <commander_department
+        name="指挥部"
+        platform="platform()"
+        _features="merchant"
         
     />
-	
-	<change_request_type
-		name="创建大屏|查看|订阅|取消订阅|搜索|禁止用户"
-		code="DEPOSITE|TRANSFER|WITHDRAW|CREATE_ACCOUNT|CHANGE_NAME|DISABLE_USER|[1,99]"
-		icon="download|swap|upload|account-book|edit"
-		display_order="1|2|3|4|5|6"
-		bind_types="text()"
-		step_configuration="text()"
-		platform="$(platform)"
-		_features="cr_type"
-		_identified_by="code"
-		
-	/>
-	
-	
-	
-	<!-- PENDING ACTION FROM WHOM -->
+    <industrial_supervisor_deparment
+        name="重要化工部门"
+        create_time="createTime()"
+        commander_department="commander_department()"
+        platform="platform()"
+        _features="merchant"
+        _group_by="commander_department"
+        
+
+    />
+
     
-	<change_request
-		name="存款|转账|取款|[1,50]"
-		
-		create_time="createTime()"
-		remote_ip="remoteIp()"
-		request_type="$(change_request_type)"
-		platform="$(platform)"
-		_vg4platform="变更"
-		_features="change_request"
-	/>
-	
-	<event
-		name="存款|转账|取款|[1,50]"
-		picture="girls.jpg"
-		cq="$(change_request)"
-		_features="n*event"
-		_reg_func="CODE"
-		
-	/>
-	<event1
-		name="存款|转账|取款|[1,50]"
-		cq="$(change_request)"
-		_features="n*event"
-		_reg_func="DEC|减法|file"
-		
-	/>
 
-	<chart_type
-		name="柱形图|折线图|饼图|条形图|面积图|点状图|组合图|散点图|气泡图|项目符号图表|仪表板图|排列图|排列图|渐进柱形图|Marimekko 图|雷达图|极坐标图"
-		code="COLUMN|LINE|PIE|BAR|AREA|POINT|COMBINATION|SCATTER|BUBBLE|BULLET|GAUGE|PARETO|PROGRESSIVE|QUADRANT|MARIMEKKO|RADAR|POLAR"
-		_features="status"
-		_identified_by="code"
-		platform="$(platform)"
-	/>
-	
-	<user_status
-		name="正常|终止|中止"
-		code="NORMAL|TERMINIATED|PAUSED"
-		
-		group_name="分组1|分组2"
-		platform="$(platform)"
-		_group_by="group_name"
-		_features="status"
-	/>
-	
-	
-	
-	<data_app_user
-		name="章总|李总|数字大屏|户外广告|[1,200]"
-		avatar="file.jpg"
-		status="$(user_status)"
-		create_time="createTime()"
-		platform="$(platform)"
-		_features="merchant,custom"
-		
-	/>
-	
-	
-	<data_application
-		name="全平台分析|四川省分析|成都市分析App|[1,200]"
-		target_project_name="retailscm|retaiscm|[2,200]"
-		target_object_type="RetailStoreCountryCenter|RetailStoreCountryCenter|[3,200]"
-		target_object_id="RSCC000001|RSCC000001|[4,200]"
-		create_time="createTime()"
-		app_user="$(data_app_user)"
-		
-		_features="custom"
-		
-		
-	/>
-	
+    <field_reviewer_person
+        name="稽核人员张喜来"
+        create_time="createTime()"
+        platform="platform()"
+       
+    />
+    <enterprise
+        enterprise_name="成都双链科技"
+        unified_social_credit_code="91510100MA6C66P74M"
+        legal_representative_name="张喜来"
+        legal_representative_cell_phone_number="13900000001"
+        registration_address="中国（四川）自由贸易试验区成都市天府新区湖畔路366号1栋3楼1号"
+        industrial_supervisor_deparment="industrial_supervisor_deparment()"
+        field_reviewer_person="field_reviewer_person()"
+        commander_department="commander_department()"
+        street="street()"
+        building="building()"
+        enterprise_type="enterprise_type()"
+        platform="platform()"
+        create_time="createTime()"
+        _features="merchant"
+        
+    />
+    <employee 
+        name="李工"
+        enterprise="enterprise()"
+    
+    />
 
-	
-	<candidate_data_set 
-		name="从双链小超全国运营中心看消费订单送货分组金额|[4,200]"
-		url_template="/queryOptions/retailscm/RetailStoreCountryCenter/{dataId}/ConsumerOrderShippingGroup_amount/{day|week|month|year}/{x}?date=20190101|/queryOptions/retailscm/RetailStoreCountryCenter/{dataId}/ConsumerOrderShippingGroup_amount/{day|week|month|year}/{x}?date=20190101"	
-		preview_url="/queryOptions/retailscm/RetailStoreCountryCenter/{dataId}/ConsumerOrderShippingGroup_amount/{day|week|month|year}/{x}?date=20190101|/queryOptions/retailscm/RetailStoreCountryCenter/{dataId}/ConsumerOrderShippingGroup_amount/{day|week|month|year}/{x}?date=20190101"	
-		preview_data="text()"
-		application="$(data_application)"
-		_features="custom"
-	/>
-	
-	
-	<chart_page
-		name="四川省人口主要指标分析|[1,200]"
-		chart_type="$(chart_type)"
-		create_time="createTime()"
-		application="$(data_application)"
-		
-	/>
-	
-	<chart
-		name="月报表"
-		data_source="datasource|[1,200]"
-		description="datasource是执行一个数据编址的App"
-		last_update_time="updateTime()"
-		application="$(data_application)"
-		chart_type="$(chart_type)"
-		page="$(chart_page)"
-		
-		
-	/>
-	
-	
+    <employee_registration_record
+        name="12月9日打开"
+        register_time="createTime()"
+        employee="employee()"
+    />
+
+
+
+
 </root>
 
 
+
+    
+
+<!--
+
+
+     <merchant_type  name="仓储服务公司|茶楼|检测机构|供应商" code="WH|TH|EXORG|SUPPLIER" platform="platform()"/>
+    <merchant  name="大华茶城仓储服务公司|[4,100]" type="merchant_type()" platform="platform()"/>
+    <merchant 
+        name="新途气体货运服务公司|旧途气体货运服务公司|双链气体货运服务公司|单链气体货运服务公司|"
+        create_city="cityByIp()"
+        create_time="createTime()"
+         platform="platform()"
+        _features="merchant"
+    />
+
+
+    <truck_trip_plan
+        name="2020年6月22日运输任务"
+        merchant="merchant()"
+        platform="platform()"
+
+    />
+    <truck_stop_plan
+        name="东方大货车送刘师傅的货"
+        stop_order="1|2|[1,20]"
+        
+        create_time="createTime()"
+        trip_plan="truck_trip_plan()"
+        order_line_item="order_line_item()"
+    />
+    <truck 
+        name="东风大货车"  
+        image="truck.jpg"
+        truck_length="12.99"
+        truck_height="12.99"
+        empty_weight="12.99"
+        load_weight="12.99"
+        maintenance_fee="$12.99"
+        fuel_fee="$12.99"
+        toll_fee="$12.99"
+        depreciation_fee="$12.99"
+        insurance_fee="$12.99"
+        labor_fee="$12.00"
+        remark="text()"
+        create_time="createTime()"
+        merchant="merchant()"
+        platform="platform()"/>
+    <order_line_item
+        name="刘师傅需要120个罐子"
+        consignor="刘师傅"
+        contact_number="13099998888"
+        quantity="1200"
+        departure="成都龙泉驿"
+        destination="成都龙泉驿成龙大道123号"
+        shipping_date="2020-10-10"
+        create_time="createTime()"
+        merchant="merchant()"
+        platform="platform()"
+        
+    
+    />
+
+
+-->
 
 
 
 
 
 <!-- 
-	https://www.ibm.com/support/knowledgecenter/zh/SSEP7J_10.2.2/com.ibm.swg.ba.cognos.ug_rptstd_fin.10.2.2.doc/c_bia_charts.html
-柱形图
-柱形图使用垂直数据标记来比较各个值。
-	<chart_type
-		name="柱形图|折线图|饼图|条形图|面积图|点状图|组合图|散点图|气泡图|项目符号图表|仪表板图|排列图|排列图|渐进柱形图|Marimekko 图|雷达图|极坐标图"
-		code="COLUMN|LINE|PIE|BAR|AREA|POINT|COMBINATION|SCATTER|BUBBLE|BULLET|GAUGE|PARETO|PROGRESSIVE|QUADRANT|MARIMEKKO|RADAR|POLAR"
-		_features="status"
+
+
+
+    <change_request_type
+		name="执行仿真|注销卡车"
+		code="REGISTER_TRUCK|UNREGISTER_TRUCK|[1,99]"
+		icon="download|swap"
+		display_order="1|2"
+		bind_types="text()"
+		step_configuration="text()"
+		platform="platform()"
+		_features="cr_type"
 		_identified_by="code"
+		
 	/>
-折线图
-折线图对于显示随时间变化的趋势和比较多个数据序列非常有用。
+	
 
-饼图
-饼图对于突出显示比例非常有用。
 
-条形图
-条形图对于显示随时间变化的趋势和绘制多个数据序列非常有用。
 
-面积图
-面积图对于强调随时间变化的更改量非常有用。堆积面积图还用于显示部分与整体的关系。
 
-点状图
-点状图对于以非簇状样式显示数量数据非常有用。
-
-组合图
-组合图通过在一个图表内使用柱形图、面积图和折线图的组合，绘出多个数据序列。组合图对于突出显示各种数据序列之间的关系非常有用。
-
-散点图
-散点图使用数据点来沿刻度的任何位置（不仅在常规刻度线处）绘出两个度量。
-
-气泡图
-气泡图使用数据点和气泡沿某一刻度的任意位置绘出度量，就像散点图一样。气泡的大小表示第三个度量。
-
-项目符号图表
-项目符号图表是条形图的一个变体。它们可以将特色度量（项目符号）与目标度量（目标）进行对比，也可以将比对度量与背景中提供其他定性度量（如“非常满意”、“满意”和“不满意”）的着色区域联系到一起。
-
-仪表板图
-仪表板图（也称为表盘图表或速度计图表）使用指针将信息显示为表盘上的读数。
-
-排列图
-排列图通过标识事件的主要原因来帮助您改善这些过程。排列图按照从最频繁到最不频繁的顺序对类别进行排名。这些图表常用于质量控制数据，以便您确定并减少问题的主要来源。
-
-渐进柱形图
-渐进柱形图（也称为瀑布图）类似于堆积图，单个堆积的各分段都从下一分段垂直偏移。
-
-象限图
-象限图是将背景分成四个等区域的气泡图。象限图对于绘出包含三个度量（使用 X 轴、Y 轴和表示第三个度量值的气泡大小）的数据很有用。
-
-Marimekko 图
-Marimekko 图是百分堆积图，其中列的宽度与列值的总和成正比。各个分段高度是各自列总值的百分比。
-
-雷达图
-雷达图将多个轴组合成一个放射状的图形。对于每个数字，均沿着从图表中心开始的单独轴绘出数据。
-
-极坐标图
-极坐标图是使用值和角度来将信息显示为极坐标的圆形图。
 
 	
+
+
+
+
+    
+	<change_request
+		name="存款|转账|取款|[1,50]"
+		
+		create_time="createTime()"
+		city="cityByIp()"
+		request_type="$(change_request_type)"
+		platform="platform()"
+		
+		_features="change_request"
+	/>
 	
-	 -->
+	<event
+		name="存款|转账|取款|[1,50]"
+		cq="$(change_request)"
+		_features="n*event"
+		_bind_with_cr_type="REGISTER_TRUCK"
+		
+	/>
+
+
+
+
+
+
+
+
+    Consignor Products Quantity Departure Destination Transport value Shipping date
+
+    订单信息										
+#	货主	产品	数量	出发地	到达地	运输价值	运输日期			
+	Consignor Products Quantity Departure Destination Transport value Shipping date									
+										
+	货车信息	重型、中型、轻型，微型									
+										
+#	车长	车高	空重	载重	保养费	油料费	过路费	折旧费	保险费	人工费
+	truck_length	vehicle height, empty weight, load, maintenance fee, fuel fee, toll fee, depreciation fee, insurance fee, labor fee								
+
+									
+										
+										
+										
+										
+										
+
+
+-->
