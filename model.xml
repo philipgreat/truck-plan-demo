@@ -46,6 +46,7 @@
         commander_department="commander_department()"
         platform="platform()"
         _features="merchant"
+        _group_by="commander_department"
         
 
     />
@@ -60,8 +61,8 @@
     <enterprise
         enterprise_name="成都双链科技"
         unified_social_credit_code="91510100MA6C66P74M"
-        legal_representive_name="张喜来"
-        legal_representive_cell_phone_number="13900000001"
+        legal_representative_name="张喜来"
+        legal_representative_cell_phone_number="13900000001"
         registration_address="中国（四川）自由贸易试验区成都市天府新区湖畔路366号1栋3楼1号"
         industrial_supervisor_deparment="industrial_supervisor_deparment()"
         field_reviewer_person="field_reviewer_person()"
