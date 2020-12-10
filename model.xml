@@ -10,7 +10,7 @@
         founded="now()"
         
     />
-    
+
 
     <change_request
     name="数据变更|数据增加|数据删除|[1,50]"
@@ -22,7 +22,7 @@
     _features="change_request"
   />
   <change_request_type
-    name="企业填报复工备案|员工信息登记|门禁打卡|主管部门审核|行业主管部门审核|提交投标|签署合同|发起合同变更"
+    name="企业填报复工备案|员工信息登记|门禁打卡|主管部门审核|行业主管部门审核|提交投标|签署合同"
     code="ADD_MERCHANT|WITHDRAW_MERCHANT|USER_REGISTRATION|CREATE_TENDERING|CREATE_TENDER|CREATE_CONTRACT|CREATE_CONTRACT_CHANGE"
     icon="shop|poweroff|user-add|file|file-zip|file-done|interaction|shopping-cart|transaction|export|import|account-book|audit|file-markdown|dashboard"
     display_order="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15"
@@ -33,7 +33,7 @@
     _identified_by="code"
     create_time="createTime()"
   />
-  
+   
 
   
 
