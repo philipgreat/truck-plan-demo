@@ -26,7 +26,7 @@
     code="ADD_MERCHANT|WITHDRAW_MERCHANT|USER_REGISTRATION|CREATE_TENDERING|CREATE_TENDER|CREATE_CONTRACT|CREATE_CONTRACT_CHANGE"
     icon="shop|poweroff|user-add|file|file-zip|file-done|interaction|shopping-cart|transaction|export|import|account-book|audit|file-markdown|dashboard"
     display_order="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15"
-    bind_types="Platform,Merchant|[1,100]"
+    bind_types="Platform|IndustrialSupervisorDeparment|CommanderDepartment|[1,100]"
     step_configuration="text()"
     platform="$(platform)"
     _features="cr_type"
