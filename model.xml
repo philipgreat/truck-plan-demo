@@ -35,14 +35,39 @@
     create_time="createTime()"
   />
    
+   <enterprise_fill_info
+		enterprise_name="成都双链科技"
+        unified_social_credit_code="91510100MA6C66P74M"
+        legal_representative_name="张喜来"
+        legal_representative_cell_phone_number="13900000001"
+        registration_address="中国（四川）自由贸易试验区成都市天府新区湖畔路366号1栋3楼1号"
+        industrial_supervisor_deparment="industrial_supervisor_deparment()"
+        field_reviewer_person="field_reviewer_person()"
+        commander_department="commander_department()"
+        street="street()"
+        building="building()"
+        enterprise_type="enterprise_type()"
+		cq="$(change_request)"
+		_features="event"
+		_bind_with_cr_type="ADD_MERCHANT"
+		
+	/>
+    <enterprise_employee_info
+		name="x企业员工|[1,50]"
+		cq="$(change_request)"
+		_features="n*event"
+		_bind_with_cr_type="ADD_MERCHANT"
+		
+	/>
 
   
 
 
 
 
+
     <street
-        name="桂溪街道"
+        name="桂溪街道|[1,1000]"
         platform="platform()"
         _vg4platform="基础数据"
 
@@ -81,7 +106,7 @@
         
 
     />
-    
+
     
 
     <field_reviewer_person
@@ -107,8 +132,17 @@
         _features="merchant"
         
     />
+    <employee 
+        name="李工"
+        enterprise="enterprise()"
     
+    />
 
+    <employee_registration_record
+        name="12月9日打开"
+        register_time="createTime()"
+        employee="employee()"
+    />
 
 
 </root>
