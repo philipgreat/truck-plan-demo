@@ -16,6 +16,7 @@
     name="数据变更|数据增加|数据删除|[1,50]"
     create_time="createTime()"
     remote_ip="remoteIp()"
+    request_from_city="cityByIp()"
     request_type="$(change_request_type)"
     platform="$(platform)"
     _vg4platform="数据管理"
