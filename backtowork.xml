@@ -93,6 +93,7 @@
     
     />
     <commander_department
+        _name="指挥部"
         name="指挥部"
         platform="platform()"
         _features="merchant"
@@ -140,7 +141,7 @@
         _name="复工员工"
         name="李工"
         enterprise="enterprise()"
-        
+
     />
 
     <employee_registration_record
