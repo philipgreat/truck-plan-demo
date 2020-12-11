@@ -99,6 +99,8 @@
         
     />
     <industrial_supervisor_deparment
+
+        _name="行业主管部门"
         name="重要化工部门"
         create_time="createTime()"
         commander_department="commander_department()"
@@ -135,13 +137,14 @@
         
     />
     <employee 
+        _name="复工员工"
         name="李工"
         enterprise="enterprise()"
-    
+        
     />
 
     <employee_registration_record
-        _name="复工员工"
+         _name="员工打卡"
         name="12月9日打开"
         register_time="createTime()"
         employee="employee()"
