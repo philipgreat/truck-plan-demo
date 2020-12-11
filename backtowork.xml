@@ -34,7 +34,7 @@
     _identified_by="code"
     create_time="createTime()"
   />
-  
+
    
    <enterprise_fill_info
 		enterprise_name="成都双链科技"
@@ -54,6 +54,7 @@
 		
 	/>
     <enterprise_employee_info
+
 		name="x企业员工|[1,50]"
 		cq="$(change_request)"
 		_features="n*event"
@@ -140,6 +141,7 @@
     />
 
     <employee_registration_record
+        _name="复工员工"
         name="12月9日打开"
         register_time="createTime()"
         employee="employee()"
