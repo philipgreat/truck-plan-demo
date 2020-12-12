@@ -1,18 +1,19 @@
 <root org="doublechain"
-    chinese_name="成都市企业复工备案平台"
+    chinese_name="政务数据资产目录管理系统"
     english_name="ChainLogic"
     _login_bg="https://demo.doublechaintech.com/demodata/imageManager/loadImage/chainlogic0000/400/300/red/"
     _home_bg="https://demo.doublechaintech.com/demodata/imageManager/loadImage/chainlogic0000/400/300/red/"
 >
     
     <platform
-        name="成都市企业复工备案平台"
+        name="政务数据资产目录管理系统"
         founded="now()"
     />
 
 
     <system_application
         name="顶点系统|[1,100]"
+        online_date="2099-10-10"
         platform="platform()"
         
     
