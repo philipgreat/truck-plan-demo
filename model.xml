@@ -55,9 +55,9 @@
         name="字段的|[1,100]"
         elemeent_type="STRING|INT|LONG|DOUBLE|[0,100]"
         database_assert="database_assert()"
-        platform="platform()"
+        
     />
-   
+    
     <business
         name="勘测|[1,100]"
         platform="platform()"
