@@ -40,11 +40,14 @@
         platform="platform()"
 
     />
-
-
+     <database_subject
+        subject="法人暂存库|[1,100]"
+        platform="platform()"
+    />
 
     <database_assert
          name="农业数据库|[1,100]"
+         database_subject="database_subject()"
          platform="platform()"
     />
 
@@ -54,7 +57,7 @@
         database_assert="database_assert()"
         platform="platform()"
     />
-
+   
     <business
         name="勘测|[1,100]"
         platform="platform()"
