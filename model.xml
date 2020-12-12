@@ -18,11 +18,23 @@
         
     
     />
-    <government_organization
+    <government_level_one_department
         name="建设局|[1,100]"
         platform="platform()"
 
     />
+    <government_level_two_department
+        name="建设局|[1,100]"
+        platform="platform()"
+
+    />
+    <government_level_three_department
+        name="建设局|[1,100]"
+        platform="platform()"
+
+    />
+
+
 
     <database_assert
          name="农业数据库|[1,100]"
@@ -31,7 +43,7 @@
 
     <database_element
         name="字段的|[1,100]"
-        assert="database_assert()"
+        database_assert="database_assert()"
         platform="platform()"
     />
 
