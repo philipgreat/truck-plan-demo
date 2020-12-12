@@ -18,6 +18,13 @@
         
     
     />
+    <system_application_task
+        name="应用任务|[1,100]"
+        online_date="2099-10-10"
+        application="system_application()"
+        
+    
+    />
     <government_level_one_department
         name="建设局|[1,100]"
         platform="platform()"
@@ -48,7 +55,7 @@
     />
 
     <organization_business
-         name="勘测|[1,100]"
+        name="勘测|[1,100]"
         platform="platform()"
     />
 
