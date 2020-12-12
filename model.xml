@@ -54,11 +54,19 @@
         database_assert="database_assert()"
         platform="platform()"
     />
-    
-    <organization_business
+
+    <business
         name="勘测|[1,100]"
         platform="platform()"
     />
+
+    <organization_business
+        name="勘测|[1,100]"
+        business="business()"
+        platform="platform()"
+    />
+
+    
 
 
 </root>
