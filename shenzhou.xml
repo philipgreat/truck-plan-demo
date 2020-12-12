@@ -13,31 +13,8 @@
 
     <system_application
         name="顶点系统|[1,100]"
-        platform="platform()"
         
     
     />
-    <government_organization
-        name="建设局|[1,100]"
-        platform="platform()"
-
-    />
-
-    <database_assert
-         name="农业数据库|[1,100]"
-         platform="platform()"
-    />
-
-    <database_element
-        name="字段的|[1,100]"
-        assert="database_assert()"
-        platform="platform()"
-    />
-
-    <organization_business
-         name="勘测|[1,100]"
-        platform="platform()"
-    />
-
 
 </root>

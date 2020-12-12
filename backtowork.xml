@@ -34,7 +34,7 @@
     _identified_by="code"
     create_time="createTime()"
   />
-
+  
    
    <enterprise_fill_info
 		enterprise_name="成都双链科技"
@@ -86,6 +86,7 @@
 
         name="大企业|小企业|中型企业"
         platform="platform()"
+        date="2030-1-10"
         create_time="createTime()"
         _vg4platform="基础数据"
        
@@ -141,6 +142,7 @@
         _name="复工员工"
         name="李工"
         enterprise="enterprise()"
+
 
     />
 
