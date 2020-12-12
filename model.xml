@@ -47,14 +47,14 @@
          name="农业数据库|[1,100]"
          platform="platform()"
     />
-    
+
     <database_element
         name="字段的|[1,100]"
         elemeent_type="STRING|INT|LONG|DOUBLE|[0,100]"
         database_assert="database_assert()"
         platform="platform()"
     />
-
+    
     <organization_business
         name="勘测|[1,100]"
         platform="platform()"
