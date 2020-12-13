@@ -92,7 +92,7 @@ TIME	时间型-->
     
     />
 
-    <busines_scale
+    <business_scale
         name="高|中|低"
         code="C01|C02|C03"
         platform="platform()"
@@ -168,7 +168,7 @@ TIME	时间型-->
 机密
 绝密-->
 
-      <file_classfication
+      <file_classification
         name="未分级|内部|秘密|机密|绝密"
         code="C01|C02|C03|C04|C05"
         platform="platform()"
@@ -321,7 +321,7 @@ SELECT SBJ_ID, SBJ_CD,SBJ_NM FROM ARCH_DM_SBJ;
 | ELE_NM       | varchar(240) | YES  |     | NULL    |       |
 -->
     <database_element
-        _comment="感觉相当于一个字段, 和ASSET是多对多的关系"
+        _comment="感觉相当于一个字段,相当于字段"
         name="字段的|[1,100]"
         platform="platform()"
         _import_sql="insert into database_element_data(id,name,platform,version) select ELE_ID,ELE_NM,'P000001',1 from shenzhou.DATAELE"
