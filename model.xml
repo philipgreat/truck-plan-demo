@@ -18,13 +18,7 @@
     _import_sql="insert into asset_category select typ_id,typ_nm from dict_bigorsmall"
 
     -->
-    <application_mode
-        name="单机|C/S|B/S|多层模式|其他"
-        code="C01|C02|C03|C04|C05"
-        platform="platform()"
-        _features="status"
     
-    />
 
     <application_mode
         name="信息视图|逻辑实体|物理数据库|概念主题"
@@ -339,6 +333,7 @@ SELECT SBJ_ID, SBJ_CD,SBJ_NM FROM ARCH_DM_SBJ;
 
 -->    
     <business
+         _comment="一共有哪些业务"
         name="勘测|[1,100]"
         platform="platform()"
         _import_sql="insert into business_data(id,name,code,platform,version) select BUSI_ID,BUSI_NM,'P000001',1 from shenzhou.ARCH_BUSI"
@@ -353,6 +348,7 @@ SELECT SBJ_ID, SBJ_CD,SBJ_NM FROM ARCH_DM_SBJ;
 
     -->
     <organization_business
+        _comment="哪些公司做哪些业务"
         name="勘测|[1,100]"
         department="government_department()"
         business="business()"
