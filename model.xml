@@ -187,8 +187,8 @@ TIME	时间型-->
 公用事业
 生儿育女-->
       <service_subject
-        name="未分级|内部|秘密|机密|绝密"
-        code="C01|C02|C03|C04|C05"
+        name="公众对象|户籍办理|文化教育|劳动人事|医疗保健|社会保障|婚姻登记|证照申领|公用事业|生儿育女"
+        code="C01|C02|C03|C04|C05|C06|C07|C08|C09|C10"
         platform="platform()"
         _features="status"
         _import_sql="dict_serv_obj"
@@ -349,7 +349,6 @@ SELECT SBJ_ID, SBJ_CD,SBJ_NM FROM ARCH_DM_SBJ;
 | BUSI_ID   | varchar(40) | NO   |     | NULL    |       |
 | ORG_ID    | varchar(40) | NO   |     | NULL    |       |
 | DUTY_DESC | text        | YES  |     | NULL    |       |
-
 
 
     -->
