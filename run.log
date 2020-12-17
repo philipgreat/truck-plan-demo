@@ -1,0 +1,28 @@
+From https://github.com/philipgreat/truck-plan-demo
+   f802690..79232c6  master     -> origin/master
+Updating f802690..79232c6
+Fast-forward
+ .github/workflows/daas.yml                |  16 +-
+ backtowork.xml                            | 307 ++++++++++++++++++++
+ dmos.xml                                  | 205 +++++++++++++
+ model.xml                                 | 466 ++++++++++++++++++------------
+ redis-comp/redis-mac-pro-hostnetwork.txt  |  17 ++
+ redis-comp/redis-office-host-network.txt  |  18 ++
+ redis-comp/redis-office-proxy-network.txt |  18 ++
+ redis-comp/redis-ora-host-network.txt     |  20 ++
+ redis-comp/redis-ora-proxy-network.txt    |  20 ++
+ shenzhou.xml                              |  20 ++
+ 10 files changed, 908 insertions(+), 199 deletions(-)
+ create mode 100644 backtowork.xml
+ create mode 100644 dmos.xml
+ create mode 100644 redis-comp/redis-mac-pro-hostnetwork.txt
+ create mode 100644 redis-comp/redis-office-host-network.txt
+ create mode 100644 redis-comp/redis-office-proxy-network.txt
+ create mode 100644 redis-comp/redis-ora-host-network.txt
+ create mode 100644 redis-comp/redis-ora-proxy-network.txt
+ create mode 100644 shenzhou.xml
+[master a1b56be] updated @ 2020-12-17 10:17:19
+ 2 files changed, 1 insertion(+)
+ create mode 100644 run.log
+To https://github.com/philipgreat/truck-plan-demo.git
+   79232c6..a1b56be  master -> master
