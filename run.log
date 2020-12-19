@@ -1,0 +1,53 @@
+From https://github.com/philipgreat/truck-plan-demo
+   f802690..79232c6  master     -> origin/master
+Updating f802690..79232c6
+Fast-forward
+ .github/workflows/daas.yml                |  16 +-
+ backtowork.xml                            | 307 ++++++++++++++++++++
+ dmos.xml                                  | 205 +++++++++++++
+ model.xml                                 | 466 ++++++++++++++++++------------
+ redis-comp/redis-mac-pro-hostnetwork.txt  |  17 ++
+ redis-comp/redis-office-host-network.txt  |  18 ++
+ redis-comp/redis-office-proxy-network.txt |  18 ++
+ redis-comp/redis-ora-host-network.txt     |  20 ++
+ redis-comp/redis-ora-proxy-network.txt    |  20 ++
+ shenzhou.xml                              |  20 ++
+ 10 files changed, 908 insertions(+), 199 deletions(-)
+ create mode 100644 backtowork.xml
+ create mode 100644 dmos.xml
+ create mode 100644 redis-comp/redis-mac-pro-hostnetwork.txt
+ create mode 100644 redis-comp/redis-office-host-network.txt
+ create mode 100644 redis-comp/redis-office-proxy-network.txt
+ create mode 100644 redis-comp/redis-ora-host-network.txt
+ create mode 100644 redis-comp/redis-ora-proxy-network.txt
+ create mode 100644 shenzhou.xml
+[master a1b56be] updated @ 2020-12-17 10:17:19
+ 2 files changed, 1 insertion(+)
+ create mode 100644 run.log
+To https://github.com/philipgreat/truck-plan-demo.git
+   79232c6..a1b56be  master -> master
+Already up to date.
+[master 59ca77b] updated @ 2020-12-17 15:17:30
+ 2 files changed, 29 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   a1b56be..59ca77b  master -> master
+Already up to date.
+[master c1bef97] updated @ 2020-12-17 20:17:43
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   59ca77b..c1bef97  master -> master
+Already up to date.
+[master b2f5a94] updated @ 2020-12-18 01:17:54
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   c1bef97..b2f5a94  master -> master
+Already up to date.
+[master 13f29c8] updated @ 2020-12-18 06:18:06
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   b2f5a94..13f29c8  master -> master
+Already up to date.
+[master 4d172c1] updated @ 2020-12-18 11:18:17
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   13f29c8..4d172c1  master -> master
