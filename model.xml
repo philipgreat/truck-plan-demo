@@ -1,353 +1,59 @@
 <root org="doublechain"
-    chinese_name="政务数据资产目录管理系统"
+    chinese_name="双链索骥数据迁移系统"
     english_name="ChainLogic"
     _login_bg="https://demo.doublechaintech.com/demodata/imageManager/loadImage/chainlogic0000/400/300/red/"
     _home_bg="https://demo.doublechaintech.com/demodata/imageManager/loadImage/chainlogic0000/400/300/red/"
 >
     
     <platform
-        name="政务数据资产目录管理系统"
+        name="双链索骥数据迁移系统"
         founded="now()"
     />
-    <!--
-        01	单机
-        02	C/S
-        03	B/S
-        04	多层模式
-        99	其他
-    _import_sql="insert into asset_category select typ_id,typ_nm from dict_bigorsmall"
-
-    -->
-
-
-    <application_mode
-        name="信息视图|逻辑实体|物理数据库|概念主题"
-        code="C01|C02|C03|C04"
-        platform="platform()"
-        _features="status"
-    
-    />
-     <asset_category
-        name="内部风险管理和缓解|意外事件计划|[1,100]"
-        code="C01|C02|C03|C04"
-        platform="platform()"
-        _features="status"
-        _import_sql="insert into asset_category(id,name,code,platform,version) select typ_id,typ_nm,typ_id,'P000001',1 from shenzhou.dict_asset_cat"
-    
-    />
-
-    <asset_category_size
-        name="大|中|小"
-        code="C01|C02|C03"
-        platform="platform()"
-        _features="status"
+ 
+    <import_data_source
+        name="从Oracle导入"
+        driver_class="oracle.jdbc.driver.OracleDriver|oracle.jdbc.driver.OracleDriver"
+        jdbc_url="jdbc.url=jdbc:oracle:thin:@192.168.135.20:1521:jsepor"
+        jdbc_username="DATACOLLECTION"
+        jdbc_password="DATACOLLECTION"
         
+        platform="platform()"
     
     />
-    <complexity_degree
-        name="复杂|一般|简单"
-        code="C01|C02|C03"
-        platform="platform()"
-        _features="status"
+    <export_data_source
+        name="导出到MYSQL"
+        driver_class="com.mysql.cj.jdbc.Driver|com.mysql.cj.jdbc.Driver"
+        jdbc_url="jdbc:mysql://localhost:3306/reportserver"
+        jdbc_username="DATACOLLECTION"
+        jdbc_password="DATACOLLECTION"
         
+        platform="platform()"
     
     />
-    <!--BLOB	大文本
-BOOLEAN	布尔型
-DATE	日期型
-DATETIME	日期时间型
-DECIMAL	数字型
-STRING	字符型
-TIME	时间型-->
 
-    <data_element_type
-        name="大文本|布尔型|日期型|日期时间型|数字型|字符型|时间型"
-        code="C01|C02|C03|C04|C05|C06|C07"
+    <migrate_task
+        name="导出到MYSQL"
+        destination_table_name="platform_data"
+        execute_batch_size="1000|1000"
+        import_sql="select X_ID  as id from dual"
+
         platform="platform()"
-        _features="status"
+    
+    />
+
+    <migrate_task_execution_record
+        name="导出到MYSQL任务执行"
+        destination_table_name="platform_data"
+        execute_batch_size="1000|1000"
+        import_sql="select X_ID  as id from dual"
         
-    
-    />
-     <database_type
-        name="Oracle|dbase|foxpro|access|db2|sybase|sql server|informix|其他桌面数据库|其他网络数据库 "
-        code="C01|C02|C03|C04|C05|C06|C07|C08|C09|C10"
         platform="platform()"
-        _features="status"
-        
-    
-    />
-
-   
-
-    <business_scale
-        name="高|中|低"
-        code="C01|C02|C03"
-        platform="platform()"
-        _features="status"
-        
-    
-    />
-     <importance_level
-        name="高|中|低"
-        code="C01|C02|C03"
-        platform="platform()"
-        _features="status"
-        
-    
-    />
-    <!--部、省级
-副部、副省级
-司、局、地、厅级
-副司、副局、副地、副厅级
-县、处级
-副县、副处级
-正科级
-副科级-->
-    <title_level
-        name="部、省级|副部、副省级|司、局、地、厅级|副司、副局、副地、副厅级|县、处级|副县、副处级|正科级|副科级-"
-        code="C01|C02|C03|C04|C05|C06|C07|C08"
-        platform="platform()"
-        _features="status"
-        
-    
-    />
-    <!--
-
-市委部门
-政府部门
-事业机构
-中央区直
-群团组织
-民主党派
-其他单位
-
-    -->
-
-    <organization_type
-        name="市委部门|政府部门|事业机构|中央区直|群团组织|民主党派|其他单位"
-        code="C01|C02|C03|C04|C05|C06|C07"
-        platform="platform()"
-        _features="status"
-        
-    
-    />
-
-<!--
-    社会公开
-政府内部强制共享
-政府内部条件共享
-政府内部不共享
-
-
--->
-    <publication_level
-        name="社会公开|政府内部强制共享|政府内部条件共享|政府内部不共享"
-        code="C01|C02|C03|C04"
-        platform="platform()"
-        _features="status"
-        
-    
-    />
-
-    <!--未分级
-内部
-秘密
-机密
-绝密-->
-
-      <file_classification
-        name="未分级|内部|秘密|机密|绝密"
-        code="C01|C02|C03|C04|C05"
-        platform="platform()"
-        _features="status"
-        
-    
-    />
-<!--公众对象
-户籍办理
-文化教育
-劳动人事
-医疗保健
-社会保障
-婚姻登记
-证照申领
-公用事业
-生儿育女-->
-      <service_subject
-        name="公众对象|户籍办理|文化教育|劳动人事|医疗保健|社会保障|婚姻登记|证照申领|公用事业|生儿育女"
-        code="C01|C02|C03|C04|C05|C06|C07|C08|C09|C10"
-        platform="platform()"
-        _features="status"
-       
-    
-    />
-
-<!--
-
-正常
-临时
-冻结
-终止-->
-
-     <asset_status
-        name="正常|临时|冻结|终止"
-        code="C01|C02|C03|C04"
-        platform="platform()"
-        _features="status"
-        
     
     />
 
 
-    <!--
-        
-
-高
-中
-低
 
 
-      Oracle
-dbase
-foxpro
-access
-db2
-sybase
-sql server
-informix
-其他桌面数据库
-其他网络数据库  
-        
-        
-        cd1	行政事项	
-cd2	日常事务	
-cd3	决策支持	
-cd9	其他	-->
-    <business_type
-        name="行政事项|日常事务|决策支持|其他"
-        code="C01|C02|C03|C04"
-        platform="platform()"
-        _features="status"
-        
-    
-    />
-
-    <system_application
-        name="顶点系统|[1,100]"
-        online_date="2099-10-10"
-        platform="platform()"
-        _import_sql="insert into system_application_data(id,name,platform,version) select appsys_id,appsys_nm,'P000001',1 from shenzhou.ARCH_APP_SYS;"
-
-    
-    />
-    <system_application_task
-        name="应用任务|[1,100]"
-        online_date="2099-10-10"
-        application="system_application()"
-        
-    
-    />
-
-    
-    <government_bureau
-        _name="局级机构"
-        name="建设局|[1,100]"
-        platform="platform()"
-
-        _import_sql="insert into government_bureau_data (id, name, platform,version ) select org_cd, org_nm,'P000001',1 from ARCH_ORG where length(ORG_CD)=2 ORDER BY ORG_CD;"
-
-    />
-    <government_department
-        _name="科级机构"
-        name="建设局|[1,100]"
-        bureau="government_bureau()"
-        platform="platform()"
-        _import_sql="insert into government_department_data (id, name, platform,version ) select org_cd, org_nm,substring(org_cd,1,2),'P000001',1 from ARCH_ORG where length(ORG_CD)=4 ORDER BY ORG_CD;"
-
-    />
-    
-     <database_subject
-        _comment="感觉相当于一个数据库"
-        subject="法人暂存库|[1,100]"
-        platform="platform()"
-        _import_sql="insert into database_subject_data (id, name, platform,version ) select SBJ_ID, sbj_nm,'P000001',1 from ARCH_DM_SBJ"
-
-    />
-    <!--
-SELECT SBJ_ID, SBJ_CD,SBJ_NM FROM ARCH_DM_SBJ;
-
-| SBJ_ID                 | SBJ_CD  | SBJ_NM                |
-| 1dYfwPtCEeO7rtngTXcY3A | FR_ZC   | 法人暂存库            |
-| 6AYw4PtCEeO7rtngTXcY3A | HGJJ    | 宏观经济基础库        |
-| 6NVAsPtCEeO7rtngTXcY3A | HGJJ_ZC | 宏观经济暂存库        |
-| 6QTcMPtCEeO7rtngTXcY3A | KJDL    | 空间地理基础库        |
-| E2RVUPtDEeO7rtngTXcY3A | KJDL_ZC | 空间地理暂存库        |
-| j-SBEPtBEeO7rtngTXcY3A | RK_ZC   | 人口暂存库            |
-| LnfxgPtDEeO7rtngTXcY3A | ZX_GR   | 个人征信库            |
-| O0zbAPtDEeO7rtngTXcY3A | ZX_ZC   | 征信暂存库            |
-| Op8O0PtDEeO7rtngTXcY3A | ZX_QY   | 企业征信库            |
-| OzBSUPtDEeO7rtngTXcY3A | ZX_ZF   | 政府征信库            |
-| UjUu8PtBEeO7rtngTXcY3A | RK      | 人口基础库            |
-| xliEcPtCEeO7rtngTXcY3A | FR      | 法人基础库            |
-
-
-    -->
-
-    <database_asset
-        _comment="感觉相当于一个表, 内部是一个树形结构"
-         name="农业数据库|[1,100]"
-         database_subject="database_subject()"
-         _import_sql="insert into database_asset_data (id, name, database_subject,version ) select ASSET_ID, ASSET_NAME,SBJ_ID, 'P000001',1 from shenzhou.ASSET"
-
-
-    />
-<!--
-    DATAELE
-| ELE_ID       | varchar(40)  | NO   | PRI | NULL    |       |
-| DESET_ID     | varchar(40)  | YES  | MUL | NULL    |       |
-| ELE_NM       | varchar(240) | YES  |     | NULL    |       |
--->
-    <database_element
-        _comment="感觉相当于一个字段,相当于字段"
-        name="字段的|[1,100]"
-        platform="platform()"
-        _import_sql="insert into database_element_data(id,name,platform,version) select ELE_ID,ELE_NM,'P000001',1 from shenzhou.DATAELE"
-        
-        
-    />
-<!--
-
-
-| BUSI_ID         | varchar(40)  | NO   | PRI | NULL    |       |
-| PAR_BUSI_ID     | varchar(40)  | YES  | MUL | NULL    |       |
-| BUSI_NM         | varchar(255) | YES  |     | NULL    |       |
-| BUSI_NO         | varchar(128) | YES  |     | NULL    |       |
-| BUSI_TYP        | varchar(8)   | YES  |     | NULL    |       |
-
--->    
-    <business
-        name="勘测|[1,100]"
-        platform="platform()"
-        _import_sql="insert into business_data(id,name,code,platform,version) select BUSI_ID,BUSI_NM,'P000001',1 from shenzhou.ARCH_BUSI"
-
-    />
-    <!--ARCH_BUSIDOMN_ORG
-| RANGE_ID  | varchar(40) | NO   | PRI | NULL    |       |
-| BUSI_ID   | varchar(40) | NO   |     | NULL    |       |
-| ORG_ID    | varchar(40) | NO   |     | NULL    |       |
-| DUTY_DESC | text        | YES  |     | NULL    |       |
-
-
-    -->
-    <organization_business
-        name="勘测|[1,100]"
-        department="government_department()"
-        business="business()"
-        _import_sql="insert into organization_business_data(id,name,department,business,version) select RANGE_ID,RANGE_ID,ORG_ID,BUSI_ID,'P000001',1 from shenzhou.ARCH_BUSIDOMN_ORG"
-        
-    />
-
-    
 
 
 </root>
