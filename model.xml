@@ -417,6 +417,7 @@
 		bundledeadlinechar='捆绑计时处置时限字符串: 字符串|[0,40]'
 		timesysname='计时方案: 10000000000'
 		record_count='1|1' _vg4platform='威海市住建局' platform='platform()'/> 
+	<!--
 	<dy_towfactinst_001 _name='威海市城市综合管理信息系统-事部件问题处理情况'
 		recid='案件标识: 10000000000'
 		bizid='业务标识: 10000000000'
@@ -788,6 +789,8 @@
 		sectioncode='区平台标识: 字符串|[0,10]'
 		sectiondeadline='区平台处置截止时间: 2100-09-09'
 		record_count='1|1' _vg4platform='威海市住建局' platform='platform()'/> 
+
+	-->
 	<dy_pres3020280500003_001 _name='威海市食品生产企业信息'
 		qymc='企业名称: 字符串|[0,100]'
 		scdz='生产地址: 字符串|[0,100]'
