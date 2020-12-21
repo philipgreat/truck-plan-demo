@@ -1,16 +1,16 @@
 <root org="doublechain"
-    chinese_name="双链索骥数据迁移系统"
+    chinese_name="威海市大数据治理系统"
     english_name="ChainLogic"
     _login_bg="https://demo.doublechaintech.com/demodata/imageManager/loadImage/chainlogic0000/400/300/red/"
     _home_bg="https://demo.doublechaintech.com/demodata/imageManager/loadImage/chainlogic0000/400/300/red/"
 >
     
     <platform
-        name="双链索骥数据迁移系统"
+        name="威海市大数据治理系统"
         founded="now()"
     />
  
-   	<dy_pres3020123700008_001 _name='扬尘设备实时数据表'
+   		<dy_pres3020123700008_001 _name='扬尘设备实时数据表'
 		reference_id='ID: 10000000000'
 		tjsj='添加时间: 2100-09-09T09:09:09'
 		sbsnwybs='设备SN 唯一标识: 字符串|[0,255]'
@@ -169,8 +169,8 @@
 		record_count='1|1' _vg4platform='威海市住建局' platform='platform()'/> 
 	<dy_pres3020270100018_001 _name='旅游景区重点区域客流最大承载量信息'
 		zdqy='重点区域: 字符串|[0,50]'
-		zdqyzdczl（r））='重点区域最大承载量（人））: 10000000000.123456789'
-		zdqyzjczl（r）='重点区域最佳承载量（人）: 10000000000.123456789'
+		zdqyzdczl_r__='重点区域最大承载量（人））: 10000000000.123456789'
+		zdqyzjczl_r_='重点区域最佳承载量（人）: 10000000000.123456789'
 		ssjqmc='所属景区名称: 字符串|[0,50]'
 		tjrq='统计日期: 2100-09-09T09:09:09'
 		record_count='1|1' _vg4platform='威海文旅局' platform='platform()'/> 
@@ -184,10 +184,10 @@
 		cfrq='处罚日期: 字符串|[0,50]'
 		record_count='1|1' _vg4platform='威海文旅局' platform='platform()'/> 
 	<dy_pres37100030280116_001 _name='旅游总收入信息'
-		lyxfze（y）='旅游消费总额（元）: 10000000000.123456789'
-		lyxfzebqnzz（y）='旅游消费总额比去年增长（元）: 10000000000.123456789'
+		lyxfze_y_='旅游消费总额（元）: 10000000000.123456789'
+		lyxfzebqnzz_y_='旅游消费总额比去年增长（元）: 10000000000.123456789'
 		nd='年度: 2100-09-09T09:09:09'
-		xdyqsgdp（bfb）='相当于全市GDP（百分比）: 10000000000.123456789'
+		xdyqsgdp_bfb_='相当于全市GDP（百分比）: 10000000000.123456789'
 		sczjz='三产增加值%: 10000000000.123456789'
 		record_count='1|1' _vg4platform='威海文旅局' platform='platform()'/> 
 	<dy_pres37100030280112_001 _name='旅游统计主要指标信息'
@@ -240,7 +240,7 @@
 		wrlx='污染类型: 字符串|[0,7]'
 		saje='涉案金额: 10000000000.123456789'
 		crsj='插入时间: 2100-09-09'
-		ly（qhdm）='来源（区划代码）: 字符串|[0,50]'
+		ly_qhdm_='来源（区划代码）: 字符串|[0,50]'
 		xzsjlx='新增数据类型: 字符串|[0,50]'
 		record_count='1|1' _vg4platform='威海文旅局' platform='platform()'/> 
 	<dy_pres3020270100008_001 _name='威海市旅游厕所建设信息'
@@ -1193,7 +1193,7 @@
 		wrlx='污染类型: 字符串|[0,50]'
 		saje='涉案金额: 字符串|[0,50]'
 		crsj='插入时间: 2100-09-09'
-		ly（qhdm）='来源（区划代码）: 字符串|[0,50]'
+		ly_qhdm_='来源（区划代码）: 字符串|[0,50]'
 		xzsjlx='新增数据类型: 字符串|[0,50]'
 		record_count='1|1' _vg4platform='威海文旅局' platform='platform()'/> 
 	<dy_pres3020270100010_001 _name='威海市旅游强镇名录'
@@ -1238,9 +1238,6 @@
 		gzzlwc='馆藏总量（万册）: 10000000000.123456789'
 		lb='类别: 字符串|[0,50]'
 		record_count='1|1' _vg4platform='威海文旅局' platform='platform()'/> 
-
-
-
 
 
 
