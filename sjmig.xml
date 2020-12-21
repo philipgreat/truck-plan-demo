@@ -1,0 +1,59 @@
+<root org="doublechain"
+    chinese_name="双链索骥数据迁移系统"
+    english_name="ChainLogic"
+    _login_bg="https://demo.doublechaintech.com/demodata/imageManager/loadImage/chainlogic0000/400/300/red/"
+    _home_bg="https://demo.doublechaintech.com/demodata/imageManager/loadImage/chainlogic0000/400/300/red/"
+>
+    
+    <platform
+        name="双链索骥数据迁移系统"
+        founded="now()"
+    />
+ 
+    <import_data_source
+        name="从Oracle导入"
+        driver_class="oracle.jdbc.driver.OracleDriver|oracle.jdbc.driver.OracleDriver"
+        jdbc_url="jdbc.url=jdbc:oracle:thin:@192.168.135.20:1521:jsepor"
+        jdbc_username="DATACOLLECTION"
+        jdbc_password="DATACOLLECTION"
+        
+        platform="platform()"
+    
+    />
+    <export_data_source
+        name="导出到MYSQL"
+        driver_class="com.mysql.cj.jdbc.Driver|com.mysql.cj.jdbc.Driver"
+        jdbc_url="jdbc:mysql://localhost:3306/reportserver"
+        jdbc_username="DATACOLLECTION"
+        jdbc_password="DATACOLLECTION"
+        
+        platform="platform()"
+    
+    />
+
+    <migrate_task
+        name="导出到MYSQL"
+        destination_table_name="platform_data"
+        execute_batch_size="1000|1000"
+        import_sql="select X_ID  as id from dual"
+
+        platform="platform()"
+    
+    />
+
+    <migrate_task_execution_record
+        name="导出到MYSQL任务执行"
+        destination_table_name="platform_data"
+        execute_batch_size="1000|1000"
+        import_sql="select X_ID  as id from dual"
+        
+        platform="platform()"
+    
+    />
+
+
+
+
+
+
+</root>
