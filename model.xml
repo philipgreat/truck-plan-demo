@@ -17,11 +17,32 @@
 		platform='platform()'
 		_features="status"
 		_vg4platform='基础数据' 
+
+	
+	/>
+
+	<district
+		_name="行政区划"
+		name="环翠区|文登区|荣成市|乳山市"
+		code="C371002|C371003|C371082|C371371083005"
+		platform='platform()'
+		_features="status"
+		_vg4platform='基础数据' 
+		
+	
+	/>
+	<regulation_voilent_type
+		_name="行政区划"
+		name="环翠区|文登区|荣成市|乳山市"
+		code="C371002|C371003|C371082|C371371083005"
+		platform='platform()'
+		_features="status"
+		_vg4platform='基础数据' 
 		
 	
 	/>
 	
-   		<dy_pres3020123700008_001 _name='扬尘设备实时数据表'
+   	<dy_pres3020123700008_001 _name='扬尘设备实时数据表'
 		reference_id='ID: 10000000000'
 		tjsj='添加时间: 2100-09-09T09:09:09'
 		sbsnwybs='设备SN 唯一标识: 字符串|[0,255]'
