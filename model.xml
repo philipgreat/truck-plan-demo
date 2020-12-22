@@ -10,6 +10,17 @@
         founded="now()"
     />
  
+	<pm25_index
+		_name="PM2.5测试空气质量分级"
+		name="优|良|轻度污染|中毒污染|重度污染"
+		code="EXCELLENT|GOOD|LIGHT|MIDDLE|HEVERY"
+		platform='platform()'
+		_features="status"
+		_vg4platform='基础数据' 
+		
+	
+	/>
+	
    		<dy_pres3020123700008_001 _name='扬尘设备实时数据表'
 		reference_id='ID: 10000000000'
 		tjsj='添加时间: 2100-09-09T09:09:09'
