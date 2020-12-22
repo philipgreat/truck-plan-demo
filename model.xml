@@ -31,6 +31,104 @@
 		
 	
 	/>
+
+
+
+	<dy_pres3020123300004_001_jzfs _name='威海市城市公厕信息建筑方式' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020123300004_001_kyzt _name='威海市城市公厕信息可用状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020123500001_001_zjlx _name='威海市住建局行政处罚信息证件类型' name='text()' code='text()' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020123500001_001_wfxwlx _name='威海市住建局行政处罚信息违法行为类型' name='text()' code='text()' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020123500001_001_cflb _name='威海市住建局行政处罚信息处罚类别' name='text()' code='text()' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020123500001_001_dqzt _name='威海市住建局行政处罚信息当前状态' name='text()' code='text()' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020122700012_001_fddbrzjlx _name='行政许可数据（新标准）法定代表人证件类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020122700012_001_xklb _name='行政许可数据（新标准）许可类别' name='字符串|[0,256]' code='字符串|[0,256]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020122700012_001_xzxdrzjlx _name='行政许可数据（新标准）行政相对人证件类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020270900001_001_lx _name='威海市物质文化遗产信息类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020270700016_001_spfwlx _name='投诉信息（互联网+监管）商品服务类型' name='字符串|[0,6]' code='字符串|[0,6]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020270700016_001_gwfs _name='投诉信息（互联网+监管）购物方式' name='字符串|[0,2]' code='字符串|[0,2]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020270700016_001_zt _name='投诉信息（互联网+监管）状态' name='字符串|[0,10]' code='字符串|[0,10]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020270700016_001_wrlx _name='投诉信息（互联网+监管）污染类型' name='字符串|[0,7]' code='字符串|[0,7]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020270700016_001_xzsjlx _name='投诉信息（互联网+监管）新增数据类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres30202700423_001_type _name='威海文旅局外来人口动态监测-字典信息类型' name='字符串|[0,255]' code='字符串|[0,255]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres30202700423_001_del_flag _name='威海文旅局外来人口动态监测-字典信息状态' name='字符串|[0,255]' code='字符串|[0,255]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020270100013_001_jb _name='威海市工农业旅游示范点级别' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020270100013_001_lb _name='威海市工农业旅游示范点类别' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres30202700351_001_lb _name='文化产业示范基地类别' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020271400002_001_lb _name='威海市文化活动场所信息类别' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_patrolinfo_001_patroltypename _name='威海市城市综合管理信息系统-监督员信息表监督员类型' name='10000000000' code='10000000000' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_tcregion_001_regiontype _name='威海市城市综合管理信息系统-区域字典表区类型' name='10000000000' code='10000000000' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_towfactinst_001_rectypename _name='威海市城市综合管理信息系统-事部件问题处理情况案卷类型' name='字符串|[0,20]' code='字符串|[0,20]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_towfactinst_001_eventtypename _name='威海市城市综合管理信息系统-事部件问题处理情况问题类型' name='字符串|[0,20]' code='字符串|[0,20]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_towfactinst_001_damagegrade _name='威海市城市综合管理信息系统-事部件问题处理情况破坏等级' name='10000000000' code='10000000000' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_towfactinst_001_eventstatename _name='威海市城市综合管理信息系统-事部件问题处理情况问题状态' name='字符串|[0,20]' code='字符串|[0,20]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_towfactinst_001_eventgradename _name='威海市城市综合管理信息系统-事部件问题处理情况问题等级' name='字符串|[0,20]' code='字符串|[0,20]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_towfactinst_001_proctimestateid _name='威海市城市综合管理信息系统-事部件问题处理情况案件红绿灯状态' name='10000000000' code='10000000000' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_towfactinst_001_dealstateid _name='威海市城市综合管理信息系统-事部件问题处理情况处理状态' name='10000000000' code='10000000000' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_towfactinst_001_mediauploadstate _name='威海市城市综合管理信息系统-事部件问题处理情况多媒体上传状态' name='字符串|[0,40]' code='字符串|[0,40]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020284400002_001_cf_xdr_lb _name='威海市市场监督管理局行政处罚汇总信息行政相对人类别' name='字符串|[0,16]' code='字符串|[0,16]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020284400002_001_cf_fr_zjlx _name='威海市市场监督管理局行政处罚汇总信息法定代表人证件类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020284400002_001_cf_xdr_zjlx _name='威海市市场监督管理局行政处罚汇总信息证件类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020284400002_001_cf_wfxw _name='威海市市场监督管理局行政处罚汇总信息违法行为类型' name='字符串|[0,2000]' code='字符串|[0,2000]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020284400002_001_cf_cflb _name='威海市市场监督管理局行政处罚汇总信息处罚类别' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020284400002_001_cf_zt _name='威海市市场监督管理局行政处罚汇总信息当前状态' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020284400002_001_cf_cxlx _name='威海市市场监督管理局行政处罚汇总信息处罚程序类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020281300137_001_jglx _name='备案、注销、吊销信息（企业注销吊销信息）机构类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020282900018_001_xzxdrlb _name='行政许可信息（药品经营许可）行政相对人类别' name='字符串|[0,16]' code='字符串|[0,16]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020282900018_001_fddbrzjlx _name='行政许可信息（药品经营许可）法定代表人证件类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020282900018_001_zjlx1 _name='行政许可信息（药品经营许可）证件类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020282900018_001_xklb _name='行政许可信息（药品经营许可）许可类别' name='字符串|[0,256]' code='字符串|[0,256]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020282900018_001_dqzt1 _name='行政许可信息（药品经营许可）当前状态' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020282900025_001_xmlb _name='特种设备设计、制造许可证信息项目类别' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres307013501058000227_001_xzxdrlb _name='检验检测机构资质认定信息行政相对人类别' name='字符串|[0,16]' code='字符串|[0,16]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres307013501058000227_001_fddbrzjlx _name='检验检测机构资质认定信息法定代表人证件类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres307013501058000227_001_zjlx _name='检验检测机构资质认定信息证件类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres307013501058000227_001_xklb _name='检验检测机构资质认定信息许可类别' name='字符串|[0,256]' code='字符串|[0,256]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres307013501058000227_001_dqzt _name='检验检测机构资质认定信息当前状态' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020282900027_001_xzxdrlb _name='行政许可信息（食品生产许可）行政相对人类别' name='字符串|[0,16]' code='字符串|[0,16]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020282900027_001_fddbrzjlx _name='行政许可信息（食品生产许可）法定代表人证件类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020282900027_001_zjlx _name='行政许可信息（食品生产许可）证件类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020282900027_001_xklb _name='行政许可信息（食品生产许可）许可类别' name='字符串|[0,256]' code='字符串|[0,256]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020282900027_001_dqzt _name='行政许可信息（食品生产许可）当前状态' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020283800053_001_wzflbs _name='市场主体注册登记类信息（企业登记基本信息）外资公司类型分类' name='字符串|[0,10]' code='字符串|[0,10]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020283800053_001_optype _name='市场主体注册登记类信息（企业登记基本信息）经营类别' name='字符串|[0,4]' code='字符串|[0,4]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020283800053_001_insform _name='市场主体注册登记类信息（企业登记基本信息）设立方式' name='字符串|[0,2]' code='字符串|[0,2]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020283800053_001_supenttype _name='市场主体注册登记类信息（企业登记基本信息）隶属企业类型' name='字符串|[0,4]' code='字符串|[0,4]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020283800053_001_enttype _name='市场主体注册登记类信息（企业登记基本信息）企业（机构）类型' name='字符串|[0,4]' code='字符串|[0,4]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020283800053_001_forcapentsort _name='市场主体注册登记类信息（企业登记基本信息）外资企业类别' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020283800053_001_sjtype _name='市场主体注册登记类信息（企业登记基本信息）实缴类型' name='字符串|[0,3]' code='字符串|[0,3]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020283800053_001_continent _name='市场主体注册登记类信息（企业登记基本信息）洲别' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020283800053_001_credlevel _name='市场主体注册登记类信息（企业登记基本信息）信用级别' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020283800053_001_safelevel _name='市场主体注册登记类信息（企业登记基本信息）风险等级' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020283800053_001_ecochr _name='市场主体注册登记类信息（企业登记基本信息）经济性质' name='字符串|[0,4]' code='字符串|[0,4]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020283800053_001_protype _name='市场主体注册登记类信息（企业登记基本信息）项目类型' name='字符串|[0,2]' code='字符串|[0,2]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020283800053_001_parform _name='市场主体注册登记类信息（企业登记基本信息）合伙方式' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020283800053_001_entcat _name='市场主体注册登记类信息（企业登记基本信息）企业类别' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020283800053_001_stockdealtype _name='市场主体注册登记类信息（企业登记基本信息）股权并购类型' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020283800053_001_opstate _name='市场主体注册登记类信息（企业登记基本信息）经营状态' name='字符串|[0,2]' code='字符串|[0,2]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020283800053_001_entstatus _name='市场主体注册登记类信息（企业登记基本信息）企业状态' name='字符串|[0,4]' code='字符串|[0,4]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020283800053_001_opeacttype _name='市场主体注册登记类信息（企业登记基本信息）经营活动类型' name='字符串|[0,2]' code='字符串|[0,2]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020271300007_001_spfwlx _name='举报信息（互联网+监管）商品服务类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020271300007_001_gwfs _name='举报信息（互联网+监管）购物方式' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020271300007_001_zt _name='举报信息（互联网+监管）状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020271300007_001_wrlx _name='举报信息（互联网+监管）污染类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020271300007_001_xzsjlx _name='举报信息（互联网+监管）新增数据类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres30202700426_001_org_type _name='威海文旅局外来人口动态监测-机构信息类型' name='字符串|[0,255]' code='字符串|[0,255]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres30202700426_001_flag _name='威海文旅局外来人口动态监测-机构信息状态' name='字符串|[0,255]' code='字符串|[0,255]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres30202700426_001_business_type _name='威海文旅局外来人口动态监测-机构信息分类' name='字符串|[0,255]' code='字符串|[0,255]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres30202700348_001_dj _name='威海A级景区客流最大承载量信息等级' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020270600002_001_lb _name='威海市图书馆馆藏总量类别' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres30202700342_001_lxfs _name='威海市文旅局智慧全域旅游-出行信息联系方式' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres30202700342_001_fl _name='威海市文旅局智慧全域旅游-出行信息分类' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres3020270100011_001_jqlb _name='A级景区名录信息景区类别' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres30206600160_001_zjlx _name='威海市医保局医保医师管理系统药店信息表证件类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres30206600160_001_qyfzrlxfs _name='威海市医保局医保医师管理系统药店信息表企业负责人联系方式' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres30206600160_001_jgzt _name='威海市医保局医保医师管理系统药店信息表机构状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres30206600160_001_ybdj _name='威海市医保局医保医师管理系统药店信息表医保等级' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres30206600098_001_hkxz _name='威海市医疗保险参保人员信息户口性质' name='字符串|[0,5]' code='字符串|[0,5]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres30206600098_001_zyjszwjb _name='威海市医疗保险参保人员信息专业技术职务级别' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres30206600098_001_gjzyzgdj _name='威海市医疗保险参保人员信息国家职业资格等级' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+	<dy_pres30201000201_001_jfrylb _name='威海市居民医疗保险缴费信息缴费人员类别' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='status' />
+
 	<regulation_voilent_type
 		_name="行政区划"
 		name="环翠区|文登区|荣成市|乳山市"
