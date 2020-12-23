@@ -25,15 +25,42 @@
 	
 	/>
 
-	<district
-		_name="行政区划"
-		name="环翠区|文登区|荣成市|乳山市"
-		code="C371002|C371003|C371082|C371371083005"
+	<city
+		_name="地市级行政区"
+		name="威海"
+		
 		platform='platform()'
-		_features="status"
 		_vg4platform='基础数据' 
 		
 	
+	/>
+
+	<county
+		_name="县级行政区"
+		name="环翠区|文登区|荣成市|乳山市|[1,40]"
+		city="city()"
+		platform='platform()'
+		_vg4platform='基础数据' 
+		
+	
+	/>
+
+	<town
+		_name="街道或者镇"
+		name="环翠楼街道|鲸园街道|竹岛街|[1,40]"
+		district="district()"
+		platform='platform()'
+		_vg4platform='基础数据' 
+
+	/>
+
+	<community_or_village
+		_name="社区或者村"		
+		name="东北村|红光|竹岛街|西门外|[1,40]"
+		town="town()"
+		platform='platform()'
+		_vg4platform='基础数据' 
+
 	/>
 
 
