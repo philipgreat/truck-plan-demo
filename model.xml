@@ -14,134 +14,134 @@
 	
 	
 
-	
 
-	<bidding_plan_xmjsfs _name='招标计划填写项目结算方式' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<bidding_plan_xmfl _name='招标计划填写项目分类' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<bidding_plan_zbfs _name='招标计划填写招标方式' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<bidding_release_xmjsfs _name='招标任务下达项目结算方式' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<bidding_release_xmfl _name='招标任务下达项目分类' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<bidding_release_zbfs _name='招标任务下达招标方式' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<competitive_inquiry_answering_wtfl _name='线上答疑问题分类' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<competitive_inquiry_answering_wtzt _name='线上答疑问题状态' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<competitive_inquiry_bidding_jjlx _name='线上竞价竞价类型' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<competitive_inquiry_bidding_jjzt _name='线上竞价竞价状态' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<refund_apply_tklx _name='退款申请退款类型' name='字符串|[0,32]' code='字符串|[0,32]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<process_management_package_fbzt _name='过程管理-发包发包状态' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<process_management_package_bjfs _name='过程管理-发包报价方式' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<process_management_evaluation_pzzt _name='过程管理-评标评标状态' name='字符串|[0,32]' code='字符串|[0,32]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<process_management_bidding_jjlx _name='过程管理-竞价竞价类型' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<process_management_bidding_jjzt _name='过程管理-竞价竞价状态' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<process_management_bargaining_yjzt _name='过程管理-议价议价状态' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<supplier_zt _name='供应商库状态' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<supplier_zjlx _name='供应商库证件类型' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<supplier_qylx _name='供应商库企业类型' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<supplier_khywlx _name='供应商库客户业务类型' name='字符串|[0,255]' code='字符串|[0,255]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<expert_zjlx _name='专家库管理证件类型' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<expert_zt _name='专家库管理状态' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<questions_online_wtfl _name='线上提问问题分类' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<questions_online_wtzt _name='线上提问问题状态' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<transit_place_state _name='中转地设置状态' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<branch_company_certification_status _name='分公司设置认证状态' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<category_good_type _name='货物类别维护货物基准类别' name='字符串|[0,24]' code='字符串|[0,24]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<vehicle_type _name='车辆管理车辆类型' name='字符串|[0,24]' code='字符串|[0,24]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<delivery_djlx _name='订单管理单据类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<delivery_ddzt _name='订单管理订单状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<quick_find_lxfs _name='快找联系方式' name='字符串|[0,128]' code='字符串|[0,128]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<quick_find_djlx _name='快找单据类型' name='字符串|[0,128]' code='字符串|[0,128]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<quick_find_fkfs _name='快找付款方式' name='字符串|[0,128]' code='字符串|[0,128]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<quick_find_jffs _name='快找交付方式' name='字符串|[0,128]' code='字符串|[0,128]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<quick_find_ydzt _name='快找运单状态' name='字符串|[0,128]' code='字符串|[0,128]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<waybill_djlx _name='运单管理单据类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<waybill_fkfs _name='运单管理付款方式' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<waybill_jffs _name='运单管理交付方式' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<waybill_ydzt _name='运单管理运单状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<waybill_fhzt _name='运单管理放货状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<send_cars_pclx _name='综合管理派车类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<send_cars_zt _name='综合管理状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<receiving_send_car_zt _name='接货派车状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<delivery_send_car_pclx _name='送货派车派车类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<delivery_send_car_zt _name='送货派车状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<transfer_zt _name='中转管理状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<pick_up_goods_zffs _name='提货管理支付方式' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<pick_up_goods_ydzt _name='提货管理运单状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<tracking_map_sjlxfs _name='地图跟踪司机联系方式' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<tracking_map_clyxzt _name='地图跟踪车辆运行状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<electronic_fence_sjlxfs _name='电子围栏管理司机联系方式' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<electronic_fence_clyxzt _name='电子围栏管理车辆运行状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<receipt_signing_ydzt _name='回单签收运单状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<receipt_export_ydzt _name='导出回单信息运单状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<cargo_shortage_and_damage_ydzt _name='货差货损运单状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<cargo_shortage_and_damage_zt _name='货差货损状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<goods_pstatd _name='新增商品商品状态' name='字符串|[0,15]' code='字符串|[0,15]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<goods_dzeinr _name='新增商品商品类型' name='字符串|[0,4]' code='字符串|[0,4]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<goods_list_matgk _name='商品列表商品维护状态' name='字符串|[0,18]' code='字符串|[0,18]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<goods_category_dzeinr _name='分类列表商品类型' name='字符串|[0,4]' code='字符串|[0,4]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<goods_category_dzeiar _name='分类列表商品状态' name='字符串|[0,18]' code='字符串|[0,18]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<goods_brand_dzeinr _name='品牌列表商品类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<price_change_pstatd _name='修改商品价格商品状态' name='字符串|[0,15]' code='字符串|[0,15]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<price_sync_pstatd _name='价格同步管理商品状态' name='字符串|[0,15]' code='字符串|[0,15]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<price_sync_brfdj _name='价格同步管理同步状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<goods_export_pstatd _name='商品导出商品状态' name='字符串|[0,15]' code='字符串|[0,15]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<goods_export_dzeinr _name='商品导出商品类型' name='字符串|[0,4]' code='字符串|[0,4]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<purchase_plan_bbsrt _name='采购计划单采购申请凭证类型' name='字符串|[0,4]' code='字符串|[0,4]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<purchase_plan_banst _name='采购计划单采购申请处理状态' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<purchase_plan_frgzu _name='采购计划单发布状态' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<purchase_plan_pstyp _name='采购计划单采购凭证中的项目类别' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<purchase_plan_attyp _name='采购计划单商品类别' name='字符串|[0,2]' code='字符串|[0,2]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<purchase_list_bbsrm _name='采购列表采购订单凭证类型' name='字符串|[0,4]' code='字符串|[0,4]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<purchase_list_bansm _name='采购列表采购订单处理状态' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<purchase_list_pstyp _name='采购列表采购凭证中的项目类别' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<purchase_list_attyp _name='采购列表商品类别' name='字符串|[0,2]' code='字符串|[0,2]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<purchase_return_bansm _name='退货管理采购订单处理状态' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<purchase_return_ktelds _name='退货管理退货状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<purchase_return_kteld _name='退货管理供应商签收状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<supplier_info_supplier_type _name='供应商信息供应商类型' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<supplier_info_supplier_status _name='供应商信息状态' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<supplier_order_payment_method _name='供应商订单支付方式' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<supplier_order_order_status _name='供应商订单订单状态' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<supplier_return_returns_type _name='供应商退货管理退货类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<supplier_return_handling_way _name='供应商退货管理退货处理方式' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<supplier_account_jfrylb _name='账户查询缴费人员类别' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<supplier_account_detail_payment_method _name='明细查询支付方式' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<supplier_account_detail_order_status _name='明细查询订单状态' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<supplier_account_detail_returns_type _name='明细查询退货类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<supplier_account_detail_handling_way _name='明细查询退货处理方式' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<order_list_ddlx _name='订单列表订单类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<order_list_zffs _name='订单列表支付方式' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<order_list_ddzt _name='订单列表订单状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<order_list_shzt _name='订单列表审核状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<order_approve_ddlx _name='订单审核、导出订单类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<order_approve_zffs _name='订单审核、导出支付方式' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<order_approve_ddzt _name='订单审核、导出订单状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<order_approve_shzt _name='订单审核、导出审核状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<order_approve_condition_ddlx _name='订单过审条件设置订单类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<order_approve_condition_zffs _name='订单过审条件设置支付方式' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<order_approve_condition_ddzt _name='订单过审条件设置订单状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<order_approve_condition_shzt _name='订单过审条件设置审核状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<order_approve_note_ddlx _name='订单审核提醒订单类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<order_approve_note_zffs _name='订单审核提醒支付方式' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<order_approve_note_ddzt _name='订单审核提醒订单状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<order_approve_note_shzt _name='订单审核提醒审核状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<return_refund_list_zffs _name='退货/款列表支付方式' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<return_refund_list_ddzt _name='退货/款列表订单状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<contract_base_data_cnt_money_type _name='合同基础数据货币类型' name='字符串|[0,32]' code='字符串|[0,32]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<contract_base_data_cnt_state _name='合同基础数据合同状态' name='字符串|[0,20]' code='字符串|[0,20]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<contract_base_data_cnt_balance_money_type _name='合同基础数据结算金额货币类型' name='字符串|[0,32]' code='字符串|[0,32]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<contract_draw_up_cnt_money_type _name='合同编制货币类型' name='字符串|[0,32]' code='字符串|[0,32]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<contract_draw_up_cnt_state _name='合同编制合同状态' name='字符串|[0,20]' code='字符串|[0,20]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<contract_draw_up_cnt_balance_money_type _name='合同编制结算金额货币类型' name='字符串|[0,32]' code='字符串|[0,32]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<contract_draw_up_prn_type _name='合同编制单位类型' name='字符串|[0,16]' code='字符串|[0,16]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<contract_draw_up_prn_kind _name='合同编制单位性质' name='字符串|[0,16]' code='字符串|[0,16]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<contract_draw_up_prn_credited _name='合同编制信用等级' name='字符串|[0,16]' code='字符串|[0,16]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<contract_approve_wf_state _name='合同审批当前流程流转状态' name='字符串|[0,32]' code='字符串|[0,32]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<contract_pay_pay_money_type _name='合同付款付款货币类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<contract_acceptance_pay_money_type _name='合同验收付款货币类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<contract_board_jfrylb _name='合同看板缴费人员类别' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<waybill_collection_pay_type _name='运单收款付款方式' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<waybill_pay_pay_type _name='运单付款付款方式' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<waybill_query_jfrylb _name='运单收付款查询缴费人员类别' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<dispatch_collection_pay_type _name='派车单付款付款方式' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>	<bidding_plan _name='招标计划填写'
+
+	<bidding_plan_xmjsfs _name='招标计划填写项目结算方式' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<bidding_plan_xmfl _name='招标计划填写项目分类' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<bidding_plan_zbfs _name='招标计划填写招标方式' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<bidding_release_xmjsfs _name='招标任务下达项目结算方式' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<bidding_release_xmfl _name='招标任务下达项目分类' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<bidding_release_zbfs _name='招标任务下达招标方式' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<competitive_inquiry_answering_wtfl _name='线上答疑问题分类' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<competitive_inquiry_answering_wtzt _name='线上答疑问题状态' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<competitive_inquiry_bidding_jjlx _name='线上竞价竞价类型' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<competitive_inquiry_bidding_jjzt _name='线上竞价竞价状态' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<refund_apply_tklx _name='退款申请退款类型' name='字符串|[0,32]' code='字符串|[0,32]' _vg4platform='基础数据' platform='platform()' />
+	<process_management_package_fbzt _name='过程管理-发包发包状态' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<process_management_package_bjfs _name='过程管理-发包报价方式' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<process_management_evaluation_pzzt _name='过程管理-评标评标状态' name='字符串|[0,32]' code='字符串|[0,32]' _vg4platform='基础数据' platform='platform()' />
+	<process_management_bidding_jjlx _name='过程管理-竞价竞价类型' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<process_management_bidding_jjzt _name='过程管理-竞价竞价状态' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<process_management_bargaining_yjzt _name='过程管理-议价议价状态' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<supplier_zt _name='供应商库状态' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<supplier_zjlx _name='供应商库证件类型' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<supplier_qylx _name='供应商库企业类型' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<supplier_khywlx _name='供应商库客户业务类型' name='字符串|[0,255]' code='字符串|[0,255]' _vg4platform='基础数据' platform='platform()' />
+	<expert_zjlx _name='专家库管理证件类型' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<expert_zt _name='专家库管理状态' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<questions_online_wtfl _name='线上提问问题分类' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<questions_online_wtzt _name='线上提问问题状态' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<transit_place_state _name='中转地设置状态' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' />
+	<branch_company_certification_status _name='分公司设置认证状态' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' />
+	<category_good_type _name='货物类别维护货物基准类别' name='字符串|[0,24]' code='字符串|[0,24]' _vg4platform='基础数据' platform='platform()' />
+	<vehicle_type _name='车辆管理车辆类型' name='字符串|[0,24]' code='字符串|[0,24]' _vg4platform='基础数据' platform='platform()' />
+	<delivery_djlx _name='订单管理单据类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<delivery_ddzt _name='订单管理订单状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<quick_find_lxfs _name='快找联系方式' name='字符串|[0,128]' code='字符串|[0,128]' _vg4platform='基础数据' platform='platform()' />
+	<quick_find_djlx _name='快找单据类型' name='字符串|[0,128]' code='字符串|[0,128]' _vg4platform='基础数据' platform='platform()' />
+	<quick_find_fkfs _name='快找付款方式' name='字符串|[0,128]' code='字符串|[0,128]' _vg4platform='基础数据' platform='platform()' />
+	<quick_find_jffs _name='快找交付方式' name='字符串|[0,128]' code='字符串|[0,128]' _vg4platform='基础数据' platform='platform()' />
+	<quick_find_ydzt _name='快找运单状态' name='字符串|[0,128]' code='字符串|[0,128]' _vg4platform='基础数据' platform='platform()' />
+	<waybill_djlx _name='运单管理单据类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<waybill_fkfs _name='运单管理付款方式' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<waybill_jffs _name='运单管理交付方式' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<waybill_ydzt _name='运单管理运单状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<waybill_fhzt _name='运单管理放货状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<send_cars_pclx _name='综合管理派车类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<send_cars_zt _name='综合管理状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<receiving_send_car_zt _name='接货派车状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<delivery_send_car_pclx _name='送货派车派车类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<delivery_send_car_zt _name='送货派车状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<transfer_zt _name='中转管理状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<pick_up_goods_zffs _name='提货管理支付方式' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<pick_up_goods_ydzt _name='提货管理运单状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<tracking_map_sjlxfs _name='地图跟踪司机联系方式' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<tracking_map_clyxzt _name='地图跟踪车辆运行状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<electronic_fence_sjlxfs _name='电子围栏管理司机联系方式' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<electronic_fence_clyxzt _name='电子围栏管理车辆运行状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<receipt_signing_ydzt _name='回单签收运单状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<receipt_export_ydzt _name='导出回单信息运单状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<cargo_shortage_and_damage_ydzt _name='货差货损运单状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<cargo_shortage_and_damage_zt _name='货差货损状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' />
+	<goods_pstatd _name='新增商品商品状态' name='字符串|[0,15]' code='字符串|[0,15]' _vg4platform='基础数据' platform='platform()' />
+	<goods_dzeinr _name='新增商品商品类型' name='字符串|[0,4]' code='字符串|[0,4]' _vg4platform='基础数据' platform='platform()' />
+	<goods_list_matgk _name='商品列表商品维护状态' name='字符串|[0,18]' code='字符串|[0,18]' _vg4platform='基础数据' platform='platform()' />
+	<goods_category_dzeinr _name='分类列表商品类型' name='字符串|[0,4]' code='字符串|[0,4]' _vg4platform='基础数据' platform='platform()' />
+	<goods_category_dzeiar _name='分类列表商品状态' name='字符串|[0,18]' code='字符串|[0,18]' _vg4platform='基础数据' platform='platform()' />
+	<goods_brand_dzeinr _name='品牌列表商品类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<price_change_pstatd _name='修改商品价格商品状态' name='字符串|[0,15]' code='字符串|[0,15]' _vg4platform='基础数据' platform='platform()' />
+	<price_sync_pstatd _name='价格同步管理商品状态' name='字符串|[0,15]' code='字符串|[0,15]' _vg4platform='基础数据' platform='platform()' />
+	<price_sync_brfdj _name='价格同步管理同步状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<goods_export_pstatd _name='商品导出商品状态' name='字符串|[0,15]' code='字符串|[0,15]' _vg4platform='基础数据' platform='platform()' />
+	<goods_export_dzeinr _name='商品导出商品类型' name='字符串|[0,4]' code='字符串|[0,4]' _vg4platform='基础数据' platform='platform()' />
+	<purchase_plan_bbsrt _name='采购计划单采购申请凭证类型' name='字符串|[0,4]' code='字符串|[0,4]' _vg4platform='基础数据' platform='platform()' />
+	<purchase_plan_banst _name='采购计划单采购申请处理状态' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' />
+	<purchase_plan_frgzu _name='采购计划单发布状态' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' />
+	<purchase_plan_pstyp _name='采购计划单采购凭证中的项目类别' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' />
+	<purchase_plan_attyp _name='采购计划单商品类别' name='字符串|[0,2]' code='字符串|[0,2]' _vg4platform='基础数据' platform='platform()' />
+	<purchase_list_bbsrm _name='采购列表采购订单凭证类型' name='字符串|[0,4]' code='字符串|[0,4]' _vg4platform='基础数据' platform='platform()' />
+	<purchase_list_bansm _name='采购列表采购订单处理状态' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' />
+	<purchase_list_pstyp _name='采购列表采购凭证中的项目类别' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' />
+	<purchase_list_attyp _name='采购列表商品类别' name='字符串|[0,2]' code='字符串|[0,2]' _vg4platform='基础数据' platform='platform()' />
+	<purchase_return_bansm _name='退货管理采购订单处理状态' name='字符串|[0,1]' code='字符串|[0,1]' _vg4platform='基础数据' platform='platform()' />
+	<purchase_return_ktelds _name='退货管理退货状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<purchase_return_kteld _name='退货管理供应商签收状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<supplier_info_supplier_type _name='供应商信息供应商类型' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' />
+	<supplier_info_supplier_status _name='供应商信息状态' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' />
+	<supplier_order_payment_method _name='供应商订单支付方式' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' />
+	<supplier_order_order_status _name='供应商订单订单状态' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' />
+	<supplier_return_returns_type _name='供应商退货管理退货类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<supplier_return_handling_way _name='供应商退货管理退货处理方式' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<supplier_account_jfrylb _name='账户查询缴费人员类别' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<supplier_account_detail_payment_method _name='明细查询支付方式' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' />
+	<supplier_account_detail_order_status _name='明细查询订单状态' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' />
+	<supplier_account_detail_returns_type _name='明细查询退货类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<supplier_account_detail_handling_way _name='明细查询退货处理方式' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<order_list_ddlx _name='订单列表订单类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<order_list_zffs _name='订单列表支付方式' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<order_list_ddzt _name='订单列表订单状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<order_list_shzt _name='订单列表审核状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<order_approve_ddlx _name='订单审核、导出订单类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<order_approve_zffs _name='订单审核、导出支付方式' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<order_approve_ddzt _name='订单审核、导出订单状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<order_approve_shzt _name='订单审核、导出审核状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<order_approve_condition_ddlx _name='订单过审条件设置订单类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<order_approve_condition_zffs _name='订单过审条件设置支付方式' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<order_approve_condition_ddzt _name='订单过审条件设置订单状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<order_approve_condition_shzt _name='订单过审条件设置审核状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<order_approve_note_ddlx _name='订单审核提醒订单类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<order_approve_note_zffs _name='订单审核提醒支付方式' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<order_approve_note_ddzt _name='订单审核提醒订单状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<order_approve_note_shzt _name='订单审核提醒审核状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<return_refund_list_zffs _name='退货/款列表支付方式' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<return_refund_list_ddzt _name='退货/款列表订单状态' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<contract_base_data_cnt_money_type _name='合同基础数据货币类型' name='字符串|[0,32]' code='字符串|[0,32]' _vg4platform='基础数据' platform='platform()' />
+	<contract_base_data_cnt_state _name='合同基础数据合同状态' name='字符串|[0,20]' code='字符串|[0,20]' _vg4platform='基础数据' platform='platform()' />
+	<contract_base_data_cnt_balance_money_type _name='合同基础数据结算金额货币类型' name='字符串|[0,32]' code='字符串|[0,32]' _vg4platform='基础数据' platform='platform()' />
+	<contract_draw_up_cnt_money_type _name='合同编制货币类型' name='字符串|[0,32]' code='字符串|[0,32]' _vg4platform='基础数据' platform='platform()' />
+	<contract_draw_up_cnt_state _name='合同编制合同状态' name='字符串|[0,20]' code='字符串|[0,20]' _vg4platform='基础数据' platform='platform()' />
+	<contract_draw_up_cnt_balance_money_type _name='合同编制结算金额货币类型' name='字符串|[0,32]' code='字符串|[0,32]' _vg4platform='基础数据' platform='platform()' />
+	<contract_draw_up_prn_type _name='合同编制单位类型' name='字符串|[0,16]' code='字符串|[0,16]' _vg4platform='基础数据' platform='platform()' />
+	<contract_draw_up_prn_kind _name='合同编制单位性质' name='字符串|[0,16]' code='字符串|[0,16]' _vg4platform='基础数据' platform='platform()' />
+	<contract_draw_up_prn_credited _name='合同编制信用等级' name='字符串|[0,16]' code='字符串|[0,16]' _vg4platform='基础数据' platform='platform()' />
+	<contract_approve_wf_state _name='合同审批当前流程流转状态' name='字符串|[0,32]' code='字符串|[0,32]' _vg4platform='基础数据' platform='platform()' />
+	<contract_pay_pay_money_type _name='合同付款付款货币类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<contract_acceptance_pay_money_type _name='合同验收付款货币类型' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<contract_board_jfrylb _name='合同看板缴费人员类别' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<waybill_collection_pay_type _name='运单收款付款方式' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' />
+	<waybill_pay_pay_type _name='运单付款付款方式' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' />
+	<waybill_query_jfrylb _name='运单收付款查询缴费人员类别' name='字符串|[0,50]' code='字符串|[0,50]' _vg4platform='基础数据' platform='platform()' />
+	<dispatch_collection_pay_type _name='派车单付款付款方式' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' />	<bidding_plan _name='招标计划填写'
 		reference_id='ID: 100000000'
 		zbbh='招标编号: 字符串|[0,32]'
 		fqr='发起人: 字符串|[0,64]'
@@ -165,7 +165,7 @@
 		cjsj='创建时间: 2100-09-09T09:09:09'
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='招标计划' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='招标计划' platform='platform()' /> 
 	<bidding_declare _name='招标计划申报'
 		reference_id='ID: 100000000'
 		xmbm='项目编码: 字符串|[0,64]'
@@ -181,7 +181,7 @@
 		cjsj='创建时间: 2100-09-09T09:09:09'
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='招标计划' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='招标计划' platform='platform()' /> 
 	<bidding_apply _name='招标审批'
 		reference_id='ID: 100000000'
 		xmbm='项目编码: 字符串|[0,64]'
@@ -196,7 +196,7 @@
 		cjsj='创建时间: 2100-09-09T09:09:09'
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='招标计划' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='招标计划' platform='platform()' /> 
 	<bidding_release _name='招标任务下达'
 		reference_id='ID: 100000000'
 		xmbm='项目编码: 字符串|[0,64]'
@@ -223,7 +223,7 @@
 		cjsj='创建时间: 2100-09-09T09:09:09'
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='招标计划' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='招标计划' platform='platform()' /> 
 	<competitive_inquiry_desire _name='意愿表达'
 		reference_id='ID: 100000000'
 		xmbm='项目编码: 字符串|[0,64]'
@@ -237,7 +237,7 @@
 		cjsj='创建时间: 2100-09-09T09:09:09'
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='竞询价项目' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='竞询价项目' platform='platform()' /> 
 	<competitive_inquiry_offer _name='线上报价'
 		reference_id='ID: 100000000'
 		xmbm='项目编码: 字符串|[0,64]'
@@ -263,7 +263,7 @@
 		cjsj='创建时间: 2100-09-09T09:09:09'
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='竞询价项目' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='竞询价项目' platform='platform()' /> 
 	<competitive_inquiry_answering _name='线上答疑'
 		reference_id='ID: 100000000'
 		xmbm='项目编码: 字符串|[0,64]'
@@ -285,7 +285,7 @@
 		cjsj='创建时间: 2100-09-09T09:09:09'
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='竞询价项目' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='竞询价项目' platform='platform()' /> 
 	<competitive_inquiry_clarify _name='线上澄清'
 		reference_id='ID: 100000000'
 		xmbm='项目编码: 字符串|[0,64]'
@@ -304,7 +304,7 @@
 		cjsj='创建时间: 2100-09-09T09:09:09'
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='竞询价项目' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='竞询价项目' platform='platform()' /> 
 	<competitive_inquiry_bidding _name='线上竞价'
 		reference_id='ID: 100000000'
 		xmbm='项目编码: 字符串|[0,64]'
@@ -324,7 +324,7 @@
 		cjsj='创建时间: 2100-09-09T09:09:09'
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='竞询价项目' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='竞询价项目' platform='platform()' /> 
 	<refund_apply _name='退款申请'
 		reference_id='ID: 100000000'
 		xmbm='项目编码: 字符串|[0,64]'
@@ -347,7 +347,7 @@
 		cjsj='创建时间: 2100-09-09T09:09:09'
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='退款申请' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='退款申请' platform='platform()' /> 
 	<process_management_package _name='过程管理-发包'
 		reference_id='ID: 100000000'
 		xmbm='项目编码: 字符串|[0,64]'
@@ -370,7 +370,7 @@
 		cjsj='创建时间: 2100-09-09T09:09:09'
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='过程管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='过程管理' platform='platform()' /> 
 	<process_management_screen _name='过程管理-专家筛选'
 		reference_id='ID: 100000000'
 		xmbm='项目编码: 字符串|[0,64]'
@@ -386,7 +386,7 @@
 		cjsj='创建时间: 2100-09-09T09:09:09'
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='过程管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='过程管理' platform='platform()' /> 
 	<process_management_evaluation _name='过程管理-评标'
 		reference_id='ID: 100000000'
 		xmbm='项目编码: 字符串|[0,64]'
@@ -407,7 +407,7 @@
 		cjsj='创建时间: 2100-09-09T09:09:09'
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='过程管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='过程管理' platform='platform()' /> 
 	<process_management_bidding _name='过程管理-竞价'
 		reference_id='ID: 100000000'
 		xmbm='项目编码: 字符串|[0,64]'
@@ -428,7 +428,7 @@
 		cjsj='创建时间: 2100-09-09T09:09:09'
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='过程管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='过程管理' platform='platform()' /> 
 	<process_management_bargaining _name='过程管理-议价'
 		reference_id='ID: 100000000'
 		xmbm='项目编码: 字符串|[0,64]'
@@ -446,7 +446,7 @@
 		cjsj='创建时间: 2100-09-09T09:09:09'
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='过程管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='过程管理' platform='platform()' /> 
 	<process_management_winning _name='过程管理-中选'
 		reference_id='ID: 100000000'
 		xmbm='项目编码: 字符串|[0,64]'
@@ -462,7 +462,7 @@
 		cjsj='创建时间: 2100-09-09T09:09:09'
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='过程管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='过程管理' platform='platform()' /> 
 	<supplier _name='供应商库'
 		reference_id='ID: 100000000'
 		gysbm='供应商编码: 字符串|[0,32]'
@@ -494,7 +494,7 @@
 		lxr='联系人: 字符串|[0,64]'
 		kpdh='开票电话: 字符串|[0,50]'
 		bz='备注: 字符串|[0,255]'
-		record_count='1|1' _vg4platform='供应商库' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='供应商库' platform='platform()' /> 
 	<expert _name='专家库管理'
 		reference_id='ID: 100000000'
 		zjxm='专家姓名: 字符串|[0,64]'
@@ -523,7 +523,7 @@
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
 		bz='备注: 字符串|[0,255]'
-		record_count='1|1' _vg4platform='专家库' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='专家库' platform='platform()' /> 
 	<security_deposit _name='保证金管理'
 		reference_id='ID: 100000000'
 		gysbm='供应商编码: 字符串|[0,32]'
@@ -540,7 +540,7 @@
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
 		bz='备注: 字符串|[0,255]'
-		record_count='1|1' _vg4platform='财务管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='财务管理' platform='platform()' /> 
 	<account_collection _name='收款账户维护'
 		reference_id='ID: 100000000'
 		gsmc='公司名称: 字符串|[0,255]'
@@ -554,7 +554,7 @@
 		cjsj='创建时间: 2100-09-09T09:09:09'
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='财务管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='财务管理' platform='platform()' /> 
 	<questions_online _name='线上提问'
 		reference_id='ID: 100000000'
 		xmbm='项目编码: 字符串|[0,32]'
@@ -575,7 +575,7 @@
 		cjsj='创建时间: 2100-09-09T09:09:09'
 		xgr='修改人: 字符串|[0,64]'
 		xgsj='修改时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='专家评标' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='专家评标' platform='platform()' /> 
 	<transit_place _name='中转地设置'
 		transit_name='中转地名称: 字符串|[0,64]'
 		transit_code='中转地代码: 100000000'
@@ -583,7 +583,7 @@
 		fee_ratio='中转费比例%: 10000000000.1100'
 		state='状态: 100000000'
 		state_reference='状态引用: transit_place_state()'
-		record_count='1|1' _vg4platform='物流主数据' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='物流主数据' platform='platform()' /> 
 	<branch_company _name='分公司设置'
 		company_name='分公司名称: 字符串|[0,24]'
 		company_code='分公司代码: 100000000'
@@ -595,7 +595,7 @@
 		county_code='所在区县: 字符串|[0,24]'
 		street_code='所在街道: 字符串|[0,24]'
 		address='详细地址: 字符串|[0,128]'
-		record_count='1|1' _vg4platform='物流主数据' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='物流主数据' platform='platform()' /> 
 	<outlets _name='网点设置'
 		outlets_code='网点代码: 100000000'
 		outlets_name='网点名称: 字符串|[0,80]'
@@ -606,7 +606,7 @@
 		county_code='所在区县: 字符串|[0,24]'
 		street_code='所在街道: 字符串|[0,24]'
 		address='详细地址: 字符串|[0,80]'
-		record_count='1|1' _vg4platform='物流主数据' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='物流主数据' platform='platform()' /> 
 	<delivery_area _name='送货区及收费标准设置'
 		company_name='所属分公司: 字符串|[0,24]'
 		outlets_name='所属网点: 字符串|[0,24]'
@@ -615,14 +615,14 @@
 		weight_start='重量区间起（吨）: 10000000000.1100'
 		weight_end='重量区间止（吨）: 10000000000.1100'
 		base_cost='基准费用（元）: 10000000000.1100'
-		record_count='1|1' _vg4platform='物流主数据' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='物流主数据' platform='platform()' /> 
 	<transportation_route _name='线路管理'
 		line_code='线路代码: 100000000'
 		line_name='线路名称: 字符串|[0,48]'
 		start='起点: 字符串|[0,48]'
 		end='终点: 字符串|[0,48]'
 		company_name='所属分公司: 字符串|[0,48]'
-		record_count='1|1' _vg4platform='物流主数据' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='物流主数据' platform='platform()' /> 
 	<category _name='货物类别维护'
 		good_code='货物类别代码: 100000000'
 		good_name='货物类别名称: 字符串|[0,24]'
@@ -630,19 +630,19 @@
 		good_type_reference='货物基准类别引用: category_good_type()'
 		importor='导入人: 字符串|[0,24]'
 		import_time='导入时间: 2100-09-09'
-		record_count='1|1' _vg4platform='物流主数据' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='物流主数据' platform='platform()' /> 
 	<collection_of_service_charge _name='代收货款手续费'
 		agent_start='代收货款区间始(元人民币): 10000000000.1100'
 		agent_end='代收货款区间止(元人民币): 10000000000.1100'
 		charge_ratio='手续费比例（%）: 10000000000.1100'
 		min_charge='最低收费（元人民币）: 10000000000.1100'
-		record_count='1|1' _vg4platform='物流主数据' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='物流主数据' platform='platform()' /> 
 	<quotation_rate _name='保价费率设置'
 		premium_start='保价区间始（元人民币）: 10000000000.1100'
 		premium_end='保价区间止（元人民币）: 10000000000.1100'
 		premium_ratio='保险费比例（%）: 10000000000.1100'
 		min_premium='最低保费: 10000000000.1100'
-		record_count='1|1' _vg4platform='物流主数据' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='物流主数据' platform='platform()' /> 
 	<vehicle _name='车辆管理'
 		license_num='车牌号码: 100000000'
 		company_name='所属公司: 字符串|[0,24]'
@@ -651,7 +651,7 @@
 		type_reference='车辆类型引用: vehicle_type()'
 		carrying_capacity='额定载重（吨）: 10000000000.1100'
 		vehicle_length='车长（米）: 10000000000.1100'
-		record_count='1|1' _vg4platform='物流主数据' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='物流主数据' platform='platform()' /> 
 	<driver _name='司机管理'
 		driver_name='司机姓名: 字符串|[0,24]'
 		driver_id='司机账号: 100000000'
@@ -659,7 +659,7 @@
 		tele='联系电话: 100000000'
 		vehicle_type='准驾车型: 字符串|[0,12]'
 		valid='是否有效（1代表是，0代表否）: 100000000'
-		record_count='1|1' _vg4platform='物流主数据' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='物流主数据' platform='platform()' /> 
 	<oilseeds _name='油料管理'
 		refuel_date='加油日期: 2100-09-09'
 		license_num='车牌号码: 100000000'
@@ -668,7 +668,7 @@
 		oil_price='油价（元/升）: 10000000000.1100'
 		totol_fee='本次加油金额（元）: 10000000000.1100'
 		driver='司机: 字符串|[0,24]'
-		record_count='1|1' _vg4platform='物流主数据' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='物流主数据' platform='platform()' /> 
 	<delivery _name='订单管理'
 		ddh='订单号: 字符串|[0,128]'
 		kkmc='客户名称: 字符串|[0,128]'
@@ -683,7 +683,7 @@
 		ddzt='订单状态: 字符串|[0,64]'
 		ddzt_reference='订单状态引用: delivery_ddzt()'
 		cz='操作: 字符串|[0,64]'
-		record_count='1|1' _vg4platform='订单/发货计划' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='订单/发货计划' platform='platform()' /> 
 	<quick_find _name='快找'
 		xh='序号: 100000000'
 		ydh='运单号: 字符串|[0,128]'
@@ -708,7 +708,7 @@
 		jffs_reference='交付方式引用: quick_find_jffs()'
 		ydzt='运单状态: 字符串|[0,128]'
 		ydzt_reference='运单状态引用: quick_find_ydzt()'
-		record_count='1|1' _vg4platform='订单/发货计划' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='订单/发货计划' platform='platform()' /> 
 	<waybill _name='运单管理'
 		xh='序号: 字符串|[0,64]'
 		ydh='运单号: 字符串|[0,64]'
@@ -731,7 +731,7 @@
 		fhzt='放货状态: 字符串|[0,64]'
 		fhzt_reference='放货状态引用: waybill_fhzt()'
 		cz='操作: 字符串|[0,64]'
-		record_count='1|1' _vg4platform='订单/发货计划' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='订单/发货计划' platform='platform()' /> 
 	<send_cars _name='综合管理'
 		xh='序号: 字符串|[0,64]'
 		pcdh='派车单号: 字符串|[0,64]'
@@ -748,7 +748,7 @@
 		zt='状态: 字符串|[0,64]'
 		zt_reference='状态引用: send_cars_zt()'
 		cz='操作: 字符串|[0,64]'
-		record_count='1|1' _vg4platform='派车管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='派车管理' platform='platform()' /> 
 	<receiving_send_car _name='接货派车'
 		xh='序号: 字符串|[0,64]'
 		pcdh='派车单号: 字符串|[0,64]'
@@ -762,7 +762,7 @@
 		zt='状态: 字符串|[0,64]'
 		zt_reference='状态引用: receiving_send_car_zt()'
 		cz='操作: 字符串|[0,64]'
-		record_count='1|1' _vg4platform='派车管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='派车管理' platform='platform()' /> 
 	<delivery_send_car _name='送货派车'
 		xh='序号: 字符串|[0,64]'
 		pcdh='派车单号: 字符串|[0,64]'
@@ -777,7 +777,7 @@
 		zt='状态: 字符串|[0,64]'
 		zt_reference='状态引用: delivery_send_car_zt()'
 		cz='操作: 字符串|[0,64]'
-		record_count='1|1' _vg4platform='派车管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='派车管理' platform='platform()' /> 
 	<transfer _name='中转管理'
 		xh='序号: 字符串|[0,64]'
 		zzdh='中转单号: 字符串|[0,64]'
@@ -789,7 +789,7 @@
 		zt='状态: 字符串|[0,64]'
 		zt_reference='状态引用: transfer_zt()'
 		cz='操作: 字符串|[0,64]'
-		record_count='1|1' _vg4platform='派车管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='派车管理' platform='platform()' /> 
 	<pick_up_goods _name='提货管理'
 		xh='序号: 字符串|[0,64]'
 		ydh='运单号: 字符串|[0,64]'
@@ -805,7 +805,7 @@
 		ydzt='运单状态: 字符串|[0,64]'
 		ydzt_reference='运单状态引用: pick_up_goods_ydzt()'
 		cz='操作: 字符串|[0,64]'
-		record_count='1|1' _vg4platform='派车管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='派车管理' platform='platform()' /> 
 	<tracking _name='跟踪管理'
 		xh='序号: 字符串|[0,64]'
 		gzdh='跟踪单号: 字符串|[0,64]'
@@ -818,7 +818,7 @@
 		shr='收货人: 字符串|[0,64]'
 		zjs='总件数(件): 字符串|[0,64]'
 		cz='操作: 字符串|[0,64]'
-		record_count='1|1' _vg4platform='运输路线管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='运输路线管理' platform='platform()' /> 
 	<tracking_map _name='地图跟踪'
 		xh='序号: 字符串|[0,64]'
 		pcdh='派车单号: 字符串|[0,64]'
@@ -832,7 +832,7 @@
 		wd='纬度: 字符串|[0,64]'
 		dqysdd='当前运输订单: 字符串|[0,64]'
 		cz='操作: 字符串|[0,64]'
-		record_count='1|1' _vg4platform='运输路线管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='运输路线管理' platform='platform()' /> 
 	<electronic_fence _name='电子围栏管理'
 		xh='序号: 字符串|[0,64]'
 		pcdh='派车单号: 字符串|[0,64]'
@@ -846,7 +846,7 @@
 		wd='纬度: 字符串|[0,64]'
 		dqysdd='当前运输订单: 字符串|[0,64]'
 		cz='操作: 字符串|[0,64]'
-		record_count='1|1' _vg4platform='运输路线管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='运输路线管理' platform='platform()' /> 
 	<receipt_signing _name='回单签收'
 		xh='序号: 字符串|[0,64]'
 		ydh='运单号: 字符串|[0,64]'
@@ -862,7 +862,7 @@
 		fhr='发货人: 字符串|[0,64]'
 		shr='收货人: 字符串|[0,64]'
 		cz='	操作: 字符串|[0,64]'
-		record_count='1|1' _vg4platform='签收回单管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='签收回单管理' platform='platform()' /> 
 	<receipt_export _name='导出回单信息'
 		xh='序号: 字符串|[0,64]'
 		ydh='运单号: 字符串|[0,64]'
@@ -878,7 +878,7 @@
 		fhr='发货人: 字符串|[0,64]'
 		shr='收货人: 字符串|[0,64]'
 		cz='	操作: 字符串|[0,64]'
-		record_count='1|1' _vg4platform='签收回单管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='签收回单管理' platform='platform()' /> 
 	<return_goods _name='退货'
 		xh='序号: 字符串|[0,64]'
 		ycdh='异常单号: 字符串|[0,64]'
@@ -891,7 +891,7 @@
 		thsj='退货时间: 字符串|[0,234]'
 		jlr='记录人: 字符串|[0,64]'
 		cz='操作: 字符串|[0,64]'
-		record_count='1|1' _vg4platform='异常管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='异常管理' platform='platform()' /> 
 	<cargo_shortage_and_damage _name='货差货损'
 		xh='序号: 字符串|[0,64]'
 		ycdh='异常单号: 字符串|[0,64]'
@@ -912,7 +912,7 @@
 		zt='状态: 字符串|[0,64]'
 		zt_reference='状态引用: cargo_shortage_and_damage_zt()'
 		cz='操作: 字符串|[0,64]'
-		record_count='1|1' _vg4platform='异常管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='异常管理' platform='platform()' /> 
 	<goods _name='新增商品'
 		matnr='商品编号: 字符串|[0,40]'
 		mttbr='商品描述: 字符串|[0,60]'
@@ -936,7 +936,7 @@
 		vollf='货源地: 字符串|[0,50]'
 		voled='订单单位: 字符串|[0,3]'
 		volwf='品牌名称: 字符串|[0,15]'
-		record_count='1|1' _vg4platform='商品及品类管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='商品及品类管理' platform='platform()' /> 
 	<goods_list _name='商品列表'
 		matnr='商品编号: 字符串|[0,40]'
 		mttbr='商品描述: 字符串|[0,60]'
@@ -947,7 +947,7 @@
 		betvo='价格: 10000000000.1100'
 		betgh='在途商品: 10000000000.123456789'
 		betfj='未发货商品: 10000000000.123456789'
-		record_count='1|1' _vg4platform='商品及品类管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='商品及品类管理' platform='platform()' /> 
 	<goods_category _name='分类列表'
 		dzeinr='商品类型: 字符串|[0,4]'
 		dzeinr_reference='商品类型引用: goods_category_dzeinr()'
@@ -955,7 +955,7 @@
 		dzeiar_reference='商品状态引用: goods_category_dzeiar()'
 		dzeivr='商品编号: 字符串|[0,18]'
 		dzeifo='商品描述: 字符串|[0,18]'
-		record_count='1|1' _vg4platform='商品及品类管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='商品及品类管理' platform='platform()' /> 
 	<goods_brand _name='品牌列表'
 		dzeinr='商品类型: 字符串|[0,50]'
 		dzeinr_reference='商品类型引用: goods_brand_dzeinr()'
@@ -963,12 +963,12 @@
 		volwf='品牌名称: 字符串|[0,50]'
 		dzeivr='商品编号: 字符串|[0,50]'
 		dzeifo='商品描述: 字符串|[0,50]'
-		record_count='1|1' _vg4platform='商品及品类管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='商品及品类管理' platform='platform()' /> 
 	<combined_goods _name='组合商品'
 		matkl='商品组合: 字符串|[0,9]'
 		dzeivr='商品编号: 字符串|[0,50]'
 		dzeifo='商品描述: 字符串|[0,50]'
-		record_count='1|1' _vg4platform='商品及品类管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='商品及品类管理' platform='platform()' /> 
 	<price_change_note _name='价格变动提醒'
 		dzeivr='商品编号: 字符串|[0,50]'
 		dzeifo='商品描述: 字符串|[0,50]'
@@ -979,7 +979,7 @@
 		ersad='更改日期: 2100-09-09T09:09:09'
 		ernda='更改对象的人员名称: 字符串|[0,12]'
 		tjsj='统计时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='商品及品类管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='商品及品类管理' platform='platform()' /> 
 	<price_change _name='修改商品价格'
 		dzeivr='商品编号: 字符串|[0,50]'
 		dzeifo='商品描述: 字符串|[0,50]'
@@ -987,7 +987,7 @@
 		pstatd_reference='商品状态引用: price_change_pstatd()'
 		betvo='商品原始价格: 10000000000.1100'
 		betvp='商品更改价格: 10000000000.1100'
-		record_count='1|1' _vg4platform='商品及品类管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='商品及品类管理' platform='platform()' /> 
 	<price_sync _name='价格同步管理'
 		dzeivr='商品编号: 字符串|[0,50]'
 		dzeifo='商品描述: 字符串|[0,50]'
@@ -997,7 +997,7 @@
 		betvp='商品更改价格: 10000000000.1100'
 		brfdj='同步状态: 字符串|[0,50]'
 		brfdj_reference='同步状态引用: price_sync_brfdj()'
-		record_count='1|1' _vg4platform='商品及品类管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='商品及品类管理' platform='platform()' /> 
 	<goods_export _name='商品导出'
 		matnr='商品编号: 字符串|[0,40]'
 		mttbr='商品描述: 字符串|[0,60]'
@@ -1021,7 +1021,7 @@
 		vollf='货源地: 字符串|[0,50]'
 		voled='订单单位: 字符串|[0,3]'
 		volwf='品牌名称: 字符串|[0,15]'
-		record_count='1|1' _vg4platform='商品及品类管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='商品及品类管理' platform='platform()' /> 
 	<purchase_plan _name='采购计划单'
 		banfn='采购申请编号: 字符串|[0,10]'
 		bbsrt='采购申请凭证类型: 字符串|[0,4]'
@@ -1070,7 +1070,7 @@
 		lzeit='交货日期时间点: 100000000'
 		prio_urg='需求紧急度: 100000000'
 		prio_req='需求优先级: 100000000'
-		record_count='1|1' _vg4platform='采购管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='采购管理' platform='platform()' /> 
 	<purchase_list _name='采购列表'
 		ablad='卸货点: 字符串|[0,25]'
 		bstnr='采购订单号: 字符串|[0,10]'
@@ -1117,7 +1117,7 @@
 		prio_req='需求优先级: 100000000'
 		plifk='出库时间: 字符串|[0,234]'
 		lzeip='出库地点: 字符串|[0,70]'
-		record_count='1|1' _vg4platform='采购管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='采购管理' platform='platform()' /> 
 	<purchase_warehousing _name='采购入库单'
 		vkldt='入库单号: 100000000'
 		valdt='库存地点: 字符串|[0,100]'
@@ -1127,7 +1127,7 @@
 		ktghd='入库车辆: 字符串|[0,50]'
 		kterd='入库负责人: 字符串|[0,50]'
 		kteqd='入库位置: 字符串|[0,51]'
-		record_count='1|1' _vg4platform='采购管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='采购管理' platform='platform()' /> 
 	<purchase_return _name='退货管理'
 		ablad='卸货点: 字符串|[0,25]'
 		bstnr='采购订单号: 字符串|[0,10]'
@@ -1145,7 +1145,7 @@
 		ktelds_reference='退货状态引用: purchase_return_ktelds()'
 		kteld='供应商签收状态: 字符串|[0,50]'
 		kteld_reference='供应商签收状态引用: purchase_return_kteld()'
-		record_count='1|1' _vg4platform='采购管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='采购管理' platform='platform()' /> 
 	<supplier_info _name='供应商信息'
 		supplier_id='供应商ID: 100000000'
 		supplier_code='供应商编码: 字符串|[0,8]'
@@ -1161,7 +1161,7 @@
 		supplier_status_reference='状态引用: supplier_info_supplier_status()'
 		modified_user='维护人员: 字符串|[0,10]'
 		modified_time='维护时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='供应商管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='供应商管理' platform='platform()' /> 
 	<supplier_order _name='供应商订单'
 		order_id='订单ID: 100000000'
 		order_no='订单编号: 100000000'
@@ -1185,7 +1185,7 @@
 		county_code='所在区县: 字符串|[0,12]'
 		street_code='所在街道: 字符串|[0,12]'
 		address='详细地址: 字符串|[0,128]'
-		record_count='1|1' _vg4platform='供应商管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='供应商管理' platform='platform()' /> 
 	<supplier_return _name='供应商退货管理'
 		returns_id='退货ID: 100000000'
 		returns_no='退货编号: 100000000'
@@ -1201,7 +1201,7 @@
 		consignee_realname='收货人姓名: 字符串|[0,50]'
 		consignee_telphone='收货人联系电话: 字符串|[0,20]'
 		consignee_address='收货地址: 字符串|[0,129]'
-		record_count='1|1' _vg4platform='供应商管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='供应商管理' platform='platform()' /> 
 	<supplier_account _name='账户查询'
 		zje='总金额: 字符串|[0,100]'
 		zzny='终止年月: 字符串|[0,50]'
@@ -1214,7 +1214,7 @@
 		jflsid='缴费历史ID: 字符串|[0,100]'
 		sfzhm='身份证号码: 字符串|[0,50]'
 		xm='姓名: 字符串|[0,50]'
-		record_count='1|1' _vg4platform='供应商管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='供应商管理' platform='platform()' /> 
 	<supplier_account_detail _name='明细查询'
 		supplier_id='供应商ID: 100000000'
 		supplier_code='供应商编码: 字符串|[0,8]'
@@ -1243,7 +1243,7 @@
 		handling_way_reference='退货处理方式引用: supplier_account_detail_handling_way()'
 		returns_amount='退款金额: 字符串|[0,234]'
 		handling_time='退货处理时间: 2100-09-09T09:09:09'
-		record_count='1|1' _vg4platform='供应商管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='供应商管理' platform='platform()' /> 
 	<order_list _name='订单列表'
 		xh='序号: 字符串|[0,50]'
 		ddh='订单号: 字符串|[0,50]'
@@ -1264,7 +1264,7 @@
 		shsj='审核时间: 字符串|[0,234]'
 		kfbz='客服备注: text()'
 		mjbz='卖家备注: text()'
-		record_count='1|1' _vg4platform='订单管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='订单管理' platform='platform()' /> 
 	<order_approve _name='订单审核、导出'
 		xh='序号: 字符串|[0,50]'
 		ddh='订单号: 字符串|[0,50]'
@@ -1286,7 +1286,7 @@
 		kfbz='客服备注: text()'
 		mjbz='卖家备注: text()'
 		spyj='审批意见: 字符串|[0,50]'
-		record_count='1|1' _vg4platform='订单管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='订单管理' platform='platform()' /> 
 	<order_approve_condition _name='订单过审条件设置'
 		xh='序号: 字符串|[0,50]'
 		ddh='订单号: 字符串|[0,50]'
@@ -1308,7 +1308,7 @@
 		kfbz='客服备注: text()'
 		mjbz='卖家备注: text()'
 		spyj='审批意见: 字符串|[0,50]'
-		record_count='1|1' _vg4platform='订单管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='订单管理' platform='platform()' /> 
 	<order_approve_note _name='订单审核提醒'
 		xh='序号: 字符串|[0,50]'
 		ddh='订单号: 字符串|[0,50]'
@@ -1330,7 +1330,7 @@
 		kfbz='客服备注: text()'
 		mjbz='卖家备注: text()'
 		spyj='审批意见: 字符串|[0,50]'
-		record_count='1|1' _vg4platform='订单管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='订单管理' platform='platform()' /> 
 	<return_refund_list _name='退货/款列表'
 		xh='序号: 字符串|[0,50]'
 		cz='操作: 字符串|[0,50]'
@@ -1350,7 +1350,7 @@
 		thgys='退货供应商: 字符串|[0,50]'
 		khly='客户留言: text()'
 		kfbz='客服备注: text()'
-		record_count='1|1' _vg4platform='订单管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='订单管理' platform='platform()' /> 
 	<contract_base_data _name='合同基础数据'
 		cnt_id='主键ID: 100000000'
 		cnt_name='合同名称: 字符串|[0,200]'
@@ -1410,7 +1410,7 @@
 		cnt_code_num='合同编号数字号: 100000000'
 		cnt_fillin_company_id='填报单位ID: 100000000'
 		cnt_fillin_company_name='填报单位名称: 字符串|[0,500]'
-		record_count='1|1' _vg4platform='合同管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='合同管理' platform='platform()' /> 
 	<contract_draw_up _name='合同编制'
 		cnt_id='主键ID: 100000000'
 		cnt_name='合同名称: 字符串|[0,200]'
@@ -1496,7 +1496,7 @@
 		prn_linkman='联系人: 字符串|[0,50]'
 		prn_linkman_tel='联系人电话: 字符串|[0,50]'
 		prn_ispublish='是否公开: 字符串|[0,50]'
-		record_count='1|1' _vg4platform='合同管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='合同管理' platform='platform()' /> 
 	<contract_approve _name='合同审批'
 		wf_id='主键: 字符串|[0,32]'
 		business_id='合同ID: 100000000'
@@ -1513,7 +1513,7 @@
 		wf_state='当前流程流转状态: 字符串|[0,32]'
 		wf_state_reference='当前流程流转状态引用: contract_approve_wf_state()'
 		aud_cntent='审批意见: 字符串|[0,500]'
-		record_count='1|1' _vg4platform='合同管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='合同管理' platform='platform()' /> 
 	<contract_pay _name='合同付款'
 		reference_id='主键ID: 100000000'
 		cont_code='合同编号: 字符串|[0,100]'
@@ -1525,7 +1525,7 @@
 		pay_money_count='付款总额: 字符串|[0,234]'
 		remark='备注: 字符串|[0,100]'
 		zfnum='支付唯一标识: 字符串|[0,20]'
-		record_count='1|1' _vg4platform='合同管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='合同管理' platform='platform()' /> 
 	<contract_acceptance _name='合同验收'
 		reference_id='主键ID: 100000000'
 		cont_code='合同编号: 字符串|[0,100]'
@@ -1537,14 +1537,14 @@
 		pay_money_count='付款总额: 字符串|[0,234]'
 		remark='备注: 字符串|[0,100]'
 		zfnum='支付唯一标识: 字符串|[0,20]'
-		record_count='1|1' _vg4platform='合同管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='合同管理' platform='platform()' /> 
 	<contract_change _name='合同变更/终止'
 		change_id='主键ID: 100000000'
 		cnt_cntid='合同ID: 100000000'
 		cnt_source_id='原合同ID: 100000000'
 		cnt_source_name='原合同名称: 字符串|[0,100]'
 		cnt_change_remark='变更说明: 字符串|[0,1000]'
-		record_count='1|1' _vg4platform='合同管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='合同管理' platform='platform()' /> 
 	<contract_board _name='合同看板'
 		zje='总金额: 字符串|[0,100]'
 		zzny='终止年月: 字符串|[0,50]'
@@ -1557,7 +1557,7 @@
 		jflsid='缴费历史ID: 字符串|[0,100]'
 		sfzhm='身份证号码: 字符串|[0,50]'
 		xm='姓名: 字符串|[0,50]'
-		record_count='1|1' _vg4platform='合同管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='合同管理' platform='platform()' /> 
 	<waybill_collection _name='运单收款'
 		pay_no='运单编号: 100000000'
 		rec_no='收款单号: 100000000'
@@ -1572,7 +1572,7 @@
 		accounting_subject='会计科目: 字符串|[0,30]'
 		rec_date='收款时间: 字符串|[0,234]'
 		adjucnt='附件: 字符串|[0,1000]'
-		record_count='1|1' _vg4platform='结算管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='结算管理' platform='platform()' /> 
 	<waybill_pay _name='运单付款'
 		waybill_no='运单编号: 100000000'
 		pay_no='付款单号: 100000000'
@@ -1587,7 +1587,7 @@
 		accounting_subject='会计科目: 字符串|[0,30]'
 		pay_date='付款时间: 字符串|[0,234]'
 		adjucnt='附件: 字符串|[0,1000]'
-		record_count='1|1' _vg4platform='结算管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='结算管理' platform='platform()' /> 
 	<waybill_query _name='运单收付款查询'
 		zje='总金额: 字符串|[0,100]'
 		zzny='终止年月: 字符串|[0,50]'
@@ -1600,7 +1600,7 @@
 		jflsid='缴费历史ID: 字符串|[0,100]'
 		sfzhm='身份证号码: 字符串|[0,50]'
 		xm='姓名: 字符串|[0,50]'
-		record_count='1|1' _vg4platform='结算管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='结算管理' platform='platform()' /> 
 	<dispatch_collection _name='派车单付款'
 		trucking_order_no='派车单号: 100000000'
 		pay_account='付款科目: 字符串|[0,30]'
@@ -1614,6 +1614,6 @@
 		pay_date='付款时间: 字符串|[0,234]'
 		payee='收款人: 字符串|[0,50]'
 		voucher_no='凭证票号: 字符串|[0,50]'
-		record_count='1|1' _vg4platform='结算管理' platform='platform()' _features='no_sample_data'/> 
+		record_count='1|1' _vg4platform='结算管理' platform='platform()' /> 
 
 </root>
