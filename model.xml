@@ -9,7 +9,8 @@
         name="北部湾投资集团供应链平台"
         founded="now()"
     />
- 
+	
+	
 	
 	<bidding_plan_xmjsfs _name='招标计划填写项目结算方式' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
 	<bidding_plan_xmfl _name='招标计划填写项目分类' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
@@ -167,7 +168,7 @@
 		xmmc='项目名称: 字符串|[0,64]'
 		sbdw='申报单位: 字符串|[0,255]'
 		tbsj='填报时间: 2100-09-09T09:09:09'
-		xmysje='项目预算金额: 字符串|[0,234]'
+		xmysje='项目预算金额: 10000000000.123456789'
 		jfly='经费来源: 字符串|[0,8]'
 		xmgq='项目周期: 100000000'
 		xmfzr='项目负责人: 字符串|[0,64]'
@@ -661,12 +662,12 @@
 		refueling='加油量（升）: 10000000000.1100'
 		oil_type='燃油种类: 字符串|[0,24]'
 		oil_price='油价（元/升）: 10000000000.1100'
-		totol__fee='本次加油金额（元）: 10000000000.1100'
+		totol_fee='本次加油金额（元）: 10000000000.1100'
 		driver='司机: 字符串|[0,24]'
 		record_count='1|1' _vg4platform='物流主数据' platform='platform()' _features='no_sample_data'/> 
 	<delivery _name='订单管理'
 		ddh='订单号: 字符串|[0,128]'
-		kkmc='客户名称: 字符串|[0,]'
+		kkmc='客户名称: 字符串|[0,128]'
 		djlx='单据类型: 字符串|[0,64]'
 		djlx_reference='单据类型引用: delivery_djlx()'
 		qxd='起运地: 字符串|[0,64]'
@@ -1155,7 +1156,7 @@
 		supplier_status='状态: 100000000'
 		supplier_status_reference='状态引用: supplier_info_supplier_status()'
 		modified_user='维护人员: 字符串|[0,10]'
-		modified_time='维护时间: 字符串|[0,234]'
+		modified_time='维护时间: 2100-09-09T09:09:09'
 		record_count='1|1' _vg4platform='供应商管理' platform='platform()' _features='no_sample_data'/> 
 	<supplier_order _name='供应商订单'
 		order_id='订单ID: 100000000'
@@ -1166,12 +1167,12 @@
 		payment_method='支付方式: 100000000'
 		payment_method_reference='支付方式引用: supplier_order_payment_method()'
 		order_money='订单金额: 字符串|[0,234]'
-		create_time='下单时间: 字符串|[0,234]'
-		shipping_time='发货时间: 字符串|[0,234]'
+		create_time='下单时间: 2100-09-09T09:09:09'
+		shipping_time='发货时间: 2100-09-09T09:09:09'
 		express_no='物流单号: 100000000'
 		payment_money='支付金额: 字符串|[0,234]'
-		pay_time='支付时间: 字符串|[0,234]'
-		receive_time='收货时间: 字符串|[0,234]'
+		pay_time='支付时间: 2100-09-09T09:09:09'
+		receive_time='收货时间: 2100-09-09T09:09:09'
 		order_status='订单状态: 100000000'
 		order_status_reference='订单状态引用: supplier_order_order_status()'
 		invoice_time='发票抬头: 字符串|[0,100]'
@@ -1190,8 +1191,8 @@
 		handling_way='退货处理方式: 字符串|[0,50]'
 		handling_way_reference='退货处理方式引用: supplier_return_handling_way()'
 		returns_amount='退款金额: 字符串|[0,234]'
-		return_submit_time='退货申请时间: 字符串|[0,234]'
-		handling_time='退货处理时间: 字符串|[0,234]'
+		return_submit_time='退货申请时间: 2100-09-09T09:09:09'
+		handling_time='退货处理时间: 2100-09-09T09:09:09'
 		express_no='物流单号: 100000000'
 		consignee_realname='收货人姓名: 字符串|[0,50]'
 		consignee_telphone='收货人联系电话: 字符串|[0,20]'
@@ -1222,11 +1223,11 @@
 		payment_method='支付方式: 100000000'
 		payment_method_reference='支付方式引用: supplier_account_detail_payment_method()'
 		order_money='订单金额: 字符串|[0,234]'
-		create_time='下单时间: 字符串|[0,234]'
-		shipping_time='发货时间: 字符串|[0,234]'
+		create_time='下单时间: 2100-09-09T09:09:09'
+		shipping_time='发货时间: 2100-09-09T09:09:09'
 		payment_money='支付金额: 字符串|[0,234]'
-		pay_time='支付时间: 字符串|[0,234]'
-		receive_time='收货时间: 字符串|[0,234]'
+		pay_time='支付时间: 2100-09-09T09:09:09'
+		receive_time='收货时间: 2100-09-09T09:09:09'
 		order_status='订单状态: 100000000'
 		order_status_reference='订单状态引用: supplier_account_detail_order_status()'
 		invoice_time='发票抬头: 字符串|[0,100]'
@@ -1237,7 +1238,7 @@
 		handling_way='退货处理方式: 字符串|[0,50]'
 		handling_way_reference='退货处理方式引用: supplier_account_detail_handling_way()'
 		returns_amount='退款金额: 字符串|[0,234]'
-		handling_time='退货处理时间: 字符串|[0,234]'
+		handling_time='退货处理时间: 2100-09-09T09:09:09'
 		record_count='1|1' _vg4platform='供应商管理' platform='platform()' _features='no_sample_data'/> 
 	<order_list _name='订单列表'
 		xh='序号: 字符串|[0,50]'
