@@ -1,5 +1,6 @@
 <root org="doublechain"
     chinese_name="北部湾投资集团供应链平台"
+	cfg_view_scope="false"
     english_name="ChainLogic"
     _login_bg="https://demo.doublechaintech.com/demodata/imageManager/loadImage/chainlogic0000/400/300/red/"
     _home_bg="https://demo.doublechaintech.com/demodata/imageManager/loadImage/chainlogic0000/400/300/red/"
