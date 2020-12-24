@@ -10,7 +10,7 @@
         founded="now()"
     />
  
- 
+	
 	<bidding_plan_xmjsfs _name='招标计划填写项目结算方式' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
 	<bidding_plan_xmfl _name='招标计划填写项目分类' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
 	<bidding_plan_zbfs _name='招标计划填写招标方式' name='字符串|[0,8]' code='字符串|[0,8]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
@@ -40,8 +40,8 @@
 	<branch_company_certification_status _name='分公司设置认证状态' name='100000000' code='100000000' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
 	<category_good_type _name='货物类别维护货物基准类别' name='字符串|[0,24]' code='字符串|[0,24]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
 	<vehicle_type _name='车辆管理车辆类型' name='字符串|[0,24]' code='字符串|[0,24]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<order_djlx _name='订单管理单据类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
-	<order_ddzt _name='订单管理订单状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
+	<delivery_djlx _name='订单管理单据类型' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
+	<delivery_ddzt _name='订单管理订单状态' name='字符串|[0,64]' code='字符串|[0,64]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
 	<quick_find_lxfs _name='快找联系方式' name='字符串|[0,128]' code='字符串|[0,128]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
 	<quick_find_djlx _name='快找单据类型' name='字符串|[0,128]' code='字符串|[0,128]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
 	<quick_find_fkfs _name='快找付款方式' name='字符串|[0,128]' code='字符串|[0,128]' _vg4platform='基础数据' platform='platform()' _features='no_sample_data'/>
@@ -644,7 +644,7 @@
 		owner='车主: 字符串|[0,24]'
 		type='车辆类型: 字符串|[0,24]'
 		type_reference='车辆类型引用: vehicle_type()'
-		load='额定载重（吨）: 10000000000.1100'
+		carrying_capacity='额定载重（吨）: 10000000000.1100'
 		vehicle_length='车长（米）: 10000000000.1100'
 		record_count='1|1' _vg4platform='物流主数据' platform='platform()' _features='no_sample_data'/> 
 	<driver _name='司机管理'
@@ -664,11 +664,11 @@
 		totol__fee='本次加油金额（元）: 10000000000.1100'
 		driver='司机: 字符串|[0,24]'
 		record_count='1|1' _vg4platform='物流主数据' platform='platform()' _features='no_sample_data'/> 
-	<order _name='订单管理'
+	<delivery _name='订单管理'
 		ddh='订单号: 字符串|[0,128]'
 		kkmc='客户名称: 字符串|[0,]'
 		djlx='单据类型: 字符串|[0,64]'
-		djlx_reference='单据类型引用: order_djlx()'
+		djlx_reference='单据类型引用: delivery_djlx()'
 		qxd='起运地: 字符串|[0,64]'
 		mdd='目的地: 字符串|[0,64]'
 		kdrq='开单日期: 2100-09-09T09:09:09'
@@ -676,7 +676,7 @@
 		zzl='总重量: 10000000000.1100'
 		ztj='总体积: 10000000000.1100'
 		ddzt='订单状态: 字符串|[0,64]'
-		ddzt_reference='订单状态引用: order_ddzt()'
+		ddzt_reference='订单状态引用: delivery_ddzt()'
 		cz='操作: 字符串|[0,64]'
 		record_count='1|1' _vg4platform='订单/发货计划' platform='platform()' _features='no_sample_data'/> 
 	<quick_find _name='快找'
@@ -1036,7 +1036,7 @@
 		bamng='采购申请数量: 字符串|[0,13]'
 		bamei='采购申请计量单位: 字符串|[0,3]'
 		bumng='短缺数量: 字符串|[0,13]'
-		badat='需求 (请求) 日期: 2100-09-09T09:09:09'
+		badat='需求(请求)日期: 2100-09-09T09:09:09'
 		eindt='项目交货日期: 2100-09-09T09:09:09'
 		frgdt='采购申请批准日期: 2100-09-09T09:09:09'
 		bapre='采购申请中的价格: 字符串|[0,11]'
