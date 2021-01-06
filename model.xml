@@ -18,26 +18,39 @@
 
 		
 	/>
+	<workflow_type 
+	
+		name="自动流程|手动流程|其他流程"
+		code="AUTO|MANUAL|OTHER"
+		_features="status"
+		platform="platform()"
+
+	/>
 	<work_card
 		name="工作卡"
+
 		platform="platform()"
 		_vg4platform="业务门户"
 
 	/>
-	<rpa_robot 
-		name="机器人一号" 
+	<robot 
+		name="RPA机器人一号" 
+		status="robot_status()"
 		_vg4platform="流程自动化" 
 		platform="platform()"
 	/>
 
 	<workflow 
 		name="工作流" 
-		_vg4platform="工作流程管理" 
+		workflow_type="workflow_type()"
+		script_text="text()"
+		_vg4platform="业务中心" 
 		platform="platform()"
 	/>
 	
 	<task 
 		name="机器人执行任务" 
+		workflow="workflow()"
 		platform="platform()"
 		_vg4platform="任务管理"
 	/>
@@ -50,7 +63,7 @@
 		_feature="log"
 	/>
 
-	
+
 
 
 </root>
