@@ -85,6 +85,7 @@
 
 	<workflow 
 		name="工作流" 
+		start_parameters="a b c c|e g f"
 		workflow_type="workflow_type()"
 		script_text="text()"
 		_vg4platform="业务中心" 
@@ -93,6 +94,7 @@
 	
 	<task 
 		name="机器人执行任务" 
+		robot="robot()"
 		status="task_status()"
 		workflow="workflow()"
 		start_time="createTime()"
