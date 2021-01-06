@@ -10,6 +10,38 @@
         name="RPA机器人控制中心"
         founded="now()"
     />
+
+	<change_request_type
+		name="登记机器人|注册流程|启动流程"
+		code="DEPOSITE|TRANSFER|WITHDRAW|[1,99]"
+		icon="download|swap|upload|account-book|edit"
+		display_order="1|2|3|4|5|6"
+		bind_types="text()"
+		step_configuration="text()"
+		platform="$(platform)"
+		_features="cr_type"
+		_identified_by="code"
+		
+	/>
+	
+	
+	
+	<!-- PENDING ACTION FROM WHOM -->
+    
+	<change_request
+		name="存款|转账|取款|[1,50]"
+		
+		create_time="createTime()"
+		remote_ip="remoteIp()"
+		request_type="$(change_request_type)"
+		platform="$(platform)"
+		_vg4platform="变更"
+		_features="change_request"
+	/>
+
+
+
+
 	<robot_status 
 		name="空闲|启动中|忙"
 		code="IDLE|STARTING|BUSY"
