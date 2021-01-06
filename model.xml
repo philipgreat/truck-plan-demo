@@ -64,16 +64,10 @@
 		last_report_time="createTime()"
 		end_time="createTime()"
 		platform="platform()"
-		_vg4platform="任务管理"
-	/>
-
-
-	<task_execution_history
-		name="2021年1月6日执行任务"
-		platform="platform()"
 		_vg4platform="业务中心"
-		_feature="log"
 	/>
+
+
 
 
 
