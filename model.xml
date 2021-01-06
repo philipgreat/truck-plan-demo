@@ -77,7 +77,7 @@
 		name="RPA机器人一号" 
 		supplier="天机RPA"
 		model="XM-009912"
-		version="1.01|1.02"
+		robot_version="1.01|1.02"
 		status="robot_status()"
 		_vg4platform="流程自动化" 
 		platform="platform()"
