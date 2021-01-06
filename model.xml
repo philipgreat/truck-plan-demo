@@ -18,6 +18,14 @@
 
 		
 	/>
+	<task_status 
+		name="启动|正在执行|完成|错误终止"
+		code="IDLE|STARTING|BUSY|ERROR"
+		_features="status"
+		platform="platform()"
+
+		
+	/>
 	<workflow_type 
 	
 		name="自动流程|手动流程|其他流程"
@@ -50,7 +58,11 @@
 	
 	<task 
 		name="机器人执行任务" 
+		status="task_status()"
 		workflow="workflow()"
+		start_time="createTime()"
+		last_report_time="createTime()"
+		end_time="createTime()"
 		platform="platform()"
 		_vg4platform="任务管理"
 	/>
