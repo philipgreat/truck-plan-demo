@@ -11,11 +11,11 @@
         founded="now()"
     />
 	
-	<rpa_robot name="机器人一号" platform="platform()"/>
-	<workflow name="工作流" platform="platform()"/>
-	<task name="机器人执行任务" platform="platform()"/>
+	<rpa_robot name="机器人一号" _vg4platform="机器人管理" platform="platform()"/>
+	<workflow name="工作流" _vg4platform="工作流程管理" platform="platform()"/>
+	<task name="机器人执行任务" _vg4platform="任务管理"  platform="platform()"/>
 
-	
+
 
 
 
