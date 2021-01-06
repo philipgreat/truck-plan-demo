@@ -12,8 +12,8 @@
     />
 
 	<change_request_type
-		name="登记机器人|注册流程|启动流程"
-		code="DEPOSITE|TRANSFER|WITHDRAW|[1,99]"
+		name="登记机器人|注册流程|启动流程|注销机器人|注销流程"
+		code="DEPOSITE|TRANSFER|WITHDRAW|WITHDRAW2|WITHDRAW3|[1,99]"
 		icon="download|swap|upload|account-book|edit"
 		display_order="1|2|3|4|5|6"
 		bind_types="text()"
