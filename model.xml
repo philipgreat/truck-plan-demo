@@ -94,11 +94,13 @@
 	
 	<task 
 		name="机器人执行任务" 
+		retry_total_count="100"
+		retry_remain="10"
 		robot="robot()"
 		status="task_status()"
 		workflow="workflow()"
 		start_time="createTime()"
-		last_report_time="createTime()"
+		last_retry_time="createTime()"
 		end_time="createTime()"
 		platform="platform()"
 		_vg4platform="业务中心"
