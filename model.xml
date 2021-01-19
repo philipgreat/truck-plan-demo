@@ -64,11 +64,12 @@
 		code="AUTO|MANUAL|OTHER"
 		_features="status"
 
-		
+
 		platform="platform()"
 
 	/>
 	<work_card
+	
 		name="工作卡"
 
 		platform="platform()"
