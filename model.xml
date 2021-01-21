@@ -33,6 +33,7 @@
 		
 		create_time="createTime()"
 		remote_ip="remoteIp()"
+		remote_ip="cityByIp()"
 		request_type="$(change_request_type)"
 		platform="$(platform)"
 		_vg4platform="变更"
