@@ -9,6 +9,7 @@
     <platform
         name="RPA机器人控制中心"
         founded="now()"
+		_features="custom"
     />
 
 	<change_request_type
