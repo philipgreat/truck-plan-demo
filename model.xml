@@ -63,7 +63,7 @@
 
 		
 	/>
-	<workflow_type 
+	<work_flow_type 
 	
 		name="自动流程|手动流程|其他流程"
 		code="AUTO|MANUAL|OTHER"
@@ -97,7 +97,7 @@
 	<workflow 
 		name="工作流" 
 		start_parameters="a b c c|e g f"
-		workflow_type="workflow_type()"
+		workflow_type="work_flow_type()"
 		script_text="text()"
 		_vg4platform="业务中心" 
 		platform="platform()"
