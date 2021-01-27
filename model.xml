@@ -1,6 +1,6 @@
 <root
   org="doublechaintech"
-  chinese_name="双链生鲜供应链平台"
+  chinese_name="抱同数字化供应链平台"
 	english_name="Agriculture Business Travel"
 >
 <!-- 
@@ -10,7 +10,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
 -->
 
   <platform
-    name="双链生鲜供应链平台"
+    name="抱同数字化供应链平台"
     create_time="createTime()"
     last_update_time="updateTime()"
   />
@@ -1183,7 +1183,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _vg4platform="数据管理"
     _features="change_request"
   />
-  
+
   <change_request_type
     name="商户入驻|商户注销|用户注册|发布招标|提交投标|签署合同|发起合同变更|创建订单|支付订单|产品入库|产品出库|申请发票|登记收票|登记损耗|过磅称重"
     code="ADD_MERCHANT|WITHDRAW_MERCHANT|USER_REGISTRATION|CREATE_TENDERING|CREATE_TENDER|CREATE_CONTRACT|CREATE_CONTRACT_CHANGE|CREATE_ORDER|CREATE_PAYMENT|STOCK_CHECKIN|STOCK_CHECHOUT|CREATE_INVOICE_APPLICATION|CREATE_INVOICE_REGISTRATION|CREATE_DESTROYED|CREATE_WEIGHT_RECORD"
