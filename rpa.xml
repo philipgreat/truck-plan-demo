@@ -1,0 +1,1201 @@
+<root
+  org="doublechaintech"
+  chinese_name="双链生鲜供应链平台"
+	english_name="Agriculture Business Travel"
+>
+<!-- 
+
+synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-sync.sh  freshchain" 
+
+-->
+
+  <platform
+    name="抱同数据化供应链系统"
+	description="为茶叶品牌化提供数字保证"
+    create_time="createTime()"
+    last_update_time="updateTime()"
+  />
+  <merchant
+    name="小链生鲜|农商科技|农商旅贸易|[1,100]"
+    owner="$(user)"
+    merchant_status = "$(merchant_status)"
+    create_time="createTime()"
+    last_update_time="updateTime()"
+    platform="$(platform)"
+    _features="merchant"
+    _vg4platform="商户管理"
+    _vg4owner="商户管理"
+  />
+  
+  
+  <product
+    name="猪肉六分体|猪肉六分体（中断）|猪头|猪手|猪脚|猪耳|猪肥肠|猪大肚|猪小肚|猪肝|一号肉|二号肉|三号肉|四号肉|猪尾|冷冻小猪皮|猪连肝肉|猪白条|猪肉二分体|猪脑花|猪粉肠|猪碎肉|猪板油|猪冠油|[1,200]"
+    description="提供全系列猪肉制品"
+    
+    origin="四川|广东|江苏|安徽|日本|法国"
+	remark="可口可乐，销售百年的糖水，获得了全世界额青睐"
+	brand="品牌品牌品牌品牌品牌品牌品牌品牌品牌品牌品牌品"
+	picture="pork.jpg"
+    measure_unit="$(measure_unit)"
+	last_update_time="updateTime()"
+	merchant="$(merchant)"
+	platform="$(platform)"
+	_vg4platform="产品管理"
+	_vg4merchant="产品管理"
+  />
+  
+  <quotation
+  	name="国内供应商报价|国外供应商报价"
+  	supplier="$(merchant)"
+  	buyer="$(merchant)"
+  	
+  	contact_person="李先生|张先生"
+  	contact_telephone="0755-887392"
+  	create_time="createTime()"
+  	_vg4supplier="报价管理"
+  	_vg4buyer="报价管理"
+  	
+  />
+  
+  <domestic_quotation_item
+  	name="国内供应商条目"
+  	product="$(product)"
+  	quotation="$(quotation)"
+  	province="云南|贵州"
+  	tax_rate="6%|11%|13%"
+  	price="$1223.99"
+  	description="text()"
+ 	
+  	
+  />
+  
+   <foreign_quotation_item
+  	name="国外供应商条目"
+  	product="$(product)"
+  	quotation="$(quotation)"
+  	original_country="美国|巴西|阿根廷"
+  	quarantine_procedures="有|无"
+  	batch_number="BN0123123"
+  	destination_port="上海|深圳|青岛|大连"
+  	
+  	price="$1223.99"
+  	description="text()"
+  	customs_clearance="是|否"
+ 	anti_dumping_duties="6%|11%|13%"
+ 	transport_mode="海运|空运|海陆联运|陆运"
+  	
+  	
+  />
+  
+  
+  
+  <!-- 
+  <category
+    name="水果蔬菜|肉禽蛋奶|冷热速食|休闲食品|酒水饮料|粮油调味|清洁日化|家居用品|鲜花蛋糕|医药健康"
+    catalog="$(catalog)"
+  />
+  <catalog
+    name="水果蔬菜|肉禽蛋奶|冷热速食|休闲食品|酒水饮料|粮油调味|清洁日化|家居用品|鲜花蛋糕|医药健康"
+    owner="$(merchant)"
+    platform="$(platform)"
+    _vg4owner="产品管理"
+    _vg4platform="产品管理"
+  />
+   -->
+  
+  <merchant_event_create
+    name="新建商户"
+    change_request="$(change_request)"
+    create_time="createTime()"
+    _features="event"
+    _bind_with_cr_type="ADD_MERCHANT"
+    merchant="$(merchant)"
+  />
+  <merchant_event_withdraw
+    name="撤销商户"
+    change_request="$(change_request)"
+    create_time="createTime()"
+    _features="event"
+    _bind_with_cr_type="WITHDRAW_MERCHANT"
+    merchant="$(merchant)"
+  />
+
+
+  <merchant_status
+    name="营业中|已注销"
+    code="Operating|Cancelled"
+    _identified_by="code"
+    _features="status"
+    platform="$(platform)"
+    create_time="createTime()"
+  />
+  <merchant_warehouse
+    name="冷鲜仓库|[1,100]"
+    address="$(location)"
+    merchant="$(merchant)"
+    create_time="createTime()"
+    last_update_time="updateTime()"
+    _vg4merchant="仓库管理"
+  />
+  <user
+    name="李军勇|李建康|向问天|[1,20]"
+    gender="male|female"
+    mobile="18012341234"
+    address="$(location)"
+    valid="true|false"
+    platform="$(platform)"
+    create_time="createTime()"
+    _vg4platform="用户管理"
+  />
+  <user_event_registration
+    name="用户注册"
+    change_request="$(change_request)"
+    create_time="createTime()"
+    _bind_with_cr_type="USER_REGISTRATION"
+    _features="event"
+    user="$(user)"
+  />
+  <!-- 公共的基础信息 -->
+  <location
+    name="公司地址|家庭地址"
+    address="四川省成都市高新区南华路100号|[1,100]"
+    district="$(district)"
+    province="$(province)"
+    latitude="30.31251|[-180.00,180.00]"
+    longitude="104.02931|[-180.00,180.00]"
+  />
+  <province
+    name="四川省|[1,50]"
+    _features="setting"
+    platform="$(platform)"
+    create_time="createTime()"
+  />
+  <city
+    name="成都市|[1,50]"
+    province="$(province)"
+    _features="setting"
+    platform="$(platform)"
+    create_time="createTime()"
+  />
+  <district
+    name="高新区|[1,50]"
+    city="$(city)"
+    _features="setting"
+    platform="$(platform)"
+    create_time="createTime()"
+  />
+  <!-- 静态内容 -->
+  <site
+    name="小链科技微信公众号|小链科技官网|小链生鲜公众号|小链生鲜官网|农商旅官网|农商旅微信服务号"
+    site_url="https://wwww.nongshanglv.com|https://nongshanglv.weixin.qq.com"
+    site_type="$(site_type)"
+    description="双链鲜生是一个专注生鲜，专注三农的综合供应链交易平台"
+    company="$(merchant)"
+    _vg4company="网站内容"
+  />
+  <site_type
+    name="微信公众号|WWW站点"
+    code="WechatSite|WWWSite"
+    _identified_by="code"
+    _features="status"
+    platform="$(platform)"
+    create_time="createTime()"
+  />
+  <!-- <home_page
+    name="网站内容"
+    merchant="$(merchant)"
+  /> -->
+  <banner
+    name="活动图片"
+    image="image_200_100.jpg"
+    link_to_url="https://www.doublechaintech.com"
+    merchant="$(merchant)"
+    site="$(site)"
+    _vg4merchant="网站内容"
+  />
+  <article
+    name="关于农商旅综合供应链系统的介绍"
+    create_time="createTime()"
+    last_update_time="updateTime()"
+    author="张三"
+    post_by="$(user)"
+    content="农商旅综合供应链系统是一个很复杂功能很多很强大的招投标交易系统。|[1,99999]"
+    image1="pork.jpg"
+    image2="pork.jpg"
+    image3="pork.jpg"
+    image4="pork.jpg"
+    image5="pork.jpg"
+    merchant="$(merchant)"
+    site="$(site)"
+    _vg4merchant="网站内容"
+    _vg4post_by="网站内容"
+  />
+  <!-- 政策法规 -->
+  <policy_regulation
+    name="禁止围标|禁止行贿|招标法"
+    content="禁止围标|禁止行贿|招投标法xxx"
+    merchant="$(merchant)"
+    site="$(site)"
+    _vg4merchant="网站内容"
+  />
+
+  <!-- 投标须知 -->
+  <tenderer_instruction
+    name="投标须知|投标必读|参投必读"
+    content="投标人必须在平台进行注册|投标人必须持有生鲜认证|投标人必须进行平台商户身份认证"
+    merchant="$(merchant)"
+    site="$(site)"
+    _vg4merchant="网站内容"
+  />
+
+  <!-- ********************************* 招投标 ***************************************** -->
+  <!-- https://wenku.baidu.com/view/c1fd08215901020207409c44.html -->
+  <!-- 合格的供应商: 针对于某一家采购方，某家商户是一家合格的供应商 -->
+  <eligible_vendor
+    name="合同供方"
+    vendor="$(merchant)"
+    buyer="$(merchant)"
+    create_time="createTime()"
+    _vg4vendor="采购客户管理"
+    _vg4buyer="供应商管理"
+  />
+  <!-- 供方评价 -->
+  <vendor_rating_review
+    name="供方评价"
+    vendor="$(merchant)"
+    buyer="$(merchant)"
+    rating="1.0|2.0|10.0"
+    review="这家供应商很诚信"
+    reviewer="$(user)"
+    _vg4vendor="采购客户管理"
+    _vg4buyer="供应商管理"
+    _vg4reviewer="供应商管理"
+  />
+
+  <!-- 采购需求 -->
+  <procurement_requirement
+    name="2020新春年货采购需求"
+    buyer="$(merchant)"
+    requirement_status="$(requirement_status)"
+    create_time="createTime()"
+    _vg4buyer="招投标管理"
+  />
+  <requirement_status
+    name="进行中|已完成"
+    code="Processing|Completed"
+    _identified_by="code"
+    _features="status"
+    platform="$(platform)"
+    create_time="createTime()"
+  />
+  <!-- 采购商品条目 -->
+  <procurement_item
+    name="车厘子|花生糖|腐乳|醪糟|竹笋|梅干菜"
+    product="$(product)"
+    quantity="1000|20|5000|9999|1"
+    procurement_requirement="$(procurement_requirement)"
+  />
+
+  <!-- 招标: 哪一份采购需求的招标 -->
+  <tendering
+    name="2020新春年货采购招标"
+    content="2020新春年货采购招标"
+    tender_documents="招标文件.pdf"
+    procurement_requirement="$(procurement_requirement)"
+    procurement_plan_time="2099-12-31T23:59:59"
+    buyer="$(merchant)"
+    platform="$(platform)"
+    post_by="$(user)"
+    post_time="2099-12-31T23:59:59"
+    create_time="createTime()"
+    _vg4buyer="招投标管理"
+    _vg4platform="招投标管理"
+    _vg4post_by="招投标管理"
+  />
+  <tendering_event_create
+    name="发起招标"
+    change_request="$(change_request)"
+    create_time="createTime()"
+     _features="event"
+    _bind_with_cr_type="CREATE_TENDERING"
+    tendering="$(tendering)"
+  />
+
+  <!-- 招标公告: 招标的公告信息，属于系统的内容组织部分 -->
+  <tendering_announcement
+    name="2020新春年货采购招标"
+    content="2020新春年货采购招标"
+    tendering="$(tendering)"
+    post_merchant="$(merchant)"
+    post_by="$(user)"
+    post_time="2099-12-31T23:59:59"
+    create_time="createTime()"
+    site="$(site)"
+    _vg4post_merchant="网站内容"
+    _vg4post_by="网站内容"
+  />
+
+  <!-- 招标通知 -->
+  <system_message
+    title="招标通知|开标通知|中标通知"
+    message_type="$(message_type)"
+    content="新春车厘子招标开始啦"
+    sender="$(merchant)"
+    receiver_merchant="$(merchant)"
+    receiver_user="$(user)"
+    mark_read="true|false"
+    related_object_type="Tendering|Tender"
+    related_object_id="A000001|A000001|UIRI000001"
+    create_time="createTime()"
+    site="$(site)"
+    _vg4sender="招投标管理"
+    _vg4receiver_merchant="招投标管理"
+    _vg4receiver_user="招投标管理"
+  />
+  <message_type
+    name="招标通知|开标通知|中标通知"
+    code="InviteTender|OpenTender|CompleteTender"
+    _identified_by="code"
+    _features="status"
+    platform="$(platform)"
+    create_time="createTime()"
+  />
+
+  <!-- 投标&投标报价: 谁对哪个招标进行了投标 -->
+  <tender
+    name="新春车厘子采购投标"
+    tender_documents="车厘子采购投标文件.pdf"
+    tender_price="$20000.00|$30000.00"
+    tendering="$(tendering)"
+    tenderer="$(merchant)"
+    submitter="$(user)"
+    submit_time="createTime()"
+    create_time="createTime()"
+    _vg4tenderer="招投标管理"
+    _vg4submitter="招投标管理"
+  />
+  <tender_event_create
+    name="发起投标"
+    change_request="$(change_request)"
+    create_time="createTime()"
+    _features="event"
+    _bind_with_cr_type="CREATE_TENDER"
+    tender="$(tender)"
+  />
+
+  <!-- 投标评审: 发布采购需求的商户对收到的投标以及投标报价信息进行评价 -->
+  <tender_evaluation
+    name="投标评审"
+    tender="$(tender)"
+    buyer="$(merchant)"
+    rating="1.0|2.0|10.0"
+    review="价格合理，品质有保障"
+    reviewer="$(user)"
+    _vg4buyer="招投标管理"
+    _vg4reviewer="招投标管理"
+  />
+
+  <!-- 中标公示: 在哪个招标中，哪家供应商投的xx标中标了 -->
+  <tender_award_announcement
+    name="2020新春年货采购招标中标公示"
+    content="2020新春年货采购招标中标公示内容"
+    start_date="2099-12-31T23:59:59"
+    end_date="2099-12-31T23:59:59"
+    tendering="$(tendering)"
+    buyer="$(merchant)"
+    successful_tenderer="$(merchant)"
+    tender="$(tender)"
+    platform="$(platform)"
+    create_time="createTime()"
+    site="$(site)"
+    _vg4buyer="招投标管理"
+    _vg4successful_tenderer="招投标管理"
+    _vg4platform="招投标管理"
+  />
+
+
+  <!-- ********************************* 财务账户 ***************************************** -->
+  <!-- 账套: -->
+  <account_set
+    name="账套2017|账套2018|账套2019"
+		year_set="2017年|2018年|2019年"
+		effective_date="2017-05-28"
+		accounting_system="企业会计制度|小企业会计制度|合伙制会计制度"
+		domestic_currency_code="RMB|USD"
+		domestic_currency_name="人民币|美元"
+    owner="$(merchant)"
+    owner_warehouse="$(merchant_warehouse)"
+		last_update_time="updateTime()"
+    _vg4owner="财务管理"
+    _vg4owner_warehouse="财务管理"
+  />
+  <!-- 开户行信息 -->
+  <account_bank
+    opening_bank="招商银行|工商银行"
+		account_number="33265805054885A"
+    address="$(location)"
+    account_set="$(account_set)"
+  />
+  <accounting_period
+		name="2017年1月|2017年2月|2017年3月|2017年4月|2017年5月|2017年6月|2017年7月|2017年8月|2017年9月|2017年10月|2017年11月|2017年12月"
+		start_date="2017-01-09"
+		end_date="2017-01-09"
+		account_set="$(account_set)"
+	/>
+
+
+	<accounting_document_type
+		name="记账凭证|收款凭证|付款凭证"
+		description="又称记账凭单，是会计人员根据审核无误的原始凭证按照经济业务事项的内容加以分类，并据以确定会计分录后所填制的会计凭证。它是登记账簿的直接依据。"
+		accounting_period="$(account_set)"
+	/>
+	<accounting_document
+		name="记账凭证"
+		accounting_document_date="2018-09-09"
+		accounting_period="$(accounting_period)"
+		document_type="$(accounting_document_type)"
+		creation="$(accounting_document_creation)"
+		confirmation="$(accounting_document_confirmation)"
+		auditing="$(accounting_document_auditing)"
+		posting="$(accounting_document_posting)"
+	/>
+	<accounting_document_creation
+		who="财务会计"
+		comments="确认提交"
+		make_date="2017-09-09"
+	/>
+
+	<accounting_document_confirmation
+		who="财务会计"
+		comments="确认通过"
+		make_date="2017-09-09"
+	/>
+	<accounting_document_auditing
+		who="财务会计"
+		comments="审核通过，要都审核过了才通过哦"
+		make_date="2017-09-09"
+	/>
+
+	<accounting_document_posting
+		who="财务会计"
+		comments="审核通过，要都审核过了才通过哦"
+		make_date="2017-09-09"
+	/>
+
+
+	<original_voucher
+		title="这是手写的发票"
+		made_by="$(user)"
+		received_by="本公司"
+		voucher_type="原始凭证|发票|出库单|入库单|存款回执|验收证明|借款凭证"
+		voucher_image="goodthing.jpg"
+		belongs_to="$(accounting_document)"
+
+		creation="$(original_voucher_creation)"
+		confirmation="$(original_voucher_confirmation)"
+		auditing="$(original_voucher_auditing)"
+    _vg4made_by="票据管理"
+	/>
+
+	<original_voucher_creation
+		who="财务会计"
+		comments="确认提交"
+		make_date="2017-09-09"
+	/>
+
+	<original_voucher_confirmation
+		who="财务会计"
+		comments="确认通过"
+		make_date="2017-09-09"
+	/>
+	<original_voucher_auditing
+		who="财务会计"
+		comments="审核通过，要都审核过了才通过哦"
+		make_date="2017-09-09"
+	/>
+
+	<accounting_document_line
+		name="收到存款"
+		code="AS9999"
+		direct="借|贷"
+		amount="$989127.99"
+		belongs_to="$(accounting_document)"
+		accounting_subject="$(accounting_subject)"
+	/>
+  <accounting_subject
+		accounting_subject_code="AS9999"
+		accounting_subject_name="银行存款"
+		accounting_subject_class_code="1|2|3|4|5|6"
+		accounting_subject_class_name="资产类|负债类|共同类|所有者权益类|成本类|损益类"
+		account_set="$(account_set)"
+	/>
+
+  <!-- ********************************* 合同 ***************************************** -->
+  <!-- 合同: 合同招标都是跟 -->
+  <contract
+    name="车厘子采购合同"
+    buyer="$(merchant)"
+    seller="$(merchant)"
+    contract_status="$(contract_status)"
+    contract_type="$(contract_type)"
+    content="合同内容"
+    amount="$200000.00"
+    tendering="$(tendering?)"
+    tender="$(tender?)"
+    last_update_time="updateTime()"
+    create_time="createTime()"
+    _vg4buyer="合同管理"
+    _vg4seller="合同管理"
+  />
+  <contract_event_create
+    name="创建合同"
+    change_request="$(change_request)"
+    create_time="createTime()"
+    _features="event"
+    _bind_with_cr_type="CREATE_CONTRACT"
+    contract="$(contract)"
+
+  />
+  <!-- 合同类型 -->
+  <contract_type
+    name="代收合同|代销合同|采购合同|销售合同"
+    code="CollectionContract|ConsignmentContract|ProcurementContract|SaleContract"
+    _identified_by="code"
+    _features="status"
+    platform="$(platform)"
+    create_time="createTime()"
+  />
+  <!-- 合同状态 vs 合同进度 -->
+  <contract_status
+    name="已签署|进行中|已中止|已完成|已作废"
+    code="Signed|InProgress|Terminated|Completed|Cancelled"
+    _identified_by="code"
+    _features="status"
+    platform="$(platform)"
+    create_time="createTime()"
+  />
+  <!-- 合同变更 -->
+  <contract_change
+    name="车厘子采购合同变更"
+    content="车厘子采购合同变更内容"
+    sponsor_user="$(user)"
+    sponsor_merchant="$(merchant)"
+    related_contract="$(contract)"
+    audit_status="$(audit_status)"
+    create_time="createTime()"
+    last_update_time="updateTime()"
+    _vg4sponsor_merchant="合同管理"
+    _vg4sponsor_user="合同管理"
+  />
+  <contract_change_event_create
+    name="发起合同变更"
+    change_request="$(change_request)"
+    create_time="createTime()"
+    _features="event"
+    _bind_with_cr_type="CREATE_CONTRACT_CHANGE"
+    contract_change="$(contract_change)"
+  />
+  <audit_status
+    name="待审核|通过|拒绝"
+    code="Pending|Passed|Rejected"
+    platform="$(platform)"
+    _features="status"
+    _identified_by="code"
+  />
+  <!-- 合同变更审核 -->
+  <contract_change_audit
+    name="合同变更审核"
+    comments="合同变更审核意见"
+    contract_change="$(contract_change)"
+    audit_user="$(user)"
+    audit_merchant="$(merchant)"
+    create_time="createTime()"
+    last_update_time="updateTime()"
+    _vg4audit_merchant="合同管理"
+    _vg4audit_user="合同管理"
+  />
+  <!-- 合同应付账 -->
+  <contract_account_payable
+    name="合同应付账"
+    account_set="$(account_set)"
+    contract="$(contract)"
+    contract_order="$(contract_order)"
+    amount="$2000.00"
+    pay_merchant="$(merchant)"
+    recipient_merchant="$(merchant)"
+    _vg4pay_merchant="合同管理"
+    _vg4recipient_merchant="合同管理"
+  />
+  <!-- 合同应收账 -->
+  <contract_account_receivable
+    name="合同应收账"
+    account_set="$(account_set)"
+    contract="$(contract)"
+    contract_order="$(contract_order)"
+    amount="$2000.00"
+    pay_merchant="$(merchant)"
+    recipient_merchant="$(merchant)"
+    _vg4pay_merchant="合同管理"
+    _vg4recipient_merchant="合同管理"
+  />
+  <!-- 合同取消 -->
+  <contract_cancel
+    name="合同作废"
+    comment="作废备注"
+    contract="$(contract)"
+    sponsor_merchant="$(merchant)"
+    sponsor_user="$(user)"
+    create_time="createTime()"
+    _vg4sponsor_merchant="合同管理"
+    _vg4sponsor_user="合同管理"
+  />
+
+  <!-- ********************************* 合同 订单 ***************************************** -->
+  <!-- 合同订单: 某个买家和卖家关于某个合同下了一个订单，在买家角度上看属于采购订单，在卖家角度上看是销售订单 -->
+  <contract_order
+    title="合同订单"
+    buyer="$(merchant)"
+    seller="$(merchant)"
+    status="$(order_status)"
+    total_amount="$103000000.005|[0.00, 100000000.00]"
+    contract="$(contract?)"
+
+    create_time="createTime()"
+    last_update_time="updateTime()"
+    platform="$(platform)"
+    _vg4buyer="交易管理"
+    _vg4seller="交易管理"
+    _vg4platform="交易管理"
+  />
+  <contract_order_event_create
+    name="下单"
+    change_request="$(change_request)"
+    create_time="createTime()"
+    _features="event"
+    _bind_with_cr_type="CREATE_ORDER"
+    contract_order="$(contract_order)"
+  />
+  <order_status
+    name="处理中|待支付|支付中|已完成|已取消"
+    code="NotReady|PendingPay|Paying|Completed|Cancelled"
+    platform="$(platform)"
+    _features="status"
+    _identified_by="code"
+  />
+  <!-- 订单中的商品条目 -->
+  <line_item
+    name="车厘子|油豆腐|黄花菜"
+    unit_price="$10300.005|[0.00, 100000000.00]"
+    quantity="200000000.000|[0.0, 100000000.00]"
+    amount="$103000000.005|[0.00, 100000000.00]"
+    product="$(product)"
+    contract_order="$(contract_order)"
+    vendor="$(merchant)"
+    create_time="createTime()"
+    last_update_time="updateTime()"
+    _vg4vendor="交易管理"
+  />
+
+  <!-- ********************************* 收付款 ***************************************** -->
+  <!-- 付款: 订单&合同付款 -->
+  <payment
+    name="付款"
+    contract_order="$(contract_order?)"
+    contract="$(contract?)"
+    payment_type="$(payment_type)"
+    payment_status="$(payment_status)"
+    payable_amount="$200000.00"
+    pay_user="$(user)"
+    pay_merchant="$(merchant)"
+    recipient_merchant="$(merchant)"
+    payment_option="$(payment_option)"
+    paid_time="2099-06-18T22:22:22"
+    create_time="createTime()"
+    _vg4pay_merchant="交易管理"
+    _vg4recipient_merchant="交易管理"
+    _vg4pay_user="交易管理"
+  />
+  <payment_event_create
+    name="创建支付"
+    change_request="$(change_request)"
+    create_time="createTime()"
+    _features="event"
+    _bind_with_cr_type="CREATE_PAYMENT"
+    payment="$(payment)"
+  />
+
+  <!-- instance vs instance change event
+    <instance_model
+
+    />
+    <instance_change_event
+      change_request="$(change_request)"                    // link to change request, when system trigger this event, it can notify to change request
+      _bind_with_cr_type="CREATE_PAYMENT"                   // change action type, same action type in redux, mandatory for each change request
+      _features="event"                                     // Mark whether the change request is an event, such as logs or result generator deosn't need trigger event
+      change_affect_instance1="$(instance_model1)"
+      change_affect_instance2="$(instance_model2)"
+    />
+
+
+   -->
+  <!-- <payment_cr
+    name="付款"
+    contract_order="$(contract_order?)"
+    contract="$(contract?)"
+    payment_type="$(payment_type)"
+    payment_status="$(payment_status)"
+    payable_amount="$200000.00"
+    pay_user="$(user)"
+    pay_merchant="$(merchant)"
+    recipient_merchant="$(merchant)"
+    payment_option="$(payment_option)"
+    paid_time="2099-06-18T22:22:22"
+    create_time="createTime()"
+    change_request="$(change_request)"
+    _features="event"
+    payment="$(payment)"
+    _bind_with_cr_type="CREATE_PAYMENT"
+  /> -->
+  <payment_type
+    name="订单|合同"
+    code="Order|Contract"
+    platform="$(platform)"
+    _features="status"
+    _identified_by="code"
+  />
+  <payment_status
+    name="待支付|支付中|已支付|已取消|已失败|已冻结"
+    code="UnPaid|Paying|Paid|Cancelled|Failed|Frozen"
+    _features="status"
+    _identified_by="code"
+    platform="$(platform)"
+  />
+  <!-- 支付方式 -->
+  <payment_option
+    name="余额|微信APP|微信WEB|微信扫码|支付宝|银联"
+    code="Balance|WechatApp|WechatWeb|WechatNative|AliPay|UnionPay"
+    _identified_by="code"
+    _features="status"
+    platform="$(platform)"
+  />
+
+  <!-- 合同结算: 在什么时间结算了关于某个合同的费用多少钱，相关的结算订单是什么 -->
+  <contract_settlement
+    name="合同订单结算"
+    summary="合同订单结算摘要"
+    amount="$2000.00"
+    settle_time="2099-06-18T22:22:22"
+    contract="$(contract)"
+    contract_order="$(contract_order)"
+    settlement_type="$(settlement_type)"
+
+  />
+  <settlement_type
+    name="付款|退款"
+    code="Pay|Refund"
+    _features="status"
+    _identified_by="code"
+    platform="$(platform)"
+  />
+
+
+  <!-- 付款审批 -->
+  <payment_audit
+    name="付款审批"
+    payment="$(payment)"
+    audit_user="$(user)"
+    audit_merchant="$(merchant)"
+    audit_comment="审批备注"
+    audit_time="2099-06-18T22:22:22"
+    audit_status="$(audit_status)"
+    _vg4audit_merchant="交易管理"
+    _vg4audit_user="交易管理"
+  />
+
+  <!-- 账户变动登记: 收款&付款登记 -->
+  <account_change_register
+    name="收款登记|付款登记"
+    amount="$2000.00"
+    comment="收款备注说明"
+    payment="$(payment)"
+    pay_merchant="$(merchant)"
+    recipient_merchant="$(merchant)"
+    registered_time="2099-06-18T22:22:22"
+    create_time="createTime()"
+    _vg4pay_merchant="财务管理"
+    _vg4recipient_merchant="财务管理"
+  />
+
+  <!-- 客户应收 -->
+  <customer_account_receivable
+    name="客户应收款"
+    customer="$(merchant)"
+    amount="$2000.00"
+    related_order="$(contract_order)"
+    _vg4customer="财务管理"
+  />
+
+  <!-- 供应商应付 -->
+  <vendor_account_payable
+    name="供应商应付"
+    vendor="$(merchant)"
+    amount="$2000.00"
+    related_order="$(contract_order)"
+    _vg4vendor="财务管理"
+  />
+
+
+
+
+
+
+
+  <!-- ********************************* 发票 ***************************************** -->
+  <!-- 开票申请 -->
+  <invoice_application
+    name="车里子发票开票申请"
+    amount="$2000.00"
+    buyer="$(merchant)"
+    seller="$(merchant)"
+    applicant="$(user)"
+    contract="$(contract?)"
+    contract_order="$(contract_order?)"
+    create_time="createTime()"
+    _vg4buyer="票据管理"
+    _vg4seller="票据管理"
+    _vg4applicant="票据管理"
+  />
+  <invoice_application_event_create
+    name="创建开票申请"
+    change_request="$(change_request)"
+    create_time="createTime()"
+    _features="event"
+    _bind_with_cr_type="CREATE_INVOICE_APPLICATION"
+    invoice_application="$(invoice_application)"
+  />
+  <!-- 开票申请中的Item -->
+  <invoice_item
+    name="车厘子J"
+    invoice_application="$(invoice_application)"
+    item="$(product)"
+    unit_price="$10.12"
+    quantity="5|999"
+    total_amount="$9999.12"
+  />
+
+  <!-- 收票登记 -->
+  <invoice_registration
+    invoice_id="SC123456899232322"
+    amount="$2000.00"
+    buyer="$(merchant)"
+    seller="$(merchant)"
+    registration_comment="登记备注"
+    register="$(user)"
+    original_voucher="$(original_voucher)"
+    registered_time="2099-06-18T22:22:22"
+    create_time="createTime()"
+    _vg4buyer="票据管理"
+    _vg4seller="票据管理"
+    _vg4register="票据管理"
+  />
+  <invoice_registration_event_create
+    name="创建发票登记"
+    change_request="$(change_request)"
+    create_time="createTime()"
+    _features="event"
+    _bind_with_cr_type="CREATE_INVOICE_REGISTRATION"
+    invoice_registration="$(invoice_registration)"
+  />
+
+  <!-- ********************************* 仓库以及出入库 ***************************************** -->
+  <!-- 订单退货 -->
+  <return_order
+    title="订单退货"
+    buyer="$(merchant)"
+    seller="$(merchant)"
+    return_sponsor="$(user)"
+    return_comment="退货原因"
+    audit_status="$(audit_status)"
+    create_time="createTime()"
+    last_update_time="updateTime()"
+    platform="$(platform)"
+    _vg4buyer="售后管理"
+    _vg4seller="售后管理"
+    _vg4platform="售后管理"
+    _vg4return_sponsor="售后管理"
+  />
+  <!-- 退货商品及信息 -->
+  <return_item
+    name="车厘子|油豆腐|黄花菜"
+    unit_price="$10300.005|[0.00, 100000000.00]"
+    quantity="200000000.000|[0.0, 100000000.00]"
+    amount="$103000000.005|[0.00, 100000000.00]"
+    product="$(product)"
+    contract_order="$(return_order)"
+    vendor="$(merchant)"
+    create_time="createTime()"
+    last_update_time="updateTime()"
+    _vg4vendor="售后管理"
+  />
+
+  <!-- ********************************* 产品管理 ***************************************** -->
+  <!-- 产品 -->
+  
+  <stock_lot_number
+    lot_number="S123423232222"
+    start_date="2019-12-31T23:59:59"
+    expired_date="2019-12-31T23:59:59"
+    warehouse="$(merchant_warehouse)"
+    _vg4warehouse="产品管理"
+  />
+  <measure_unit
+    name="包|千克|打|箱"
+    code="Pack|Kg|Dozen|Box"
+    platform="$(platform)"
+    _features="status"
+    _identified_by="code"
+  />
+
+  <!-- 库存: 商户可以看到自己在某个仓库中不同批次的商品的库存量是多少 -->
+  <inventory
+    quantity="200"
+    product="$(product)"
+    stock_lot_number="$(stock_lot_number)"
+    warehouse="$(merchant_warehouse)"
+    merchant="$(merchant)"
+    create_time="createTime()"
+    last_update_time="updateTime()"
+    _vg4merchant="仓库管理"
+    _vg4warehouse="仓库管理"
+  />
+  <!-- 单价: 某件商品销售价格是多少  merchant="$(merchant)"-->
+  <unit_price
+    list_price="$2000.00|$80.00|$90.00"
+    sale_price="$1500.00|$60.00|$70.00"
+    product="$(product)"
+   
+    create_time="createTime()"
+    last_update_time="updateTime()"
+    _vg4merchant="产品管理"
+  />
+  <!-- 成本价格 -->
+  <cost_price
+    price="$200.00|$300.00"
+    stock_lot_number="$(stock_lot_number)"
+    product="$(product)"
+  />
+
+  <!-- 损耗登记 -->
+  <destroyed_registration
+    name="损耗登记"
+    product="$(product)"
+    quantity="20.00"
+    destroyed_value="$2000.00"
+    registration_comment="登记备注"
+    registered_time="2099-06-18T22:22:22"
+    warehouse="$(merchant_warehouse)"
+    merchant="$(merchant)"
+    booker="$(user)"
+    _vg4merchant="仓库管理"
+    _vg4register="仓库管理"
+    _vg4booker="仓库管理"
+  />
+  <destroyed_registration_event_create
+    name="损耗登记"
+    change_request="$(change_request)"
+    create_time="createTime()"
+    _features="event"
+    _bind_with_cr_type="CREATE_DESTROYED"
+    destroyed_registration="$(destroyed_registration)"
+  />
+
+  <!-- ********************************* 出库&入库 管理 ***************************************** -->
+  <!-- 出库&入库 -->
+  <stock_change
+    name="商品出库|商品入库"
+    stock_change_direction="$(stock_change_direction)"
+    stock_change_type="$(stock_change_type)"
+    warehouse="$(merchant_warehouse)"
+    operator="$(user)"
+    reference_id="externalID"
+    check_in_time="2099-06-18T22:22:22"
+    create_time="createTime()"
+    owner="$(merchant)"
+    _vg4owner="仓库管理"
+    _vg4warehouse="仓库管理"
+    _vg4operator="仓库管理"
+  />
+  <stock_change_event_checkin
+    name="商品入库"
+    change_request="$(change_request)"
+    create_time="createTime()"
+    _features="event"
+    _bind_with_cr_type="STOCK_CHECKIN"
+    stock_change="$(stock_change)"
+  />
+  <stock_change_event_checkout
+    name="商品出库"
+    change_request="$(change_request)"
+    create_time="createTime()"
+    _features="event"
+    _bind_with_cr_type="STOCK_CHECHOUT"
+    stock_change="$(stock_change)"
+  />
+  <!-- 库存变化方向：出库还是入库 -->
+  <stock_change_direction
+    name="入库|出库"
+    code="CheckIn|Checkout"
+    platform="$(platform)"
+    _features="status"
+    _identified_by="code"
+  />
+  <!-- 出入库类型 -->
+  <stock_change_type
+    name="盘点入库|报废入库|退货入库|代收入库|收货入库|销售出库|代收出库"
+    code="StockTaking|GoodDestroyed|OrderReturn|AgentCollection|WarehouseCollection|SoldCheckout|CollectionCheckout"
+    platform="$(platform)"
+    _features="status"
+    _identified_by="code"
+  />
+  <!-- 出入库的商品条目 -->
+  <stock_change_item
+    name="鸡蛋|竹笋|甜椒"
+    product="$(product)"
+    stock_lot_number="$(stock_lot_number)"
+    quantity="20000.00"
+    stock_check_in="$(stock_change)"
+  />
+
+  <!-- ********************************* 库存盘点 ***************************************** -->
+  <!-- 库存盘点: 在仓库管理的业务过程中，盘点指的是在指定的时间范围内对仓库中的货物进行清点 -->
+  <stock_taking
+    name="盘点计划名称"
+    warehouse="$(merchant_warehouse)"
+    stock_taking_time="2999-01-01T12:30:00"
+    operator="$(user)"
+    stock_taking_status="$(stock_taking_status)"
+    create_time="createTime()"
+    last_update_time="updateTime()"
+    owner="$(merchant)"
+    _vg4owner="仓库管理"
+    _vg4warehouse="仓库管理"
+    _vg4operator="仓库管理"
+  />
+  <stock_taking_status
+    name="未盘点|已盘点"
+		code="Pending|Completed"
+		platform="$(platform)"
+		_features="status"
+		_identified_by="code"
+  />
+  <!-- 盘点记录: 通过盘点，某件货物记录库存数 与 实际库存数 -->
+  <!-- 盘点记录: 对仓库中的商品进行盘点过后生成的就是盘点记录，盘点记录所记录的信息就是在某次盘点完成后，某个商品在仓库中的实际库存量如何，实际状况如何（是否需要报损） -->
+  <!-- 仓库中的产品盘点结果：某个商品在某次盘点计划中 -->
+  <stock_taking_record
+    name="黄花菜|茄子|土豆|西红柿"
+    product="$(product)"
+    stock_lot_number="$(stock_lot_number)"
+    measure_unit="$(measure_unit)"
+    inventory="$(inventory)"
+    inventory_quantity="20|50|200|300"
+    stock_taking_quantity="20|80|900|300"
+    stock_taking_diff="0|30|600|0"
+    stock_taking_result="$(stock_taking_result)"
+    operator="$(user)"
+    comment="重量增加|重量减少|腐败变坏"
+    create_time="createTime()"
+    stock_taking="$(stock_taking)"
+    _vg4operator="仓库管理"
+  />
+  <stock_taking_result
+    name="不变|盘亏|盘盈"
+		code="NoDiff|InventoryLoss|InventoryProfit"
+		platform="$(platform)"
+		_features="status"
+		_identified_by="code"
+  />
+  <!-- ********************************* 称重 ***************************************** -->
+  <!-- 称重所用的称: 目前认为称和仓库是在一起的 -->
+  <smart_scale
+    name="10吨地磅|[1,20]"
+    vendor="柯力|[1,20]"
+    type="D2008|[1,20]"
+    max_weight="200000000.000|[0.0, 100000000.00]"
+    precision_weight="200000000.000|[0.0, 100000000.00]"
+    scale_location="$(merchant_warehouse)"
+    owner="$(merchant)"
+    create_datetime="now()"
+    status="$(iot_online_status)"
+    last_update_time="updateTime()"
+    platform="$(platform)"
+    _vg4owner="仓库管理"
+    _vg4platform="仓库管理"
+    _vg4scale_location="仓库管理"
+  />
+  <iot_online_status
+    name="离线|在线"
+    code="offline|online"
+    platform="$(platform)"
+    _features="status"
+    _identified_by="code"
+  />
+  <weigh_type
+    name="称毛重|称皮重"
+    code="GrossWeight|TareWeight"
+    platform="$(platform)"
+    _features="status"
+    _identified_by="code"
+  />
+  <weigh_record
+    weigh_value="200000000.000|[0.0, 100000000.00]"
+    weigh_datetime="2099-12-31T22:22:22"
+    weigh_type="$(weigh_type)"
+    plate_number="川AFCD234|川AFD234|[0,20]"
+    executor="$(user)"
+    weigh_location="$(merchant_warehouse)"
+    weigh_scale="$(smart_scale)"
+    ocr_datetime="2100-01-01T12:30:00"
+    ocr_result="川AFCD234|川AFD234|[0,20]"
+    ocr_image="image.jpg"
+    front_camera_image="image.jpg"
+    top_camera_image="image.jpg"
+    back_camera_image="image.jpg"
+    create_datetime="now()"
+    stock_change="$(stock_change)"
+
+    _vg4weigh_location="仓库管理"
+    _vg4executor="仓库管理"
+  />
+  <weigh_record_event_create
+    name="进行称重"
+    change_request="$(change_request)"
+    create_time="createTime()"
+    _features="event"
+    _bind_with_cr_type="CREATE_WEIGHT_RECORD"
+    weigh_record="$(weigh_record)"
+  />
+
+  <change_request
+    name="数据变更|数据增加|数据删除|[1,50]"
+    create_time="createTime()"
+    remote_ip="remoteIp()"
+    request_type="$(change_request_type)"
+    platform="$(platform)"
+    _vg4platform="数据管理"
+    _features="change_request"
+  />
+  <change_request_type
+    name="商户入驻|商户注销|用户注册|发布招标|提交投标|签署合同|发起合同变更|创建订单|支付订单|产品入库|产品出库|申请发票|登记收票|登记损耗|过磅称重"
+    code="ADD_MERCHANT|WITHDRAW_MERCHANT|USER_REGISTRATION|CREATE_TENDERING|CREATE_TENDER|CREATE_CONTRACT|CREATE_CONTRACT_CHANGE|CREATE_ORDER|CREATE_PAYMENT|STOCK_CHECKIN|STOCK_CHECHOUT|CREATE_INVOICE_APPLICATION|CREATE_INVOICE_REGISTRATION|CREATE_DESTROYED|CREATE_WEIGHT_RECORD"
+    icon="shop|poweroff|user-add|file|file-zip|file-done|interaction|shopping-cart|transaction|export|import|account-book|audit|file-markdown|dashboard"
+    display_order="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15"
+    bind_types="Platform,Merchant|[1,100]"
+    step_configuration="text()"
+    platform="$(platform)"
+    _features="cr_type"
+    _identified_by="code"
+    create_time="createTime()"
+  />
+
+
+</root>
