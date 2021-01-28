@@ -18,6 +18,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     name="云南普洱经销商|蒙顶皇茶|峨眉雪|[1,100]"
     owner="$(user)"
     merchant_status = "$(merchant_status)"
+    merchant_type = "$(merchant_type)"
     create_time="createTime()"
     last_update_time="updateTime()"
     platform="$(platform)"
@@ -32,60 +33,18 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     description="提供全系列茶品"
     
     origin="四川|广东|江苏|安徽|日本|法国"
-	remark="可口可乐，销售百年的糖水，获得了全世界额青睐"
-	brand="品牌品牌品牌品牌品牌品牌品牌品牌品牌品牌品牌品"
-	picture="tea.jpg"
+    remark="可口可乐，销售百年的糖水，获得了全世界额青睐"
+    brand="品牌品牌品牌品牌品牌品牌品牌品牌品牌品牌品牌品"
+    picture="tea.jpg"
     measure_unit="$(measure_unit)"
-	last_update_time="updateTime()"
-	merchant="$(merchant)"
-	platform="$(platform)"
-	_vg4platform="产品管理"
-	_vg4merchant="产品管理"
+    last_update_time="updateTime()"
+    merchant="$(merchant)"
+    platform="$(platform)"
+    _vg4platform="产品管理"
+    _vg4merchant="产品管理"
   />
 
 
-  <quotation
-  	name="国内供应商报价|国外供应商报价"
-  	supplier="$(merchant)"
-  	buyer="$(merchant)"
-  	
-  	contact_person="李先生|张先生"
-  	contact_telephone="0755-887392"
-  	create_time="createTime()"
-  	_vg4supplier="报价管理"
-  	_vg4buyer="报价管理"
-  	
-  />
-  
-  <domestic_quotation_item
-  	name="国内供应商条目"
-  	product="$(product)"
-  	quotation="$(quotation)"
-  	province="云南|贵州"
-  	tax_rate="6%|11%|13%"
-  	price="$1223.99"
-  	description="text()"
- 	
-  	
-  />
-  
-   <foreign_quotation_item
-  	name="国外供应商条目"
-  	product="$(product)"
-  	quotation="$(quotation)"
-  	original_country="美国|巴西|阿根廷"
-  	quarantine_procedures="有|无"
-  	batch_number="BN0123123"
-  	destination_port="上海|深圳|青岛|大连"
-  	
-  	price="$1223.99"
-  	description="text()"
-  	customs_clearance="是|否"
- 	anti_dumping_duties="6%|11%|13%"
- 	transport_mode="海运|空运|海陆联运|陆运"
-  	
-  	
-  />
   
   
   
@@ -121,9 +80,18 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
   />
 
 
+  <merchant_type
+    name="平台商户|审评机构|检验机构"
+    code="PLATFORM|REVIEW|EXAM"
+    _identified_by="code"
+    _features="status"
+    platform="$(platform)"
+    create_time="createTime()"
+  />
+
   <merchant_status
-    name="营业中|已注销"
-    code="Operating|Cancelled"
+    name="营业中|暂停营业"
+    code="OPERATION|HOLD"
     _identified_by="code"
     _features="status"
     platform="$(platform)"
@@ -185,68 +153,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     create_time="createTime()"
   />
   <!-- 静态内容 -->
-  <site
-    name="小链科技微信公众号|小链科技官网|小链生鲜公众号|小链生鲜官网|农商旅官网|农商旅微信服务号"
-    site_url="https://wwww.nongshanglv.com|https://nongshanglv.weixin.qq.com"
-    site_type="$(site_type)"
-    description="双链鲜生是一个专注生鲜，专注三农的综合供应链交易平台"
-    company="$(merchant)"
-    _vg4company="网站内容"
-  />
-  <site_type
-    name="微信公众号|WWW站点"
-    code="WechatSite|WWWSite"
-    _identified_by="code"
-    _features="status"
-    platform="$(platform)"
-    create_time="createTime()"
-  />
-  <!-- <home_page
-    name="网站内容"
-    merchant="$(merchant)"
-  /> -->
-  <banner
-    name="活动图片"
-    image="image_200_100.jpg"
-    link_to_url="https://www.doublechaintech.com"
-    merchant="$(merchant)"
-    site="$(site)"
-    _vg4merchant="网站内容"
-  />
-  <article
-    name="关于农商旅综合供应链系统的介绍"
-    create_time="createTime()"
-    last_update_time="updateTime()"
-    author="张三"
-    post_by="$(user)"
-    content="农商旅综合供应链系统是一个很复杂功能很多很强大的招投标交易系统。|[1,99999]"
-    image1="pork.jpg"
-    image2="pork.jpg"
-    image3="pork.jpg"
-    image4="pork.jpg"
-    image5="pork.jpg"
-    merchant="$(merchant)"
-    site="$(site)"
-    _vg4merchant="网站内容"
-    _vg4post_by="网站内容"
-  />
-  <!-- 政策法规 -->
-  <policy_regulation
-    name="禁止围标|禁止行贿|招标法"
-    content="禁止围标|禁止行贿|招投标法xxx"
-    merchant="$(merchant)"
-    site="$(site)"
-    _vg4merchant="网站内容"
-  />
-
-  <!-- 投标须知 -->
-  <tenderer_instruction
-    name="投标须知|投标必读|参投必读"
-    content="投标人必须在平台进行注册|投标人必须持有生鲜认证|投标人必须进行平台商户身份认证"
-    merchant="$(merchant)"
-    site="$(site)"
-    _vg4merchant="网站内容"
-  />
+  
 
   <!-- ********************************* 招投标 ***************************************** -->
   <!-- https://wenku.baidu.com/view/c1fd08215901020207409c44.html -->
