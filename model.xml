@@ -26,7 +26,27 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _vg4platform="商户管理"
     _vg4owner="商户管理"
   />
+  <employee
+    name="张三|李四|王五|[1,200]"
+    description="提供全系列茶品"
+    last_update_time="updateTime()"
+    merchant="$(merchant)"
+
+    _vg4platform="产品管理"
+    _vg4merchant="产品管理"
+  />
+
+  <job
+    _name="岗位"
+    name="管理员|审评员|检验员|[1,200]"
+    description="提供全系列茶品|[1,200]"
+    employee="employee()"
+    last_update_time="updateTime()"
+    merchant="$(merchant)"
+    _vg4platform="产品管理"
+    _vg4merchant="产品管理"
   
+  />
   
   <product
     name="蒙顶甘露|蒙顶红茶|蒙顶黄小芽|蒙顶花茶|[1,200]"
@@ -43,25 +63,11 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _vg4platform="产品管理"
     _vg4merchant="产品管理"
   />
-  
 
 
+
   
   
-  
-  <!-- 
-  <category
-    name="水果蔬菜|肉禽蛋奶|冷热速食|休闲食品|酒水饮料|粮油调味|清洁日化|家居用品|鲜花蛋糕|医药健康"
-    catalog="$(catalog)"
-  />
-  <catalog
-    name="水果蔬菜|肉禽蛋奶|冷热速食|休闲食品|酒水饮料|粮油调味|清洁日化|家居用品|鲜花蛋糕|医药健康"
-    owner="$(merchant)"
-    platform="$(platform)"
-    _vg4owner="产品管理"
-    _vg4platform="产品管理"
-  />
-   -->
   
   <merchant_event_create
     name="新建商户"
@@ -124,35 +130,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _features="event"
     user="$(user)"
   />
-  <!-- 公共的基础信息 -->
-  <location
-    name="公司地址|家庭地址"
-    address="四川省成都市高新区南华路100号|[1,100]"
-    district="$(district)"
-    province="$(province)"
-    latitude="30.31251|[-180.00,180.00]"
-    longitude="104.02931|[-180.00,180.00]"
-  />
-  <province
-    name="四川省|[1,50]"
-    _features="setting"
-    platform="$(platform)"
-    create_time="createTime()"
-  />
-  <city
-    name="成都市|[1,50]"
-    province="$(province)"
-    _features="setting"
-    platform="$(platform)"
-    create_time="createTime()"
-  />
-  <district
-    name="高新区|[1,50]"
-    city="$(city)"
-    _features="setting"
-    platform="$(platform)"
-    create_time="createTime()"
-  />
+ 
   
 
   <change_request
