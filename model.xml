@@ -20,10 +20,6 @@
       _vg4platform="用户管理"
       />
 
-    
-
-
-
   <merchant
       name="云南普洱经销商|蒙顶皇茶|峨眉雪|[1,100]"
       owner="$(user)"
@@ -114,6 +110,8 @@
         _name="采购订单"
         name="方圆认证检测机构采购订单工单|[1,200]"
         contract="procuring_contract()"
+        merchant="$(merchant)"
+        last_update_time="updateTime()"
         _vg4merchant="采购管理"
         />
 
@@ -121,6 +119,7 @@
         _name="采购单条目"
         name="方圆认证检测机构采购订单工单|[1,200]"
         procuring_order="procuring_order()"
+        last_update_time="updateTime()"
         _vg4merchant="采购管理"
         />
 
@@ -142,6 +141,7 @@
       _name="潜在客户"
       name="软件园茶馆|[1,200]"
       contact_number="18900000001"
+      last_update_time="updateTime()"
       merchant="$(merchant)"
       _vg4merchant="销售管理"
       />
@@ -153,16 +153,19 @@
       _vg4merchant="销售管理">
 
     <selling_contract_text
-        _name="供应合同文本"
+        _name="销售合同文本"
         name="方圆认证检测机构采购合同|[1,200]"
         contract="selling_contract()"
+        last_update_time="updateTime()"
         _vg4merchant="销售管理"
         />
 
     <selling_order
-        _name="供应订单"
+        _name="销售订单"
         name="方圆认证检测机构销售订单|[1,200]"
         contract="selling_contract()"
+        merchant="$(merchant)"
+        last_update_time="updateTime()"
         _vg4merchant="销售管理"
         />
 
@@ -170,6 +173,7 @@
         _name="供应订单条目"
         name="方圆认证检测机构销售采购订单|[1,200]"
         selling_order="selling_order()"
+        last_update_time="updateTime()"
         _vg4merchant="销售管理"
         />
 
@@ -267,10 +271,10 @@
       />
 
   <change_request_type
-      name="名称:补充资质材料|注册员工|登记岗位|岗位分配|岗位变更|登记潜在供应商|供应商注册|供应合同登记|发起工单|发起采购|确认收货|登记潜在经销商|经销商注册|销售合同登记|发货|分配工单|完成审评工单|完成检验工单|登记库房|库间调拨|[1,100]"
-      code="代码:A001|A002|A003|A004|A005|A101|A102|A103|A104|A107|A105|A201|A202|A203|A204|A205|A206|A207|A301|A302|[1,100]"
-      icon="图标:bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|[1,100]"
-      view_group="分组:组织管理|组织管理|组织管理|组织管理|组织管理|采购管理|采购管理|采购管理|采购管理|采购管理|采购管理|销售管理|销售管理|销售管理|销售管理|销售管理|销售管理|销售管理|库存管理|库存管理|[1,100]"
+      name="名称:补充资质材料|注册员工|登记岗位|岗位分配|岗位变更|登记潜在供应商|供应商注册|供应合同登记|发起工单|发起采购|确认收货|产品上架|登记潜在经销商|经销商注册|销售合同登记|发货|分配工单|完成审评工单|完成检验工单|登记库房|库间调拨|[1,100]"
+      code="代码:A001|A002|A003|A004|A005|A101|A102|A103|A104|A107|A105|A109|A201|A202|A203|A204|A205|A206|A207|A301|A302|[1,100]"
+      icon="图标:bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|[1,100]"
+      view_group="分组:组织管理|组织管理|组织管理|组织管理|组织管理|采购管理|采购管理|采购管理|采购管理|采购管理|采购管理|销售管理|销售管理|销售管理|销售管理|销售管理|销售管理|销售管理|销售管理|库存管理|库存管理|[1,100]"
       display_order="显示顺序:1|2|3|4|5|6"
       bind_types="text()"
       step_configuration="text()"
@@ -278,9 +282,6 @@
       _features="cr_type"
       _identified_by="code"
       />
-    
-    
+
 </root>
-
-
 
