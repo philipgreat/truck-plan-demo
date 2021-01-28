@@ -51,8 +51,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
 
   <qualification
     _name="资质"
-    name="营业执照|检测资质|检验资质[1,200]"
-
+    name="营业执照|检测资质|检验资质|[1,200]"
     last_update_time="updateTime()"
     merchant="$(merchant)"
     _vg4platform="产品管理"
@@ -101,38 +100,84 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _vg4merchant="采购管理"
   />
 
-  <supply_contract
-    _name="供应合同"
+
+<procuring_contract
+    _name="采购合同"
     name="方圆认证检测机构采购合同|[1,200]"
     merchant="$(merchant)"
     _vg4merchant="采购管理"
   >
-    <supply_contract_text
-      _name="供应合同文本"
+    <procuring_contract_text
+      _name="采购合同文本"
       name="方圆认证检测机构采购合同|[1,200]"
-      contract="supply_contract()"
+      contract="procuring_contract()"
       _vg4merchant="采购管理"
       
     />
 
-    <supply_order
-      _name="供应合同"
+    <procuring_order
+      _name="采购订单"
       name="方圆认证检测机构采购订单工单|[1,200]"
-      contract="supply_contract()"
+      contract="procuring_contract()"
       _vg4merchant="采购管理"
     />
     
-    <supply_order_item
-      _name="供应合同"
+    <pro'cu'ring_order_item
+      _name="采购合同"
       name="方圆认证检测机构采购订单工单|[1,200]"
-      supply_order="supply_order()"
+      procuring_order="procuring_order()"
       _vg4merchant="采购管理"
     />
     
 
 
   
-  </supply_contract>
+  </procuring_contract>
+
+
+  <potential_customer
+    _name="潜在客户"
+    name="软件园茶馆|[1,200]"
+    contact_number="18900000001"
+    merchant="$(merchant)"
+    _vg4merchant="销售管理"
+  />
+
+
+
+  <suppling_contract
+    _name="销售合同"
+    name="聚贤庄销售合同|[1,200]"
+    merchant="$(merchant)"
+    _vg4merchant="销售管理"
+  >
+
+    <saling_contract_text
+      _name="供应合同文本"
+      name="方圆认证检测机构采购合同|[1,200]"
+      contract="saling_contract()"
+      _vg4merchant="销售管理"
+      
+    />
+
+    <saling_order
+      _name="供应订单"
+      name="方圆认证检测机构采购订单工单|[1,200]"
+      contract="saling_contract()"
+      _vg4merchant="销售管理"
+    />
+    
+    <saling_order_item
+      _name="供应合同"
+      name="方圆认证检测机构采购订单工单|[1,200]"
+      saling_order="saling_order()"
+      _vg4merchant="销售管理"
+    />
+    
+
+
+  
+  </saling_contract>
 
 
 
