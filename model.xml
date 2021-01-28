@@ -28,8 +28,8 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
   
   
   <product
-    name="猪肉六分体|猪肉六分体（中断）|猪头|猪手|猪脚|猪耳|猪肥肠|猪大肚|猪小肚|猪肝|一号肉|二号肉|三号肉|四号肉|猪尾|冷冻小猪皮|猪连肝肉|猪白条|猪肉二分体|猪脑花|猪粉肠|猪碎肉|猪板油|猪冠油|[1,200]"
-    description="提供全系列猪肉制品"
+    name="蒙顶甘露|蒙顶红茶|蒙顶黄小芽|蒙顶花茶|[1,200]"
+    description="提供全系列茶品"
     
     origin="四川|广东|江苏|安徽|日本|法国"
 	remark="可口可乐，销售百年的糖水，获得了全世界额青睐"
@@ -42,6 +42,8 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
 	_vg4platform="产品管理"
 	_vg4merchant="产品管理"
   />
+
+  
 
   
   <quotation
@@ -184,7 +186,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     platform="$(platform)"
     create_time="createTime()"
   />
-  <!-- 静态内容 -->
+  <!-- 静态内容 
   <site
     name="小链科技微信公众号|小链科技官网|云南普洱经销商公众号|云南普洱经销商官网|农商旅官网|农商旅微信服务号"
     site_url="https://wwww.nongshanglv.com|https://nongshanglv.weixin.qq.com"
@@ -201,10 +203,14 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     platform="$(platform)"
     create_time="createTime()"
   />
+  -->
   <!-- <home_page
     name="网站内容"
     merchant="$(merchant)"
-  /> -->
+  /> 
+  
+  
+  -->
   <banner
     name="活动图片"
     image="image_200_100.jpg"
