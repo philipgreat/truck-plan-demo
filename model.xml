@@ -115,6 +115,8 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
       
     />
 
+
+
     <procuring_order
       _name="采购订单"
       name="方圆认证检测机构采购订单工单|[1,200]"
@@ -232,6 +234,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _features="event"
     _bind_with_cr_type="ADD_MERCHANT"
     merchant="$(merchant)"
+    _vg4merchant="销售管理"
   />
   <merchant_event_withdraw
     name="撤销商户"
@@ -240,6 +243,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _features="event"
     _bind_with_cr_type="WITHDRAW_MERCHANT"
     merchant="$(merchant)"
+    _vg4merchant="销售管理"
   />
 
 
@@ -266,7 +270,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     merchant="$(merchant)"
     create_time="createTime()"
     
-    _vg4merchant="库存作业"
+    _vg4merchant="库存管理"
   />
 
   
@@ -303,6 +307,8 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _identified_by="code"
     create_time="createTime()"
   />
+
+  
 
 
 </root>
