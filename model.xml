@@ -43,8 +43,8 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
 	_vg4merchant="产品管理"
   />
 
-  
 
+<!--
   
   <quotation
   	name="国内供应商报价|国外供应商报价"
@@ -88,7 +88,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
   	
   	
   />
-  
+  -->
   
   
   <!-- 
@@ -210,7 +210,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
   /> 
   
   
-  -->
+  
   <banner
     name="活动图片"
     image="image_200_100.jpg"
@@ -236,6 +236,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _vg4merchant="网站内容"
     _vg4post_by="网站内容"
   />
+  -->
   <!-- 政策法规 -->
   <policy_regulation
     name="禁止围标|禁止行贿|招标法"
@@ -435,7 +436,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _vg4owner="财务管理"
     _vg4owner_warehouse="财务管理"
   />
-  <!-- 开户行信息 -->
+  <!-- 开户行信息 
   <account_bank
     opening_bank="招商银行|工商银行"
 		account_number="33265805054885A"
@@ -535,7 +536,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
 		accounting_subject_class_name="资产类|负债类|共同类|所有者权益类|成本类|损益类"
 		account_set="$(account_set)"
 	/>
-
+-->
   <!-- ********************************* 合同 ***************************************** -->
   <!-- 合同: 合同招标都是跟 -->
   <contract
