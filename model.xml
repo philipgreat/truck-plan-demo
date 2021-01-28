@@ -168,14 +168,14 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
 
     <selling_order
       _name="供应订单"
-      name="方圆认证检测机构采购订单工单|[1,200]"
+      name="方圆认证检测机构销售订单|[1,200]"
       contract="selling_contract()"
       _vg4merchant="销售管理"
     />
     
     <selling_order_item
-      _name="供应合同"
-      name="方圆认证检测机构采购订单工单|[1,200]"
+      _name="供应订单条目"
+      name="方圆认证检测机构销售采购订单|[1,200]"
       selling_order="selling_order()"
       _vg4merchant="销售管理"
     />
