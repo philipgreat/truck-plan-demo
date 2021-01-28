@@ -14,6 +14,17 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     create_time="createTime()"
     last_update_time="updateTime()"
   />
+
+  <user
+    name="李军勇|李建康|向问天|[1,20]"
+    mobile="18012341234"
+    address="四川省成都市高新区南华路100号|[1,100]"
+    valid="true|false"
+    platform="$(platform)"
+    create_time="createTime()"
+    _vg4platform="用户管理"
+  />
+
   <merchant
     name="云南普洱经销商|蒙顶皇茶|峨眉雪|[1,100]"
     owner="$(user)"
@@ -26,12 +37,13 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _vg4platform="商户管理"
     _vg4owner="商户管理"
   />
+
+  <!--组织管理 包含资质，岗位，员工，上下岗记录-->
   <employee
     name="张三|李四|王五|[1,200]"
     description="提供全系列茶品"
     last_update_time="updateTime()"
     merchant="$(merchant)"
-
     _vg4platform="产品管理"
     _vg4merchant="组织管理"
   />
@@ -69,7 +81,38 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _features="log"
   />
   
-  <product
+  <procuring_product
+    _name="采购产品"
+    name="蒙顶甘露|蒙顶红茶|蒙顶黄小芽|蒙顶花茶|[1,200]"
+    description="提供全系列茶品"
+    picture="tea.jpg"
+    last_update_time="updateTime()"
+    merchant="$(merchant)"
+    
+    _vg4platform="产品管理"
+    _vg4merchant="采购管理"
+  />
+
+ <!--
+商户
+
+
+    组织建设 - 一般属于管理员设置范围
+      资质 员工 岗位
+
+    采购作业 - 一般属于招采部
+      采购目录 采购合同 供应商  采购单  采购跟踪 
+
+    销售作业 - 一般属于营销部
+      销售目录 销售合同  客户管理  订单 订单跟踪 
+
+    库存作业 
+      仓库管理  库存变化 
+-->
+
+
+  <saling_product 
+    _name="销售产品"
     name="蒙顶甘露|蒙顶红茶|蒙顶黄小芽|蒙顶花茶|[1,200]"
     description="提供全系列茶品"
     picture="tea.jpg"
@@ -77,8 +120,11 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     merchant="$(merchant)"
     platform="$(platform)"
     _vg4platform="产品管理"
-    _vg4merchant="产品管理"
+    _vg4merchant="销售管理"
+
   />
+
+  
 
 
 
@@ -128,16 +174,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     last_update_time="updateTime()"
     _vg4merchant="仓库管理"
   />
-  <user
-    name="李军勇|李建康|向问天|[1,20]"
-    gender="male|female"
-    mobile="18012341234"
-    address="四川省成都市高新区南华路100号|[1,100]"
-    valid="true|false"
-    platform="$(platform)"
-    create_time="createTime()"
-    _vg4platform="用户管理"
-  />
+  
   <user_event_registration
     name="用户注册"
     change_request="$(change_request)"
