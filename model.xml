@@ -237,7 +237,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _vg4post_by="网站内容"
   />
   -->
-  <!-- 政策法规 -->
+  <!-- 政策法规 
   <policy_regulation
     name="禁止围标|禁止行贿|招标法"
     content="禁止围标|禁止行贿|招投标法xxx"
@@ -254,7 +254,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     site="$(site)"
     _vg4merchant="网站内容"
   />
-
+-->
   <!-- ********************************* 招投标 ***************************************** -->
   <!-- https://wenku.baidu.com/view/c1fd08215901020207409c44.html -->
   <!-- 合格的供应商: 针对于某一家采购方，某家商户是一家合格的供应商 -->
