@@ -33,7 +33,18 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     merchant="$(merchant)"
 
     _vg4platform="产品管理"
-    _vg4merchant="产品管理"
+    _vg4merchant="组织管理"
+  />
+
+
+  <qualification
+    _name="资质"
+    name="营业执照|检测资质|检验资质[1,200]"
+
+    last_update_time="updateTime()"
+    merchant="$(merchant)"
+    _vg4platform="产品管理"
+    _vg4merchant="组织管理"
   />
 
   <job
@@ -44,19 +55,24 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     last_update_time="updateTime()"
     merchant="$(merchant)"
     _vg4platform="产品管理"
-    _vg4merchant="产品管理"
+    _vg4merchant="组织管理"
   
+  />
+  
+  <job_change
+    _name="岗位变化信息"
+    name="岗位变化记录[1,200]"
+    merchant="$(merchant)"
+    employee="employee()"
+    job="job()"
+    create_time="createTime()"
+    _features="log"
   />
   
   <product
     name="蒙顶甘露|蒙顶红茶|蒙顶黄小芽|蒙顶花茶|[1,200]"
     description="提供全系列茶品"
-    
-    origin="四川|广东|江苏|安徽|日本|法国"
-    remark="可口可乐，销售百年的糖水，获得了全世界额青睐"
-    brand="品牌品牌品牌品牌品牌品牌品牌品牌品牌品牌品牌品"
     picture="tea.jpg"
-  
     last_update_time="updateTime()"
     merchant="$(merchant)"
     platform="$(platform)"
