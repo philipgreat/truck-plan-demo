@@ -312,18 +312,56 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _features="change_request"
   />
   <change_request_type
-    name="商户入驻|商户注销|用户注册|发布招标|提交投标|签署合同|发起合同变更|创建订单|支付订单|产品入库|产品出库|申请发票|登记收票|登记损耗|过磅称重"
-    code="ADD_MERCHANT|WITHDRAW_MERCHANT|USER_REGISTRATION|CREATE_TENDERING|CREATE_TENDER|CREATE_CONTRACT|CREATE_CONTRACT_CHANGE|CREATE_ORDER|CREATE_PAYMENT|STOCK_CHECKIN|STOCK_CHECHOUT|CREATE_INVOICE_APPLICATION|CREATE_INVOICE_REGISTRATION|CREATE_DESTROYED|CREATE_WEIGHT_RECORD"
-    icon="shop|poweroff|user-add|file|file-zip|file-done|interaction|shopping-cart|transaction|export|import|account-book|audit|file-markdown|dashboard"
-    display_order="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15"
-    bind_types="Platform,Merchant|[1,100]"
+    name="名称:value()|[1,100]"
+    code="代码:value()|[1,100]"
+    icon="图标:value()|[1,100]"
+    display_order="显示顺序:1|2|3|4|5|6"
+    bind_types="text()"
     step_configuration="text()"
     platform="$(platform)"
     _features="cr_type"
     _identified_by="code"
-    create_time="createTime()"
-  />
-
+  >
+    <#value name="转移管理员" code="ADMIN_TRANSFER" icon="bars"/>
+    <#value name="1/3 商户信息" code="SELLER_REGISTER" icon="bars"/>
+    <#value name="添加客户" code="SELLER_ADD_BUYER" icon="bars"/>
+    <#value name="添加客户" code="ADD_BUYER_FOR_QUOTE" icon="bars"/>
+    <#value name="自定义产品" code="CUSTOM_PRODUCT_WHEN_INITIAL" icon="bars"/>
+    <#value name="产品附加规格" code="EDIT_ADDITIONAL_SPEC_WHEN_INIT" icon="bars"/>
+    <#value name="完善信息并入库" code="UPDATE_MERCHANT_INFO_WHEN_INBOUND" icon="bars"/>
+    <#value name="修改附加规格" code="EDIT_ADDITIONAL_SPEC_WHEN_CREATE_IN_QUOTE" icon="bars"/>
+    <#value name="外采入库" code="BUY_INBOUND_FROM_HOME" icon="bars"/>
+    <#value name="完善信息" code="SELLER_UPDATE_MERCHANT_INFO" icon="bars"/>
+    <#value name="修改备注" code="SELLER_UPDATE_CUSTOMER_COMMENT" icon="bars"/>
+    <#value name="入库" code="PRODUCT_INBOUND" icon="bars"/>
+    <#value name="编辑备注" code="UPDATE_SUPPLIER" icon="bars"/>
+    <#value name="更新个人信息" code="UPDATE_PERSONAL_INFO" icon="bars"/>
+    <#value name="完善信息" code="UPDATE_MERCHANT_INFO_FROM_SELLER_HOME" icon="bars"/>
+    <#value name="更新认证信息" code="UPDATE_INDIVIDUAL_IDENTITY" icon="bars"/>
+    <#value name="设置企业下班时间" code="UPDATE_MERCHANT_OFF_TIME" icon="bars"/>
+    <#value name="审批加入+姓名" code="AUDIT_JOIN_APPLY" icon="bars"/>
+    <#value name="设置单次配送最大量" code="UPDATE_MERCHANT_DELIVERY_LIMIT" icon="bars"/>
+    <#value name="批准加入" code="APPROVE_JOIN_BUYER" icon="bars"/>
+    <#value name="完善信息" code="UPDATE_BUYER_INFO_WHEN_CONFIRM_QUOTE" icon="bars"/>
+    <#value name="生产入库" code="INBOUND_FROM_HOME" icon="bars"/>
+    <#value name="产品附加规格" code="EDIT_ADDITIONAL_SPEC_WHEN_REVIEW_INIT" icon="bars"/>
+    <#value name="完善信息信息" code="BUYER_PERFECT_ENTITY_INFO" icon="bars"/>
+    <#value name="下架" code="PRODUCT_OFF_SHELF" icon="bars"/>
+    <#value name="安全库存设置" code="UPDATE_INVENTORY_PARAMETER" icon="bars"/>
+    <#value name="完善信息" code="UPDATE_MERCHANT_INFO_WHEN_INVITE" icon="bars"/>
+    <#value name="代收凭证" code="PROOF_FOR_ACCEPT_FOR_BUYER" icon="bars"/>
+    <#value name="更新产品信息" code="UPDATE_PRODUCT_INFO" icon="bars"/>
+    <#value name="备注" code="UPDATE_COLLEAGUE_INFO" icon="bars"/>
+    <#value name="完善信息" code="UPDATE_MERCHANT_INFO_WHEN_QUOTE" icon="bars"/>
+    <#value name="产品附加规格" code="EDIT_ADDITIONAL_SPEC_WHEN_QUOTE" icon="bars"/>
+    <#value name="更新信息" code="BUYER_UPDATE_MERCHANT_INFO" icon="bars"/>
+    <#value name="完善个人认证信息" code="FULFILL_INDIVIDUAL_IDENTITY" icon="bars"/>
+    <#value name="修改附加规格" code="EDIT_ADDITIONAL_SPEC_WHEN_CREATE" icon="bars"/>
+    <#value name="上架" code="PRODUCT_ON_SHELF" icon="bars"/>
+    <#value name="完善信息" code="BUYER_UPDATE_INFO_IN_HOME" icon="bars"/>
+    <#value name="完善信息" code="UPDATE_BUYER_INFO_WHEN_ORDER" icon="bars"/>
+  </change_request_type>
+  
 
 
 
