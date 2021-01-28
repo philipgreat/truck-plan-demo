@@ -72,11 +72,12 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
   
   <job_change
     _name="岗位变化信息"
-    name="岗位变化记录[1,200]"
+    name="岗位变化记录|[1,200]"
     merchant="$(merchant)"
     employee="employee()"
     job="job()"
     create_time="createTime()"
+    _vg4merchant="组织管理"
     _features="log"
   />
   
@@ -125,7 +126,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     />
     
     <procuring_order_item
-      _name="采购合同"
+      _name="采购单条目"
       name="方圆认证检测机构采购订单工单|[1,200]"
       procuring_order="procuring_order()"
       _vg4merchant="采购管理"
@@ -308,7 +309,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     create_time="createTime()"
   />
 
-  
+
 
 
 </root>
