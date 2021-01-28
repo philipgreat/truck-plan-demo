@@ -99,7 +99,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
   />
   <merchant_warehouse
     name="冷鲜仓库|[1,100]"
-    address="$(location)"
+    address="四川省成都市高新区南华路100号|[1,100]"
     merchant="$(merchant)"
     create_time="createTime()"
     last_update_time="updateTime()"
@@ -109,7 +109,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     name="李军勇|李建康|向问天|[1,20]"
     gender="male|female"
     mobile="18012341234"
-    address="$(location)"
+    address="四川省成都市高新区南华路100号|[1,100]"
     valid="true|false"
     platform="$(platform)"
     create_time="createTime()"
@@ -175,6 +175,6 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _identified_by="code"
     create_time="createTime()"
   />
-
+  
 
 </root>
