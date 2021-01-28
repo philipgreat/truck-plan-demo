@@ -43,6 +43,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
 	_vg4merchant="产品管理"
   />
   
+  
   <quotation
   	name="国内供应商报价|国外供应商报价"
   	supplier="$(merchant)"
