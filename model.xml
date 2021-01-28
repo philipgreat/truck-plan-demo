@@ -8,7 +8,7 @@
 synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-sync.sh  freshchain" 
 
 -->
-
+  
   <platform
     name="抱同数字化供应链平台"
     create_time="createTime()"
@@ -122,7 +122,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
       _vg4merchant="采购管理"
     />
     
-    <pro'cu'ring_order_item
+    <procuring_order_item
       _name="采购合同"
       name="方圆认证检测机构采购订单工单|[1,200]"
       procuring_order="procuring_order()"
@@ -145,39 +145,39 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
 
 
 
-  <suppling_contract
+  <selling_contract
     _name="销售合同"
     name="聚贤庄销售合同|[1,200]"
     merchant="$(merchant)"
     _vg4merchant="销售管理"
   >
 
-    <saling_contract_text
+    <selling_contract_text
       _name="供应合同文本"
       name="方圆认证检测机构采购合同|[1,200]"
-      contract="saling_contract()"
+      contract="selling_contract()"
       _vg4merchant="销售管理"
       
     />
 
-    <saling_order
+    <selling_order
       _name="供应订单"
       name="方圆认证检测机构采购订单工单|[1,200]"
-      contract="saling_contract()"
+      contract="selling_contract()"
       _vg4merchant="销售管理"
     />
     
-    <saling_order_item
+    <selling_order_item
       _name="供应合同"
       name="方圆认证检测机构采购订单工单|[1,200]"
-      saling_order="saling_order()"
+      selling_order="selling_order()"
       _vg4merchant="销售管理"
     />
     
 
 
   
-  </saling_contract>
+  </selling_contract>
 
 
 
@@ -204,7 +204,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
 -->
 
 
-  <saling_product 
+  <selling_product 
     _name="销售产品"
     name="蒙顶甘露|蒙顶红茶|蒙顶黄小芽|蒙顶花茶|[1,200]"
     description="提供全系列茶品"
