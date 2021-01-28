@@ -36,13 +36,14 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     remark="可口可乐，销售百年的糖水，获得了全世界额青睐"
     brand="品牌品牌品牌品牌品牌品牌品牌品牌品牌品牌品牌品"
     picture="tea.jpg"
-    measure_unit="$(measure_unit)"
+  
     last_update_time="updateTime()"
     merchant="$(merchant)"
     platform="$(platform)"
     _vg4platform="产品管理"
     _vg4merchant="产品管理"
   />
+  
 
 
   
@@ -175,6 +176,6 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _identified_by="code"
     create_time="createTime()"
   />
-  
+
 
 </root>
