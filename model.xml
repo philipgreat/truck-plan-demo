@@ -137,6 +137,18 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
   
   </procuring_contract>
 
+  <selling_product 
+    _name="销售产品"
+    name="蒙顶甘露|蒙顶红茶|蒙顶黄小芽|蒙顶花茶|[1,200]"
+    description="提供全系列茶品"
+    picture="tea.jpg"
+    last_update_time="updateTime()"
+    merchant="$(merchant)"
+    platform="$(platform)"
+    _vg4platform="产品管理"
+    _vg4merchant="销售管理"
+
+  />
 
   <potential_customer
     _name="潜在客户"
@@ -210,18 +222,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
 -->
 
 
-  <selling_product 
-    _name="销售产品"
-    name="蒙顶甘露|蒙顶红茶|蒙顶黄小芽|蒙顶花茶|[1,200]"
-    description="提供全系列茶品"
-    picture="tea.jpg"
-    last_update_time="updateTime()"
-    merchant="$(merchant)"
-    platform="$(platform)"
-    _vg4platform="产品管理"
-    _vg4merchant="销售管理"
 
-  />
 
  
 
@@ -287,7 +288,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _features="log"
     _vg4merchant="库存管理"
   />
-  
+
   
   <user_event_registration
     name="用户注册"
