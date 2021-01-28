@@ -15,7 +15,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     last_update_time="updateTime()"
   />
   <merchant
-    name="小链生鲜|农商科技|农商旅贸易|[1,100]"
+    name="云南普洱经销商|蒙顶皇茶|峨眉雪|[1,100]"
     owner="$(user)"
     merchant_status = "$(merchant_status)"
     create_time="createTime()"
@@ -34,7 +34,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     origin="四川|广东|江苏|安徽|日本|法国"
 	remark="可口可乐，销售百年的糖水，获得了全世界额青睐"
 	brand="品牌品牌品牌品牌品牌品牌品牌品牌品牌品牌品牌品"
-	picture="pork.jpg"
+	picture="tea.jpg"
     measure_unit="$(measure_unit)"
 	last_update_time="updateTime()"
 	merchant="$(merchant)"
@@ -42,7 +42,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
 	_vg4platform="产品管理"
 	_vg4merchant="产品管理"
   />
-  
+
   
   <quotation
   	name="国内供应商报价|国外供应商报价"
@@ -186,7 +186,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
   />
   <!-- 静态内容 -->
   <site
-    name="小链科技微信公众号|小链科技官网|小链生鲜公众号|小链生鲜官网|农商旅官网|农商旅微信服务号"
+    name="小链科技微信公众号|小链科技官网|云南普洱经销商公众号|云南普洱经销商官网|农商旅官网|农商旅微信服务号"
     site_url="https://wwww.nongshanglv.com|https://nongshanglv.weixin.qq.com"
     site_type="$(site_type)"
     description="双链鲜生是一个专注生鲜，专注三农的综合供应链交易平台"
