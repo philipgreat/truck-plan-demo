@@ -277,6 +277,17 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _vg4merchant="库存管理"
   />
 
+  <merchant_stock_change
+    _name="库存变化日志"
+    name="今日出库100套普洱茶，批号12321|[1,100]"
+    description="text()"
+    merchant="$(merchant)"
+    warehouse="merchant_warehouse()"
+    create_time="createTime()"
+    _features="log"
+    _vg4merchant="库存管理"
+  />
+  
   
   <user_event_registration
     name="用户注册"
