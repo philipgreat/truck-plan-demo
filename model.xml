@@ -107,8 +107,30 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     merchant="$(merchant)"
     _vg4merchant="采购管理"
   >
+    <supply_contract_text
+      _name="供应合同文本"
+      name="方圆认证检测机构采购合同|[1,200]"
+      contract="supply_contract()"
+      _vg4merchant="采购管理"
+      
+    />
+
+    <supply_order
+      _name="供应合同"
+      name="方圆认证检测机构采购订单工单|[1,200]"
+      contract="supply_contract()"
+      _vg4merchant="采购管理"
+    />
     
-  
+    <supply_order_item
+      _name="供应合同"
+      name="方圆认证检测机构采购订单工单|[1,200]"
+      supply_order="supply_order()"
+      _vg4merchant="采购管理"
+    />
+    
+
+
   
   </supply_contract>
 
