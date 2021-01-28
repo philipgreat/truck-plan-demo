@@ -148,6 +148,9 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
 
 
 
+
+
+
   <selling_contract
     _name="销售合同"
     name="聚贤庄销售合同|[1,200]"
