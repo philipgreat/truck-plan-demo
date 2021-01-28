@@ -261,14 +261,14 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     create_time="createTime()"
   />
   <merchant_warehouse
-    name="产地仓|城市中心仓|发货仓|[1,100]"
+    name="产地仓|城市中心仓|发货仓|接货仓|[1,100]"
     address="四川省成都市高新区南华路100号|[1,100]"
     merchant="$(merchant)"
     create_time="createTime()"
-    last_update_time="updateTime()"
+    
     _vg4merchant="库存作业"
   />
-  
+
   
   <user_event_registration
     name="用户注册"
@@ -279,6 +279,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     user="$(user)"
   />
  
+  
   
 
   <change_request
