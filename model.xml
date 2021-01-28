@@ -89,9 +89,35 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     last_update_time="updateTime()"
     merchant="$(merchant)"
     
-    _vg4platform="产品管理"
+    _vg4platform="采购管理"
     _vg4merchant="采购管理"
   />
+
+  <candidate_supplier
+    _name="候选供应商"
+    name="方圆认证检测机构|[1,200]"
+    contact_number="18900000001"
+    merchant="$(merchant)"
+    _vg4merchant="采购管理"
+  />
+
+  <supply_contract
+    _name="供应合同"
+    name="方圆认证检测机构采购合同|[1,200]"
+    merchant="$(merchant)"
+    _vg4merchant="采购管理"
+  >
+    
+  
+  
+  </supply_contract>
+
+
+
+
+
+
+
 
  <!--
 商户
@@ -124,7 +150,8 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
 
   />
 
-  
+ 
+
 
 
 
