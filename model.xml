@@ -1,211 +1,177 @@
 <root
-  org="doublechaintech"
-  chinese_name="抱同数字化供应链平台"
-	english_name="Agriculture Business Travel"
->
-<!-- 
+    org="doublechaintech"
+    chinese_name="抱同数字化供应链平台"
+    english_name="Agriculture Business Travel">
 
-synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-sync.sh  freshchain" 
-
--->
-  
+  <!-- synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-sync.sh  freshchain" -->
   <platform
-    name="抱同数字化供应链平台"
-    create_time="createTime()"
-    last_update_time="updateTime()"
-  />
+      name="抱同数字化供应链平台"
+      create_time="createTime()"
+      last_update_time="updateTime()"
+      />
 
   <user
-    name="李军勇|李建康|向问天|[1,20]"
-    mobile="18012341234"
-    address="四川省成都市高新区南华路100号|[1,100]"
-    valid="true|false"
-    platform="$(platform)"
-    create_time="createTime()"
-    _vg4platform="用户管理"
-  />
+      name="李军勇|李建康|向问天|[1,20]"
+      mobile="18012341234"
+      address="四川省成都市高新区南华路100号|[1,100]"
+      valid="true|false"
+      platform="$(platform)"
+      create_time="createTime()"
+      _vg4platform="用户管理"
+      />
 
   <merchant
-    name="云南普洱经销商|蒙顶皇茶|峨眉雪|[1,100]"
-    owner="$(user)"
-    merchant_status = "$(merchant_status)"
-    merchant_type = "$(merchant_type)"
-    create_time="createTime()"
-    last_update_time="updateTime()"
-    platform="$(platform)"
-    _features="merchant"
-    _vg4platform="商户管理"
-    _vg4owner="商户管理"
-  />
+      name="云南普洱经销商|蒙顶皇茶|峨眉雪|[1,100]"
+      owner="$(user)"
+      merchant_status="$(merchant_status)"
+      merchant_type="$(merchant_type)"
+      create_time="createTime()"
+      last_update_time="updateTime()"
+      platform="$(platform)"
+      _features="merchant"
+      _vg4platform="商户管理"
+      _vg4owner="商户管理"
+      />
 
-  <!--组织管理 包含资质，岗位，员工，上下岗记录-->
+  <!-- 组织管理 包含资质，岗位，员工，上下岗记录 -->
   <employee
-    name="张三|李四|王五|[1,200]"
-    description="提供全系列茶品"
-    last_update_time="updateTime()"
-    merchant="$(merchant)"
-    _vg4platform="产品管理"
-    _vg4merchant="组织管理"
-  />
-
+      name="张三|李四|王五|[1,200]"
+      description="提供全系列茶品"
+      last_update_time="updateTime()"
+      merchant="$(merchant)"
+      _vg4platform="产品管理"
+      _vg4merchant="组织管理"
+      />
 
   <qualification
-    _name="资质"
-    name="营业执照|检测资质|检验资质|[1,200]"
-    last_update_time="updateTime()"
-    merchant="$(merchant)"
-    _vg4platform="产品管理"
-    _vg4merchant="组织管理"
-  />
+      _name="资质"
+      name="营业执照|检测资质|检验资质|[1,200]"
+      last_update_time="updateTime()"
+      merchant="$(merchant)"
+      _vg4platform="产品管理"
+      _vg4merchant="组织管理"
+      />
 
   <job
-    _name="岗位"
-    name="管理员|审评员|检验员|[1,200]"
-    description="提供全系列茶品|[1,200]"
-    employee="employee()"
-    last_update_time="updateTime()"
-    merchant="$(merchant)"
-    _vg4platform="产品管理"
-    _vg4merchant="组织管理"
-  
-  />
-  
+      _name="岗位"
+      name="管理员|审评员|检验员|[1,200]"
+      description="提供全系列茶品|[1,200]"
+      employee="employee()"
+      last_update_time="updateTime()"
+      merchant="$(merchant)"
+      _vg4platform="产品管理"
+      _vg4merchant="组织管理"
+      />
+
   <job_change
-    _name="岗位变化信息"
-    name="岗位变化记录|[1,200]"
-    merchant="$(merchant)"
-    employee="employee()"
-    job="job()"
-    create_time="createTime()"
-    _vg4merchant="组织管理"
-    _features="log"
-  />
-  
+      _name="岗位变化信息"
+      name="岗位变化记录|[1,200]"
+      merchant="$(merchant)"
+      employee="employee()"
+      job="job()"
+      create_time="createTime()"
+      _vg4merchant="组织管理"
+      _features="log"
+      />
+
   <procuring_product
-    _name="采购产品"
-    name="蒙顶甘露|蒙顶红茶|蒙顶黄小芽|蒙顶花茶|[1,200]"
-    description="提供全系列茶品"
-    picture="tea.jpg"
-    last_update_time="updateTime()"
-    merchant="$(merchant)"
-    
-    _vg4platform="采购管理"
-    _vg4merchant="采购管理"
-  />
+      _name="采购产品"
+      name="蒙顶甘露|蒙顶红茶|蒙顶黄小芽|蒙顶花茶|[1,200]"
+      description="提供全系列茶品"
+      picture="tea.jpg"
+      last_update_time="updateTime()"
+      merchant="$(merchant)"
+      _vg4platform="采购管理"
+      _vg4merchant="采购管理"
+      />
 
   <candidate_supplier
-    _name="候选供应商"
-    name="方圆认证检测机构|[1,200]"
-    contact_number="18900000001"
-    merchant="$(merchant)"
-    _vg4merchant="采购管理"
-  />
-
-
-<procuring_contract
-    _name="采购合同"
-    name="方圆认证检测机构采购合同|[1,200]"
-    merchant="$(merchant)"
-    _vg4merchant="采购管理"
-  >
-    <procuring_contract_text
-      _name="采购合同文本"
-      name="方圆认证检测机构采购合同|[1,200]"
-      contract="procuring_contract()"
+      _name="候选供应商"
+      name="方圆认证检测机构|[1,200]"
+      contact_number="18900000001"
+      merchant="$(merchant)"
       _vg4merchant="采购管理"
-      
-    />
+      />
 
+  <procuring_contract
+      _name="采购合同"
+      name="方圆认证检测机构采购合同|[1,200]"
+      merchant="$(merchant)"
+      _vg4merchant="采购管理">
 
+    <procuring_contract_text
+        _name="采购合同文本"
+        name="方圆认证检测机构采购合同|[1,200]"
+        contract="procuring_contract()"
+        _vg4merchant="采购管理"
+        />
 
     <procuring_order
-      _name="采购订单"
-      name="方圆认证检测机构采购订单工单|[1,200]"
-      contract="procuring_contract()"
-      _vg4merchant="采购管理"
-    />
-    
+        _name="采购订单"
+        name="方圆认证检测机构采购订单工单|[1,200]"
+        contract="procuring_contract()"
+        _vg4merchant="采购管理"
+        />
+
     <procuring_order_item
-      _name="采购单条目"
-      name="方圆认证检测机构采购订单工单|[1,200]"
-      procuring_order="procuring_order()"
-      _vg4merchant="采购管理"
-    />
-    
+        _name="采购单条目"
+        name="方圆认证检测机构采购订单工单|[1,200]"
+        procuring_order="procuring_order()"
+        _vg4merchant="采购管理"
+        />
 
-
-  
   </procuring_contract>
 
-  <selling_product 
-    _name="销售产品"
-    name="蒙顶甘露|蒙顶红茶|蒙顶黄小芽|蒙顶花茶|[1,200]"
-    description="提供全系列茶品"
-    picture="tea.jpg"
-    last_update_time="updateTime()"
-    merchant="$(merchant)"
-    platform="$(platform)"
-    _vg4platform="产品管理"
-    _vg4merchant="销售管理"
-
-  />
+  <selling_product
+      _name="销售产品"
+      name="蒙顶甘露|蒙顶红茶|蒙顶黄小芽|蒙顶花茶|[1,200]"
+      description="提供全系列茶品"
+      picture="tea.jpg"
+      last_update_time="updateTime()"
+      merchant="$(merchant)"
+      platform="$(platform)"
+      _vg4platform="产品管理"
+      _vg4merchant="销售管理"
+      />
 
   <potential_customer
-    _name="潜在客户"
-    name="软件园茶馆|[1,200]"
-    contact_number="18900000001"
-    merchant="$(merchant)"
-    _vg4merchant="销售管理"
-  />
-
-
-
-
-
+      _name="潜在客户"
+      name="软件园茶馆|[1,200]"
+      contact_number="18900000001"
+      merchant="$(merchant)"
+      _vg4merchant="销售管理"
+      />
 
   <selling_contract
-    _name="销售合同"
-    name="聚贤庄销售合同|[1,200]"
-    merchant="$(merchant)"
-    _vg4merchant="销售管理"
-  >
+      _name="销售合同"
+      name="聚贤庄销售合同|[1,200]"
+      merchant="$(merchant)"
+      _vg4merchant="销售管理">
 
     <selling_contract_text
-      _name="供应合同文本"
-      name="方圆认证检测机构采购合同|[1,200]"
-      contract="selling_contract()"
-      _vg4merchant="销售管理"
-      
-    />
+        _name="供应合同文本"
+        name="方圆认证检测机构采购合同|[1,200]"
+        contract="selling_contract()"
+        _vg4merchant="销售管理"
+        />
 
     <selling_order
-      _name="供应订单"
-      name="方圆认证检测机构销售订单|[1,200]"
-      contract="selling_contract()"
-      _vg4merchant="销售管理"
-    />
-    
+        _name="供应订单"
+        name="方圆认证检测机构销售订单|[1,200]"
+        contract="selling_contract()"
+        _vg4merchant="销售管理"
+        />
+
     <selling_order_item
-      _name="供应订单条目"
-      name="方圆认证检测机构销售采购订单|[1,200]"
-      selling_order="selling_order()"
-      _vg4merchant="销售管理"
-    />
-    
+        _name="供应订单条目"
+        name="方圆认证检测机构销售采购订单|[1,200]"
+        selling_order="selling_order()"
+        _vg4merchant="销售管理"
+        />
 
-
-  
   </selling_contract>
 
-
-
-
-
-
-
-
- <!--
-商户
+  <!-- 商户
 
 
     组织建设 - 一般属于管理员设置范围
@@ -218,151 +184,96 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
       销售目录 销售合同  客户管理  订单 订单跟踪 
 
     库存作业 
-      仓库管理  库存变化 
--->
-
-
-
-
- 
-
-
-
-
-  
-  
-  
+      仓库管理  库存变化
+   -->
   <merchant_event_create
-    name="新建商户"
-    change_request="$(change_request)"
-    create_time="createTime()"
-    _features="event"
-    _bind_with_cr_type="ADD_MERCHANT"
-    merchant="$(merchant)"
-    _vg4merchant="销售管理"
-  />
-  <merchant_event_withdraw
-    name="撤销商户"
-    change_request="$(change_request)"
-    create_time="createTime()"
-    _features="event"
-    _bind_with_cr_type="WITHDRAW_MERCHANT"
-    merchant="$(merchant)"
-    _vg4merchant="销售管理"
-  />
+      name="新建商户"
+      change_request="$(change_request)"
+      create_time="createTime()"
+      _features="event"
+      _bind_with_cr_type="ADD_MERCHANT"
+      merchant="$(merchant)"
+      _vg4merchant="销售管理"
+      />
 
+  <merchant_event_withdraw
+      name="撤销商户"
+      change_request="$(change_request)"
+      create_time="createTime()"
+      _features="event"
+      _bind_with_cr_type="WITHDRAW_MERCHANT"
+      merchant="$(merchant)"
+      _vg4merchant="销售管理"
+      />
 
   <merchant_type
-    name="平台商户|审评机构|检验机构"
-    code="PLATFORM|REVIEW|EXAM"
-    _identified_by="code"
-    _features="status"
-    platform="$(platform)"
-    create_time="createTime()"
-  />
+      name="平台商户|审评机构|检验机构"
+      code="PLATFORM|REVIEW|EXAM"
+      _identified_by="code"
+      _features="status"
+      platform="$(platform)"
+      create_time="createTime()"
+      />
 
   <merchant_status
-    name="营业中|暂停营业"
-    code="OPERATION|HOLD"
-    _identified_by="code"
-    _features="status"
-    platform="$(platform)"
-    create_time="createTime()"
-  />
+      name="营业中|暂停营业"
+      code="OPERATION|HOLD"
+      _identified_by="code"
+      _features="status"
+      platform="$(platform)"
+      create_time="createTime()"
+      />
+
   <merchant_warehouse
-    name="产地仓|城市中心仓|发货仓|接货仓|[1,100]"
-    address="四川省成都市高新区南华路100号|[1,100]"
-    merchant="$(merchant)"
-    create_time="createTime()"
-    
-    _vg4merchant="库存管理"
-  />
+      name="产地仓|城市中心仓|发货仓|接货仓|[1,100]"
+      address="四川省成都市高新区南华路100号|[1,100]"
+      merchant="$(merchant)"
+      create_time="createTime()"
+      _vg4merchant="库存管理"
+      />
 
   <merchant_stock_change
-    _name="库存变化日志"
-    name="今日出库100套普洱茶，批号12321|[1,100]"
-    description="text()"
-    merchant="$(merchant)"
-    warehouse="merchant_warehouse()"
-    create_time="createTime()"
-    _features="log"
-    _vg4merchant="库存管理"
-  />
+      _name="库存变化日志"
+      name="今日出库100套普洱茶，批号12321|[1,100]"
+      description="text()"
+      merchant="$(merchant)"
+      warehouse="merchant_warehouse()"
+      create_time="createTime()"
+      _features="log"
+      _vg4merchant="库存管理"
+      />
 
-  
   <user_event_registration
-    name="用户注册"
-    change_request="$(change_request)"
-    create_time="createTime()"
-    _bind_with_cr_type="USER_REGISTRATION"
-    _features="event"
-    user="$(user)"
-  />
- 
-  
-  
+      name="用户注册"
+      change_request="$(change_request)"
+      create_time="createTime()"
+      _bind_with_cr_type="USER_REGISTRATION"
+      _features="event"
+      user="$(user)"
+      />
 
   <change_request
-    name="数据变更|数据增加|数据删除|[1,50]"
-    create_time="createTime()"
-    remote_ip="remoteIp()"
-    request_type="$(change_request_type)"
-    platform="$(platform)"
-    _vg4platform="数据管理"
-    _features="change_request"
-  />
+      name="数据变更|数据增加|数据删除|[1,50]"
+      create_time="createTime()"
+      remote_ip="remoteIp()"
+      request_type="$(change_request_type)"
+      platform="$(platform)"
+      _vg4platform="数据管理"
+      _features="change_request"
+      />
+
   <change_request_type
-    name="名称:value()|[1,100]"
-    code="代码:value()|[1,100]"
-    icon="图标:value()|[1,100]"
-    display_order="显示顺序:1|2|3|4|5|6"
-    bind_types="text()"
-    step_configuration="text()"
-    platform="$(platform)"
-    _features="cr_type"
-    _identified_by="code"
-  >
-    <#value name="转移管理员" code="ADMIN_TRANSFER" icon="bars"/>
-    <#value name="1/3 商户信息" code="SELLER_REGISTER" icon="bars"/>
-    <#value name="添加客户" code="SELLER_ADD_BUYER" icon="bars"/>
-    <#value name="添加客户" code="ADD_BUYER_FOR_QUOTE" icon="bars"/>
-    <#value name="自定义产品" code="CUSTOM_PRODUCT_WHEN_INITIAL" icon="bars"/>
-    <#value name="产品附加规格" code="EDIT_ADDITIONAL_SPEC_WHEN_INIT" icon="bars"/>
-    <#value name="完善信息并入库" code="UPDATE_MERCHANT_INFO_WHEN_INBOUND" icon="bars"/>
-    <#value name="修改附加规格" code="EDIT_ADDITIONAL_SPEC_WHEN_CREATE_IN_QUOTE" icon="bars"/>
-    <#value name="外采入库" code="BUY_INBOUND_FROM_HOME" icon="bars"/>
-    <#value name="完善信息" code="SELLER_UPDATE_MERCHANT_INFO" icon="bars"/>
-    <#value name="修改备注" code="SELLER_UPDATE_CUSTOMER_COMMENT" icon="bars"/>
-    <#value name="入库" code="PRODUCT_INBOUND" icon="bars"/>
-    <#value name="编辑备注" code="UPDATE_SUPPLIER" icon="bars"/>
-    <#value name="更新个人信息" code="UPDATE_PERSONAL_INFO" icon="bars"/>
-    <#value name="完善信息" code="UPDATE_MERCHANT_INFO_FROM_SELLER_HOME" icon="bars"/>
-    <#value name="更新认证信息" code="UPDATE_INDIVIDUAL_IDENTITY" icon="bars"/>
-    <#value name="设置企业下班时间" code="UPDATE_MERCHANT_OFF_TIME" icon="bars"/>
-    <#value name="审批加入+姓名" code="AUDIT_JOIN_APPLY" icon="bars"/>
-    <#value name="设置单次配送最大量" code="UPDATE_MERCHANT_DELIVERY_LIMIT" icon="bars"/>
-    <#value name="批准加入" code="APPROVE_JOIN_BUYER" icon="bars"/>
-    <#value name="完善信息" code="UPDATE_BUYER_INFO_WHEN_CONFIRM_QUOTE" icon="bars"/>
-    <#value name="生产入库" code="INBOUND_FROM_HOME" icon="bars"/>
-    <#value name="产品附加规格" code="EDIT_ADDITIONAL_SPEC_WHEN_REVIEW_INIT" icon="bars"/>
-    <#value name="完善信息信息" code="BUYER_PERFECT_ENTITY_INFO" icon="bars"/>
-    <#value name="下架" code="PRODUCT_OFF_SHELF" icon="bars"/>
-    <#value name="安全库存设置" code="UPDATE_INVENTORY_PARAMETER" icon="bars"/>
-    <#value name="完善信息" code="UPDATE_MERCHANT_INFO_WHEN_INVITE" icon="bars"/>
-    <#value name="代收凭证" code="PROOF_FOR_ACCEPT_FOR_BUYER" icon="bars"/>
-    <#value name="更新产品信息" code="UPDATE_PRODUCT_INFO" icon="bars"/>
-    <#value name="备注" code="UPDATE_COLLEAGUE_INFO" icon="bars"/>
-    <#value name="完善信息" code="UPDATE_MERCHANT_INFO_WHEN_QUOTE" icon="bars"/>
-    <#value name="产品附加规格" code="EDIT_ADDITIONAL_SPEC_WHEN_QUOTE" icon="bars"/>
-    <#value name="更新信息" code="BUYER_UPDATE_MERCHANT_INFO" icon="bars"/>
-    <#value name="完善个人认证信息" code="FULFILL_INDIVIDUAL_IDENTITY" icon="bars"/>
-    <#value name="修改附加规格" code="EDIT_ADDITIONAL_SPEC_WHEN_CREATE" icon="bars"/>
-    <#value name="上架" code="PRODUCT_ON_SHELF" icon="bars"/>
-    <#value name="完善信息" code="BUYER_UPDATE_INFO_IN_HOME" icon="bars"/>
-    <#value name="完善信息" code="UPDATE_BUYER_INFO_WHEN_ORDER" icon="bars"/>
-  </change_request_type>
-  
-
-
+      name="名称:补充资质材料|注册员工|登记岗位|岗位分配|岗位变更|登记潜在供应商|供应商注册|供应合同登记|发起工单|发起采购|确认收货|登记潜在经销商|经销商注册|销售合同登记|发货|分配工单|完成审评工单|完成检验工单|登记库房|库间调拨|[1,100]"
+      code="代码:A001|A002|A003|A004|A005|A101|A102|A103|A104|A107|A105|A201|A202|A203|A204|A205|A206|A207|A301|A302|[1,100]"
+      icon="图标:bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|bars|[1,100]"
+      view_group="分组:组织管理|组织管理|组织管理|组织管理|组织管理|采购管理|采购管理|采购管理|采购管理|采购管理|采购管理|销售管理|销售管理|销售管理|销售管理|销售管理|销售管理|销售管理|库存管理|库存管理|[1,100]"
+      display_order="显示顺序:1|2|3|4|5|6"
+      bind_types="text()"
+      step_configuration="text()"
+      platform="$(platform)"
+      _features="cr_type"
+      _identified_by="code"
+      />
 
 </root>
+
