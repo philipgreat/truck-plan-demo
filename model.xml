@@ -44,8 +44,6 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
   />
 
 
-<!--
-  
   <quotation
   	name="国内供应商报价|国外供应商报价"
   	supplier="$(merchant)"
@@ -88,7 +86,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
   	
   	
   />
-  -->
+  
   
   
   <!-- 
@@ -186,9 +184,9 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     platform="$(platform)"
     create_time="createTime()"
   />
-  <!-- 静态内容 
+  <!-- 静态内容 -->
   <site
-    name="小链科技微信公众号|小链科技官网|云南普洱经销商公众号|云南普洱经销商官网|农商旅官网|农商旅微信服务号"
+    name="小链科技微信公众号|小链科技官网|小链生鲜公众号|小链生鲜官网|农商旅官网|农商旅微信服务号"
     site_url="https://wwww.nongshanglv.com|https://nongshanglv.weixin.qq.com"
     site_type="$(site_type)"
     description="双链鲜生是一个专注生鲜，专注三农的综合供应链交易平台"
@@ -203,14 +201,10 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     platform="$(platform)"
     create_time="createTime()"
   />
-  -->
   <!-- <home_page
     name="网站内容"
     merchant="$(merchant)"
-  /> 
-  
-  
-  
+  /> -->
   <banner
     name="活动图片"
     image="image_200_100.jpg"
@@ -236,8 +230,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _vg4merchant="网站内容"
     _vg4post_by="网站内容"
   />
-  -->
-  <!-- 政策法规 
+  <!-- 政策法规 -->
   <policy_regulation
     name="禁止围标|禁止行贿|招标法"
     content="禁止围标|禁止行贿|招投标法xxx"
@@ -254,7 +247,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     site="$(site)"
     _vg4merchant="网站内容"
   />
--->
+
   <!-- ********************************* 招投标 ***************************************** -->
   <!-- https://wenku.baidu.com/view/c1fd08215901020207409c44.html -->
   <!-- 合格的供应商: 针对于某一家采购方，某家商户是一家合格的供应商 -->
@@ -436,7 +429,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _vg4owner="财务管理"
     _vg4owner_warehouse="财务管理"
   />
-  <!-- 开户行信息 
+  <!-- 开户行信息 -->
   <account_bank
     opening_bank="招商银行|工商银行"
 		account_number="33265805054885A"
@@ -536,7 +529,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
 		accounting_subject_class_name="资产类|负债类|共同类|所有者权益类|成本类|损益类"
 		account_set="$(account_set)"
 	/>
--->
+
   <!-- ********************************* 合同 ***************************************** -->
   <!-- 合同: 合同招标都是跟 -->
   <contract
@@ -1191,7 +1184,6 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _vg4platform="数据管理"
     _features="change_request"
   />
-
   <change_request_type
     name="商户入驻|商户注销|用户注册|发布招标|提交投标|签署合同|发起合同变更|创建订单|支付订单|产品入库|产品出库|申请发票|登记收票|登记损耗|过磅称重"
     code="ADD_MERCHANT|WITHDRAW_MERCHANT|USER_REGISTRATION|CREATE_TENDERING|CREATE_TENDER|CREATE_CONTRACT|CREATE_CONTRACT_CHANGE|CREATE_ORDER|CREATE_PAYMENT|STOCK_CHECKIN|STOCK_CHECHOUT|CREATE_INVOICE_APPLICATION|CREATE_INVOICE_REGISTRATION|CREATE_DESTROYED|CREATE_WEIGHT_RECORD"
