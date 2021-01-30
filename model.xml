@@ -214,6 +214,7 @@
       _vg4merchant="销售管理"
       />
 
+
   <merchant_type
       name="平台商户|审评机构|检验机构"
       code="PLATFORM|REVIEW|EXAM"
