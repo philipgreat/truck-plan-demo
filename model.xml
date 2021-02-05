@@ -1,350 +1,205 @@
-<root
-    org="doublechaintech"
-    chinese_name="抱同数字化供应链平台"
-    english_name="Agriculture Business Travel">
-
-  <!-- synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-sync.sh  freshchain" -->
-  <platform
-      name="抱同数字化供应链平台"
-      create_time="createTime()"
-      last_update_time="updateTime()"
-      />
-
-  <user
-      name="李军勇|李建康|向问天|[1,20]"
-      mobile="18012341234"
-      address="四川省成都市高新区南华路100号|[1,100]"
-      valid="true|false"
-      platform="platform()"
-      create_time="createTime()"
-      _vg4platform="用户管理"
-      />
-
-  <project
-      _name="批号"
-      name="批号管理|[1,20]"
-      platform="platform()"
-      _vg4platform="批号"
-      />
-
-  <merchant
-      name="云南普洱经销商|蒙顶皇茶|峨眉雪|[1,100]"
-      owner="$(user)"
-      merchant_status="merchant_status()"
-      merchant_type="merchant_type()"
-      create_time="createTime()"
-      last_update_time="updateTime()"
-      platform="platform()"
-      _features="merchant"
-      _vg4platform="商户管理"
-      _vg4owner="商户管理"
-      />
-
-  <!-- 公司管理 包含资质，岗位，员工，上下岗记录 -->
-  <employee
-      name="张三|李四|王五|[1,200]"
-      description="提供全系列茶品"
-      last_update_time="updateTime()"
-      merchant="merchant()"
-      _vg4platform="产品管理"
-      _vg4merchant="公司管理"
-      />
-
-  <activity
-      _name="公司动态"
-      title="皇茶品牌成功签约抱同文化|[1,200]"
-      last_update_time="updateTime()"
-      merchant="merchant()"
-      _vg4platform="产品管理"
-      _vg4merchant="公司管理"
-      />
-
-  <merchant_tips
-      _name="操作提示"
-      title="请完善公司资料|[1,200]"
-      last_update_time="updateTime()"
-      merchant="merchant()"
-      _vg4platform="产品管理"
-      _vg4merchant="公司管理"
-      />
-
-  <help_document
-      name="帮助文档"
-      title="如果入驻|[1,200]"
-      always_on_top="true"
-      last_update_time="updateTime()"
-      merchant="merchant()"
-      _vg4platform="产品管理"
-      _vg4merchant="公司管理"
-      />
-
-  <qualification
-      _name="资质"
-      name="营业执照|检测资质|检验资质|[1,200]"
-      last_update_time="updateTime()"
-      merchant="merchant()"
-      _vg4platform="产品管理"
-      _vg4merchant="公司管理"
-      />
-
-  <job
-      _name="岗位"
-      name="管理员|审评员|检验员|[1,200]"
-      description="提供全系列茶品|[1,200]"
-      employee="employee()"
-      last_update_time="updateTime()"
-      merchant="merchant()"
-      _vg4platform="产品管理"
-      _vg4merchant="公司管理"
-      />
-
-  <job_change
-      _name="岗位变化信息"
-      name="岗位变化记录|[1,200]"
-      merchant="merchant()"
-      employee="employee()"
-      job="job()"
-      create_time="createTime()"
-      _vg4merchant="公司管理"
-      _features="log"
-      />
-
-  <procuring_product
-      _name="采购产品"
-      name="蒙顶甘露|蒙顶红茶|蒙顶黄小芽|蒙顶花茶|[1,200]"
-      description="提供全系列茶品"
-      picture="tea.jpg"
-      last_update_time="updateTime()"
-      merchant="merchant()"
-      _vg4platform="采购管理"
-      _vg4merchant="采购管理"
-      />
-
-  <candidate_supplier
-      _name="候选供应商"
-      name="方圆认证检测机构|[1,200]"
-      contact_number="18900000001"
-      merchant="merchant()"
-      _vg4merchant="采购管理"
-      />
-
-  <procuring_contract
-      _name="采购合同"
-      name="方圆认证检测机构采购合同|[1,200]"
-      merchant="merchant()"
-      _vg4merchant="采购管理">
-
-    <procuring_contract_text
-        _name="采购合同文本"
-        name="方圆认证检测机构采购合同|[1,200]"
-        contract="procuring_contract()"
-        _vg4merchant="采购管理"
-        />
-
-    <procuring_order
-        _name="采购订单"
-        name="方圆认证检测机构采购订单工单|[1,200]"
-        contract="procuring_contract()"
-        merchant="merchant()"
-        last_update_time="updateTime()"
-        _vg4merchant="采购管理"
-        />
-
-    <procuring_order_item
-        _name="采购单条目"
-        name="方圆认证检测机构采购订单工单|[1,200]"
-        procuring_order="procuring_order()"
-        last_update_time="updateTime()"
-        _vg4merchant="采购管理"
-        />
-
-  </procuring_contract>
-
-  <selling_product
-      _name="销售产品"
-      name="蒙顶甘露|蒙顶红茶|蒙顶黄小芽|蒙顶花茶|[1,200]"
-      description="提供全系列茶品"
-      picture="tea.jpg"
-      last_update_time="updateTime()"
-      merchant="merchant()"
-      platform="platform()"
-      _vg4platform="产品管理"
-      _vg4merchant="销售管理"
-      />
-
-  <potential_customer
-      _name="潜在客户"
-      name="软件园茶馆|[1,200]"
-      contact_number="18900000001"
-      last_update_time="updateTime()"
-      merchant="merchant()"
-      _vg4merchant="销售管理"
-      />
-
-  <selling_contract
-      _name="销售合同"
-      name="聚贤庄销售合同|[1,200]"
-      merchant="merchant()"
-      _vg4merchant="销售管理">
-
-    <selling_contract_text
-        _name="销售合同文本"
-        name="方圆认证检测机构采购合同|[1,200]"
-        contract="selling_contract()"
-        last_update_time="updateTime()"
-        _vg4merchant="销售管理"
-        />
-
-    <selling_order
-        _name="销售订单"
-        name="方圆认证检测机构销售订单|[1,200]"
-        contract="selling_contract()"
-        merchant="merchant()"
-        last_update_time="updateTime()"
-        _vg4merchant="销售管理"
-        />
-
-    <selling_order_item
-        _name="供应订单条目"
-        name="方圆认证检测机构销售采购订单|[1,200]"
-        selling_order="selling_order()"
-        last_update_time="updateTime()"
-        _vg4merchant="销售管理"
-        />
-
-  </selling_contract>
-
-  <!-- 商户
+<root org="doublechain"
+    chinese_name="双链索骥数据中台"
+    english_name="双链索骥数据中台"
+>
 
 
-    组织建设 - 一般属于管理员设置范围
-      资质 员工 岗位
-
-    采购作业 - 一般属于招采部
-      采购目录 采购合同 供应商  采购单  采购跟踪 
-
-    销售作业 - 一般属于营销部
-      销售目录 销售合同  客户管理  订单 订单跟踪 
-
-    库存作业 
-      仓库管理  库存变化
-   -->
-  <merchant_event_create
-      name="新建商户"
-      change_request="$(change_request)"
-      create_time="createTime()"
-      _features="event"
-      _bind_with_cr_type="ADD_MERCHANT"
-      merchant="merchant()"
-      _vg4merchant="销售管理"
-      />
-
-  <merchant_event_withdraw
-      name="撤销商户"
-      change_request="$(change_request)"
-      create_time="createTime()"
-      _features="event"
-      _bind_with_cr_type="WITHDRAW_MERCHANT"
-      merchant="merchant()"
-      _vg4merchant="销售管理"
-      />
-
-  <merchant_type
-      name="平台商户|品牌主体|审评机构|检验机构|经销商"
-      code="PLATFORM|BRAND_OWNER|REVIEW|EXAM|RESELLER"
-      _identified_by="code"
-      _features="status"
-      platform="platform()"
-      create_time="createTime()"
-      />
-
-  <merchant_status
-      name="营业中|暂停营业"
-      code="OPERATION|HOLD"
-      _identified_by="code"
-      _features="status"
-      platform="platform()"
-      create_time="createTime()"
-      />
-
-  <merchant_warehouse
-      name="产地仓|城市中心仓|发货仓|接货仓|[1,100]"
-      address="四川省成都市高新区南华路100号|[1,100]"
-      merchant="merchant()"
-      create_time="createTime()"
-      _vg4merchant="库存管理"
-      />
-
-  <merchant_stock_change
-      _name="库存变化日志"
-      name="今日出库100套普洱茶，批号12321|[1,100]"
-      description="text()"
-      merchant="merchant()"
-      warehouse="merchant_warehouse()"
-      create_time="createTime()"
-      _features="log"
-      _vg4merchant="库存管理"
-      />
-
-  <user_event_registration
-      name="用户注册"
-      change_request="$(change_request)"
-      create_time="createTime()"
-      _bind_with_cr_type="USER_REGISTRATION"
-      _features="event"
-      user="$(user)"
-      />
-
-  <account_book
-      _name="财务账本"
-      name="保证金账户"
-      merchant="merchant()"
-      last_update_time="updateTime()"
-      _vg4merchant="财务管理">
-
-    <transaction
-        _name="账户变动记录"
-        name="支付入驻保证金"
-        inbound_merchant="merchant()"
-        inbound_account_book="account_book()"
-        outbound_merchant="merchant()"
-        outbound_account_book="account_book()"
-        amount="$10000000.00"
-        last_update_time="updateTime()"
-        _vg4inbound_merchant="财务管理"
-        _vg4outbound_merchant="财务管理"
-        _features="log"
-        />
+    <platform
+        name="双链索骥数据中台"
+        founded="now()"
         
+        description="双链科技数据中台系统（DMOS)|[1,2000]"
+        
+        
+    />
+	
+	<change_request_type
+		name="创建大屏|查看|订阅|取消订阅|搜索|禁止用户"
+		code="DEPOSITE|TRANSFER|WITHDRAW|CREATE_ACCOUNT|CHANGE_NAME|DISABLE_USER|[1,99]"
+		icon="download|swap|upload|account-book|edit"
+		display_order="1|2|3|4|5|6"
+		bind_types="text()"
+		step_configuration="text()"
+		platform="$(platform)"
+		_features="cr_type"
+		_identified_by="code"
+		
+	/>
+	
+	
+	
+	<!-- PENDING ACTION FROM WHOM -->
+    
+	<change_request
+		name="存款|转账|取款|[1,50]"
+		
+		create_time="createTime()"
+		remote_ip="remoteIp()"
+		request_type="$(change_request_type)"
+		platform="$(platform)"
+		_vg4platform="变更"
+		_features="change_request"
+	/>
+	
+	<event
+		name="存款|转账|取款|[1,50]"
+		picture="girls.jpg"
+		cq="$(change_request)"
+		_features="n*event"
+		_reg_func="CODE"
+		
+	/>
+	<event1
+		name="存款|转账|取款|[1,50]"
+		cq="$(change_request)"
+		_features="n*event"
+		_reg_func="DEC|减法|file"
+		
+	/>
 
-  </account_book>
+	<chart_type
+		name="柱形图|折线图|饼图|条形图|面积图|点状图|组合图|散点图|气泡图|项目符号图表|仪表板图|排列图|排列图|渐进柱形图|Marimekko 图|雷达图|极坐标图"
+		code="COLUMN|LINE|PIE|BAR|AREA|POINT|COMBINATION|SCATTER|BUBBLE|BULLET|GAUGE|PARETO|PROGRESSIVE|QUADRANT|MARIMEKKO|RADAR|POLAR"
+		_features="status"
+		_identified_by="code"
+		platform="$(platform)"
+	/>
+	
+	<user_status
+		name="正常|终止|中止"
+		code="NORMAL|TERMINIATED|PAUSED"
+		
+		group_name="分组1|分组2"
+		platform="$(platform)"
+		_group_by="group_name"
+		_features="status"
+	/>
+	
+	
+	
+	<data_app_user
+		name="章总|李总|数字大屏|户外广告|[1,200]"
+		avatar="file.jpg"
+		status="$(user_status)"
+		create_time="createTime()"
+		platform="$(platform)"
+		_features="merchant,custom"
+		
+	/>
+	
+	
+	<data_application
+		name="全平台分析|四川省分析|成都市分析App|[1,200]"
+		target_project_name="retailscm|retaiscm|[2,200]"
+		target_object_type="RetailStoreCountryCenter|RetailStoreCountryCenter|[3,200]"
+		target_object_id="RSCC000001|RSCC000001|[4,200]"
+		create_time="createTime()"
+		app_user="$(data_app_user)"
+		
+		_features="custom"
+		
+		
+	/>
+	
 
-  <change_request
-      name="数据变更|数据增加|数据删除|[1,50]"
-      create_time="createTime()"
-      remote_ip="remoteIp()"
-      request_type="$(change_request_type)"
-      platform="$(platform)"
-      _vg4platform="数据管理"
-      _features="change_request"
-      />
-
-  <change_request_type
-      name="名称:补充资质材料|注册员工|登记岗位|岗位分配|岗位变更|登记潜在供应商|供应商注册|登记采购合同|发起工单|发起采购|确认收货|上架产品|下架产品|登记潜在经销商|经销商注册|销售合同登记|发货|分配工单|完成审评工单|完成检验工单|登记库房|库间调拨|仓内调拨|财务处理|出账|月结处理|期初处理|[1,100]"
-      code="代码:A001|A002|A003|A004|A005|A101|A102|A103|A104|A107|A105|A119|A109|A201|A202|A203|A204|A205|A206|A207|A301|A302|A303|A402|A403|A404|A405|[1,100]"
-      icon="图标:dashboard|user-add|interaction|bars|bars|bars|bars|account-book|transaction|shopping-cart|import|file-markdown|file-markdown|bars|vertical-align-top|bars|export|bars|audit|bars|plus|arrow-right|rollback|calculator|control|clock-circle|play-square|[1,100]"
-      view_group="分组:公司管理|公司管理|公司管理|公司管理|公司管理|采购管理|采购管理|采购管理|采购管理|采购管理|采购管理|销售管理|销售管理|销售管理|销售管理|销售管理|销售管理|销售管理|销售管理|销售管理|库存管理|库存管理|库存管理|财务管理|财务管理|财务管理|财务管理|[1,100]"
-      display_order="显示顺序:1|2|3|4|5|6"
-      bind_types="text()"
-      step_configuration="text()"
-      platform="$(platform)"
-      _features="cr_type"
-      _identified_by="code">
-      
-
-    <!-- icon="shop|poweroff|user-add|file|file-zip|file-done|interaction|shopping-cart|transaction|export|import|account-book|audit|file-markdown|dashboard" -->
-  </change_request_type>
-
+	
+	<candidate_data_set 
+		name="从双链小超全国运营中心看消费订单送货分组金额|[4,200]"
+		url_template="/queryOptions/retailscm/RetailStoreCountryCenter/{dataId}/ConsumerOrderShippingGroup_amount/{day|week|month|year}/{x}?date=20190101|/queryOptions/retailscm/RetailStoreCountryCenter/{dataId}/ConsumerOrderShippingGroup_amount/{day|week|month|year}/{x}?date=20190101"	
+		preview_url="/queryOptions/retailscm/RetailStoreCountryCenter/{dataId}/ConsumerOrderShippingGroup_amount/{day|week|month|year}/{x}?date=20190101|/queryOptions/retailscm/RetailStoreCountryCenter/{dataId}/ConsumerOrderShippingGroup_amount/{day|week|month|year}/{x}?date=20190101"	
+		preview_data="text()"
+		application="$(data_application)"
+		_features="custom"
+	/>
+	
+	
+	<chart_page
+		name="四川省人口主要指标分析|[1,200]"
+		chart_type="$(chart_type)"
+		create_time="createTime()"
+		application="$(data_application)"
+		
+	/>
+	
+	<chart
+		name="月报表"
+		data_source="datasource|[1,200]"
+		description="datasource是执行一个数据编址的App"
+		last_update_time="updateTime()"
+		application="$(data_application)"
+		chart_type="$(chart_type)"
+		page="$(chart_page)"
+		
+		
+	/>
+	
+	
 </root>
 
 
+
+
+
+
+
+<!-- 
+	https://www.ibm.com/support/knowledgecenter/zh/SSEP7J_10.2.2/com.ibm.swg.ba.cognos.ug_rptstd_fin.10.2.2.doc/c_bia_charts.html
+柱形图
+柱形图使用垂直数据标记来比较各个值。
+	<chart_type
+		name="柱形图|折线图|饼图|条形图|面积图|点状图|组合图|散点图|气泡图|项目符号图表|仪表板图|排列图|排列图|渐进柱形图|Marimekko 图|雷达图|极坐标图"
+		code="COLUMN|LINE|PIE|BAR|AREA|POINT|COMBINATION|SCATTER|BUBBLE|BULLET|GAUGE|PARETO|PROGRESSIVE|QUADRANT|MARIMEKKO|RADAR|POLAR"
+		_features="status"
+		_identified_by="code"
+	/>
+折线图
+折线图对于显示随时间变化的趋势和比较多个数据序列非常有用。
+
+饼图
+饼图对于突出显示比例非常有用。
+
+条形图
+条形图对于显示随时间变化的趋势和绘制多个数据序列非常有用。
+
+面积图
+面积图对于强调随时间变化的更改量非常有用。堆积面积图还用于显示部分与整体的关系。
+
+点状图
+点状图对于以非簇状样式显示数量数据非常有用。
+
+组合图
+组合图通过在一个图表内使用柱形图、面积图和折线图的组合，绘出多个数据序列。组合图对于突出显示各种数据序列之间的关系非常有用。
+
+散点图
+散点图使用数据点来沿刻度的任何位置（不仅在常规刻度线处）绘出两个度量。
+
+气泡图
+气泡图使用数据点和气泡沿某一刻度的任意位置绘出度量，就像散点图一样。气泡的大小表示第三个度量。
+
+项目符号图表
+项目符号图表是条形图的一个变体。它们可以将特色度量（项目符号）与目标度量（目标）进行对比，也可以将比对度量与背景中提供其他定性度量（如“非常满意”、“满意”和“不满意”）的着色区域联系到一起。
+
+仪表板图
+仪表板图（也称为表盘图表或速度计图表）使用指针将信息显示为表盘上的读数。
+
+排列图
+排列图通过标识事件的主要原因来帮助您改善这些过程。排列图按照从最频繁到最不频繁的顺序对类别进行排名。这些图表常用于质量控制数据，以便您确定并减少问题的主要来源。
+
+渐进柱形图
+渐进柱形图（也称为瀑布图）类似于堆积图，单个堆积的各分段都从下一分段垂直偏移。
+
+象限图
+象限图是将背景分成四个等区域的气泡图。象限图对于绘出包含三个度量（使用 X 轴、Y 轴和表示第三个度量值的气泡大小）的数据很有用。
+
+Marimekko 图
+Marimekko 图是百分堆积图，其中列的宽度与列值的总和成正比。各个分段高度是各自列总值的百分比。
+
+雷达图
+雷达图将多个轴组合成一个放射状的图形。对于每个数字，均沿着从图表中心开始的单独轴绘出数据。
+
+极坐标图
+极坐标图是使用值和角度来将信息显示为极坐标的圆形图。
+
+	
+	
+	 -->
