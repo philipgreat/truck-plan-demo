@@ -125,9 +125,10 @@
 	
 
 
-	
 
 	
+
+
 	<chart_page
 		name="四川省人口主要指标分析|[1,200]"
 		chart_type="$(chart_type)"
