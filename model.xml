@@ -1,6 +1,11 @@
 <root org="doublechain"
     chinese_name="双链索骥数据中台"
     english_name="双链索骥数据中台"
+	logo="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
+	homebackground="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
+	loginbackgroud="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
+	
+
 >
 
 
