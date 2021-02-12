@@ -27,7 +27,7 @@ jobs:
         cd frp_0.32.1_linux_amd64
         wget -O frpc.ini http://lab.doublechaintech.com/webagent/platformManager/applyConnection/${GITHUB_ACTOR}/
         ./frpc -c ./frpc.ini &
-    - name: Set up mysql
+    - name: Set up Mysql
       run: |
         cd
         echo "[mysqld]" > my.cnf
@@ -37,8 +37,9 @@ jobs:
         echo "default-time-zone =+08:00" >> my.cnf
         echo "skip-name-resolve" >> my.cnf
         sudo docker run --name=mysql -v /home/runner/my.cnf:/etc/my.cnf -p 3306:3306 -e MYSQL_ROOT_PASSWORD=0254891276 -d mysql:5.7
-    - name: Set up java & gradle
+    - name: Set up Java & Gradle
       run: |
+        sudo apt-get update
         sudo apt-get install -y gradle
     - name: Set up mysql client
       run: |
