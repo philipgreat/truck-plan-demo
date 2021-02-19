@@ -1,5 +1,5 @@
 <root org="doublechain"
-    chinese_name="双链索骥数据中台"
+    chinese_name="双链索骥数据中台1"
     english_name="双链索骥数据中台"
 	_logo="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
 	_homebackground="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
@@ -11,6 +11,7 @@
 
     <platform
         name="双链索骥数据中台"
+		description="hello"
         founded="now()"
         
         description="双链科技数据中台系统（DMOS)|[1,2000]"
