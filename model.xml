@@ -21,20 +21,9 @@
 
 
 	
-
-
-
-
-
-
-
-
-
-
-
 	
 	<change_request_type
-		name="创建大屏|查看|订阅|取消订阅|搜索|禁止用户"
+		name="联系客户|转化客户|录入合同|收款|升级VIP|[3,10]"
 		code="DEPOSITE|TRANSFER|WITHDRAW|CREATE_ACCOUNT|CHANGE_NAME|DISABLE_USER|[1,99]"
 		icon="download|swap|upload|account-book|edit"
 		display_order="1|2|3|4|5|6"
