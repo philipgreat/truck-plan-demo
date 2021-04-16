@@ -63,7 +63,7 @@ jobs:
         ./daas-client/gencode.sh ./models/model.xml all /home/runner/work/daas-sample/daas-sample/
     - name: Creating Tables and Import Sample Data
       run: |
-        cd /home/runner/work/daas-sample/daas-sample/bizcore/WEB-INF/model_core_src/META-INF/
+        cd /home/runner/work/daas-sample/daas-sample/data
         mysql -uroot -p0254891276 -h127.0.0.1 < model_mysql.sql
     - name: Start Java Backend - Run in Resin Container
       run: |
