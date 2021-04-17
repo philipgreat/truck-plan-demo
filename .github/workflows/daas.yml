@@ -28,6 +28,7 @@ jobs:
         /home/runner/resin-3.1.16/bin/httpd.sh start
         cat /home/runner/resin-3.1.16/conf/resin.conf
         cat /home/runner/resin-3.1.16/log/jvm-default.log
+        sleep 10
         netstat -an
     - name: Set up Proxy Server for Public Browse.
       run: |
