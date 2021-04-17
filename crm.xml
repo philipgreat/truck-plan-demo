@@ -14,6 +14,8 @@
 
 
 
+
+
     <platform name="中国平安客户关系管理系统" founded="now()" description="中国平安客户关系管理系统（PA-CRM)|[1,2000]"/>
 	<merchant name="平安四川分公司|平安广东分公司|"  founded="now" platform="platform()"/>
 	<customer name="刘利|田波" birdth_day="2019-09-09" create_time="createTime()" merchant="merchant()" platform="platform()"/>
