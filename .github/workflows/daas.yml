@@ -26,7 +26,7 @@ jobs:
         java -version
         wget http://d.xrcity.cn/upload/java/resin-3.1.16.zip
         unzip resin-3.1.16.zip
-        /home/runner/resin-3.1.16/bin/httpd.sh 
+        /home/runner/resin-3.1.16/bin/httpd.sh  start
         cat /home/runner/resin-3.1.16/conf/resin.conf|grep addr
         cat /home/runner/resin-3.1.16/log/jvm-default.log
         sleep 10
