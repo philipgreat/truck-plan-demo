@@ -27,7 +27,8 @@ jobs:
         unzip resin-3.1.16.zip
         /home/runner/resin-3.1.16/bin/httpd.sh start
         cat /home/runner/resin-3.1.16/conf/resin.conf
-        netstat -an|grep 8080
+        cat /home/runner/resin-3.1.16/log/jvm-default
+        netstat -an
     - name: Set up Proxy Server for Public Browse.
       run: |
         cd
