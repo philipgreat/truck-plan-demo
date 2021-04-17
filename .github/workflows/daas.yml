@@ -69,13 +69,13 @@ jobs:
         mysql -uroot -p0254891276 -h127.0.0.1 < model_mysql.sql
     - name: Start Java Backend - Run in Resin Container
       run: |
+        netstat -an
+        curl -s http://localhost:8080/model/cacheService/getAsString/action/
         cd /home/runner/work/daas-sample/daas-sample/bizcore
         gradle classes
         gradle copyJar
         ln -s /home/runner/work/daas-sample/daas-sample/bizcore /home/runner/resin-3.1.16/webapps/model
         sleep 10
-        netstat -an|grep 8080
-        curl -s http://localhost:8080/model/cacheService/getAsString/action/
     - name: Running - This App Will Be Running for Six Hours
       run: |
         while true
