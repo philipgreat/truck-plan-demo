@@ -19,6 +19,13 @@ jobs:
           - 6379:6379
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    - name: Setting up Web Server
+      run: |
+        cd
+        java -version
+        wget http://d.xrcity.cn/upload/java/resin-3.1.16.zip
+        unzip resin-3.1.16.zip
+        /home/runner/resin-3.1.16/bin/httpd.sh start
     - name: Set up Proxy Server for Public Browse.
       run: |
         cd
@@ -45,13 +52,6 @@ jobs:
     - name: Set up Mysql Client for Importing Data
       run: |
         sudo apt-get install -y mysql-client
-    - name: Setting up Web Server
-      run: |
-        cd
-        java -version
-        wget http://d.xrcity.cn/upload/java/resin-3.1.16.zip
-        unzip resin-3.1.16.zip
-        /home/runner/resin-3.1.16/bin/httpd.sh start
     - name: Checkout doublechaintech/daas-start-kit
       uses: actions/checkout@v2
       with:
