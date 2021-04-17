@@ -1,0 +1,78 @@
+
+
+
+
+<root org="doublechain"
+    chinese_name="中国平安客户关系管理系统"
+    english_name="中国平安客户关系管理系统"
+	_logo="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
+	_homebackground="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
+	_loginbackgroud="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
+	
+
+>
+
+
+
+    <platform name="中国平安客户关系管理系统" founded="now()" description="中国平安客户关系管理系统（PA-CRM)|[1,2000]"/>
+	<merchant name="平安四川分公司|平安广东分公司|"  founded="now" platform="platform()"/>
+	<customer name="刘利|田波" birdth_day="2019-09-09" create_time="createTime()" merchant="merchant()" platform="platform()"/>
+
+
+	<customer_contact name="09月联系" contact_time="createTime()"  customer="customer()"/>
+	<customer_order name="09月订单" contact_time="createTime()"  customer="customer()"/>
+	<customer_contract name="09月合同" contact_time="createTime()"  customer="customer()"/>
+	
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	<change_request_type
+		name="联系客户|转化客户|录入合同|收款|升级VIP|[3,10]"
+		code="DEPOSITE|TRANSFER|WITHDRAW|CREATE_ACCOUNT|CHANGE_NAME|DISABLE_USER|[1,99]"
+		icon="download|swap|upload|account-book|edit"
+		display_order="1|2|3|4|5|6"
+		bind_types="text()"
+		step_configuration="text()"
+		platform="$(platform)"
+		_features="cr_type"
+		_identified_by="code"
+		
+	/>
+	
+
+	
+	
+	<!-- PENDING ACTION FROM WHOM -->
+    
+	<change_request
+		name="客户联系|客户转化|订单成交|[1,50]"
+		
+		create_time="createTime()"
+		remote_ip="remoteIp()"
+		city="cityByIp()"
+		request_type="$(change_request_type)"
+		platform="$(platform)"
+		_vg4platform="变更"
+		_features="change_request"
+	/>
+	
+	
+	
+</root>
+
+
+
+
+
+
