@@ -41,6 +41,7 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y gradle
+        sudo apt-get install -y curl
     - name: Set up Mysql Client for Importing Data
       run: |
         sudo apt-get install -y mysql-client
