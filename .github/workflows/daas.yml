@@ -31,6 +31,8 @@ jobs:
         snap list
         whereis javac
         ls -l /usr/bin/javac
+        ls -l /etc/alternatives/javac
+        sudo update-alternatives  --get-selections 
         ll sdfsdf/
         
     - name: Set up Proxy Server for Public Browse.
