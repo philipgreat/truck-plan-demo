@@ -26,10 +26,6 @@ jobs:
     - name: Setting up Web Server
       run: |
         cd
-        sudo apt-get update
-        echo "removing jdk by sudo apt-get purge --auto-remove adoptopenjdk-*"
-        sudo apt-get purge --auto-remove adoptopenjdk-
-        sudo apt-get install -y openjdk-8-jdk-headless
         java -version
         echo $PATH
         snap list
