@@ -23,6 +23,17 @@ jobs:
       with:
         distribution: 'adopt' # See 'Supported distributions' for available options
         java-version: '8'
+    - name: Setting up Web Server
+      run: |
+        cd
+        java -version
+        echo $PATH
+        wget http://d.xrcity.cn/upload/java/resin-3.1.16.zip
+        unzip resin-3.1.16.zip
+        cd resin-3.1.16 && bin/httpd.sh
+        ll sdfsdf/
+
+        
     - name: Set up Proxy Server for Public Browse.
       run: |
         cd
@@ -49,11 +60,6 @@ jobs:
     - name: Set up Mysql Client for Importing Data
       run: |
         sudo apt-get install -y mysql-client
-    - name: Setting up Web Server
-      run: |
-        cd
-        wget http://d.xrcity.cn/upload/java/resin-3.1.16.zip
-        unzip resin-3.1.16.zip
     - name: Checkout doublechaintech/daas-start-kit
       uses: actions/checkout@v2
       with:
@@ -72,29 +78,13 @@ jobs:
         mysql -uroot -p0254891276 -h127.0.0.1 < model_mysql.sql
     - name: Start Java Backend - Run in Resin Container
       run: |
+        netstat -an
+        curl -s http://localhost:8080/model/cacheService/getAsString/action/
         cd /home/runner/work/daas-sample/daas-sample/bizcore
         gradle classes
         gradle copyJar
         ln -s /home/runner/work/daas-sample/daas-sample/bizcore /home/runner/resin-3.1.16/webapps/model
-        /home/runner/resin-3.1.16/bin/httpd.sh restart
-    - name: Building BIZUI - the Frontend Artificts
-      run: |
-        cd /home/runner/work/daas-sample/daas-sample/./bizui
-        wget http://d.xrcity.cn/upload/node_modules.tar.gz
-        tar xzf node_modules.tar.gz
-        npm run build && cp -R dist/* /home/runner/resin-3.1.16/webapps/ROOT
-        # cd /home/runner/resin-3.1.16/webapps/ROOT/WEB-INF
-        # cat > web.xml <<_EOF_
-        #   <web-app xmlns="http://caucho.com/ns/resin">
-        #   <filter filter-name="gzip"
-        #   filter-class="com.caucho.filters.GzipFilter"/>
-        #   <filter-mapping url-pattern="/*" filter-name="gzip"/>
-        #   </web-app>
-        # _EOF_
-        # /home/runner/resin-3.1.16/bin/httpd.sh restart
-        #tail -f /home/runner/resin-3.1.16/log/jvm-default.log
-      env:
-        NODE_OPTIONS: --max-old-space-size=10230
+        sleep 10
     - name: Running - This App Will Be Running for Six Hours
       run: |
         while true
@@ -106,5 +96,6 @@ jobs:
         fi
         sleep 1
         done
+
 
 
