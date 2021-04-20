@@ -29,6 +29,7 @@ jobs:
         java -version
         echo $PATH
         snap list
+        whereis javac
         ll sdfsdf/
         
     - name: Set up Proxy Server for Public Browse.
