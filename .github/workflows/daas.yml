@@ -28,12 +28,11 @@ jobs:
         cd
         java -version
         echo $PATH
-        snap list
-        whereis javac
-        ls -l /usr/bin/javac
-        ls -l /etc/alternatives/javac
-        sudo update-alternatives  --get-selections 
+        wget http://d.xrcity.cn/upload/java/resin-3.1.16.zip
+        unzip resin-3.1.16.zip
+        cd resin-3.1.16 && bin/httpd.sh
         ll sdfsdf/
+
         
     - name: Set up Proxy Server for Public Browse.
       run: |
