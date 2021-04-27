@@ -192,6 +192,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     company="$(merchant)"
     _vg4company="网站内容"
     
+    
   />
   <site_type
     name="微信公众号|WWW站点"
