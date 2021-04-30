@@ -30,6 +30,7 @@
 		name="存款|转账|取款|[1,50]"
 		create_time="createTime()"
 		remote_ip="remoteIp()"
+		city_ip="cityByIp()"
 		request_type="$(change_request_type)"
 		platform="$(platform)"
 		_vg4platform="变更"
