@@ -14,6 +14,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
 
 
 
+
   <platform
     name="双链生鲜供应链平台"
     create_time="createTime()"
