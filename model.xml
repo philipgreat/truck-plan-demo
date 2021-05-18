@@ -35,6 +35,36 @@
 
 
 	
+	<change_request_type
+		name="续签合同|终止合同|[3,10]"
+		code="DEPOSITE|TRANSFER|WITHDRAW|CREATE_ACCOUNT|CHANGE_NAME|DISABLE_USER|[1,99]"
+		icon="download|swap|upload|account-book|edit"
+		display_order="1|2|3|4|5|6"
+		bind_types="text()"
+		step_configuration="text()"
+		platform="$(platform)"
+		_features="cr_type"
+		_identified_by="code"
+		
+	/>
+	
+
+	
+	
+	<!-- PENDING ACTION FROM WHOM -->
+    
+	<change_request
+		name="续签合同|终止合同|[1,50]"
+		
+		create_time="createTime()"
+		remote_ip="remoteIp()"
+		city="cityByIp()"
+		request_type="$(change_request_type)"
+		platform="$(platform)"
+		_vg4platform="变更"
+		_features="change_request"
+	/>
+	
 	
 	
 </root>
