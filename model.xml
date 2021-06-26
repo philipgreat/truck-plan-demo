@@ -1134,7 +1134,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     last_update_time="updateTime()"
     platform="$(platform)"
 
-    
+
     _vg4owner="仓库管理"
     _vg4platform="仓库管理"
     _vg4scale_location="仓库管理"
@@ -1203,6 +1203,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _identified_by="code"
     create_time="createTime()"
   />
+
 
 
 
