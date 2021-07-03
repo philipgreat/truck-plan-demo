@@ -1,151 +1,3 @@
-<root org="doublechain"
-    chinese_name="双链索骥数据中台"
-    english_name="双链索骥数据中台"
-	logo="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
-	homebackground="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
-	loginbackgroud="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
-	
-
-
-
-
-
-
->
-
-
-    <platform
-        name="双链索骥数据中台"
-        founded="now()"
-        
-        description="双链科技数据中台系统（DMOS)|[1,2000]"
-        
-        
-    />
-	
-	<change_request_type
-		name="创建大屏|查看|订阅|取消订阅|搜索|禁止用户"
-		code="DEPOSITE|TRANSFER|WITHDRAW|CREATE_ACCOUNT|CHANGE_NAME|DISABLE_USER|[1,99]"
-		icon="download|swap|upload|account-book|edit"
-		display_order="1|2|3|4|5|6"
-		bind_types="text()"
-		step_configuration="text()"
-		platform="$(platform)"
-		_features="cr_type"
-		_identified_by="code"
-		
-	/>
-	
-	
-	
-	<!-- PENDING ACTION FROM WHOM -->
-    
-	<change_request
-		name="存款|转账|取款|[1,50]"
-		
-		create_time="createTime()"
-		remote_ip="remoteIp()"
-		request_type="$(change_request_type)"
-		platform="$(platform)"
-		_vg4platform="变更"
-		_features="change_request"
-	/>
-	
-	<event
-		name="存款|转账|取款|[1,50]"
-		picture="girls.jpg"
-		cq="$(change_request)"
-		_features="n*event"
-		_reg_func="CODE"
-		
-	/>
-	<event1
-		name="存款|转账|取款|[1,50]"
-		cq="$(change_request)"
-		_features="n*event"
-		_reg_func="DEC|减法|file"
-		
-	/>
-
-	<chart_type
-		name="柱形图|折线图|饼图|条形图|面积图|点状图|组合图|散点图|气泡图|项目符号图表|仪表板图|排列图|排列图|渐进柱形图|Marimekko 图|雷达图|极坐标图"
-		code="COLUMN|LINE|PIE|BAR|AREA|POINT|COMBINATION|SCATTER|BUBBLE|BULLET|GAUGE|PARETO|PROGRESSIVE|QUADRANT|MARIMEKKO|RADAR|POLAR"
-		_features="status"
-		_identified_by="code"
-		platform="$(platform)"
-	/>
-	
-	<user_status
-		name="正常|终止|中止"
-		code="NORMAL|TERMINIATED|PAUSED"
-		
-		group_name="分组1|分组2"
-		platform="$(platform)"
-		_group_by="group_name"
-		_features="status"
-	/>
-	
-	
-	
-	<data_app_user
-		name="章总|李总|数字大屏|户外广告|[1,200]"
-		avatar="file.jpg"
-		status="$(user_status)"
-		create_time="createTime()"
-		platform="$(platform)"
-		_features="merchant,custom"
-		
-	/>
-	
-	
-	<data_application
-		name="全平台分析|四川省分析|成都市分析App|[1,200]"
-		target_project_name="retailscm|retaiscm|[2,200]"
-		target_object_type="RetailStoreCountryCenter|RetailStoreCountryCenter|[3,200]"
-		target_object_id="RSCC000001|RSCC000001|[4,200]"
-		create_time="createTime()"
-		app_user="$(data_app_user)"
-		
-		_features="custom"
-		
-		
-	/>
-	
-
-	
-	<candidate_data_set 
-		name="从双链小超全国运营中心看消费订单送货分组金额|[4,200]"
-		url_template="/queryOptions/retailscm/RetailStoreCountryCenter/{dataId}/ConsumerOrderShippingGroup_amount/{day|week|month|year}/{x}?date=20190101|/queryOptions/retailscm/RetailStoreCountryCenter/{dataId}/ConsumerOrderShippingGroup_amount/{day|week|month|year}/{x}?date=20190101"	
-		preview_url="/queryOptions/retailscm/RetailStoreCountryCenter/{dataId}/ConsumerOrderShippingGroup_amount/{day|week|month|year}/{x}?date=20190101|/queryOptions/retailscm/RetailStoreCountryCenter/{dataId}/ConsumerOrderShippingGroup_amount/{day|week|month|year}/{x}?date=20190101"	
-		preview_data="text()"
-		application="$(data_application)"
-		_features="custom"
-	/>
-	
-	
-	<chart_page
-		name="四川省人口主要指标分析|[1,200]"
-		chart_type="$(chart_type)"
-		create_time="createTime()"
-		application="$(data_application)"
-		
-	/>
-	
-	<chart
-		name="月报表"
-		data_source="datasource|[1,200]"
-		description="datasource是执行一个数据编址的App"
-		last_update_time="updateTime()"
-		application="$(data_application)"
-		chart_type="$(chart_type)"
-		page="$(chart_page)"
-		
-		
-	/>
-	
-	
-</root>
-
 <root
   org="doublechaintech"
   chinese_name="双链生鲜供应链平台"
@@ -164,7 +16,8 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
   />
   <factory
     name="南沙工厂|珠江工厂|芜湖工厂|[1,100]"
-    location="广州|广州|芜湖"
+    location="广州|广州|芜湖|[1,1000]"
+    mobile="123123"
     
     platform="platform()"
     _features="merchant"
@@ -172,6 +25,12 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     _vg4owner="商户管理"
   />
 
+ <cylinder_status 
+    name="可用|报废" 
+    platform="platform()"
+    code="AVAIL|DISCARD" 
+    _features="status"
+/>
 
   
   
