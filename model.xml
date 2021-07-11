@@ -26,8 +26,11 @@
   />
 <access_record
     name="访问记录|[1,100]"
+    user="web_user()"
     location="广州|广州|芜湖|[1,1000]"
-    mobile="123123"
+    referral_url="https://demo.doublechaintech.com/admin/freshchian|[1,1000]"
+    destination_url="https://demo.doublechaintech.com/admin/freshchian|[1,1000]"
+    access_time="create_time()"
     platform="platform()"
     _features="merchant"
     _vg4platform="商户管理"
