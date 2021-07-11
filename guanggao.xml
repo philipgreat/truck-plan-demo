@@ -1,0 +1,41 @@
+<root
+    org="doublechaintech"
+    chinese_name="广钢气瓶追溯平台"
+    english_name="广钢气瓶追溯平台"
+>
+
+  <platform
+    name="广钢气瓶追溯平台"
+    create_time="createTime()"
+    last_update_time="updateTime()"
+  />
+  <site
+    name="freshchain演示项目|retailchain演示项目|[1,100]"
+    location="demo.doublechaintech.com/admin/retailscm|demo.doublechaintech.com/admin/freshchain|[1,512]"
+    platform="platform()"
+    _features="merchant"
+    _vg4platform="商户管理"
+    _vg4owner="商户管理"
+  />
+  <web_user
+
+    name="freshchain演示项目|retailchain演示项目|[1,100]"
+    platform="platform()"
+    create_time="createTime()"
+  
+  />
+<access_record
+    name="访问记录|[1,100]"
+    location="广州|广州|芜湖|[1,1000]"
+    mobile="123123"
+    platform="platform()"
+    _features="merchant"
+    _vg4platform="商户管理"
+    _vg4owner="商户管理"
+  />
+
+  
+  
+
+
+</root>
