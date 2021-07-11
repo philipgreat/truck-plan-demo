@@ -1,11 +1,11 @@
 <root
     org="doublechaintech"
-    chinese_name="网站流量分析平台"
-    english_name="网站流量分析平台"
+    chinese_name="网站流量分析系统"
+    english_name="网站流量分析系统"
 >
 
   <platform
-    name="网站流量分析平台"
+    name="网站流量分析系统"
     create_time="createTime()"
     last_update_time="updateTime()"
   />
@@ -13,6 +13,7 @@
     name="freshchain演示项目|retailchain演示项目|[1,100]"
     location="demo.doublechaintech.com/admin/retailscm|demo.doublechaintech.com/admin/freshchain|[1,512]"
     platform="platform()"
+    create_time="createTime()"
     _features="merchant"
     _vg4platform="商户管理"
     _vg4owner="商户管理"
@@ -30,7 +31,7 @@
     location="广州|广州|芜湖|[1,1000]"
     referral_url="https://demo.doublechaintech.com/admin/freshchian|[1,1000]"
     destination_url="https://demo.doublechaintech.com/admin/freshchian|[1,1000]"
-    access_time="create_time()"
+    create_time="createTime()"
     platform="platform()"
     _features="merchant"
     _vg4platform="商户管理"
