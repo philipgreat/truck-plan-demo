@@ -15,8 +15,7 @@
     platform="platform()"
     create_time="createTime()"
     _features="merchant"
-    _vg4platform="商户管理"
-    _vg4owner="商户管理"
+ 
   />
 
     <referral_domain
@@ -25,8 +24,7 @@
     platform="platform()"
     create_time="createTime()"
     _features="merchant"
-    _vg4platform="商户管理"
-    _vg4owner="商户管理"
+
   />
   
   <web_user
@@ -45,9 +43,8 @@
     destination_url="https://demo.doublechaintech.com/admin/freshchian|[1,1000]"
     create_time="createTime()"
     platform="platform()"
-    _features="merchant"
-    _vg4platform="商户管理"
-    _vg4owner="商户管理"
+    
+
   />
 
   
