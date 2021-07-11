@@ -1,37 +1,38 @@
 <root
-  org="doublechaintech"
-  chinese_name="双链生鲜供应链平台"
-	english_name="Agriculture Business Travel"
+    org="doublechaintech"
+    chinese_name="网站流量分析平台"
+    english_name="网站流量分析平台"
 >
-<!-- 
-
-synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-sync.sh  freshchain" 
-
-
--->
 
   <platform
-    name="广钢气瓶追溯平台"
+    name="网站流量分析平台"
     create_time="createTime()"
     last_update_time="updateTime()"
   />
-  <factory
-    name="南沙工厂|珠江工厂|芜湖工厂|[1,100]"
-    location="广州|广州|芜湖|[1,1000]"
-    mobile="123123"
-    
+  <site
+    name="freshchain演示项目|retailchain演示项目|[1,100]"
+    location="demo.doublechaintech.com/admin/retailscm|demo.doublechaintech.com/admin/freshchain|[1,512]"
     platform="platform()"
     _features="merchant"
     _vg4platform="商户管理"
     _vg4owner="商户管理"
   />
+  <web_user
 
- <cylinder_status 
-    name="可用|报废" 
+    name="freshchain演示项目|retailchain演示项目|[1,100]"
     platform="platform()"
-    code="AVAIL|DISCARD" 
-    _features="status"
-/>
+    create_time="createTime()"
+  
+  />
+<access_record
+    name="访问记录|[1,100]"
+    location="广州|广州|芜湖|[1,1000]"
+    mobile="123123"
+    platform="platform()"
+    _features="merchant"
+    _vg4platform="商户管理"
+    _vg4owner="商户管理"
+  />
 
   
   
