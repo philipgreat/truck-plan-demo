@@ -1,215 +1,40 @@
-<root org="doublechain"
-    chinese_name="双链索骥数据中台"
-    english_name="双链索骥数据中台"
-	logo="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
-	homebackground="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
-	loginbackgroud="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
-	
-
-
-
-
-
-
+<root
+  org="doublechaintech"
+  chinese_name="双链生鲜供应链平台"
+	english_name="Agriculture Business Travel"
 >
-
-
-    <platform
-        name="双链索骥数据中台"
-        founded="now()"
-        
-        description="双链科技数据中台系统（DMOS)|[1,2000]"
-        
-        
-    />
-	
-	<change_request_type
-		name="创建大屏|查看|订阅|取消订阅|搜索|禁止用户"
-		code="DEPOSITE|TRANSFER|WITHDRAW|CREATE_ACCOUNT|CHANGE_NAME|DISABLE_USER|[1,99]"
-		icon="download|swap|upload|account-book|edit"
-		display_order="1|2|3|4|5|6"
-		bind_types="text()"
-		step_configuration="text()"
-		platform="$(platform)"
-		_features="cr_type"
-		_identified_by="code"
-		
-	/>
-	
-	
-	
-	<!-- PENDING ACTION FROM WHOM -->
-    
-	<change_request
-		name="存款|转账|取款|[1,50]"
-		
-		create_time="createTime()"
-		remote_ip="remoteIp()"
-		request_type="$(change_request_type)"
-		platform="$(platform)"
-		_vg4platform="变更"
-		_features="change_request"
-	/>
-	
-	<event
-		name="存款|转账|取款|[1,50]"
-		picture="girls.jpg"
-		cq="$(change_request)"
-		_features="n*event"
-		_reg_func="CODE"
-		
-	/>
-	<event1
-		name="存款|转账|取款|[1,50]"
-		cq="$(change_request)"
-		_features="n*event"
-		_reg_func="DEC|减法|file"
-		
-	/>
-
-	<chart_type
-		name="柱形图|折线图|饼图|条形图|面积图|点状图|组合图|散点图|气泡图|项目符号图表|仪表板图|排列图|排列图|渐进柱形图|Marimekko 图|雷达图|极坐标图"
-		code="COLUMN|LINE|PIE|BAR|AREA|POINT|COMBINATION|SCATTER|BUBBLE|BULLET|GAUGE|PARETO|PROGRESSIVE|QUADRANT|MARIMEKKO|RADAR|POLAR"
-		_features="status"
-		_identified_by="code"
-		platform="$(platform)"
-	/>
-	
-	<user_status
-		name="正常|终止|中止"
-		code="NORMAL|TERMINIATED|PAUSED"
-		
-		group_name="分组1|分组2"
-		platform="$(platform)"
-		_group_by="group_name"
-		_features="status"
-	/>
-	
-	
-	
-	<data_app_user
-		name="章总|李总|数字大屏|户外广告|[1,200]"
-		avatar="file.jpg"
-		status="$(user_status)"
-		create_time="createTime()"
-		platform="$(platform)"
-		_features="merchant,custom"
-		
-	/>
-	
-	
-	<data_application
-		name="全平台分析|四川省分析|成都市分析App|[1,200]"
-		target_project_name="retailscm|retaiscm|[2,200]"
-		target_object_type="RetailStoreCountryCenter|RetailStoreCountryCenter|[3,200]"
-		target_object_id="RSCC000001|RSCC000001|[4,200]"
-		create_time="createTime()"
-		app_user="$(data_app_user)"
-		
-		_features="custom"
-		
-		
-	/>
-	
-
-	
-	<candidate_data_set 
-		name="从双链小超全国运营中心看消费订单送货分组金额|[4,200]"
-		url_template="/queryOptions/retailscm/RetailStoreCountryCenter/{dataId}/ConsumerOrderShippingGroup_amount/{day|week|month|year}/{x}?date=20190101|/queryOptions/retailscm/RetailStoreCountryCenter/{dataId}/ConsumerOrderShippingGroup_amount/{day|week|month|year}/{x}?date=20190101"	
-		preview_url="/queryOptions/retailscm/RetailStoreCountryCenter/{dataId}/ConsumerOrderShippingGroup_amount/{day|week|month|year}/{x}?date=20190101|/queryOptions/retailscm/RetailStoreCountryCenter/{dataId}/ConsumerOrderShippingGroup_amount/{day|week|month|year}/{x}?date=20190101"	
-		preview_data="text()"
-		application="$(data_application)"
-		_features="custom"
-	/>
-	
-	
-	<chart_page
-		name="四川省人口主要指标分析|[1,200]"
-		chart_type="$(chart_type)"
-		create_time="createTime()"
-		application="$(data_application)"
-		
-	/>
-	
-	<chart
-		name="月报表"
-		data_source="datasource|[1,200]"
-		description="datasource是执行一个数据编址的App"
-		last_update_time="updateTime()"
-		application="$(data_application)"
-		chart_type="$(chart_type)"
-		page="$(chart_page)"
-		
-		
-	/>
-	
-	
-</root>
-
-
-
-
-
-
-
 <!-- 
-	https://www.ibm.com/support/knowledgecenter/zh/SSEP7J_10.2.2/com.ibm.swg.ba.cognos.ug_rptstd_fin.10.2.2.doc/c_bia_charts.html
-柱形图
-柱形图使用垂直数据标记来比较各个值。
-	<chart_type
-		name="柱形图|折线图|饼图|条形图|面积图|点状图|组合图|散点图|气泡图|项目符号图表|仪表板图|排列图|排列图|渐进柱形图|Marimekko 图|雷达图|极坐标图"
-		code="COLUMN|LINE|PIE|BAR|AREA|POINT|COMBINATION|SCATTER|BUBBLE|BULLET|GAUGE|PARETO|PROGRESSIVE|QUADRANT|MARIMEKKO|RADAR|POLAR"
-		_features="status"
-		_identified_by="code"
-	/>
-折线图
-折线图对于显示随时间变化的趋势和比较多个数据序列非常有用。
 
-饼图
-饼图对于突出显示比例非常有用。
+synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-sync.sh  freshchain" 
 
-条形图
-条形图对于显示随时间变化的趋势和绘制多个数据序列非常有用。
 
-面积图
-面积图对于强调随时间变化的更改量非常有用。堆积面积图还用于显示部分与整体的关系。
+-->
 
-点状图
-点状图对于以非簇状样式显示数量数据非常有用。
+  <platform
+    name="广钢气瓶追溯平台"
+    create_time="createTime()"
+    last_update_time="updateTime()"
+  />
+  <factory
+    name="南沙工厂|珠江工厂|芜湖工厂|[1,100]"
+    location="广州|广州|芜湖|[1,1000]"
+    mobile="123123"
+    
+    platform="platform()"
+    _features="merchant"
+    _vg4platform="商户管理"
+    _vg4owner="商户管理"
+  />
 
-组合图
-组合图通过在一个图表内使用柱形图、面积图和折线图的组合，绘出多个数据序列。组合图对于突出显示各种数据序列之间的关系非常有用。
+ <cylinder_status 
+    name="可用|报废" 
+    platform="platform()"
+    code="AVAIL|DISCARD" 
+    _features="status"
+/>
 
-散点图
-散点图使用数据点来沿刻度的任何位置（不仅在常规刻度线处）绘出两个度量。
+  
+  
 
-气泡图
-气泡图使用数据点和气泡沿某一刻度的任意位置绘出度量，就像散点图一样。气泡的大小表示第三个度量。
 
-项目符号图表
-项目符号图表是条形图的一个变体。它们可以将特色度量（项目符号）与目标度量（目标）进行对比，也可以将比对度量与背景中提供其他定性度量（如“非常满意”、“满意”和“不满意”）的着色区域联系到一起。
-
-仪表板图
-仪表板图（也称为表盘图表或速度计图表）使用指针将信息显示为表盘上的读数。
-
-排列图
-排列图通过标识事件的主要原因来帮助您改善这些过程。排列图按照从最频繁到最不频繁的顺序对类别进行排名。这些图表常用于质量控制数据，以便您确定并减少问题的主要来源。
-
-渐进柱形图
-渐进柱形图（也称为瀑布图）类似于堆积图，单个堆积的各分段都从下一分段垂直偏移。
-
-象限图
-象限图是将背景分成四个等区域的气泡图。象限图对于绘出包含三个度量（使用 X 轴、Y 轴和表示第三个度量值的气泡大小）的数据很有用。
-
-Marimekko 图
-Marimekko 图是百分堆积图，其中列的宽度与列值的总和成正比。各个分段高度是各自列总值的百分比。
-
-雷达图
-雷达图将多个轴组合成一个放射状的图形。对于每个数字，均沿着从图表中心开始的单独轴绘出数据。
-
-极坐标图
-极坐标图是使用值和角度来将信息显示为极坐标的圆形图。
-
-	
-	
-	 -->
+</root>
