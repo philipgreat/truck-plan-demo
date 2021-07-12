@@ -535,8 +535,8 @@
     contract_type="contract_type()"
     content="合同内容"
     amount="$200000.00"
-    tendering="tendering?()"
-    tender="tender?()"
+    tendering="tendering()?"
+    tender="tender()?"
     last_update_time="updateTime()"
     create_time="createTime()"
     _vg4buyer="合同管理"
@@ -653,7 +653,7 @@
     seller="merchant()"
     status="order_status()"
     total_amount="$103000000.005|[0.00, 100000000.00]"
-    contract="contract?()"
+    contract="contract()?"
 
     create_time="createTime()"
     last_update_time="updateTime()"
@@ -695,8 +695,8 @@
   <!-- 付款: 订单&合同付款 -->
   <payment
     name="付款"
-    contract_order="contract_order?()"
-    contract="contract?()"
+    contract_order="contract_order()?"
+    contract="contract()?"
     payment_type="payment_type()"
     payment_status="payment_status()"
     payable_amount="$200000.00"
@@ -735,8 +735,8 @@
    -->
   <!-- <payment_cr
     name="付款"
-    contract_order="contract_order?()"
-    contract="contract?()"
+    contract_order="contract_order()?"
+    contract="contract()?"
     payment_type="payment_type()"
     payment_status="payment_status()"
     payable_amount="$200000.00"
@@ -853,8 +853,8 @@
     buyer="merchant()"
     seller="merchant()"
     applicant="user()"
-    contract="contract?()"
-    contract_order="contract_order?()"
+    contract="contract()?"
+    contract_order="contract_order()?"
     create_time="createTime()"
     _vg4buyer="票据管理"
     _vg4seller="票据管理"
