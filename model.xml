@@ -41,7 +41,7 @@
 	
 	<change_request_type
 		name="联系客户|转化客户|录入合同|收款|升级VIP|[3,10]"
-		code="DEPOSITE|TRANSFER|WITHDRAW|CREATE_ACCOUNT|CHANGE_NAME|DISABLE_USER|[1,99]"
+		code="DEPOSITE|TRANSFER|WITHDRAW|CREATE_ACCOUNT|CHANGE_NAME|UPDATE_IMAGE|[1,99]"
 		icon="download|swap|upload|account-book|edit"
 		display_order="1|2|3|4|5|6"
 		bind_types="text()"
@@ -69,6 +69,18 @@
 		_features="change_request"
 	/>
 	
+	  <image_upload_reponse
+      _name="上传图片"
+      name="图片|[1,100]"
+      mime_type="image/png|[5,20]"
+      remote_url="http://localhost/|[10,256]"
+      change_request="change_request()"
+      _features="event"
+      _bind_with_cr_type="UPLOAD_IMAGE"
+      />
+
+
+
 	
 	
 </root>
