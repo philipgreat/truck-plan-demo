@@ -78,8 +78,16 @@
       _features="event"
       _bind_with_cr_type="UPLOAD_IMAGE"
       />
-
-
+	
+	  <image_upload_step
+      _name="上传图片"
+      name="图片|[1,100]"
+      mime_type="image/png|[5,20]"
+      encode_content="text()"
+      change_request="change_request()"
+      _features="event"
+      _bind_with_cr_type="UPLOAD_IMAGE"
+      />
 
 	
 	
