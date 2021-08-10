@@ -8358,3 +8358,10 @@ remote: fatal error in commit_refs
 To https://github.com/philipgreat/truck-plan-demo.git
  ! [remote rejected] master -> master (failure)
 error: failed to push some refs to 'https://github.com/philipgreat/truck-plan-demo.git'
+Already up to date.
+[master 29de527] updated @ 2021-08-10 23:58:59
+ 2 files changed, 8 insertions(+)
+remote: fatal error in commit_refs        
+To https://github.com/philipgreat/truck-plan-demo.git
+ ! [remote rejected] master -> master (failure)
+error: failed to push some refs to 'https://github.com/philipgreat/truck-plan-demo.git'
