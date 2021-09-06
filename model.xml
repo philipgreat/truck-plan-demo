@@ -7,7 +7,7 @@
 
 
   />
-    <training_Center
+    <training_center
         name="继续教育与培训学院"
         service_number="02981480157"
         director="吴德君|周高鹏"
@@ -18,7 +18,7 @@
         description='上线测试'
     />
 
-    <training_Provider
+    <training_provider
         name="智能制造学院|人工智能学院"
         director="李俊涛|姜鑫"
         contacts="李成平|崔屹嵘"
@@ -28,7 +28,7 @@
     />
 
     <training_Item
-        training_provider="Training_Provider()"
+        training_provider="training_provider()"
         training_name="工业机器人培训"
         training_object="陕西省师资队伍培训"
         begin_date="2021-08-01"
