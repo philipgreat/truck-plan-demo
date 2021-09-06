@@ -26,9 +26,10 @@
         telephone="02681480012|02981480013"
         description="双高学院|人工智能"
         platform="platform()"
+        _features="merchant"
     />
 
-    <training_Item
+    <training_item
         training_provider="training_provider()"
         training_name="工业机器人培训"
         photo="course.jpg"
