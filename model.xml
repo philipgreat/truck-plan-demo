@@ -14,6 +14,7 @@
         web_site="https://jxjy.gfxy.com"
         address="国防学院北校区19号实训二层"
         operated_by="陕西国防工业职业技术学院"
+
         platform="platform()"
         description='上线测试'
     />
@@ -30,6 +31,7 @@
     <training_Item
         training_provider="training_provider()"
         training_name="工业机器人培训"
+        photo="course.jpg"
         training_object="陕西省师资队伍培训"
         begin_date="2021-08-01"
         end_date="2021-08-20"
