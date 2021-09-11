@@ -7,6 +7,6 @@ do
 	git pull
 	git commit -m "updated @ $(date '+%Y-%m-%d %H:%M:%S') on ora2" 
 	git push
-	sleep 1000
+	sleep 7200
 done
 
