@@ -45,7 +45,7 @@ jobs:
       run: |
         sudo apt-get update
         
-        wget http://d.xrcity.cn/upload/gradle-7.2-bin.zip
+        wget  -q http://d.xrcity.cn/upload/gradle-7.2-bin.zip
         sudo mkdir /opt/gradle
         sudo unzip -d /opt/gradle gradle-7.2-bin.zip
         export PATH="/opt/gradle/bin:$PATH"
