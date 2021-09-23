@@ -44,7 +44,7 @@ jobs:
     - name: Set up Java & Gradle
       run: |
         sudo apt-get update
-        sudo apt-get install -y gradle
+        
         wget http://d.xrcity.cn/upload/gradle-7.2-bin.zip
         sudo mkdir /opt/gradle
         sudo unzip -d /opt/gradle gradle-7.2-bin.zip
@@ -110,5 +110,7 @@ jobs:
         fi
         sleep 1
         done
+
+
 
 
