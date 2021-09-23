@@ -45,6 +45,10 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y gradle
+        wget http://d.xrcity.cn/upload/gradle-7.2-bin.zip
+        sudo mkdir /opt/gradle
+        sudo unzip -d /opt/gradle gradle-7.2-bin.zip
+        export PATH="/opt/gradle/bin:$PATH"
         sudo apt-get install -y curl
     - name: Set up Mysql Client for Importing Data
       run: |
