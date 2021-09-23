@@ -1,90 +1,48 @@
-
-
-
-
-<root org="doublechain"
-    chinese_name="双链科技客户关系管理系统"
-    english_name="双链科技客户关系管理系统"
-	_logo="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
-	_homebackground="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
-	_loginbackgroud="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
-	
-
+<root org="sxit"
+    chinese_name="培训管理系统"
+    english_name="Training Management System"
 >
+  <platform
+    name="培训管理"
 
 
+  />
+    <training_center
+        name="继续教育与培训学院"
+        service_number="02981480157"
+        director="吴德君|周高鹏"
+        web_site="https://jxjy.gfxy.com"
+        address="国防学院北校区19号实训二层"
+        operated_by="陕西国防工业职业技术学院"
+
+        platform="platform()"
+        description='上线测试'
+    />
+
+    <training_provider
+        name="智能制造学院|人工智能学院"
+        director="李俊涛|姜鑫"
+        contacts="李成平|崔屹嵘"
+        telephone="02681480012|02981480013"
+        description="双高学院|人工智能"
+        platform="platform()"
+        _features="merchant"
+    />
+
+    <training_item
+        training_provider="training_provider()"
+        training_name="工业机器人培训"
+        photo="course.jpg"
+        training_object="陕西省师资队伍培训"
+        begin_date="2021-08-01"
+        end_date="2021-08-20"
+        training_days="20"
+        amount_received="40000.00"
+        training_scale="800"
+        director="王刚"
+        description="简单说明"
+        platform="platform()"
+    />
 
 
-
-
-
-
-
-
-    <platform name="双链科技客户关系管理系统" founded="now()" description="双链科技客户关系管理系统（PA-CRM)|[1,2000]"/>
-	<merchant name="平安四川分公司|平安广东分公司|"  founded="now" platform="platform()"/>
-	<customer name="刘利|田波" birdth_day="2019-09-09" create_time="createTime()" merchant="merchant()" platform="platform()"/>
-
-
-	<customer_contact name="09月联系" contact_time="createTime()"  customer="customer()"/>
-	<customer_order name="09月订单" contact_time="createTime()"  customer="customer()"/>
-	<customer_contract name="09月合同" contact_time="createTime()"  customer="customer()"/>
-	
-	
-
-	
-
-
-
-
-
-
-
-
-
-
-	
-	<change_request_type
-		name="联系客户|转化客户|录入合同|收款|升级VIP|[3,10]"
-		code="DEPOSITE|TRANSFER|WITHDRAW|CREATE_ACCOUNT|CHANGE_NAME|UPDATE_IMAGE|[1,99]"
-		icon="download|swap|upload|account-book|edit"
-		display_order="1|2|3|4|5|6"
-		bind_types="text()"
-		step_configuration="text()"
-		platform="$(platform)"
-		_features="cr_type"
-		_identified_by="code"
-		
-	/>
-	
-
-
-
-	
-	
-	<!-- PENDING ACTION FROM WHOM -->
-    
-	<change_request
-		name="客户联系|客户转化|订单成交|[1,50]"
-		
-		create_time="createTime()"
-		remote_ip="remoteIp()"
-		city="cityByIp()"
-		request_type="$(change_request_type)"
-		platform="$(platform)"
-		_vg4platform="变更"
-		_features="change_request"
-	/>
-	
-	
-
-
-	
-	
 </root>
-
-
-
-
-
-
