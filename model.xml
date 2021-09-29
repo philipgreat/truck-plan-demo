@@ -1,7 +1,7 @@
 
 <root
   org="doublechaintech"
-  chinese_name="生鲜供应链平台"
+  chinese_name="供应链管理平台"
 	english_name="Agriculture Business Travel"
 >
 <!-- 
@@ -17,7 +17,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
 
 
   <platform
-    name="生鲜供应链平台"
+    name="供应链管理平台"
     create_time="createTime()"
     last_update_time="updateTime()"
   />
