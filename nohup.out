@@ -22199,3 +22199,15 @@ Already up to date.
  2 files changed, 6 insertions(+)
 To https://github.com/philipgreat/truck-plan-demo.git
    bd3d23d1..eaf0cab8  master -> master
+From https://github.com/philipgreat/truck-plan-demo
+   eaf0cab8..f7bd0b89  master     -> origin/master
+Updating eaf0cab8..f7bd0b89
+Fast-forward
+ model.xml     | 1234 +++++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ xiantrain.xml |   51 +++
+ 2 files changed, 1249 insertions(+), 36 deletions(-)
+ create mode 100644 xiantrain.xml
+[master e4413024] updated @ 2021-09-29 13:50:18 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   f7bd0b89..e4413024  master -> master
