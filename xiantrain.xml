@@ -1,0 +1,51 @@
+<root org="sxit"
+    chinese_name="培训管理系统"
+    english_name="Training Management System"
+>
+  <platform
+    name="培训管理"
+
+
+  />
+    <training_center
+        name="继续教育与培训学院"
+        service_number="02981480157"
+        director="吴德君|周高鹏"
+        web_site="https://jxjy.gfxy.com"
+        address="国防学院北校区19号实训二层"
+        operated_by="陕西国防工业职业技术学院"
+
+        platform="platform()"
+        description='上线测试'
+    />
+
+    <training_provider
+        name="智能制造学院|人工智能学院"
+        director="李俊涛|姜鑫"
+        contacts="李成平|崔屹嵘"
+        telephone="02681480012|02981480013"
+        description="双高学院|人工智能"
+        platform="platform()"
+        _features="merchant"
+    />
+
+    <training_item
+        training_provider="training_provider()"
+        training_name="工业机器人培训"
+        photo="course.jpg"
+        training_object="陕西省师资队伍培训"
+        begin_date="2021-08-01"
+        end_date="2021-08-20"
+        training_days="20"
+        amount_received="40000.00"
+        training_scale="800"
+        director="王刚"
+        description="简单说明"
+        platform="platform()"
+    />
+
+
+</root>
+
+
+
