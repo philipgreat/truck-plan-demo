@@ -1,7 +1,7 @@
 
 <root
   org="doublechaintech"
-  chinese_name="双链生鲜供应链平台"
+  chinese_name="生鲜供应链平台"
 	english_name="Agriculture Business Travel"
 >
 <!-- 
@@ -17,7 +17,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
 
 
   <platform
-    name="双链生鲜供应链平台"
+    name="生鲜供应链平台"
     create_time="createTime()"
     last_update_time="updateTime()"
   />
@@ -195,7 +195,7 @@ synct420 && ssh -p 4422 philip@t420.doublechaintech.cn "cd githome/ && bash all-
     name="小链科技微信公众号|小链科技官网|小链生鲜公众号|小链生鲜官网|农商旅官网|农商旅微信服务号"
     site_url="https://wwww.nongshanglv.com|https://nongshanglv.weixin.qq.com"
     site_type="$(site_type)"
-    description="双链鲜生是一个专注生鲜，专注三农的综合供应链交易平台"
+    description="鲜生是一个专注生鲜，专注三农的综合供应链交易平台"
     company="$(merchant)"
     _vg4company="网站内容"
   />
