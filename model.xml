@@ -3,8 +3,8 @@
 
 
 <root org="doublechain"
-    chinese_name="中国平安客户关系管理系统"
-    english_name="中国平安客户关系管理系统"
+    chinese_name="平安客户关系管理系统"
+    english_name="平安客户关系管理系统"
 	_logo="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
 	_homebackground="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
 	_loginbackgroud="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
@@ -17,7 +17,7 @@
 
 
 
-    <platform name="中国平安客户关系管理系统" founded="now()" description="中国平安客户关系管理系统（PA-CRM)|[1,2000]"/>
+    <platform name="平安客户关系管理系统" founded="now()" description="中国平安客户关系管理系统（PA-CRM)|[1,2000]"/>
 	<merchant name="平安四川分公司|平安广东分公司|"  founded="now" platform="platform()"/>
 	<customer name="刘利|田波" birdth_day="2019-09-09" create_time="createTime()" merchant="merchant()" platform="platform()"/>
 
