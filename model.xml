@@ -1,82 +1,1097 @@
+<root
+    org="doublechaintech"
+    chinese_name="Sys X"
+    english_name="Cylinder Manufacturing Execution System">
 
+  <!-- 平台 -->
+  <platform
+      name="气瓶制造执行系统"
+      create_time="createTime()"
+      last_update_time="updateTime()"
+      />
 
+  <merchant
+      _name="工厂"
+      name="广钢集团|珠江气体|南沙工厂|武汉工厂|[1,100]"
+      address="详细地址:天府三街?|[0,100]"
+      contact_name="联系人:张三？|[0,20]"
+      contact_mobile="联系电话:18900000001?"
+      contact_email="联系邮箱:email@company.com?"
+      create_time="createTime()"
+      last_update_time="updateTime()"
+      merchant_status="merchant_status()"
+      merchant_type="merchant_type()"
+      owner="natural_person()?"
+      platform="platform()"
+      _features="merchant,log"
+      _vg4platform="商户管理"
+      _vg4owner="商户管理"
+      />
 
+  <parent_merchant
+      _name="上级组织"
+      object_id="M000001|[1,50]"
+      object_type="merchant|[1,50]"
+      merchant="merchant()"
+      create_time="createTime()"
+      />
 
-<root org="doublechain"
-    chinese_name="平安客户关系管理系统"
-    english_name="平安客户关系管理系统"
-	_logo="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
-	_homebackground="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
-	_loginbackgroud="https://demo.doublechaintech.com/demodata/imageManager/loadImage/drink0000/400/300/red/"
-	
+  <child_merchant
+      _name="下级组织"
+      object_id="M000001|[1,50]"
+      object_type="merchant|[1,50]"
+      merchant="merchant()"
+      create_time="createTime()"
+      />
 
->
+  <natural_person
+      name="李军勇|李建康|向问天|[1,20]"
+      mobile="18012341234?"
+      status="user_status()"
+      platform="platform()"
+      create_time="createTime()"
+      _vg4platform="用户管理"
+      />
 
+  <!-- 作为商家，管理组织中的人员(员工) -->
+  <employee
+      _name="员工"
+      name="张三|李四|王五|[1,200]"
+      user="natural_person()"
+      avatar="照片:man.jpg|woman.jpg"
+      merchant="merchant()"
+      create_time="createTime()"
+      _vg4merchant="公司管理"
+      />
 
+  <!-- 部门 -->
+  <merchant_department
+      _name="部门"
+      name="招采部|[1,20]"
+      merchant="merchant()"
+      _vg4merchant="公司管理"
+      />
 
+  <!-- 员工的岗位，公司为其某个员工分配 -->
+  <job
+      _name="岗位"
+      name="管理员|审评员|检验员|[1,200]"
+      description="岗位描述|[1,200]"
+      last_update_time="updateTime()"
+      employee="employee()"
+      job_type="job_type()"
+      department="merchant_department()?"
+      merchant="merchant()"
+      _vg4merchant="公司管理"
+      />
 
+  <merchant_type
+      name="充装单位|制造单位|使用单位|其它"
+      code="FILL_FACTORY|ASSET_MAKER|CUSTOMER|OTHER"
+      category="default|default|default|default"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
 
+  <merchant_status
+      name="营业中|已关闭"
+      code="OPERATION|CLOSED"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
 
+  <user_status
+      name="用户状态:活跃|未激活"
+      code="代码:ACTIVE|DISABLED"
+      _features="status"
+      create_time="createTime()"
+      platform="platform()"
+      _identified_by="code"
+      />
 
-    <platform name="平安客户关系管理系统" founded="now()" description="中国平安客户关系管理系统（PA-CRM)|[1,2000]"/>
-	<merchant name="平安四川分公司|平安广东分公司|"  founded="now" platform="platform()"/>
-	<customer name="刘利|田波" birdth_day="2019-09-09" create_time="createTime()" merchant="merchant()" platform="platform()"/>
+  <job_type
+      _name="角色"
+      _desc="角色"
+      name="系统管理员|集团业务负责人|工厂经理|生产经理|充装操作者|分析员|司机|押运员|运输调度"
+      code="SYSTEM_ADMIN|PLATFORM_PURCHASER_MANAGER|FACTORY_MANAGER|PRODUCE_MANAGER|FILLING_OPERATOR|ANALYZER|DRIVER|SUPERCARGO|DISPATCHER"
+      platform="platform()"
+      _identified_by="code"
+      _features="status"
+      />
 
+  <!-- 资产 -->
+  <asset
+      barcode="条码:a1233|[1,100]"
+      asset_type="资产类别:asset_type()"
+      asset_owner_type="资产归属类别:asset_owner_type()"
+      asset_status="资产状态:asset_status()"
+      owner="所属工厂:merchant()"
+      custodian="保管单位:merchant()"
+      internal_code="序列/钢印号:1213a|[1,100]"
+      maker="制造单位:merchant()"
+      make_date="制造日期:2900-01-01T00:00:00"
+      location="location()"
+      create_time="登记时间:createTime()"
+      last_update_time="最后更新时间:updateTime()"
+      _name="资产"
+      />
 
-	<customer_contact name="09月联系" contact_time="createTime()"  customer="customer()"/>
-	<customer_order name="09月订单" contact_time="createTime()"  customer="customer()"/>
-	<customer_contract name="09月合同" contact_time="createTime()"  customer="customer()"/>
-	
-	
+  <!-- 资产的一种 -->
+  <container
+      _name="包装容器"
+      name="包装容器?|[0,50]"
+      asset="asset(parentLink)"
+      />
 
-	
+  <!-- 资产的一种，container不为空时，表示气瓶放进了某一种container -->
+  <cylinder
+      _name="气瓶"
+      name="包装容器?|[0,50]"
+      cylinder_type="cylinder_type()?"
+      last_check_time="上次检查时间:2900-01-01T00:00:00?"
+      next_check_time="下次检查时间:2900-01-01T00:00:00?"
+      product="产品:product()"
+      container="container()?"
+      asset="asset(parentLink)"
+      />
 
+  <!-- 资产的一种 -->
+  <dewar
+      _name="杜瓦"
+      last_check_time="上次检查时间:2900-01-01T00:00:00"
+      next_check_time="下次检查时间:2900-01-01T00:00:00?"
+      valve_due_date="安全阀有效期:2900-01-01T00:00:00"
+      gauge_due_date="压力表有效期:2900-01-01T00:00:00"
+      product="产品:product()"
+      cylinder_type="cylinder_type()?"
+      asset="asset(parentLink)"
+      />
 
+  <!-- 包装的一种，当然也是资产的一种 -->
+  <pallet
+      _name="托盘"
+      name="3*3?|[0,50]"
+      spec="拖盘规格:container_spec()"
+      container="container(parentLink)"
+      />
 
+  <!-- 包装的一种，当然也是资产的一种 -->
+  <lattice
+      _name="集装格"
+      name="3*3 40L?|[0,50]"
+      spec="框架规格:container_spec()"
+      cylinder_volume="气瓶容积:nominal_volume()"
+      product="产品:product()"
+      container="container(parentLink)"
+      />
 
+  <!-- 资产的一种 -->
+  <acetylene_cylinder
+      _name="乙炔瓶"
+      last_check_time="上次检查时间:2900-01-01T00:00:00"
+      next_check_time="下次检查时间:2900-01-01T00:00:00?"
+      adsorbed_material="吸附物质:adsorbed_material()?"
+      solvent="溶剂:acetylene_solvent()?"
+      product="产品:product()"
+      cylinder_type="cylinder_type()?"
+      asset="asset(parentLink)"
+      />
 
+  <!-- 资产的一种 -->
+  <vehicle_bottle
+      _name="车用瓶"
+      name="车用瓶|[1,50]"
+      cylinder_type="cylinder_type()?"
+      asset="asset(parentLink)"
+      />
 
+  <!-- 运输车辆 -->
+  <truck
+      _name="车辆"
+      license="车牌号:川A.12345|[1,50]"
+      truck_load="负载:load_weight()"
+      brand="品牌|[1,100]"
+      driver="司机:job()"
+      supercargo="押运员:job()"
+      merchant="服务主体单位:merchant()"
+      dangerous_class="dangerous_class()"
+      load_goods="load_goods()"
+      load_weight="load_weight()"
+      truck_status="状态:truck_status()"
+      />
 
+  <truck_status
+      _name="车辆状态"
+      name="使用中|维修中|已报废"
+      code="IN_USE|MAINTENANCE|SCRAPPED"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
 
+  <load_goods
+      _name="可载货物"
+      name="瓶装气|液体"
+      code="IN_USE|MAINTENANCE|SCRAPPED"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
 
+  <load_weight
+      _name="车辆载重"
+      name="0.5T|1T|1.5T|02T|2.5T|3T|5T|8T|10T"
+      code="LW05|LW10|LW15|LW20|LW25|LW30|LW50|LW80|LW100"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
 
-	
-	<change_request_type
-		name="联系客户|转化客户|录入合同|收款|升级VIP|[3,10]"
-		code="DEPOSITE|TRANSFER|WITHDRAW|CREATE_ACCOUNT|CHANGE_NAME|DISABLE_USER|[1,99]"
-		icon="download|swap|upload|account-book|edit"
-		display_order="1|2|3|4|5|6"
-		bind_types="text()"
-		step_configuration="text()"
-		platform="$(platform)"
-		_features="cr_type"
-		_identified_by="code"
-		
-	/>
-	
+  <dangerous_class
+      _name="危化品级别"
+      name="无|I|II|III"
+      code="NONE|DCI|DCII|DCIII"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
 
-	
-	
-	<!-- PENDING ACTION FROM WHOM -->
-    
-	<change_request
-		name="客户联系|客户转化|订单成交|[1,50]"
-		
-		create_time="createTime()"
-		remote_ip="remoteIp()"
-		city="cityByIp()"
-		request_type="$(change_request_type)"
-		platform="$(platform)"
-		_vg4platform="变更"
-		_features="change_request"
-	/>
-	
-	
-	
+  <filling_station
+      _name="充装工位"
+      barcode="条码:a1233|[1,100]"
+      name="名称:氧|[1,50]"
+      merchant="merchant()"
+      />
+
+  <station_product
+      _name="工位产品"
+      filling_station="filling_station()"
+      product_group="product_group()"
+      />
+
+  <asset_type
+      _name="资产类别"
+      name="气瓶|杜瓦（焊接绝热气瓶)|集装格框架|集装格|托盘|车用气瓶|生物质容器"
+      code="CYLINDER|DEWAR|LATTICE_FRAME|LATTICE|PALLET|VEHICLE_BOTTLE|BIOMASS_CONTAINER"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
+
+  <asset_owner_type
+      _name="资产归属类别"
+      name="自有|专用托管|流转托管|临时外购"
+      code="OWNER|DEDICATED_HOSTING|CIRCULATION_TRUSTEESHIP|TEMPORARY_OUTSOURCING"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
+
+  <container_spec
+      _name="拖盘集装格规格"
+      name="3 x 3|3 x 4|3 x 5|4 x 4|4 x 5|其它"
+      quantity="9|12|15|16|20|-"
+      platform="platform()"
+      _features="sample_data"
+      />
+
+  <!-- 公称容积 -->
+  <nominal_volume
+      _name="公称容积"
+      name="50L|40L|10L|2L|其它"
+      platform="platform()"
+      _features="sample_data"
+      />
+
+  <asset_status
+      _name="资产状态"
+      name="名称:空|空，已预检|充装前检查完毕|充装中检查完毕|待分析|满瓶|满瓶，已拣配|空，已拣配|配送在途|已配送|冻结|维修|报废|丢失|出售|内部领用"
+      code="代码:EMPTY|EMPTY_CHECKED|CHECKED_BEFORE_FILL|FILLED|CHECKED_AFTER_FILL|FULL|FULL_PICKED|EMPTY_PICKED|DELIVERY|CUSTOMER|DISABLED|MAINTAIN|DISCARDED|LOST|SELLED|INTERNAL_USE"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
+
+  <cylinder_type
+      _name="气瓶品种"
+      name="无缝气瓶|焊接气瓶|纤维缠绕气瓶|低温绝热气瓶|内装填料气瓶|生物质容器"
+      code="SEAMLESS|WELDED|FILAMENT_WINDING|LOW_TEMPERATURE_INSULATED|INTERNAL_PACKING|BIOMASS_CONTAINER"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
+
+  <asset_frozen_reason
+      _name="冻结原因"
+      name="投诉-质量问题|投诉-疑似空瓶|回满|其余原因"
+      code="QUALITY_ISSUE|EMPTY_ISSUE|BACK_FULL|OTHER"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
+
+  <asset_lost_reason
+      _name="挂失原因"
+      name="客户申报丢失|工厂申报丢失|客户盘点丢失|工厂盘点丢失"
+      code="CUSTOM_LOST|FACTORY_LOST|CUSTOM_CHECK_LOST|FACTORY_CHECK_LOST"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
+
+  <asset_unpack_reason
+      _name="放空原因"
+      name="充装异常|气瓶损坏|质量不合格|内部领用|[1,100]"
+      platform="platform()"
+      _features_delta="sample_data"
+      />
+
+  <asset_return_full_reason
+      _name="退满原因"
+      name="客户退货|未卸货|[1,100]"
+      platform="platform()"
+      _features_delta="sample_data"
+      />
+
+  <asset_broken_reason
+      _name="报修原因"
+      name="油漆脱落|瓶阀损坏|检验超期|安全阀损坏|护罩损坏|漏气|油脂污损|条码缺失|瓶体变形|防震圈缺损|其余原因|[1,100]"
+      platform="platform()"
+      _features_delta="sample_data"
+      />
+
+  <adsorbed_material
+      _name="吸附物质"
+      name="石棉"
+      platform="platform()"
+      _features="sample_data"
+      />
+
+  <acetylene_solvent
+      _name="溶剂"
+      name="丙酮"
+      platform="platform()"
+      _features="sample_data"
+      />
+
+  <!-- 位置信息 -->
+  <location
+      _name="位置"
+      name="在厂内A212工位?|[0,50]"
+      location_type="位置类型:location_type()"
+      platform="platform()"
+      />
+
+  <!-- 在某一辆车上, 位置的一种 -->
+  <location_vehicle
+      _name="在车上"
+      truck="位置:truck()"
+      location="location(parentLink)"
+      />
+
+  <!-- 在某个客户处, 位置的一种 -->
+  <location_customer
+      _name="在客户处"
+      customer="位置:merchant()"
+      location="location(parentLink)"
+      />
+
+  <location_factory
+      _name="在工厂"
+      factory="位置:merchant()"
+      location="location(parentLink)"
+      />
+
+  <location_type
+      _name="位置分类"
+      name="厂内|车上|客户处|[1,50]"
+      code="IN_FACTORY|ON_DELIVERY|AT_CUSTOMER"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
+
+  <area_type
+      _name="区域分类"
+      name="空瓶区|满瓶区|分析区|[1,50]"
+      code="EMPTY|FULL|ANALYZE"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
+
+  <product
+      _name="产品"
+      name="产品名称:高纯氢瓶组99.999%.40L*15瓶.135bar|[1,50]"
+      empty_name="瓶罐-高纯氢瓶组99.999%.40L*15瓶.135bar|[1,50]"
+      full_material_code="满物料代码:1221.aa|[1,50]"
+      empty_material_code="空物料代码:1221.aa|[1,50]"
+      fill_medium="充装介质:fill_medium()"
+      product_level="物料级别:product_level()"
+      nominal_volume="nominal_volume()"
+      product_group="product_group()"
+      state="状态:product_state()"
+      analysis_standard="分析标准:analysis_standard()"
+      pre_check_standard="预检:check_standard()"
+      fill_pre_check_standard="充前检查:check_standard()"
+      fill_check_standard="充装检查:check_standard()"
+      fill_post_check_standard="充后检查:check_standard()"
+      />
+
+  <analysis_standard
+      _name="分析标准"
+      name="高纯氢|[1,50]"
+      platform="platform()"
+      />
+
+  <analysis_item
+      _name="分析条目"
+      name="氢气纯度体积分数|[1,100]"
+      display_rule="氢气纯度体积分数应该小于100|[1,100]"
+      validate_expression="value小于100|[1,100]"
+      analysis_standard="analysis_standard()"
+      />
+
+  <check_standard
+      _name="检查标准"
+      name="高纯氢|[1,50]"
+      platform="platform()"
+      />
+
+  <check_item
+      _name="检查条目"
+      name="瓶子没有油|[1,50]"
+      display_order="1|[1,100]"
+      check_standard="check_standard()"
+      />
+
+  <product_group
+      _name="产品组"
+      name="工业氧单瓶|工业氧瓶组|工业液氧杜瓦|工业氧生物质容器|医用氧单瓶|医用氧集装格|医用液氧杜瓦|医疗氧生物质容器|高纯氢气瓶|高纯氢集装格|[1,100]"
+      platform="platform()"
+      _features="sample_data"
+      />
+
+  <product_level
+      _name="物料级别"
+      name="工业级|高纯级|超纯级|医用级|食品级|[1,100]"
+      platform="platform()"
+      _features="sample_data"
+      />
+
+  <fill_medium
+      _name="充装介质"
+      name="空气|氩|氦|[1,100]"
+      chemical="Air|Ar|He|[1,100]"
+      cylinder_color="黑|银灰|银灰|[1,100]"
+      font_color="白|深绿|深绿|[1,100]"
+      platform="platform()"
+      _features="sample_data"
+      />
+
+  <product_state
+      _name="状态"
+      name="气态|液态|[1,100]"
+      code="GAS|LIQUID|[1,20]"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
+
+  <!-- 工序定义 -->
+  <filling_flow
+      _name="工序"
+      name="工序|[1,50]"
+      merchant="merchant()"
+      />
+
+  <!-- 充装步骤 -->
+  <filling_step
+      _name="充装步骤"
+      name="充前检查"
+      action="action_type()"
+      display_order="1|[1,100]"
+      />
+
+  <!-- 在某操作步骤时允许的资产状态 -->
+  <action_allow_status
+      name="状态迁移?|[0,50]"
+      allow_status="允许状态:asset_status()"
+      after_status="操作后状态:asset_status()"
+      filling_step="action_type()"
+      />
+
+  <filling_plan
+      _name="生产计划"
+      product="product()"
+      current_stock="当前存库:1000000"
+      low_gate="低储:1000000"
+      undelivery="未配送需求:1000000"
+      empty_asset="空瓶:1000000"
+      plan_count="计划:1000000"
+      plan_date="2900-01-01T00:00:00"
+      merchant="merchant()"
+      create_time="createTime()"
+      />
+
+  <!-- 某个批次/ 计划任务 -->
+  <filling_batch
+      _name="批次"
+      product="product()"
+      number="批次号:O2-A123-20210831"
+      batch_status="batch_status()?"
+      report="分析报告:analysis_report()?"
+      merchant="merchant()"
+      create_time="createTime()"
+      />
+
+  <!-- 充装过程中的某一步 ，用于智能导入 -->
+  <filling_job
+      _name="充装任务"
+      action_type="action_type()"
+      batch="批次:filling_batch()"
+      filling_station="filling_station()?"
+      create_time="createTime()"
+      />
+
+  <!-- 充装过程中的某一步中操作了哪些资产(不包括托盘)，用于智能导入 -->
+  <filling_item
+      _name="充装气瓶"
+      asset="asset()"
+      filling_job="filling_job()"
+      create_time="createTime()"
+      />
+
+  <!-- 充装完成后的实物，包含了包装物和核心产品, 此时应该是满瓶状态，也不管是否被客户使用过 -->
+  <packaged_item
+      _name="满瓶"
+      name="充装完成的产品?|[0,50]"
+      asset="包装物:asset()"
+      product="product()"
+      batch="批次:filling_batch()"
+      pre_checher="充前检查者:job()?"
+      pre_check_result="充前检查结果:合格?|[0,20]"
+      pre_check_time="充前检查时间:2900-01-01T00:00:00?"
+      fill_checker="充装操作者:job()?"
+      fill_start_time="充装开始时间:2900-01-01T00:00:00?"
+      fill_end_time="充装完成时间:2900-01-01T00:00:00?"
+      post_checker="充后检查者:job()?"
+      post_check_result="充后检查结果:合格?|[0,20]"
+      post_check_time="充后检查时间:2900-01-01T00:00:00?"
+      report="资产分析:analysis_report()?"
+      merchant="供应商:merchant()"
+      usable="可使用的:true"
+      create_time="createTime()"
+      />
+
+  <analysis_report
+      _name="分析报告"
+      name="分析报告|[1,100]"
+      create_time="createTime()"
+      platform="platform()"
+      />
+
+  <!-- batch="批次:filling_batch()" -->
+  <analysis_report_item
+      _name="分析报告条目"
+      name="氢气纯度体积分数|[1,100]"
+      display_rule="氢气纯度体积分数应该小于100|[1,100]"
+      validate_expression="value小于100|[1,100]"
+      analysis_standard="analysis_standard()"
+      value="99999.99a|[1,100]"
+      result="合格|[1,100]"
+      report="analysis_report()"
+      />
+
+  <!-- 资产操作日志 -->
+  <asset_action_log
+      message="text()"
+      user="job()"
+      asset="asset()"
+      action_type="action_type()"
+      pre_asset_status="asset_status()?"
+      post_asset_status="asset_status()?"
+      pre_location="location()?"
+      post_location="location()?"
+      images="text()"
+      video="text()"
+      create_time="createTime()"
+      />
+
+  <action_type
+      _name="操作类型定义"
+      name="资产注册|强制状态转移|资产冻结|资产调拔|资产挂失|预检|报修|充装前检查|充装|充装后检查|分析|分析后标记分析|充装后标记分析|放空|退满入库|拣配|出厂装车|配送|入厂卸车"
+      code="REGISTRY|UPDATE_STATUS|FROZEN_ASSET|ASSET_MOVE|ASSET_LOST|PRE_CHECK|ASSET_BROKEN_REPORT|CHECK_BEFORE_FILL|FILL|CHECK_AFTER_FILL|ANALYSIS|MARK_ANALYSIS_AFTER_ANALYSIS|MARK_ANALYSIS_AFTER_CHECK|UNPACK|STOCK_IN_FULL|PICK|LEAVE_FACTORY|DELIVER_CUSTOMER|BACK_FACTORY"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
+
+  <batch_status
+      name="名称:计划中|已分析|已完成"
+      code="代码:PLANNED|ANALYSED|FINISHED"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
+
+  <service_request
+      name="aaa|[1,100]"
+      create_time="createTime()"
+      remote_ip="remoteIp()"
+      request_type="request_type(actionType)"
+      cdata="text(snapshotForChildren)"
+      platform="platform()"
+      _features_delta="service_request"
+      />
+
+  <request_type
+      name="名称:气瓶注册|杜瓦注册|托盘注册|集装格注册|集装格组装|条码替换|乙炔瓶注册|强制状态转移|资产信息查询|资产冻结|资产调拔|资产挂失|无条码查询|预检|拖盘绑定气瓶|拖盘清空|报修|换车|充装前检查|充装|充装后检查|放空|退满入库|分析|[1,100]"
+      code="代码:CYLINDER_REGISTRY|DEWAR_REGISTRY|PALLET_REGISTRY|LATTICE_REGISTRY|LATTICE_CONFIGURATION|BARCODE_REPLACE|ACETYLENE_CYLINDER_REGISTRY|ASSET_UPDATE_STATUS|ASSET_INFO_QUERY|ASSET_FROZEN|ASSET_MOVE|ASSET_LOST|ASSET_NO_BARCODE|PRE_CHECK|PALLET_BIND|PALLET_CLEAN|ASSET_BROKEN_REPORT|CHANGE_VEHICLE|CHECK_BEFORE_FILL|FILL|CHECK_AFTER_FILL|UNPACK|STOCK_IN_FULL|ANALYSIS|[1,100]"
+      steps="asset_registration,cylinder_registration|asset_registration,dewar_registration|asset_registration,pallet_registration|asset_registration,lattice_registration|lattice_configuration|barcode_replacement|asset_registration,acetylene_cylinder_registry|asset_update_status|asset_info|asset_frozen|asset_move|asset_lost|asset_no_barcode|asset_pre_check|pallet_bind|pallet_clean|asset_broken_report|change_vehicle|prepare_before_fill,check_before_fill|fill_form,fill_gas_check,fill_liquid_check|prepare_after_fill,check_after_fill|asset_unpack|stock_in_full|analysis_form|[1,100]"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
+
+  <asset_registration
+      _ui_name="资产注册"
+      _ui_action="确定/查重:submitForCheckConflict"
+      _ui_additional_action="继续:submitForNextStep"
+      barcode="资产条码:string(ui-required)"
+      register_type="string(ui-hidden)"
+      asset_type="资产类别:asset_type(ui-required ui-type=single-select ui_candidate_title=displayName)"
+      asset_owner_type="产权性质:asset_owner_type(ui-required ui_candidate_title=displayName)"
+      asset_owner_name="产权归属:string(ui-required)"
+      internal_code="序列/钢印号:string(ui-required)"
+      maker="制造单位:merchant(ui-type=single-select ui_with-custom-candidate ui-required ui_candidate_title=displayName)"
+      make_date="制造年月:date_time(ui-type=date ui-required)"
+      message="string(ui_ignore-if-null ui-type=display-field ui_ignore-form ui_$template=message)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <cylinder_registration
+      _name="气瓶注册"
+      _ui_action="完成:submit"
+      cylinder_type="cylinder_type(ui-required ui-type=single-select ui_candidate_title=displayName)"
+      last_check_time="上次检查时间:date_time(ui-type=date)"
+      next_check_time="下次检查时间:date_time(ui-type=date)"
+      product_group="product_group(ui-type=single-select ui_onChangeAction_action=submitProductGroupFilter ui_candidate_title=displayName)"
+      product="product(ui-type=single-select ui_with-custom-candidate ui_candidate_title=displayName)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <dewar_registration
+      _ui_action="完成:submit"
+      cylinder_type="cylinder_type(ui-required ui-type=single-select ui_candidate_title=displayName)"
+      last_check_time="上次检查时间:date_time(ui-type=date)"
+      next_check_time="下次检查时间:date_time(ui-type=date)"
+      valve_due_date="安全阀有效期:date_time(ui-type=date)"
+      gauge_due_date="压力表有效期:date_time(ui-type=date)"
+      product_group="product_group(ui-type=single-select ui_onChangeAction_action=submitProductGroupFilter ui_candidate_title=displayName)"
+      product="product(ui-type=single-select ui_with-custom-candidate ui_candidate_title=displayName)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <pallet_registration
+      _ui_action="完成:submit"
+      spec="container_spec(ui-type=single-select ui_candidate_title=displayName)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <lattice_registration
+      _ui_action="完成:submit"
+      spec="container_spec(ui-type=single-select ui_candidate_title=displayName)"
+      cylinder_volume="nominal_volume(ui-type=single-select ui_candidate_title=displayName)"
+      product_group="product_group(ui-type=single-select ui_candidate_title=displayName ui_onChangeAction_action=submitProductGroupFilter)"
+      product="product(ui-type=single-select ui_with-custom-candidate ui_candidate_title=displayName)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <lattice_configuration
+      _ui_action="气瓶清空:submitCylinderClean,确认组装:submitLatticeBuild"
+      lattice_barcode="框架条码:string(ui_onChangeAction_action=submitLatticeCode ui-type=barcode)"
+      lattice="asset(ui_ignore)"
+      lattice_scanned="string(ui_ignore)"
+      spec="框架规格:container_spec(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=lattice.spec)"
+      cylinder_volume="气瓶容积规格:nominal_volume(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=lattice.cylinderVolume)"
+      cylinder_desc="请扫描气瓶条码添加气瓶:string(ui-disabled)"
+      cylinder_barcode="string(ui_onChangeAction_action=submitCylinderCode ui-type=barcode)"
+      cylinder="详细信息:asset(ui_ignore-form ui-type=long-display ui_candidate_$container=value !ui_candidate_$select ui_candidate_barcode=barcode ui_candidate_title=product.name ui_with-custom-candidate)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <barcode_replacement
+      _ui_action="无条码资产:submitToNoCode,确认替换:submitBarcodeReplacement"
+      old_barcode="资产条码:string(ui_onChangeAction_action=submitOldBarcode ui-type=barcode)"
+      asset="详细信息:asset(ui-type=display-field ui_with-custom-candidate ui_ignore-form ui_candidate_$template=kv ui_candidate_title=title ui_candidate_value=value)"
+      new_barcode="新条码:string(ui-type=barcode)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <acetylene_cylinder_registry
+      _ui_action="完成:submit"
+      cylinder_type="cylinder_type(ui-required ui-type=single-select ui_candidate_title=displayName)"
+      last_check_time="上次检查时间:date_time(ui-type=date)"
+      next_check_time="下次检查时间:date_time(ui-type=date)"
+      adsorbed_material="吸附物质:adsorbed_material(ui-required ui-type=single-select ui_candidate_title=displayName)?"
+      solvent="溶剂:acetylene_solvent(ui-required ui-type=single-select ui_candidate_title=displayName)?"
+      product_group="product_group(ui-type=single-select ui_candidate_title=displayName ui_onChangeAction_action=submitProductGroupFilter)"
+      product="产品:product(ui-type=single-select ui_with-custom-candidate ui_candidate_title=displayName ui_onChangeAction_action=submitProduct)"
+      material_code="物料代码:string(ui-disabled=true ui_vpath=product.fullMaterialCode)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <asset_lost
+      _ui_name="资产挂失"
+      _ui_action="确认挂失:submitAssetLost"
+      barcode="资产条码:string(ui_onChangeAction_action=submitBarcode ui-type=barcode)"
+      asset_type="资产类别:asset_type(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=asset.assetType)"
+      product="产品:product(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=asset.product)"
+      current_location_type="当前区域:location_type(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=asset.location.locationType)"
+      current_location="当前位置:string(ui-disabled=true)"
+      current_status="当前状态:asset_status(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=asset.assetStatus)"
+      asset="asset(ui_ignore)"
+      reason="挂失原因:asset_lost_reason(ui_candidate_title=displayName)"
+      comment="备注:text()"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <asset_move
+      _ui_name="资产调拔"
+      _ui_action="确认资产调拔:submitToMove"
+      barcode="资产条码:string(ui_onChangeAction_action=submitBarcode ui-type=barcode)"
+      asset_type="资产类别:asset_type(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=asset.assetType)"
+      product="产品:product(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=asset.product)"
+      current_location_type="当前区域:location_type(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=asset.location.locationType)"
+      current_location="当前位置:string(ui-disabled=true)"
+      current_status="当前状态:asset_status(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=asset.assetStatus)"
+      asset_owner="资产归属:merchant(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=asset.merchant)"
+      asset="asset(ui_ignore)"
+      target_factory="目标工厂:merchant(ui-type=single-select ui_with-custom-candidate ui_candidate_title=displayName)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <asset_frozen
+      _ui_name="资产冻结"
+      _ui_action="无条码资产:submitToNoCode,确认冻结:submitAssetFrozen"
+      barcode="资产条码:string(ui_onChangeAction_action=submitBarcode ui-type=barcode)"
+      asset_type="资产类别:asset_type(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=asset.assetType)"
+      product="产品:product(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=asset.product)"
+      current_location_type="当前区域:location_type(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=asset.location.locationType)"
+      current_location="当前位置:string(ui-disabled=true)"
+      current_status="当前状态:asset_status(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=asset.assetStatus)"
+      reason="冻结原因:asset_frozen_reason(ui_candidate_title=displayName)"
+      comment="备注:text()"
+      images="添加图片:string(ui-type=image)"
+      videos="添加视频:string(ui-type=video)"
+      asset="asset(ui_ignore)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <!-- 无条码查询 -->
+  <asset_no_barcode
+      _ui_name="无条码资产查询"
+      _ui_action="预查询:submitToQuery"
+      _ui_additional_action="确认:submitToPreStep"
+      pre_bean="string(ui-type=text ui-hidden)"
+      pre_action="string(ui-type=text ui-hidden)"
+      pre_view="string(ui-type=text ui-hidden)"
+      pre_view_field_mapping="string(ui-type=text ui-hidden)"
+      asset_number="序列/钢印号:string(ui-required)"
+      asset_maker="制造单位:merchant(ui-type=single-select ui_with-custom-candidate ui_candidate_title=displayName)"
+      asset_manufacturing_date="制造年月:date_time(ui-type=date)"
+      asset_result="资产详细信息:asset(ui-type=display-field ui_with-custom-candidate ui_ignore-form ui_candidate_$template=kv ui_candidate_title=title ui_candidate_value=value)"
+      asset_code="string(ui-type=text ui-hidden)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <asset_info
+      _ui_name="资产信息查询"
+      barcode="资产条码:string(ui_onChangeAction_action=submitBarcode ui-type=barcode)"
+      asset_type="资产类别:asset_type(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=asset.assetType)"
+      product="产品:product(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=asset.product)"
+      current_location_type="当前区域:location_type(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=asset.location.locationType)"
+      current_location="当前位置:string(ui-disabled)"
+      current_status="当前状态:asset_status(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=asset.assetStatus)"
+      asset="详细信息:asset(ui_ignore-if-null ui-type=display-field ui_with-custom-candidate ui_ignore-form ui_candidate_$template=kv ui_candidate_title=title ui_candidate_value=value)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <asset_update_status
+      _ui_name="强制状态转移"
+      _ui_action="强制变更:submitForStatusChange"
+      asset="asset(ui_ignore)"
+      barcode="资产条码:string(ui_onChangeAction_action=submitBarcode ui-type=barcode)"
+      asset_type="资产类别:asset_type(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled ui_vpath=asset.assetType)"
+      product="产品:product(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled ui_vpath=asset.product)"
+      current_location_type="当前区域:location_type(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled ui_vpath=asset.location.locationType)"
+      current_location="当前位置:string(ui-disabled)"
+      current_status="当前状态:asset_status(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled ui_vpath=asset.assetStatus)"
+      target_location_type="目标区域:location_type(ui-type=single-select ui_onChangeAction_action=submitTargetLocationType ui_candidate_title=displayName)"
+      target_location="目标位置:string(ui_with-custom-candidate ui-type=single-select ui_candidate_title=displayName)"
+      target_status="目标状态:asset_status(ui-type=single-select ui-type=single-select ui_candidate_title=displayName)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <pallet_bind
+      _ui_name="拖盘绑定气瓶"
+      _ui_action="气瓶清空:submitPalletClean,确认绑定:submitPalletBind"
+      pallet_barcode="托盘条码:string(ui_onChangeAction_action=submitPalletBarcode ui-type=barcode ui_vpath=asset.barcode)"
+      spec="托盘规格:container_spec(ui_no-candidate ui-type=text ui-disabled ui_candidate_id=name)"
+      cylinder_barcode="气瓶条码:string(ui_onChangeAction_action=submitCylinderBarcode ui-type=barcode)"
+      bind_desc="请扫描气瓶条码添加气瓶:string(ui-type=text ui-disabled)"
+      cylinder="气瓶列表:asset(ui-type=display-field ui_with-custom-candidate ui_ignore-form ui_candidate_$template=kv ui_candidate_value=barcode)"
+      asset="asset(ui_ignore)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <pallet_clean
+      _ui_name="拖盘清空"
+      _ui_action="气瓶清空:submitPalletClean"
+      pallet_barcode="托盘条码:string(ui_onChangeAction_action=submitPalletBarcode ui-type=barcode)"
+      spec="托盘规格:container_spec(ui_no-candidate ui-type=text ui-disabled ui_candidate_id=name)"
+      bind_desc="托盘当前绑定的气瓶:string(ui-type=text ui-disabled)"
+      cylinder="气瓶列表:asset(ui-type=display-field ui_with-custom-candidate ui_ignore-form ui_candidate_$template=kv ui_candidate_title=barcode ui_candidate_value=barcode)"
+      asset="asset(ui_ignore)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <check_mode
+      name="连续预检模式|分类预检模式"
+      code="PRE_CHECK_THROUGH|PRE_CHECK_BY_CATEGORY"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
+
+  <asset_pre_check
+      _ui_name="预检"
+      _ui_action="清空:submitToClear,报修:submitAssetBroken,预检:submitAssetPreCheck"
+      _ui_additional_action="submitAfterAssetBroken"
+      check_mode="预检模式:check_mode(ui-type=radio ui_onChangeAction_action=submitCheckModel ui_candidate_title=displayName)"
+      asset_count="请扫描气瓶条码添加气瓶:int(value=1000 ui-disabled)"
+      barcode="string(ui_onChangeAction_action=submitBarcode)"
+      asset="详细信息:asset(ui-type=display-field ui_candidate_value=barcode ui_candidate_$template=kv ui_with-custom-candidate)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <asset_broken_report
+      _ui_name="报修"
+      _ui_action="确认报修:submitAssetBroken"
+      pre_bean="string(ui-type=text ui-hidden)"
+      pre_action="string(ui-type=text ui-hidden)"
+      pre_view="string(ui-type=text ui-hidden)"
+      pre_view_field_mapping="string(ui-type=text ui-hidden)"
+      barcode="资产条码:string(ui_onChangeAction_action=submitBarcode ui-type=barcode)"
+      product_group="产品组:product_group(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=product.productGroup)"
+      product="产品:product(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true)"
+      reason="报修原因:string(ui-type=checkbox ui_with-custom-candidate ui_candidate_title=displayName)"
+      comments="备注:string(ui-type=long-text)"
+      images="添加图片:string(ui-type=image)"
+      videos="添加视频:string(ui-type=video)"
+      asset="asset(ui_ignore)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <asset_pre_check_category
+      _ui_name="预检"
+      _ui_action="返回:submitReturn,报修:submitAssetBroken,确认:submitPrecheck"
+      product="产品:product(ui-type=text ui-disabled ui_vpath=product.name)"
+      material_code="物料代码:string(ui-disabled=true ui_vpath=product.fullMaterialCode)"
+      precheck_standard="预检项目:check_standard(ui_no-candidate ui_candidate_id=name ui-type=text ui-disabled=true ui_vpath=product.preCheckStandard)"
+      check_item="check_item(ui_ignore-form ui-type=display-field ui_candidate_value=name ui_with-custom-candidate ui_candidate_$template=kv)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <change_vehicle
+      _ui_name="换车"
+      _ui_action="确认换车:submitCarChange"
+      truck="车辆:truck(ui-type=single-select ui_candidate_title=displayName ui-required)"
+      message="string(ui-type=display-field ui_ignore-if-null)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <common_result
+      message="string(ui-type=display-field ui_ignore-if-null)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <stock_in_full
+      _ui_name="退满入库"
+      _ui_action="清空:submitClean,无条码:submitNoBarcode,确认入库:submitReturnFull"
+      full_return_reason="退满原因:asset_return_full_reason(ui-type=single-select ui_candidate_title=displayName)"
+      checker="复核人:job(ui-type=single-select ui_candidate_title=employee.name ui_with-custom-candidate)"
+      barcode="资产条码:string(ui_onChangeAction_action=submitBarcode ui-type=barcode)"
+      asset_count="请扫描气瓶条码添加气瓶:int(value=1000 ui-disabled)"
+      asset="详细信息:asset(ui-type=display-field ui_candidate_value=barcode ui_candidate_$template=kv ui_with-custom-candidate)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <asset_unpack
+      _ui_name="放空"
+      _ui_action="清空:submitClean,确认放空:submitUnpack"
+      unpack_reason="放空原因:asset_unpack_reason(ui-type=single-select ui_candidate_title=displayName)"
+      barcode="资产条码:string(ui_onChangeAction_action=submitBarcode ui-type=barcode)"
+      asset_count="请扫描气瓶条码添加气瓶:int(value=1000 ui-disabled)"
+      asset="详细信息:asset(ui-type=display-field ui_candidate_title=barcode ui_candidate_value=product.displayName ui_candidate_$template=kv ui_with-custom-candidate)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <check_after_fill
+      _ui_name="充装后检查"
+      _ui_action="返回:submitReturn,报修:submitAssetBroken,完成:submitComplete"
+      batch="批次:filling_batch(ui-type=text ui-disabled ui_no-candidate ui_candidate_id=number)"
+      check_standard="检查项目组:check_standard(ui-type=text ui-disabled ui_no-candidate ui_candidate_id=name)"
+      check_item="请核对确认以下检验项目:check_item(ui_ignore-form ui-type=display-field ui_candidate_value=name ui_with-custom-candidate ui_candidate_$template=kv)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <prepare_after_fill
+      _ui_name="充装后检查"
+      _ui_action="清空:submitClean,智能导入:submitImport,继续:submitContinue"
+      _ui_additional_action="submitRemove"
+      station_barcode="工位:filling_station(ui-type=text ui-disabled ui_no-candidate ui_candidate_id=name)"
+      batch="批次:filling_batch(ui-type=text ui-disabled ui_no-candidate ui_candidate_id=number)"
+      product="产品:product(ui-type=text ui_no-candidate ui_candidate_id=name ui-disabled ui_vpath=batch.product)"
+      barcode="资产条码:string(ui_onChangeAction_action=submitBarcode ui-type=barcode)"
+      asset="asset(ui-type=display-field ui_with-custom-candidate ui_ignore-form ui_candidate_$template=kv ui_candidate_value=barcode)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <fill_gas_check
+      _ui_name="充装检查"
+      _ui_action="返回:submitReturn,完成:submitComplete"
+      start_time="开始时间:date_time()"
+      end_time="结束时间:date_time()"
+      pre_pressure="充装前压力:double(value=10000.00)"
+      end_pressure="充装后压力:double(value=10000.00)"
+      fill_temperature="充装温度:double(value=10000.00)"
+      env_temperature="环境温度:double(value=10000.00)"
+      fill_operator="充装员:job(ui-type=single-select ui_candidate_title=employee.name ui_with-custom-candidate)"
+      checker="检查员:job(ui-type=single-select ui_candidate_title=employee.name ui_with-custom-candidate)"
+      check_item="充装过程检查内容:check_item(ui_ignore-form ui-type=display-field ui_candidate_value=name ui_with-custom-candidate ui_candidate_$template=kv)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <fill_liquid_check
+      _ui_name="充装检查"
+      _ui_action="返回:submitReturn,完成:submitComplete"
+      start_time="开始时间:date_time()"
+      end_time="结束时间:date_time()"
+      pre_weight="充装前重量:double(value=10000.00)"
+      end_weight="充装后重量:double(value=10000.00)"
+      weight="充装净重量:double(value=10000.00)"
+      fill_operator="充装员:job(ui-type=single-select ui_candidate_title=employee.name ui_with-custom-candidate)"
+      checker="检查员:job(ui-type=single-select ui_candidate_title=employee.name ui_with-custom-candidate)"
+      check_item="充装过程检查内容:check_item(ui_ignore-form ui-type=display-field ui_candidate_value=name ui_with-custom-candidate ui_candidate_$template=kv)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <fill_form
+      _ui_name="充装"
+      _ui_action="清空:submitClean,智能导入:submitImport,继续:submitContinue"
+      station_barcode="工位:filling_station(ui-type=text ui-disabled ui_no-candidate ui_candidate_id=name)"
+      batch="批次:filling_batch(ui-type=text ui-disabled ui_no-candidate ui_candidate_id=number)"
+      product="产品:product(ui-type=text ui_no-candidate ui_candidate_id=name ui-disabled ui_vpath=batch.product)"
+      barcode="资产条码:string(ui_onChangeAction_action=submitBarcode ui-type=barcode)"
+      asset="asset(ui-type=display-field ui_with-custom-candidate ui_ignore-form ui_candidate_$template=kv ui_candidate_value=barcode)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <prepare_before_fill
+      _ui_name="充装前检查"
+      _ui_action="清空:submitClean,报修:submitAssetBroken,继续:submitCheck"
+      _ui_additional_action="submitAfterAssetBroken"
+      station_barcode="工位:string(uit-type=barcode ui_onChangeAction_action=submitStationBarcode)"
+      filling_station="filling_station(ui_ignore)"
+      product_group="产品组:product_group(ui-type=single-select ui_candidate_title=displayName ui_onChangeAction_action=submitProductGroup ui_with-custom-candidate)"
+      product="产品:product(ui-type=single-select ui_candidate_title=name ui_with-custom-candidate ui_onChangeAction_action=submitProduct)"
+      barcode="资产条码:string(ui_onChangeAction_action=submitBarcode ui-type=barcode)"
+      filling_desc="请扫描气瓶或托盘添加:int(value=1000 ui-disabled)"
+      asset="详细信息:asset(ui-type=display-field ui_with-custom-candidate ui_ignore-form ui_candidate_$template=kv ui_candidate_value=barcode)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <check_before_fill
+      _ui_name="充装前检查"
+      _ui_action="返回:submitReturn,报修:submitAssetBroken,完成:submitComplete"
+      batch="批次:string(ui-type=text ui_no-candidate)"
+      check_standard="检查项目组:check_standard(ui-type=text ui-disabled ui_no-candidate ui_candidate_id=name)"
+      check_item="请核对确认以下检验项目:check_item(ui_ignore-form ui-type=display-field ui_candidate_value=name ui_with-custom-candidate ui_candidate_$template=kv)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <analysis_form
+      _ui_name="分析"
+      _ui_action="关联批次:submitBatch,保存:submitSave,确认:submit"
+      barcode="资产条码:string(ui_onChangeAction_action=submitBarcode ui-type=barcode)"
+      batch="对应批次:filling_batch(ui-type=text ui-disabled ui_no-candidate ui_candidate_id=number)"
+      product="产品:product(ui-type=text ui-disabled ui_no-candidate ui_candidate_id=name ui_vpath=batch.product)"
+      analysis_model="analysis_model(ui-type=single-select ui_candidate_title=displayName)"
+      analysis_standard="analysis_standard(ui-type=text ui-disabled ui_no-candidate ui_candidate_id=displayName)"
+      analysis_item="analysis_item(ui-type=analyze-work-list ui_with-custom-candidate ui_candidate_$template=analytics)"
+      request="service_request(ui_no-candidate ui-type=text ui-hidden)"
+      _features_delta="view"
+      />
+
+  <analysis_model
+      _name="分析模式"
+      name="批次分析|单瓶分析"
+      code="BATCH|SINGLE"
+      platform="platform()"
+      _features="status"
+      _identified_by="code"
+      />
+
+  <menu_item
+      name="主页|管理|注册|预检|充装|分析|拣配|配送|维护|盘点|强制状态转移|资产信息查询|资产冻结|资产调拔|资产挂失|气瓶注册|杜瓦注册|托盘注册|集装格注册|集装格组装|条码替换|乙炔瓶注册|车用瓶注册|预检|拖盘绑定气瓶|拖盘清空|充装前检查|充装|充装后检查|外购收货|放空|退满入库|生产计划查询|分析|放空|产品更改|分析结果查询|换车|无条码查询|报修|[1, 50]"
+      code="home|management|registration|preCheckHome|filling|analysisHome|pick|delivery|maintain|check_inventory|force_status|asset_info|frozen|move|lost|cylinder|dewar|pallet|lattice|lattice_bind|barcode|acetylene|vehicle|preCheck|pallet_bind|pallet_clean|check_before_fill|do_fill|check_after_fill|purchase|empty|stock_in_full|plan|analysis|analysisEmpty|product|report|change_vehicle|asset_no_barcode|asset_broken_report|[1,50]"
+      icon="home|management|registration|preCheck|filling|analysis|pick|delivery|maintain|check_inventory|force_status|asset_info|frozen|move|lost|cylinder|dewar|pallet|lattice|lattice_bind|barcode|acetylene|vehicle|preCheck|pallet_bind|pallet_clean|check_before_fill|do_fill|check_after_fill|purchase|empty|stock_in_full|plan|analysis|empty|product|report|app|app|app?|[0, 100]"
+      action="home|management|registration|preCheck|filling|analysis|pick|delivery|maintain|check_inventory|assetUpdateStatus/init|assetInfoQuery/init|assetFrozen/init|assetMove/init|assetLost/init|cylinderRegistry/init|dewarRegistry/init|palletRegistry/init|latticeRegistry/init|latticeConfiguration/init|barcodeReplace/init|acetyleneCylinderRegistry/init|vehicle|preCheck/init|palletBind/init|palletClean/init|checkBeforeFill/init|fill/init|checkAfterFill/init|purchase|unpack/init|stockInFull/init|plan|analysis/init|empty|product|report|changeVehicle/init|assetNoBarcode/init|assetBrokenReport/init?|[0, 100]"
+      platform="platform()"
+      _features="sample_data"
+      />
+
+  <menu_relation
+      parent="home|home|home|home|home|home|home|home|home|management|management|management|management|management|registration|registration|registration|registration|registration|registration|registration|registration|preCheckHome|preCheckHome|preCheckHome|filling|filling|filling|filling|filling|filling|filling|analysisHome|analysisHome|analysisHome|analysisHome"
+      child="management|registration|preCheckHome|filling|analysisHome|pick|delivery|maintain|check_inventory|force_status|asset_info|frozen|move|lost|cylinder|dewar|pallet|lattice|lattice_bind|barcode|acetylene|vertical|preCheck|pallet_bind|pallet_clean|check_before_fill|do_fill|check_after_fill|purchase|empty|stock_in_full|plan|analysis|analysisEmpty|product|report"
+      display_order="1|2|3|4|5|6|7|8|9|1|2|3|4|5|1|2|3|4|5|6|7|8|1|2|3|1|2|3|4|5|6|7|1|2|3|4|[1,200]"
+      platform="platform()"
+      _features="sample_data"
+      />
+
 </root>
-
-
-
-
-
 
