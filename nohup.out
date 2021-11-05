@@ -24452,3 +24452,13 @@ Already up to date.
  2 files changed, 6 insertions(+)
 To https://github.com/philipgreat/truck-plan-demo.git
    900c7b44..aaab0c90  master -> master
+From https://github.com/philipgreat/truck-plan-demo
+   aaab0c90..f41d513f  master     -> origin/master
+Updating aaab0c90..f41d513f
+Fast-forward
+ model.xml | 17 ++++++++++++++---
+ 1 file changed, 14 insertions(+), 3 deletions(-)
+[master 99abb1e8] updated @ 2021-11-05 12:55:53 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   f41d513f..99abb1e8  master -> master
