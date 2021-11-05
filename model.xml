@@ -1,15 +1,26 @@
 <root
     org="doublechaintech"
-    chinese_name="Sys X"
-    english_name="Cylinder Manufacturing Execution System">
+    chinese_name="问图科技（成都）有限公司企业员工健康台账"
+    english_name="问图科技（成都）有限公司企业员工健康台账">
 
   <!-- 平台 -->
   <platform
-      name="气瓶制造执行系统"
+      _name="问图科技（成都）有限公司企业员工健康台账"
+      name="问图科技（成都）有限公司企业员工健康台账"
       create_time="createTime()"
       last_update_time="updateTime()"
       />
 
+    <health_status
+        _name="健康台账"
+        name="张喜来|刘利|田波|周廷志"
+        type="企业员工|企业员工|企业员工|来访人员"
+        code_color="绿码|绿码"
+        temporature="36.9"
+        record_time="2021-11-05"
+        platform="platform()"
+    
+    />
 
 </root>
 
