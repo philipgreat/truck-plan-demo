@@ -1,12 +1,13 @@
 <root
     org="doublechaintech"
-    chinese_name="问图科技（成都）有限公司企业员工健康台账"
-    english_name="问图科技（成都）有限公司企业员工健康台账">
+    chinese_name="企业员工健康台账"
+    english_name="企业员工健康台账">
 
+    
   <!-- 平台 -->
   <platform
-      _name="问图科技（成都）有限公司企业员工健康台账"
-      name="问图科技（成都）有限公司企业员工健康台账"
+      _name="企业员工健康台账"
+      name="企业员工健康台账"
       create_time="createTime()"
       last_update_time="updateTime()"
       />
