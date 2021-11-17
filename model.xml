@@ -17,7 +17,7 @@
         name="张喜来|刘利|田波|周廷志"
         type="企业员工|企业员工|企业员工|来访人员"
         code_color="绿码|绿码"
-        temporature="36.9"
+        temporature="36.9|[36.3,37.2]"
         record_time="2021-11-05"
         platform="platform()"
     
