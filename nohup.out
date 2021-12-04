@@ -25899,3 +25899,373 @@ Already up to date.
  2 files changed, 6 insertions(+)
 To https://github.com/philipgreat/truck-plan-demo.git
    9fff20bc..d21757f2  master -> master
+From https://github.com/philipgreat/truck-plan-demo
+   d21757f2..4091175d  master     -> origin/master
+Updating d21757f2..4091175d
+Fast-forward
+ model.xml | 4 ++++
+ 1 file changed, 4 insertions(+)
+[master 98b95480] updated @ 2021-11-28 21:07:08 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   4091175d..98b95480  master -> master
+From https://github.com/philipgreat/truck-plan-demo
+   98b95480..675533ca  master     -> origin/master
+Updating 98b95480..675533ca
+Fast-forward
+ model.xml | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+[master fcea97c4] updated @ 2021-11-28 23:07:10 on ora2
+ 2 files changed, 11 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   675533ca..fcea97c4  master -> master
+Already up to date.
+[master ff76a651] updated @ 2021-11-29 01:07:12 on ora2
+ 2 files changed, 11 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   fcea97c4..ff76a651  master -> master
+Already up to date.
+[master 579e9c35] updated @ 2021-11-29 03:07:13 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   ff76a651..579e9c35  master -> master
+Already up to date.
+[master f97d3376] updated @ 2021-11-29 05:07:15 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   579e9c35..f97d3376  master -> master
+Already up to date.
+[master 7453fc01] updated @ 2021-11-29 07:07:17 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   f97d3376..7453fc01  master -> master
+Already up to date.
+[master 8be4ac21] updated @ 2021-11-29 09:07:18 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   7453fc01..8be4ac21  master -> master
+Already up to date.
+[master 168dd4ce] updated @ 2021-11-29 11:07:20 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   8be4ac21..168dd4ce  master -> master
+Already up to date.
+[master 54ec3f8f] updated @ 2021-11-29 13:07:21 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   168dd4ce..54ec3f8f  master -> master
+Already up to date.
+[master 91a8b66c] updated @ 2021-11-29 15:07:23 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   54ec3f8f..91a8b66c  master -> master
+Already up to date.
+[master 39ff5c17] updated @ 2021-11-29 17:07:25 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   91a8b66c..39ff5c17  master -> master
+Already up to date.
+[master c624d971] updated @ 2021-11-29 19:07:27 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   39ff5c17..c624d971  master -> master
+Already up to date.
+[master 359eb4e8] updated @ 2021-11-29 21:07:28 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   c624d971..359eb4e8  master -> master
+Already up to date.
+[master 41dc2288] updated @ 2021-11-29 23:07:31 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   359eb4e8..41dc2288  master -> master
+Already up to date.
+[master 8421ba40] updated @ 2021-11-30 01:07:32 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   41dc2288..8421ba40  master -> master
+Already up to date.
+[master a636c616] updated @ 2021-11-30 03:07:34 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   8421ba40..a636c616  master -> master
+Already up to date.
+[master 73dd704e] updated @ 2021-11-30 05:07:35 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   a636c616..73dd704e  master -> master
+Already up to date.
+[master 623ea939] updated @ 2021-11-30 07:07:37 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   73dd704e..623ea939  master -> master
+Already up to date.
+[master 8a5b1b7f] updated @ 2021-11-30 09:07:39 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   623ea939..8a5b1b7f  master -> master
+Already up to date.
+[master 49c10bda] updated @ 2021-11-30 11:07:40 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   8a5b1b7f..49c10bda  master -> master
+Already up to date.
+[master b11c66e5] updated @ 2021-11-30 13:07:42 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   49c10bda..b11c66e5  master -> master
+Already up to date.
+[master d430afd4] updated @ 2021-11-30 15:07:44 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   b11c66e5..d430afd4  master -> master
+Already up to date.
+[master 7481a90a] updated @ 2021-11-30 17:07:45 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   d430afd4..7481a90a  master -> master
+From https://github.com/philipgreat/truck-plan-demo
+   7481a90a..fd1125aa  master     -> origin/master
+Updating 7481a90a..fd1125aa
+Fast-forward
+ xiantrain.xml | 1 +
+ 1 file changed, 1 insertion(+)
+[master 3bc20424] updated @ 2021-11-30 19:07:49 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   fd1125aa..3bc20424  master -> master
+Already up to date.
+[master 8b761839] updated @ 2021-11-30 21:07:50 on ora2
+ 2 files changed, 11 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   3bc20424..8b761839  master -> master
+Already up to date.
+[master a49b7d50] updated @ 2021-11-30 23:07:52 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   8b761839..a49b7d50  master -> master
+Already up to date.
+[master 1386c8fe] updated @ 2021-12-01 01:07:54 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   a49b7d50..1386c8fe  master -> master
+Already up to date.
+[master 29c06e88] updated @ 2021-12-01 03:07:55 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   1386c8fe..29c06e88  master -> master
+Already up to date.
+[master 70ca5c2c] updated @ 2021-12-01 05:07:57 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   29c06e88..70ca5c2c  master -> master
+Already up to date.
+[master b4fdddff] updated @ 2021-12-01 07:07:59 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   70ca5c2c..b4fdddff  master -> master
+Already up to date.
+[master fb42a140] updated @ 2021-12-01 09:08:00 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   b4fdddff..fb42a140  master -> master
+Already up to date.
+[master 8d340781] updated @ 2021-12-01 11:08:02 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   fb42a140..8d340781  master -> master
+Already up to date.
+[master c541b6eb] updated @ 2021-12-01 13:08:04 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   8d340781..c541b6eb  master -> master
+Already up to date.
+[master 83cdb8bb] updated @ 2021-12-01 15:08:06 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   c541b6eb..83cdb8bb  master -> master
+Already up to date.
+[master 60c934b2] updated @ 2021-12-01 17:08:07 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   83cdb8bb..60c934b2  master -> master
+Already up to date.
+[master c953a75c] updated @ 2021-12-01 19:08:09 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   60c934b2..c953a75c  master -> master
+Already up to date.
+[master ce7839cd] updated @ 2021-12-01 21:08:11 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   c953a75c..ce7839cd  master -> master
+Already up to date.
+[master 2372e089] updated @ 2021-12-01 23:08:12 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   ce7839cd..2372e089  master -> master
+Already up to date.
+[master d20150bc] updated @ 2021-12-02 01:08:14 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   2372e089..d20150bc  master -> master
+Already up to date.
+[master 4ea4bf54] updated @ 2021-12-02 03:08:16 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   d20150bc..4ea4bf54  master -> master
+Already up to date.
+[master bd44df2f] updated @ 2021-12-02 05:08:17 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   4ea4bf54..bd44df2f  master -> master
+Already up to date.
+[master 3328ede0] updated @ 2021-12-02 07:08:19 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   bd44df2f..3328ede0  master -> master
+Already up to date.
+[master 9572b3b8] updated @ 2021-12-02 09:08:21 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   3328ede0..9572b3b8  master -> master
+Already up to date.
+[master 492b17db] updated @ 2021-12-02 11:08:23 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   9572b3b8..492b17db  master -> master
+Already up to date.
+[master e3daf06c] updated @ 2021-12-02 13:08:24 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   492b17db..e3daf06c  master -> master
+Already up to date.
+[master a11cdc1d] updated @ 2021-12-02 15:08:26 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   e3daf06c..a11cdc1d  master -> master
+Already up to date.
+[master 0452e3cf] updated @ 2021-12-02 17:08:28 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   a11cdc1d..0452e3cf  master -> master
+Already up to date.
+[master b192a312] updated @ 2021-12-02 19:08:29 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   0452e3cf..b192a312  master -> master
+Already up to date.
+[master a7825cb4] updated @ 2021-12-02 21:08:31 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   b192a312..a7825cb4  master -> master
+Already up to date.
+[master c1810823] updated @ 2021-12-02 23:08:33 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   a7825cb4..c1810823  master -> master
+Already up to date.
+[master 3c2c6630] updated @ 2021-12-03 01:08:34 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   c1810823..3c2c6630  master -> master
+Already up to date.
+[master 054b8876] updated @ 2021-12-03 03:08:36 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   3c2c6630..054b8876  master -> master
+Already up to date.
+[master 03165536] updated @ 2021-12-03 05:08:38 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   054b8876..03165536  master -> master
+Already up to date.
+[master 30f54246] updated @ 2021-12-03 07:08:40 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   03165536..30f54246  master -> master
+Already up to date.
+[master a03a545c] updated @ 2021-12-03 09:08:41 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   30f54246..a03a545c  master -> master
+Already up to date.
+[master 39fa6e86] updated @ 2021-12-03 11:08:43 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   a03a545c..39fa6e86  master -> master
+Already up to date.
+[master 29f66c60] updated @ 2021-12-03 13:08:44 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   39fa6e86..29f66c60  master -> master
+Already up to date.
+[master 393514ad] updated @ 2021-12-03 15:08:46 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   29f66c60..393514ad  master -> master
+Already up to date.
+[master 478e8d3a] updated @ 2021-12-03 17:08:48 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   393514ad..478e8d3a  master -> master
+Already up to date.
+[master 596a4c7e] updated @ 2021-12-03 19:08:50 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   478e8d3a..596a4c7e  master -> master
+Already up to date.
+[master cbaa26a2] updated @ 2021-12-03 21:08:52 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   596a4c7e..cbaa26a2  master -> master
+Already up to date.
+[master a9a4f08b] updated @ 2021-12-03 23:08:53 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   cbaa26a2..a9a4f08b  master -> master
+Already up to date.
+[master b88a1501] updated @ 2021-12-04 01:08:55 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   a9a4f08b..b88a1501  master -> master
+Already up to date.
+[master 06668cb1] updated @ 2021-12-04 03:08:56 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   b88a1501..06668cb1  master -> master
+Already up to date.
+[master 521d7443] updated @ 2021-12-04 05:08:58 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   06668cb1..521d7443  master -> master
+Already up to date.
+[master 5639f8ef] updated @ 2021-12-04 07:09:00 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   521d7443..5639f8ef  master -> master
+Already up to date.
+[master df960957] updated @ 2021-12-04 09:09:02 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   5639f8ef..df960957  master -> master
+Already up to date.
+[master dbeba6af] updated @ 2021-12-04 11:09:04 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   df960957..dbeba6af  master -> master
+Already up to date.
+[master 453a8121] updated @ 2021-12-04 13:09:05 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   dbeba6af..453a8121  master -> master
+Already up to date.
+[master 763ae5f2] updated @ 2021-12-04 15:09:07 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   453a8121..763ae5f2  master -> master
+Already up to date.
+[master 22f11e88] updated @ 2021-12-04 17:09:09 on ora2
+ 2 files changed, 6 insertions(+)
+To https://github.com/philipgreat/truck-plan-demo.git
+   763ae5f2..22f11e88  master -> master
