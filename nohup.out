@@ -26749,3 +26749,10 @@ Already up to date.
  2 files changed, 6 insertions(+)
 To https://github.com/philipgreat/truck-plan-demo.git
    dbcab411..a5bea258  master -> master
+Already up to date.
+[master 02ca13d1] updated @ 2021-12-12 13:12:01 on ora2
+ 2 files changed, 6 insertions(+)
+remote: fatal error in commit_refs        
+To https://github.com/philipgreat/truck-plan-demo.git
+ ! [remote rejected]   master -> master (failure)
+error: failed to push some refs to 'https://github.com/philipgreat/truck-plan-demo.git'
