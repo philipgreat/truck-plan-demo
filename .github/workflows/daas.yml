@@ -52,7 +52,7 @@ jobs:
         sudo apt-get install -y curl
     - name: Set up Mysql Client for Importing Data
       run: |
-        sudo apt-get install default-mysql-client
+        sudo apt -y install mariadb-server
     - name: Setting up Web Server
       run: |
         cd
