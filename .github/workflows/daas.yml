@@ -50,9 +50,6 @@ jobs:
         sudo unzip -d /opt/gradle gradle-7.2-bin.zip
         export PATH="/opt/gradle/bin:$PATH"
         sudo apt-get install -y curl
-    - name: Set up Mysql Client for Importing Data
-      run: |
-        sudo apt -y install mariadb-server
     - name: Setting up Web Server
       run: |
         cd
