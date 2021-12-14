@@ -52,7 +52,7 @@ jobs:
         sudo apt-get install -y curl
     - name: Set up Mysql Client for Importing Data
       run: |
-        sudo apt-get install -y mysql-client
+        sudo apt install -f -y  mysql-client=5.7*
     - name: Setting up Web Server
       run: |
         cd
