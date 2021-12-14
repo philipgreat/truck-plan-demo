@@ -1,33 +1,18 @@
-<root
-    org="doublechaintech"
-    chinese_name="企业员工健康台账"
-    english_name="企业员工健康台账">
+<root org="doublechain"
+    chinese_name="教育系统示例"
+    english_name="教育系统示例"
+   
+>
 
-    
-  <!-- 平台 -->
-  <platform
-      _name="企业员工健康台账"
-      name="企业员工健康台账"
-      create_time="createTime()"
-      last_update_time="updateTime()"
-      />
-
-    <health_status
-        _name="健康台账"
-        name="张喜来|刘利|田波|周廷志"
-        type="企业员工|企业员工|企业员工|来访人员"
-        code_color="绿码|绿码"
-        temporature="36.9|[36.3,37.2]"
-        record_time="2021-11-05"
-        platform="platform()"
-    
+    <platform
+        name="教育系统示例"
+        founded="now()"
+        _features="custom"
     />
-    
 
-
-
-
+    <develop_system
+     name="应用开放平台"
+     platform="platform()"
+ />
 </root>
-
-
 

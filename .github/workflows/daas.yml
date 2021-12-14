@@ -40,7 +40,7 @@ jobs:
         echo "collation-server = utf8mb4_unicode_ci" >> my.cnf
         echo "default-time-zone =+08:00" >> my.cnf
         echo "skip-name-resolve" >> my.cnf
-        sudo docker run --name=mysql -v /home/runner/my.cnf:/etc/my.cnf -p 3306:3306 -e MYSQL_ROOT_PASSWORD=0254891276 -d mysql:5.7
+        sudo docker run --name=mysql -v /home/runner/my.cnf:/etc/my.cnf -p 3306:3306 -e MYSQL_ROOT_PASSWORD=0254891276 -d mysql
     - name: Set up Java & Gradle
       run: |
         sudo apt-get update
