@@ -96,7 +96,7 @@ jobs:
           pkill frpc
           exit 0
         fi
-        tail -100 /home/runner/resin-4.0.65/log/jvm-default.log
+        
         sleep 1
         done
 
