@@ -45,7 +45,7 @@ jobs:
       run: |
         sudo apt-get update
         
-        wget  -q http://t420.doublechaintech.cn:2080/upload/gradle-7.2-bin.zip
+        wget  -q http://d.xrcity.cn/upload/gradle-7.2-bin.zip
         sudo mkdir /opt/gradle
         sudo unzip -d /opt/gradle gradle-7.2-bin.zip
         export PATH="/opt/gradle/bin:$PATH"
@@ -53,7 +53,7 @@ jobs:
     - name: Setting up Web Server
       run: |
         cd
-        wget -q http://t420.doublechaintech.cn:2080/upload/java/resin-3.1.16.zip
+        wget -q http://d.xrcity.cn/upload/java/resin-3.1.16.zip
         unzip resin-3.1.16.zip
     - name: Checkout doublechaintech/daas-start-kit
       uses: actions/checkout@v2
@@ -81,7 +81,7 @@ jobs:
     - name: Building BIZUI - the Frontend Artificts
       run: |
         cd /home/runner/work/daas-sample/daas-sample/./bizui
-        wget -q http://t420.doublechaintech.cn:2080/upload/node_modules.tar.gz
+        wget -q http://d.xrcity.cn/upload/node_modules.tar.gz
         tar xzf node_modules.tar.gz
         npm run build && cp -R dist/* /home/runner/resin-3.1.16/webapps/ROOT
 
