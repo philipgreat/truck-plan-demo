@@ -8,6 +8,7 @@
         name="教育系统示例"
         founded="now()"
         _features="custom"
+
     />
 
     <develop_system
