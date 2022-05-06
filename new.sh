@@ -12,3 +12,4 @@ function commit() {
 commit "change @ $(date '+%Y-%m-%d %H:%M:%S')"
 
 
+
