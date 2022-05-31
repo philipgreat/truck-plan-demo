@@ -33,7 +33,7 @@
         name="川A-UYF812"
         logistics="logistics()"
     />
-    <base
+    <supply_base
         name="素菜基地"
         logistics="logistics()"
     />
